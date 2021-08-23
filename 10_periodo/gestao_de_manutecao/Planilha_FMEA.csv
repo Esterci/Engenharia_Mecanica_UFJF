@@ -1,0 +1,56 @@
+Função,Modo de Falha,Efeito,Severidade,Causa da Falha
+Preparação de material,Material incorreto,"Rejeição do produto final
+Por não atendimento do 
+Projeto",8,Erro do operador
+,,,,"Identificação incorreta
+Do material"
+,Material humido,Atrapalha a moldagem,5,"Armazenagem incorreta
+Da matéria-prima"
+"Aquecimento e preenchimento
+Do material","Temperatura incorreta
+No molde","Preenchimento incorreto
+Do molde, causando
+Deforrmidades na peça final",6,"Malfuncionamento do
+Sistema de controle de
+Temperatura do Fuso"
+,,,,"Malfuncionamento do
+Sistema de controle de
+Temperatura do
+Cilindro de plastificação"
+"Escolha dos parâmetros
+De injeção","Pressão
+Inadequada","Preenchimento imcompleto
+Do molde",3,"ajuste incorreta do
+Parâmetro de pressão"
+,"Velocidade exagerada
+De injeção","Geração das marcas cinzas,
+Que reduzem a resistência
+Do produto final",4,"ajuste incorreta do
+Parâmetro de velocidade"
+Fechamento do molde,"Os moldes fixo e móvel
+Não estão em contato
+Perfeito",Formação de rebarbas,6,"Força insuficiente do
+Sistema de fecho e
+Abertura do molde"
+,,,,"Deformação do
+Bico de injeção"
+Função,Ocorrência,Ações,Detecção,RPN
+Preparação de material,2,"Usar um checklist para o
+Processo",3,48
+,2,"Medida de peso do materail
+Antes da alimentação da máquina",5,80
+,4,"Medir humidade relativa do ar no
+Local de armazenamento",7,140
+"Aquecimento e preenchimento
+Do material",8,"Instalaçaõ de termopar para controle de
+Temperatura no Fuso",4,192
+,5,"Instalaçaõ de termopar para controle de
+Temperatura no cilindro de plastificação",4,120
+"Escolha dos parâmetros
+De injeção",4,Medir pressão com um manômetro,5,60
+,7,"Definição automática do parâmetro de
+Velocidade em função das demais
+Variaveis já mensuradas",3,84
+Fechamento do molde,4,"Medir a poressão aplicada pelo 
+Mecanismo De trava",6,144
+,6,Inspeção visual do bico de injeção,4,144
