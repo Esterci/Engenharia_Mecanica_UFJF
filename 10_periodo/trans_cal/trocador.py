@@ -33,6 +33,7 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
         I_f_sai_4 := Enthalpy(Water;T=T_f_sai_4;P=P_f)
         mu_f_4 := Viscosity(Water;T=T_med_f_4;P=P_f)
         Pr_f_4 := Prandtl(Water;T=T_med_f_4;P=P_f)
+	   k_f_4 := Conductivity(Water;T=T_med_f_4;P=P_f)
 
 
         "parametros do fluido quente"
@@ -91,7 +92,10 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
 
         "coeficientes globais"
 
-        U_i_4 := (1/h_i_4 + R_d_i_4 + d_i * (ln(d_e/d_i))/(2 * k_aco) + (d_i/d_e) * R_d_e + d_i/(d_e * h_e))
+	   R_d_i_4 := 0,0002
+	   R_d_e := 0,0009
+
+        U_i_4 := (1/h_i_4 + R_d_i_4 + d_i * (ln(d_e/d_i))/(2 * k_aco) + (d_i/d_e) * R_d_e + d_i/(d_e * h_e))^(-1)
 
         "encontrando comprimento do volume de controle"
 
