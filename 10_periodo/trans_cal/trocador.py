@@ -171,27 +171,27 @@ PROCEDURE temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f
 
         "coeficiente de convecção interna"
 
-        h_i_6 := (Nu_D_5*k_f_a)/(d_i)
+        h_i_5 := (Nu_D_5*k_f_a)/(d_i)
 
         "coeficientes globais"
 
-	    R_d_i_6 := 0,0002
+	    R_d_i_5 := 0,0002
 
-        U_i_6 := (1/h_i_6 + R_d_i_6 + d_i * (ln(d_e/d_i))/(2 * k_aco) + (d_i/d_e) * R_d_e + d_i/(d_e * h_e))^(-1)
+        U_i_5 := (1/h_i_5 + R_d_i_5 + d_i * (ln(d_e/d_i))/(2 * k_aco) + (d_i/d_e) * R_d_e + d_i/(d_e * h_e))^(-1)
 
         "encontrando comprimento do volume de controle"
 
-        L_6 := (NUT_6 * c_min_6)/(U_i_6 * d_i * pi)
+        L_5 := (NUT_5 * c_min_5)/(U_i_5 * d_i * pi)
 
         "lei de resfriamento de Newton"
         
-        T_f_sai_6 := T_f_ent_6 + q_6/h_i_6
+        T_f_sai_5 := T_f_ent_5 + q_5/h_i_5
 
         "############### Volume de Controle VI ##############"
 
         "parametros do fluido frio"
 
-        T_f_ent_6 := T_f_sai_chut_5
+        T_f_ent_6 := T_f_sai_5
         T_med_f_6 := (T_f_ent_6 + T_f_sai_chut_6) / 2
         c_p_f_6 := Cp (Steam;T=T_med_f_6;P=P_f)
         I_f_ent_6 := Enthalpy(Steam;T=T_f_ent_6;P=P_f)
