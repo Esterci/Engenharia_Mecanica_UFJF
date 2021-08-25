@@ -125,7 +125,7 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
         "parametros do fluido quente"
 
         T_q_ent_5 := T_q_sai_4
-        T_med_q_5 := (T_q_ent_5 + abs(T_q_sai_chut_5))/2
+        T_med_q_5 := (T_q_ent_5 + T_q_sai_chut_5)/2
         c_p_q_5 := Cp(Air_ha;T=T_med_q_5;P=P_q)
 
         "Balanço de massas e energias"
@@ -148,7 +148,7 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
 
         epsilon_5 := q_5 / q_max_5
 
-        NUT_5 := -ln(abs(1-epsilon_5))
+        NUT_5 := -ln(1-epsilon_5)
 
         "Numero de Reynolds"
 
@@ -167,8 +167,8 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
 
         "parametros do fluido quente"
 
-        T_q_ent_6 := abs(T_q_sai_5)
-        T_med_q_6 := (T_q_ent_6 + abs(T_q_sai_chut_6))/2
+        T_q_ent_6 := T_q_sai_5
+        T_med_q_6 := (T_q_ent_6 + T_q_sai_chut_6)/2
         c_p_q_6 := Cp(Air_ha;T=T_med_q_6;P=P_q)
 
         "parametros adicionais"
@@ -399,7 +399,7 @@ I_f_sai_6 = Enthalpy(Steam;T=T_f_sai_4;P=P_f)
 "parametros do fluido quente"
 
 T_q_ent_6 = T_q_sai_5
-T_med_q_6 = abs((T_q_ent_6 + T_it_6)/2)
+T_med_q_6 = (T_q_ent_6 + T_it_6)/2
 c_p_q_6 =Cp(Air_ha;T=T_med_q_6;P=P_q)
 rho_q_6 = Density(Air_ha;T=T_med_q_6;P=P_q)
 mu_q_6 =Viscosity(Air_ha;T=T_med_q_6;P=P_q)
