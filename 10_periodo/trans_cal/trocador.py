@@ -160,7 +160,7 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
         c_p_f_6 := Cp (Steam;T=T_med_f_6;P=P_f)
         I_f_ent_6 := Enthalpy(Steam;T=T_f_ent_6;P=P_f)
         I_f_sai_6 := Enthalpy(Steam;T=T_f_sai_chut_6;P=P_f)
-	   mu_f_6 := Viscosity(Steam;T=T_med_f_6;P=P_f)
+	    mu_f_6 := Viscosity(Steam;T=T_med_f_6;P=P_f)
 
         "parametros do fluido quente"
 
@@ -219,7 +219,6 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
         "coeficientes globais"
 
 	    R_d_i_6 := 0,0002
-	    R_d_e := 0,0009
 
         U_i_6 := (1/h_i_6 + R_d_i_6 + d_i * (ln(d_e/d_i))/(2 * k_aco) + (d_i/d_e) * R_d_e + d_i/(d_e * h_e))^(-1)
 
