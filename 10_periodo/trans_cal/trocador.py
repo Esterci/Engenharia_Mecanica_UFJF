@@ -107,22 +107,18 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
 
         T_f_ent_5 := T_f_sai_4
         T_med_f_5 := (T_f_ent_5 + T_f_sai_chut_5) / 2
+	   I_f_ent_5 :=  Enthalpy(Water;T=T_f_ent_5;P=P_f)
+        I_f_sai_5 := Enthalpy(Steam;T=T_f_sai_chut_5;P=P_f)
 
         " tirando média dos parâmetros termo-físicos"
 
         c_p_f_a := Cp (Water;T=T_med_f_5;P=P_f)
-        I_f_ent_a := Enthalpy_vaporization(Water;T=T_f_ent_5)
-        I_f_sai_a := Enthalpy_vaporization(Water;T=T_f_sai_chut_5)
         mu_f_a := Viscosity(Water;T=T_med_f_5;P=P_f)
 
         c_p_f_v := Cp (Steam;T=T_med_f_5;P=P_f)
-        I_f_ent_v := Enthalpy_vaporization(Steam;T=T_f_ent_5)
-        I_f_sai_v := Enthalpy_vaporization(Steam;T=T_f_sai_chut_5)
         mu_f_v := Viscosity(Steam;T=T_med_f_5;P=P_f)
 
         c_p_f_5 := (c_p_f_v + c_p_f_a)/2
-        I_f_ent_5 := (I_f_ent_v + I_f_ent_a)/2
-        I_f_sai_5 := (I_f_sai_v + I_f_sai_a)/2
         mu_f_5 := (mu_f_v + mu_f_a)/2
 
         "parametros do fluido quente"
@@ -162,8 +158,9 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
         T_f_ent_6 := T_f_sai_chut_5
         T_med_f_6 := (T_f_ent_6 + T_f_sai_chut_6) / 2
         c_p_f_6 := Cp (Steam;T=T_med_f_6;P=P_f)
-        I_f_ent_6 := Enthalpy(Steam;T=T_f_ent_4;P=P_f)
-        I_f_sai_6 := Enthalpy(Steam;T=T_f_sai_4;P=P_f)
+        I_f_ent_6 := Enthalpy(Steam;T=T_f_ent_6;P=P_f)
+        I_f_sai_6 := Enthalpy(Steam;T=T_f_sai_chut_6;P=P_f)
+	   mu_f_6 := Viscosity(Steam;T=T_med_f_6;P=P_f)
 
         "parametros do fluido quente"
 
