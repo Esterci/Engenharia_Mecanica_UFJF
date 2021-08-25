@@ -92,8 +92,8 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
 
         "coeficientes globais"
 
-	   R_d_i_4 := 0,0002
-	   R_d_e := 0,0009
+        R_d_i_4 := 0,0002
+	    R_d_e := 0,0009
 
         U_i_4 := (1/h_i_4 + R_d_i_4 + d_i * (ln(d_e/d_i))/(2 * k_aco) + (d_i/d_e) * R_d_e + d_i/(d_e * h_e))^(-1)
 
@@ -111,16 +111,19 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
         " tirando média dos parâmetros termo-físicos"
 
         c_p_f_a := Cp (Water;T=T_med_f_5;P=P_f)
-        I_f_ent_a := Enthalpy_vaporization(Water;T=T_f_ent_4)
-        I_f_sai_a := Enthalpy_vaporization(Water;T=T_f_sai_4)
+        I_f_ent_a := Enthalpy_vaporization(Water;T=T_f_ent_5)
+        I_f_sai_a := Enthalpy_vaporization(Water;T=T_f_sai_chut_5)
+        mu_f_a := Viscosity(Water;T=T_med_f_5;P=P_f)
 
         c_p_f_v := Cp (Steam;T=T_med_f_5;P=P_f)
-        I_f_ent_v := Enthalpy_vaporization(Steam;T=T_f_ent_4)
-        I_f_sai_v := Enthalpy_vaporization(Steam;T=T_f_sai_4)
+        I_f_ent_v := Enthalpy_vaporization(Steam;T=T_f_ent_5)
+        I_f_sai_v := Enthalpy_vaporization(Steam;T=T_f_sai_chut_5)
+        mu_f_v := Viscosity(Steam;T=T_med_f_5;P=P_f)
 
         c_p_f_5 := (c_p_f_v + c_p_f_a)/2
         I_f_ent_5 := (I_f_ent_v + I_f_ent_a)/2
         I_f_sai_5 := (I_f_sai_v + I_f_sai_a)/2
+        mu_f_5 := (mu_f_v + mu_f_a)/2
 
         "parametros do fluido quente"
 
@@ -133,6 +136,24 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
         T_q_sai_5 := T_q_ent_5 - m_dot_f*(I_f_sai_5-I_f_ent_5)/(m_dot_q * c_p_q_5)
 
         q_5 := m_dot_q * c_p_q_5 * (T_q_ent_5 - T_q_sai_5)
+
+        "calculo da efetividade"
+
+        c_q_5 := m_dot_q * c_p_q_5
+
+        c_min_5 := c_q_5 
+        
+        c_r_5 := 0
+
+        q_max_5 := c_min_5 * (T_q_ent_5 - T_f_ent_5)
+
+        epsilon_5 := q_5 / q_max_5
+
+        NUT_5 := -ln(1-epsilon_5)
+
+        "Numero de Reynolds"
+
+        Re_D_i_5 := (m_dot_f*D_h)/(A_i_t*mu_f_5)
 
         "############### Volume de Controle VI ##############"
 
@@ -192,7 +213,7 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
 
         "numero de Nusselt"
 
-        Nu_D_6 := 0,27 * Re_D_i_6^(4/5) * Pr_f_6^(1/3) * (mu_f_6 * mu_f_s_6)^(0,14)
+        {Nu_D_6 := 0,27 * Re_D_i_6^(4/5) * Pr_f_6^(1/3) * (mu_f_6 * mu_f_s_6)^(0,14)
 
         "coeficiente de convecção interna"
 
@@ -211,7 +232,7 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
 
         "lei de resfriamento de Newton"
         
-        T_f_sai_6 := T_f_ent_6 + q_6/h_i_6
+        T_f_sai_6 := T_f_ent_6 + q_6/h_i_6}
 
         "############### parametros do loop ##############"
 
