@@ -1,4 +1,4 @@
-PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6;T_q_ent_2;T_q_sai_chut_4;T_q_sai_chut_5;T_q_sai_chut_6 ;m_dot_f ;m_dot_q ;P_q ;P_f ; D_h ; A_i_t ; d_i ; d_e : error_q_4 ;error_q_5 ; error_q_6 ; error_q_med ; T_it_4 ; T_it_5 ; T_it_6)
+PROCEDURE temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6;T_q_ent_2;T_q_sai_chut_4;T_q_sai_chut_5;T_q_sai_chut_6 ;m_dot_f ;m_dot_q ;P_q ;P_f ; D_h ; A_i_t ; d_i ; d_e : error_q_4 ;error_q_5 ; error_q_6 ; error_q_med ; T_it_4 ; T_it_5 ; T_it_6)
 
     REPEAT
         "############### Volume de Controle IV,V,VI ##############"
@@ -107,17 +107,20 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
 
         T_f_ent_5 := T_f_sai_4
         T_med_f_5 := (T_f_ent_5 + T_f_sai_chut_5) / 2
-	   I_f_ent_5 :=  Enthalpy(Water;T=T_f_ent_5;P=P_f)
+	    I_f_ent_5 :=  Enthalpy(Water;T=T_f_ent_5;P=P_f)
         I_f_sai_5 := Enthalpy(Steam;T=T_f_sai_chut_5;P=P_f)
-	   DELTAh_vap := I_f_sai_5 - I_f_ent_5
 
         " tirando média dos parâmetros termo-físicos"
 
         c_p_f_a := Cp (Water;T=T_med_f_5;P=P_f)
         mu_f_a := Viscosity(Water;T=T_med_f_5;P=P_f)
+        rho_f_a := Density(Water;T=T_med_f_5;P=P_f)
+        Pr_f_a := Prandtl(Water;T=T_med_f_5;P=P_f)
 
         c_p_f_v := Cp (Steam;T=T_med_f_5;P=P_f)
         mu_f_v := Viscosity(Steam;T=T_med_f_5;P=P_f)
+        rho_f_v := Density(Steam;T=T_med_f_5;P=P_f)
+        Pr_f_v := Prandtl(Steam;T=T_med_f_5;P=P_f)
 
         c_p_f_5 := (c_p_f_v + c_p_f_a)/2
         mu_f_5 := (mu_f_v + mu_f_a)/2
@@ -130,9 +133,7 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
 
         "Balanço de massas e energias"
 	   
-	   energia_vapo := m_dot_f*DELTAh_vap/(m_dot_q * c_p_q_5)      
-
-        T_q_sai_5 := T_q_ent_5 - energia_vapo
+        T_q_sai_5 := T_q_ent_5 - m_dot_f*(I_f_sai_5 - I_f_ent_5)/(m_dot_q * c_p_q_5)
 
         q_5 := m_dot_q * c_p_q_5 * (T_q_ent_5 - T_q_sai_5)
 
@@ -152,7 +153,39 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
 
         "Numero de Reynolds"
 
-        Re_D_i_5 := (m_dot_f*D_h)/(A_i_t*mu_f_5)
+        Re_D_i_5 := (m_dot_f*D_h)/(A_i_t*mu_f_5)}
+
+        "parametro de Martinelli"
+
+        m_dot_v_med := m_dot_f/2
+
+        X :=  m_dot_v_med/ m_dot_f
+
+        X_t_t := ((1-X)/X)^0,9 * (rho_f_v/rho_f_a)^0,5 * (mu_f_a/mu_f_v)^0,1
+
+        "correlacao de Donbson e Chato"
+
+        Re_D_l_5 := 4 * m_dot_f * (1-X)/(pi * d_i * mu_f_a)
+
+        Nu_D_5 := 0,023 * Re_D_l_5 * 0,8 * Pr_f_a^0,4 * (1 + 2,22/(X_t_t^0,89))
+
+        "coeficiente de convecção interna"
+
+        h_i_6 := (Nu_D_5*k_f_a)/(d_i)
+
+        "coeficientes globais"
+
+	    R_d_i_6 := 0,0002
+
+        U_i_6 := (1/h_i_6 + R_d_i_6 + d_i * (ln(d_e/d_i))/(2 * k_aco) + (d_i/d_e) * R_d_e + d_i/(d_e * h_e))^(-1)
+
+        "encontrando comprimento do volume de controle"
+
+        L_6 := (NUT_6 * c_min_6)/(U_i_6 * d_i * pi)
+
+        "lei de resfriamento de Newton"
+        
+        T_f_sai_6 := T_f_ent_6 + q_6/h_i_6
 
         "############### Volume de Controle VI ##############"
 
@@ -164,6 +197,7 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
         I_f_ent_6 := Enthalpy(Steam;T=T_f_ent_6;P=P_f)
         I_f_sai_6 := Enthalpy(Steam;T=T_f_sai_chut_6;P=P_f)
 	    mu_f_6 := Viscosity(Steam;T=T_med_f_6;P=P_f)
+        Pr_f_6 := Prandtl(Steam;T=T_med_f_6;P=P_f)
 
         "parametros do fluido quente"
 
