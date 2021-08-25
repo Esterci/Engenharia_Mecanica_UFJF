@@ -1,4 +1,4 @@
-PROCEDURE temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6;T_q_ent_2;T_q_sai_chut_4;T_q_sai_chut_5;T_q_sai_chut_6 ;m_dot_f ;m_dot_q ;P_q ;P_f ; D_h ; A_i_t ; d_i ; d_e : error_q_4 ;error_q_5 ; error_q_6 ; error_q_med ; T_it_4 ; T_it_5 ; T_it_6)
+PROCEDURE temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6;T_q_ent_2;T_q_sai_chut_4;T_q_sai_chut_5;T_q_sai_chut_6 ;m_dot_f ;m_dot_q ;P_q ;P_f ; D_h ; A_i_t ; d_i ; d_e : error_q_4 ; error_q_5 ; error_q_6 ; error_f_5 ; error_f_6 ; error_q_med ; T_q_sai_it_4 ;T_q_sai_it_5 ;T_q_sai_it_6 ;T_f_sai_it_5 ; T_f_sai_it_6)
 
     REPEAT
         "############### Volume de Controle IV,V,VI ##############"
@@ -233,13 +233,13 @@ PROCEDURE temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f
 
         c_r_6 := c_min_6/c_max_6
 
-        q_max_6 := c_min_6 * abs(T_q_ent_6 - T_f_sai_chut_5)
+        q_max_6 := c_min_6 * abs(T_q_ent_6 - T_f_ent_6)
 
         epsilon_6 := q_6 / q_max_6
 
         e_c_6 := (2/epsilon_6 - 1 + c_r_6)/(1 + c_r_6^2)^(1/2)
 
-        {NUT_6 := -(1 + c_r_6^2)^(-1/2) * ln((e_c_6 - 1)/(e_c_6 + 1))}
+        NUT_6 := -(1 + c_r_6^2)^(-1/2) * ln((e_c_6 - 1)/(e_c_6 + 1))
 
         "Numero de Reynolds"
 
@@ -247,7 +247,7 @@ PROCEDURE temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f
 
         "numero de Nusselt"
 
-        {Nu_D_6 := 0,27 * Re_D_i_6^(4/5) * Pr_f_6^(1/3) * (mu_f_6 * mu_f_s_6)^(0,14)
+        Nu_D_6 := 0,27 * Re_D_i_6^(4/5) * Pr_f_6^(1/3) * (mu_f_6 * mu_f_s_6)^(0,14)
 
         "coeficiente de convecção interna"
 
@@ -265,24 +265,35 @@ PROCEDURE temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f
 
         "lei de resfriamento de Newton"
         
-        T_f_sai_6 := T_f_ent_6 + q_6/h_i_6}
+        T_f_sai_6 := T_f_ent_6 + q_6/h_i_6
 
         "############### parametros do loop ##############"
 
         error_q_4 := ((T_q_sai_chut_4 - T_q_sai_4)^2)^0,5
         error_q_5 := ((T_q_sai_chut_5- T_q_sai_5)^2)^0,5
         error_q_6 := ((T_q_sai_chut_6- T_q_sai_6)^2)^0,5
+        
+        error_f_5 := ((T_f_sai_chut_5- T_f_sai_5)^2)^0,5
+        error_f_6 := ((T_f_sai_chut_6- T_f_sai_6)^2)^0,5
+        
         error_q_med := (error_q_4 + error_q_5 + error_q_6)/3
 
         T_q_sai_chut_4 := (T_q_sai_chut_4 + T_q_sai_4)/2
         T_q_sai_chut_5 := (T_q_sai_chut_5 + T_q_sai_5)/2
         T_q_sai_chut_6 := (T_q_sai_chut_6 + T_q_sai_6)/2
+        
+        T_f_sai_chut_5 := (T_f_sai_chut_5 + T_f_sai_5)/2
+        T_f_sai_chut_6 := (T_f_sai_chut_6 + T_f_sai_6)/2
 
-    UNTIL((error_q_4 < 0,1) AND (error_q_5<0,1) AND (error_q_6<0,1))
+    UNTIL((error_q_4 < 0,1) AND (error_q_5<0,1) AND (error_q_6<0,1) AND (error_f_5<0,1) AND (error_f_6<0,1))
 
-    T_it_4 := T_q_sai_chut_4
-    T_it_5 := T_q_sai_chut_5
-    T_it_6 := T_q_sai_chut_6
+    T_q_sai_it_4 := T_q_sai_chut_4
+    T_q_sai_it_5 := T_q_sai_chut_5
+    T_q_sai_it_6 := T_q_sai_chut_6
+
+    T_f_sai_it_5 := T_f_sai_chut_5
+    T_f_sai_it_6 := T_f_sai_chut_6
+
 END
 
 "############### parametros do trocador ##############"
@@ -329,7 +340,7 @@ D_h =  A_i_t/P_i_m
 
 "Defininindo temperaturas intermediarias pro iteração"
 
-CALL temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6;T_q_ent_2;T_q_sai_chut_4;T_q_sai_chut_5;T_q_sai_chut_6 ;m_dot_f ;m_dot_q ;P_q ;P_f ; D_h ; A_i_t ; d_i ; d_e : error_q_4 ;error_q_5 ; error_q_6 ; error_q_med ; T_it_4 ; T_it_5 ; T_it_6)
+CALL temp_it temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6;T_q_ent_2;T_q_sai_chut_4;T_q_sai_chut_5;T_q_sai_chut_6 ;m_dot_f ;m_dot_q ;P_q ;P_f ; D_h ; A_i_t ; d_i ; d_e : error_q_4 ; error_q_5 ; error_q_6 ; error_f_5 ; error_f_6 ; error_q_med ; T_q_sai_it_4 ;T_q_sai_it_5 ;T_q_sai_it_6 ;T_f_sai_it_5 ; T_f_sai_it_6)
 
 "############### Volume de Controle IV ##############"
 
