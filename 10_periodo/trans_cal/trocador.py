@@ -84,7 +84,7 @@ PROCEDURE temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f
 
         "numero de Nusselt"
 
-        Nu_D_4 := 0,27 * Re_D_i_4^(4/5) * Pr_f_4^(1/3) * (mu_f_4 * mu_f_s_4)^(0,14)
+        Nu_D_4 := 3,66
 
         "coeficiente de convecção interna"
 
@@ -233,17 +233,17 @@ PROCEDURE temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f
 
         c_r_6 := c_min_6/c_max_6
 
-        q_max_6 := c_min_6 * (T_q_ent_6 - T_f_sai_chut_5)
+        q_max_6 := c_min_6 * abs(T_q_ent_6 - T_f_sai_chut_5)
 
         epsilon_6 := q_6 / q_max_6
 
         e_c_6 := (2/epsilon_6 - 1 + c_r_6)/(1 + c_r_6^2)^(1/2)
 
-        {NUT_6 := -(1 + c_r_6^2)^(-1/2) * ln((e_c_6 - 1)/(e_c_6 + 1))
+        {NUT_6 := -(1 + c_r_6^2)^(-1/2) * ln((e_c_6 - 1)/(e_c_6 + 1))}
 
         "Numero de Reynolds"
 
-        Re_D_i_6 := (m_dot_f*D_h)/(A_i_t*mu_f_6)}
+        Re_D_i_6 := (m_dot_f*D_h)/(A_i_t*mu_f_6)
 
         "numero de Nusselt"
 
@@ -318,7 +318,7 @@ T_q_sai_chut_6 = T_q_sai_chut_2
 
 "############### Volumes de Controle IV,V,VI ##############"
 
-m_dot_f = 0,01
+m_dot_f = 0,02
 m_dot_q = 0,102115
 P_q = 101,325
 P_f = 101,325
