@@ -109,6 +109,7 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
         T_med_f_5 := (T_f_ent_5 + T_f_sai_chut_5) / 2
 	   I_f_ent_5 :=  Enthalpy(Water;T=T_f_ent_5;P=P_f)
         I_f_sai_5 := Enthalpy(Steam;T=T_f_sai_chut_5;P=P_f)
+	   DELTAh_vap := I_f_sai_5 - I_f_ent_5
 
         " tirando média dos parâmetros termo-físicos"
 
@@ -124,12 +125,14 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
         "parametros do fluido quente"
 
         T_q_ent_5 := T_q_sai_4
-        T_med_q_5 := (T_q_ent_5 + T_q_sai_chut_5)/2
+        T_med_q_5 := (T_q_ent_5 + abs(T_q_sai_chut_5))/2
         c_p_q_5 := Cp(Air_ha;T=T_med_q_5;P=P_q)
 
         "Balanço de massas e energias"
+	   
+	   energia_vapo := m_dot_f*DELTAh_vap/(m_dot_q * c_p_q_5)      
 
-        T_q_sai_5 := T_q_ent_5 - m_dot_f*(I_f_sai_5-I_f_ent_5)/(m_dot_q * c_p_q_5)
+        T_q_sai_5 := T_q_ent_5 - energia_vapo
 
         q_5 := m_dot_q * c_p_q_5 * (T_q_ent_5 - T_q_sai_5)
 
@@ -145,7 +148,7 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
 
         epsilon_5 := q_5 / q_max_5
 
-        NUT_5 := -ln(1-epsilon_5)
+        NUT_5 := -ln(abs(1-epsilon_5))
 
         "Numero de Reynolds"
 
@@ -164,8 +167,8 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
 
         "parametros do fluido quente"
 
-        T_q_ent_6 := T_q_sai_5
-        T_med_q_6 := (T_q_ent_6 + T_q_sai_chut_6)/2
+        T_q_ent_6 := abs(T_q_sai_5)
+        T_med_q_6 := (T_q_ent_6 + abs(T_q_sai_chut_6))/2
         c_p_q_6 := Cp(Air_ha;T=T_med_q_6;P=P_q)
 
         "parametros adicionais"
@@ -202,11 +205,11 @@ PROCEDURE temp_it (k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6
 
         e_c_6 := (2/epsilon_6 - 1 + c_r_6)/(1 + c_r_6^2)^(1/2)
 
-        NUT_6 := -(1 + c_r_6^2)^(-1/2) * ln((e_c_6 - 1)/(e_c_6 + 1))
+        {NUT_6 := -(1 + c_r_6^2)^(-1/2) * ln((e_c_6 - 1)/(e_c_6 + 1))
 
         "Numero de Reynolds"
 
-        Re_D_i_6 := (m_dot_f*D_h)/(A_i_t*mu_f_6)
+        Re_D_i_6 := (m_dot_f*D_h)/(A_i_t*mu_f_6)}
 
         "numero de Nusselt"
 
@@ -281,7 +284,7 @@ T_q_sai_chut_6 = T_q_sai_chut_2
 
 "############### Volumes de Controle IV,V,VI ##############"
 
-m_dot_f = 0,16
+m_dot_f = 0,01
 m_dot_q = 0,102115
 P_q = 101,325
 P_f = 101,325
