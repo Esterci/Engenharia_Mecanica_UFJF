@@ -11,7 +11,7 @@ PROCEDURE temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f
         Pr_q_kern := Prandtl(Air_ha;T=T_med_q_kern;P=P_q)
         k_q_kern :=Conductivity(Air_ha;T=T_med_q_kern;P=P_q)
 
-        D_e_kern := (4*((P_T^2 * 3^(1/2))/4 - (pi * d_e^2)/8))/(pi * d_e/2)
+        D_e_kern := (4*((P_T^2 * 3^(1/2))/4 - (pi# * d_e^2)/8))/(pi# * d_e/2)
 
         C_kern := P_T - d_e
                 
@@ -99,7 +99,7 @@ PROCEDURE temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f
 
         "encontrando comprimento do volume de controle"
 
-        L_4 := (NUT_4 * c_min_4)/(U_i_4 * d_i * pi)
+        L_4 := (NUT_4 * c_min_4)/(U_i_4 * d_i * pi#)
 
         "############### Volume de Controle V ##############"
 
@@ -165,7 +165,7 @@ PROCEDURE temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f
 
         "correlacao de Donbson e Chato"
 
-        Re_D_l_5 := 4 * m_dot_f * (1-X)/(pi * d_i * mu_f_a)
+        Re_D_l_5 := 4 * m_dot_f * (1-X)/(pi# * d_i * mu_f_a)
 
         Nu_D_5 := 0,023 * Re_D_l_5 * 0,8 * Pr_f_a^0,4 * (1 + 2,22/(X_t_t^0,89))
 
@@ -181,7 +181,7 @@ PROCEDURE temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f
 
         "encontrando comprimento do volume de controle"
 
-        L_5 := (NUT_5 * c_min_5)/(U_i_5 * d_i * pi)
+        L_5 := (NUT_5 * c_min_5)/(U_i_5 * d_i * pi#)
 
         "lei de resfriamento de Newton"
         
@@ -261,7 +261,7 @@ PROCEDURE temp_it (L_5_chut ; k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f
 
         "encontrando comprimento do volume de controle"
 
-        L_6 := (NUT_6 * c_min_6)/(U_i_6 * d_i * pi)
+        L_6 := (NUT_6 * c_min_6)/(U_i_6 * d_i * pi#)
 
         "lei de resfriamento de Newton"
         
@@ -305,12 +305,12 @@ d_e = 12^(-2)
 n_tubos = 19
 P_T = 15 * 10^(-3)
 B_chi = L / 8
-A_i = pi * d_i * L * n_tubos
-P_i_m = pi * d_i
-A_e = pi * d_e * L * n_tubos
-P_e_m = pi * d_e
-A_i_t = pi * d_i^2/4
-A_c_t = pi * D^2/4
+A_i = pi# * d_i * L * n_tubos
+P_i_m = pi# * d_i
+A_e = pi# * d_e * L * n_tubos
+P_e_m = pi# * d_e
+A_i_t = pi# * d_i^2/4
+A_c_t = pi# * D^2/4
 k_aco = 504
 
 "############### chute inicial de temp. ##############"
