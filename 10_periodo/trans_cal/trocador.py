@@ -18,6 +18,7 @@ PROCEDURE temp_it ( k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_
         A_c := D_e_kern/P_T * C_kern * B_chi
 
         Re_c := m_dot_q/A_c * D_e_kern/mu_q_kern
+        
 
         h_e := (0,36 * k_q_kern)/D_e_kern * Re_c^0,55 * Pr_q_kern^(1/3)
 
@@ -262,11 +263,11 @@ PROCEDURE temp_it ( k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_
 
         "encontrando comprimento do volume de controle"
 
-        "L_6 := (NUT_6 * c_min_6)/(U_i_6 * d_i * pi#)"
+        L_6 := (NUT_6 * c_min_6)/(U_i_6 * d_i * pi#)
 
         "lei de resfriamento de Newton"
         
-        T_f_sai_6 := T_f_ent_6 + q_6/h_i_6
+        T_f_sai_6 = T_f_ent_6 + q_6/h_i_6
 
         "############### parametros do loop ##############"
 
@@ -342,3 +343,7 @@ D_h =  A_i_t/P_i_m
 "Defininindo temperaturas intermediarias pro iteração"
 
 CALL temp_it ( k_aco ; B_chi ; P_T ; T_f_ent_1;T_f_sai_chut_5;T_f_sai_chut_6;T_q_ent_2;T_q_sai_chut_4;T_q_sai_chut_5;T_q_sai_chut_6 ;m_dot_f ;m_dot_q ;P_q ;P_f ; D_h ; A_i_t ; d_i ; d_e : error_q_4 ; error_q_5 ; error_q_6 ; error_f_5 ; error_f_6 ; error_q_med ; T_q_sai_it_4 ;T_q_sai_it_5 ;T_q_sai_it_6 ;T_f_sai_it_5 ; T_f_sai_it_6)
+
+
+
+
