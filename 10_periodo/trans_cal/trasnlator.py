@@ -217,9 +217,11 @@ for d_i in d_i_eval:
 
         "Calculo do coeficiente convectivo"
 
-        q_s_flux = q_5/( n_tubos * np.pi * d_i * L_chut_5)
+        q_s_flux = q_5/(A_i)
 
-        X_bar = (q_s_flux * np.pi * d_i * L_chut_5)/(m_dot_f*(I_f_v-I_f_a))
+        x = np.linspace(0,L_chut_5,num=100)
+
+        X_eval = (q_s_flux * np.pi * d_i * x)/(m_dot_f*(I_f_v-I_f_a))
 
         G_s_f = 1
 
@@ -239,17 +241,29 @@ for d_i in d_i_eval:
 
         h_mf = (Nu_D_v*k_f_v)/(d_i)
 
-        if (X_bar > 0) and (X_bar <= 0.8):
+        
+        aux = []
 
-            aux = (1.136*(rho_f_a/rho_f_v)**0.45 * X_bar**0.72 * (1-X_bar)**0.08 * f_Fr +
-            667*(q_s_flux/((m_dot_f/A_i_t)*(I_f_v-I_f_a)))**0.7 * (1-X_bar)**0.8 * G_s_f)
+        for X in X_eval:
 
-        else:
 
-            aux = (0.6683*(rho_f_a/rho_f_v)**0.1 * X_bar**0.16 * (1-X_bar)**0.64 * f_Fr + 
-            1058*(q_s_flux/((m_dot_f/A_i_t)*(I_f_v-I_f_a)))**0.7 * (1-X_bar)**0.8 * G_s_f)
+            if (X > 0) and (X <= 0.8):
 
-        h_i_5 = aux * h_mf
+                aux.append((1.136*(rho_f_a/rho_f_v)**0.45 * X**0.72 * (1-X)**0.08 * f_Fr +
+                667*(q_s_flux/((m_dot_f/A_i_t)*(I_f_v-I_f_a)))**0.7 * (1-X)**0.8 * G_s_f))
+
+            else:
+
+                r = 0.6683*((rho_f_a/rho_f_v)**0.1) * X**0.16 * (1-X)**0.64 * f_Fr + 1058*((q_s_flux/((m_dot_f/A_i_t)*(I_f_v-I_f_a)))**0.7) * (1-X)**0.8 * G_s_f
+
+                if np.isnan(r) == True:
+                    aux.append(0)
+                
+                else:
+                    aux.append(r)
+
+
+        h_i_5 = np.mean(aux) * h_mf
 
         "coeficientes globais"
 

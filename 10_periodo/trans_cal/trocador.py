@@ -5,10 +5,13 @@ import matplotlib.pyplot as plt
 
 "############### Parâmetros fixos ##############"
 
+"############### Parâmetros fixos ##############"
+
 "############### chute inicial de temp. ##############"
 
 T_f_ent_1 = 28 + 273.15
 T_f_sai_chut_1 =  700 + 273.15 
+T_f_sai_chut_5 = (T_f_sai_chut_1 - T_f_ent_1)/2 + T_f_ent_1
 T_f_sai_chut_6 = T_f_sai_chut_1
 
 T_q_ent_2 = 665 + 273.15
@@ -19,82 +22,91 @@ T_q_sai_chut_6 = T_q_sai_chut_2
 
 "############### chute inicial de comprimentos. ##############"
 
+L_chut_5 = 0.6
+
 L = 2
 
 L_chut_4 = L/3
 
 L_chut_5 = L*2/3
 
-#d_i_eval = np.linspace(8**(-3),10**(-3),num=5)
-
 
 "############### parametros do trocador ##############"
 
+L = 2
 D = 76e-3
 n_tubos = 19
 P_T = 15e-3
 B_chi = L / 8
 d_i = 10e-3
-d_e = d_i + 2.5e-3
+d_e = d_i + 1e-3
+A_i = np.pi * d_i * n_tubos
+A_e = np.pi * d_e * n_tubos
+P_e_m = np.pi * d_e
 A_i_t = (np.pi * d_i**2)/4
+A_c_t = np.pi * D**2/4
 k_aco = 401
 
 "############### parâmetros de entrada dos flúidos ##############"
 
-m_dot_f_eval = np.linspace(0.0000045,0.0001,num=100)
+m_dot_f_eval = np.linspace(0.00005,0.0002,num=100)
 m_dot_q = 0.0016
 P_q = 101325
 P_f = 101325
 
-parameters_5 = {'q' : np.zeros((1,len(m_dot_f_eval))),
-                'epsilon' : np.zeros((1,len(m_dot_f_eval))),
-                'Re_D_i' : np.zeros((1,len(m_dot_f_eval))),
-                'h_i' : np.zeros((1,len(m_dot_f_eval))),
-                'T_q_sai' : np.zeros((1,len(m_dot_f_eval))),
-                'T_f_sai' : np.zeros((1,len(m_dot_f_eval))),
-                'L' : np.zeros((1,len(m_dot_f_eval)))}
+parameters_5 = {'q' : [],
+                'c_p_f' : [],
+                'c_p_q' : [],
+                'C_min' : [],
+                'q_max' : [],
+                'epsilon' : [],
+                'Re_D_i' : [],
+                'h_i' : [],
+                'T_q_sai' : [],
+                'T_f_sai' : [],
+                'L' : []}
 
 
-parameters_4 = {'q' : np.zeros((1,len(m_dot_f_eval))),
-                'epsilon' : np.zeros((1,len(m_dot_f_eval))),
-                'Re_D_i' : np.zeros((1,len(m_dot_f_eval))),
-                'h_i' : np.zeros((1,len(m_dot_f_eval))),
-                'T_q_sai' : np.zeros((1,len(m_dot_f_eval))),
-                'T_f_sai' : np.zeros((1,len(m_dot_f_eval))),
-                'L' : np.zeros((1,len(m_dot_f_eval)))}
+parameters_4 = {'q' : [],
+                'c_p_f' : [],
+                'c_p_q' : [],
+                'C_min' : [],
+                'q_max' : [],
+                'epsilon' : [],
+                'Re_D_i' : [],
+                'h_i' : [],
+                'T_q_sai' : [],
+                'T_f_sai' : [],
+                'L' : []}
 
 
-parameters_6 = {'q' : np.zeros((1,len(m_dot_f_eval))),
-                'epsilon' : np.zeros((1,len(m_dot_f_eval))),
-                'Re_D_i' : np.zeros((1,len(m_dot_f_eval))),
-                'h_i' : np.zeros((1,len(m_dot_f_eval))),
-                'T_q_sai' : np.zeros((1,len(m_dot_f_eval))),
-                'T_f_sai' : np.zeros((1,len(m_dot_f_eval))),
-                'L' : np.zeros((1,len(m_dot_f_eval)))}
+parameters_6 = {'q' : [],
+                'c_p_f' : [],
+                'c_p_q' : [],
+                'C_min' : [],
+                'q_max' : [],
+                'epsilon' : [],
+                'Re_D_i' : [],
+                'h_i' : [],
+                'T_q_sai' : [],
+                'T_f_sai' : [],
+                'L' : []}
 
 
-
-for counter,m_dot_f in enumerate(m_dot_f_eval):
+for m_dot_f in m_dot_f_eval:
 
     while True:
 
 
         "############### Volumes de Controle IV.V.VI ##############"
 
-        "parametros do fluido frio"
-
-        I_f_ent_2 = PropsSI('H','P',P_f,'T',T_f_ent_1,'water')
-        I_f_sai_2 = PropsSI('H','P',P_f,'T',T_f_sai_chut_1,'water')
-
         "parametros do fluido quente"
 
         T_q_ent_kern = T_q_ent_2
-        T_med_q_kern = (T_q_ent_kern + T_q_sai_chut_2)/2
+        T_med_q_kern = (T_q_ent_kern + T_q_sai_chut_5)/2
         mu_q_kern = PropsSI('viscosity','P',P_q,'T',T_med_q_kern,'air')
         Pr_q_kern = PropsSI('Prandtl','P',P_q,'T',T_med_q_kern,'air')
         k_q_kern = PropsSI('conductivity','P',P_q,'T',T_med_q_kern,'air')
-        c_p_q_1 = PropsSI('CPMASS','P',P_q,'T',T_med_q_kern,'air')
-
 
         D_e_kern = (4*((P_T**2 * 3**(1/2))/4 - (np.pi * d_e**2)/8))/(np.pi * d_e/2)
 
@@ -107,419 +119,424 @@ for counter,m_dot_f in enumerate(m_dot_f_eval):
         h_e = (0.36 * k_q_kern)/D_e_kern * Re_c**0.55 * Pr_q_kern**(1/3)
 
         "############### Volume de Controle IV ##############"
+        
+
+        "parametros do fluido frio"
+
+        T_f_ent_4 = T_f_ent_1
+        T_f_sai_4 = 373.15
+        T_med_f_4 = (T_f_ent_4 +T_f_sai_4) / 2
+        c_p_f_4 = PropsSI('CPMASS','P',P_f,'T',T_med_f_4,'water')
+        I_f_ent_4 = PropsSI('H','P',P_f,'T',T_f_ent_1,'water')
+        I_f_sai_4 = PropsSI('H','P',P_f,'T',T_f_sai_4,'water')
+        mu_f_4 = PropsSI('viscosity','P',P_f,'T',T_med_f_4,'water')
+        Pr_f_4 = PropsSI('Prandtl','P',P_f,'T',T_med_f_4,'water')
+        k_f_4 = PropsSI('conductivity','P',P_f,'T',T_med_f_4,'water')
 
 
-        while True:
+        "parametros do fluido quente"
 
-            "parametros da zona"
+        T_q_ent_4 = T_q_ent_2
+        T_med_q_4 = (T_q_ent_4 + T_q_sai_chut_4)/2
+        c_p_q_4 = PropsSI('CPMASS','P',P_q,'T',T_med_q_4,'air')
 
-            A_i_4 = np.pi * d_i * L_chut_4 * n_tubos
-            A_e_4 = np.pi * d_e * L_chut_4 * n_tubos
+        "Balanço de massas e energias"
+
+        T_q_sai_4 = T_q_ent_4 - m_dot_f*(I_f_sai_4-I_f_ent_4)/(m_dot_q * c_p_q_4)
+
+        q_4 = m_dot_q * c_p_q_4 * (T_q_ent_4 - T_q_sai_4)
+
+        "calculo da efetividade"
+
+        c_q_4 = m_dot_q * c_p_q_4
+        c_f_4 = m_dot_f * c_p_f_4
+
+        if c_q_4<c_f_4 :
+            c_min_4 = c_q_4 
+            c_max_4 = c_f_4
+
+        else:
+            c_min_4 = c_f_4
+            c_max_4 = c_q_4
+
+        c_r_4 = c_min_4/c_max_4
+
+        q_max_4 = c_min_4 * (T_q_ent_4 - T_f_ent_4)
+
+        epsilon_4 = q_4 / q_max_4
+
+        if epsilon_4 >=1:
+            print(m_dot_f)
+
+        """
+        E_c_4 = ((2/epsilon_4) - (1 + c_r_4))/((1 + c_r_4**2)**(1/2))
+
+        NUT_4 = -(1 + c_r_4**2)**(-1/2) * np.log((E_c_4 - 1)/(E_c_4 + 1))
+        """
+
+        NUT_4 = (c_r_4-1)**(-1) * np.log((epsilon_4 - 1)/(epsilon_4*c_r_4 - 1))
+
+        "Numero de Reynolds"
+
+        Re_D_i_4 = (m_dot_f*d_i)/(A_i_t*mu_f_4)
+
+
+        "numero de Nusselt"
+
+        if Re_D_i_4 >= 2300:
+
+            f_f = 0.0375
+
+            Nu_D_4 = ((f_f/8)*(Re_D_i_4-1e3)*Pr_f_4)/(1 + 12.7 * (f_f/8)**0.5 * (Pr_f_4**(2/3)-1))
+
+        elif Re_D_i_4 >= 10000 and Pr_f_4 >= 0.6 and Pr_f_4 <= 160:
             
+            Nu_D_4 = 0.023 * Re_D_i_4**(4/5) * Pr_f_4 * 0.4
 
-            "parametros do fluido frio"
-
-            T_f_ent_4 = T_f_ent_1
-            T_f_sai_4 = 373.15
-            T_med_f_4 = (T_f_ent_4 +T_f_sai_4) / 2
-            c_p_f_4 = PropsSI('CPMASS','P',P_f,'T',T_med_f_4,'water')
-            I_f_ent_4 = PropsSI('H','P',P_f,'T',T_f_ent_1,'water')
-            I_f_sai_4 = PropsSI('H','P',P_f,'T',T_f_sai_4,'water')
-            mu_f_4 = PropsSI('viscosity','P',P_f,'T',T_med_f_4,'water')
-            Pr_f_4 = PropsSI('Prandtl','P',P_f,'T',T_med_f_4,'water')
-            k_f_4 = PropsSI('conductivity','P',P_f,'T',T_med_f_4,'water')
-
-
-            "parametros do fluido quente"
-
-            T_q_ent_4 = T_q_ent_2
-            T_med_q_4 = (T_q_ent_4 + T_q_sai_chut_4)/2
-            c_p_q_4 = PropsSI('CPMASS','P',P_q,'T',T_med_q_4,'air')
-
-            "Balanço de massas e energias"
-
-            T_q_sai_4 = T_q_ent_4 - m_dot_f*(I_f_sai_4-I_f_ent_4)/(m_dot_q * c_p_q_4)
-
-            q_4 = m_dot_q * c_p_q_4 * (T_q_ent_4 - T_q_sai_4)
-
-            "calculo da efetividade"
-
-            c_q_4 = m_dot_q * c_p_q_4
-            c_f_4 = m_dot_f * c_p_f_4
-
-            if c_q_4<c_f_4 :
-                c_min_4 = c_q_4 
-                c_max_4 = c_f_4
-
-            else:
-                c_min_4 = c_f_4
-                c_max_4 = c_q_4
-
-            c_r_4 = c_min_4/c_max_4
-
-            q_max_4 = c_min_4 * (T_q_ent_4 - T_f_ent_4)
-
-            epsilon_4 = q_4 / q_max_4
-
-            E_c_4 = ((2/epsilon_4) - (1 + c_r_4))/((1 + c_r_4**2)**(1/2))
-
-            NUT_4 = -(1 + c_r_4**2)**(-1/2) * np.log((E_c_4 - 1)/(E_c_4 + 1))
+        else:
             
-
-            "Numero de Reynolds"
-
-            Re_D_i_4 = (m_dot_f*d_i)/(A_i_t*mu_f_4)
+            Nu_D_4 = 4.36
 
 
-            "numero de Nusselt"
+        "coeficiente de convecção interna"
 
-            if Re_D_i_4 >= 2300:
-
-                f_f = 0.0375
-
-                Nu_D_4 = ((f_f/8)*(Re_D_i_4-1e3)*Pr_f_4)/(1 + 12.7 * (f_f/8)**0.5 * (Pr_f_4**(2/3)-1))
-
-            elif Re_D_i_4 >= 10000 and Pr_f_4 >= 0.6 and Pr_f_4 <= 160:
-                
-                Nu_D_4 = 0.023 * Re_D_i_4**(4/5) * Pr_f_4 * 0.4
-
-            else:
-                
-                Nu_D_4 = 4.36
+        h_i_4 = (Nu_D_4*k_f_4)/(d_i)
 
 
-            "coeficiente de convecção interna"
+        "coeficientes globais"
 
-            h_i_4 = (Nu_D_4*k_f_4)/(d_i)
+        R_d_i_4 = 0.0002
+        R_d_e = 0.0009
 
-
-            "coeficientes globais"
-
-            R_d_i_4 = 0.0002
-            R_d_e = 0.0009
-
-            U_i_4 = (A_i_4 * (1/(A_i_4 * h_i_4) + R_d_i_4 / A_i_4 + (np.log(d_e/d_i))/
-                    (2 * np.pi * k_aco * L_chut_4 ) + R_d_e/A_e_4 + 1/(A_e_4 * h_e)))**(-1)
+        U_i_4 = (1/ h_i_4 + R_d_i_4 + d_i * n_tubos * (np.log(d_e/d_i))/
+                (2 * k_aco ) + (d_i * R_d_e)/d_e + d_i * 1/(d_e * h_e))**(-1)
 
 
-            "encontrando comprimento do volume de controle"
+        "encontrando comprimento do volume de controle"
 
-            L_4 = (NUT_4 * c_f_4)/( U_i_4 * d_i * np.pi * n_tubos)
-
-            "############### parametros do loop ##############"
-
-            error_q_4 = ((T_q_sai_chut_4 - T_q_sai_4)**2)**0.5
-
-            T_q_sai_chut_4 = (T_q_sai_chut_4 + T_q_sai_4)/2
-
-            error_L_4 = ((L_chut_4 - L_4)**2)**0.5
-
-            L_chut_4 = (L_chut_4 + L_4)/2
-
-            if error_q_4 < (T_q_sai_4 * 0.01) and error_L_4 < (L_4 * 0.01):
-
-                parameters_4['q'][0,counter] = q_4
-                parameters_4['epsilon'][0,counter] = epsilon_4
-                parameters_4['Re_D_i'][0,counter] = Re_D_i_4
-                parameters_4['h_i'][0,counter] = h_i_4
-                parameters_4['T_q_sai'][0,counter] = T_q_sai_4
-                parameters_4['T_f_sai'][0,counter] = T_f_sai_4
-                parameters_4['L'][0,counter] = L_4
-
-                break
+        L_4 = (NUT_4 * c_f_4)/( U_i_4 * A_i)
 
 
         "############### Volume de Controle V ##############"
 
+        "parametros do fluido frio"
 
-        while True:
+        T_f_ent_5 = 373.15
+        T_f_sai_5 = T_f_sai_chut_5
+        I_f_ent_5 = PropsSI('H','Q',0,'T',T_f_ent_5,'water')
+        I_f_sai_5 = PropsSI('H','Q',1,'T',T_f_sai_5,'water')
 
-            "parametros da zona"
+        mu_f_a = PropsSI('viscosity','Q',0,'T',T_f_ent_5,'water')
+        Pr_f_a = PropsSI('Prandtl','Q',0,'T',T_f_ent_5,'water')
+        k_f_a = PropsSI('conductivity','Q',0,'T',T_f_ent_5,'water')
+        c_p_f_a = PropsSI('CPMASS','Q',0,'T',T_f_ent_5,'water')
+        I_f_a = PropsSI('H','Q',0,'T',T_f_ent_5,'water')
+        rho_f_a = PropsSI('D','Q',0,'T',T_f_ent_5,'water')
 
-            A_i_5 = np.pi * d_i * L_chut_5 * n_tubos
-            A_e_5 = np.pi * d_e * L_chut_5 * n_tubos
+        mu_f_v = PropsSI('viscosity','Q',1,'T',T_f_ent_5,'water')
+        Pr_f_v = PropsSI('Prandtl','Q',1,'T',T_f_ent_5,'water')
+        k_f_v = PropsSI('conductivity','Q',1,'T',T_f_ent_5,'water')
+        c_p_f_v = PropsSI('CPMASS','Q',1,'T',T_f_ent_5,'water')
+        I_f_v = PropsSI('H','Q',1,'T',T_f_ent_5,'water')
+        rho_f_v = PropsSI('D','Q',0,'T',T_f_ent_5,'water')
 
-            "parametros do fluido frio"
+        "parametros do fluido quente"
 
-            T_f_ent_5 = T_f_sai_5 = T_f_sai_4
-            I_f_ent_5 = PropsSI('H','Q',0,'T',T_f_ent_5,'water')
-            I_f_sai_5 = PropsSI('H','Q',1,'T',T_f_sai_5,'water')
+        T_q_ent_5 = T_q_sai_4
+        T_med_q_5 = (T_q_ent_5 + T_q_sai_chut_5)/2
+        c_p_q_5 = PropsSI('CPMASS','P',P_q,'T',T_med_q_5,'air')
 
-            mu_f_a = PropsSI('viscosity','Q',0,'T',T_f_ent_5,'water')
-            Pr_f_a = PropsSI('Prandtl','Q',0,'T',T_f_ent_5,'water')
-            k_f_a = PropsSI('conductivity','Q',0,'T',T_f_ent_5,'water')
-            c_p_f_a = PropsSI('CPMASS','Q',0,'T',T_f_ent_5,'water')
-            I_f_a = PropsSI('H','Q',0,'T',T_f_ent_5,'water')
-            rho_f_a = PropsSI('D','Q',0,'T',T_f_ent_5,'water')
+        "parametros adicionais"
 
-            mu_f_v = PropsSI('viscosity','Q',1,'T',T_f_ent_5,'water')
-            Pr_f_v = PropsSI('Prandtl','Q',1,'T',T_f_ent_5,'water')
-            k_f_v = PropsSI('conductivity','Q',1,'T',T_f_ent_5,'water')
-            c_p_f_v = PropsSI('CPMASS','Q',1,'T',T_f_ent_5,'water')
-            I_f_v = PropsSI('H','Q',1,'T',T_f_ent_5,'water')
-            rho_f_v = PropsSI('D','Q',0,'T',T_f_ent_5,'water')
-
-            "parametros do fluido quente"
-
-            T_q_ent_5 = T_q_sai_4
-            T_med_q_5 = (T_q_ent_5 + T_q_sai_chut_5)/2
-            c_p_q_5 = PropsSI('CPMASS','P',P_q,'T',T_med_q_5,'air')
-
-            "parametros adicionais"
-
-            mu_f_s_v = PropsSI('viscosity','Q',0,'T',647.096,'water')
+        mu_f_s_v = PropsSI('viscosity','Q',0,'T',647.096,'water')
 
 
-            "Balanço de massas e energias"
+        "Balanço de massas e energias"
 
-            T_q_sai_5 = T_q_ent_5 - m_dot_f*(I_f_sai_5 - I_f_ent_5)/(m_dot_q * c_p_q_5)
+        T_q_sai_5 = T_q_ent_5 - m_dot_f*(I_f_sai_5 - I_f_sai_5)/(m_dot_q * c_p_q_5)
 
-            q_5 = m_dot_q * c_p_q_5 * (T_q_ent_5 - T_q_sai_5)
+        q_5 = m_dot_q * c_p_q_5 * (T_q_ent_5 - T_q_sai_5)
 
-            "calculo da efetividade"
+        "calculo da efetividade"
 
-            c_q_5 = m_dot_q * c_p_q_5
+        c_q_5 = m_dot_q * c_p_q_5
 
-            c_min_5 = c_q_5 
+        c_min_5 = c_q_5 
 
-            c_r_5 = 0
+        c_r_5 = 0
 
-            q_max_5 = c_min_5 * (T_q_ent_5 - T_f_ent_5)
+        q_max_5 = c_min_5 * (T_q_ent_5 - T_f_ent_5)
 
-            epsilon_5 = q_5 / q_max_5
+        epsilon_5 = q_5 / q_max_5
 
-            NUT_5 = -np.log(1-epsilon_5)
+        if epsilon_5 >=1:
+            print(m_dot_f)
 
-
-
-            "Numero de Reynolds"
-
-            Re_D_i_5_v = (m_dot_f*d_i)/(A_i_t*mu_f_v)
-
-            Re_D_i_5_a = (m_dot_f*d_i)/(A_i_t*mu_f_a)
+        NUT_5 = -np.log(1-epsilon_5)
 
 
+        "Numero de Reynolds"
 
-            "Calculo do coeficiente convectivo"
+        Re_D_i_5_v = (m_dot_f*d_i)/(A_i_t*mu_f_v)
 
-            q_s_flux = q_5/( n_tubos * np.pi * d_i * L_chut_5)
+        Re_D_i_5_a = (m_dot_f*d_i)/(A_i_t*mu_f_a)
 
-            X_bar = (q_s_flux * np.pi * d_i * L_chut_5)/(m_dot_f*(I_f_v-I_f_a))
 
-            G_s_f = 1
+        "Calculo do coeficiente convectivo"
 
-            Fr = ((m_dot_f/A_i_t) / rho_f_a)/(2*10*d_i)
+        q_s_flux = q_5/(A_i)
 
-            if Fr >= 0.04:
-                f_Fr =1
+        x = np.linspace(0,L_chut_5,num=100)
+
+        X_eval = (q_s_flux * np.pi * d_i * x)/(m_dot_f*(I_f_v-I_f_a))
+
+        G_s_f = 1
+
+        Fr = ((m_dot_f/A_i_t)**2 / rho_f_a)/(10*d_i)
+
+        if Fr >= 0.04:
+            f_Fr =1
+
+        else:
+            f_Fr = 2.63*Fr**0.3
+
+
+
+        "numero de Nusselt"
+
+        if Re_D_i_5_v >= 2300:
+
+            f_f = 0.0375
+
+            Nu_D_v = ((f_f/8)*(Re_D_i_5_v-1e3)*Pr_f_v)/(1 + 12.7 * (f_f/8)**0.5 * (Pr_f_v**(2/3)-1))
+
+        elif Re_D_i_5_v >= 10000 and Pr_f_v >= 0.6 and Pr_f_v <= 160:
+            
+            Nu_D_v = 0.023 * Re_D_i_5_v**(4/5) * Pr_f_v * 0.4
+
+        else:
+            
+            Nu_D_v = 4.36
+
+
+        "coeficiente de convecção interna"
+
+        h_mf = (Nu_D_v*k_f_v)/(d_i)
+
+        aux = []
+
+        for X in X_eval:
+
+            if (X > 0) and (X <= 0.8):
+
+                aux.append((1.136*(rho_f_a/rho_f_v)**0.45 * X**0.72 * (1-X)**0.08 * f_Fr +
+                667*(q_s_flux/((m_dot_f/A_i_t)*(I_f_v-I_f_a)))**0.7 * (1-X)**0.8 * G_s_f))
 
             else:
-                f_Fr = 2.63*Fr**0.3
 
+                r = 0.6683*((rho_f_a/rho_f_v)**0.1) * X**0.16 * (1-X)**0.64 * f_Fr + 1058*((q_s_flux/((m_dot_f/A_i_t)*(I_f_v-I_f_a)))**0.7) * (1-X)**0.8 * G_s_f
 
-
-            "numero de Nusselt"
-
-            if Re_D_i_5_v >= 2300:
-
-                f_f = 0.0375
-
-                Nu_D_v = ((f_f/8)*(Re_D_i_5_v-1e3)*Pr_f_v)/(1 + 12.7 * (f_f/8)**0.5 * (Pr_f_v**(2/3)-1))
-
-            elif Re_D_i_5_v >= 10000 and Pr_f_v >= 0.6 and Pr_f_v <= 160:
+                if np.isnan(r) == True:
+                    aux.append(0)
                 
-                Nu_D_v = 0.023 * Re_D_i_5_v**(4/5) * Pr_f_v * 0.4
+                else:
+                    aux.append(r)
 
-            else:
-                
-                Nu_D_v = 4.36
+        h_i_5 = np.mean(aux) * h_mf
+  
 
+        "coeficientes globais"
 
-            "coeficiente de convecção interna"
+        R_d_i_5 = 0.0002
 
-            h_mf = (Nu_D_v*k_f_v)/(d_i)
-
-            if (X_bar > 0) and (X_bar <= 0.8):
-
-                aux = (1.136*(rho_f_a/rho_f_v)**0.45 * X_bar**0.72 * (1-X_bar)**0.08 * f_Fr +
-                667*(q_s_flux/((m_dot_f/A_i_t)*(I_f_v-I_f_a)))**0.7 * (1-X_bar)**0.8 * G_s_f)
-
-            else:
-
-                aux = (0.6683*(rho_f_a/rho_f_v)**0.1 * X_bar**0.16 * (1-X_bar)**0.64 * f_Fr + 
-                1058*(q_s_flux/((m_dot_f/A_i_t)*(I_f_v-I_f_a)))**0.7 * (1-X_bar)**0.8 * G_s_f)
-
-            h_i_5 = aux * h_mf
+        U_e_5 = (d_e/(d_i*h_i_5) + R_d_i_5 * d_e /d_i + d_e * n_tubos * (np.log(d_e/d_i))/(2 * k_aco ) + 
+                R_d_e + 1/h_e)**(-1)
 
 
-            "coeficientes globais"
+        "encontrando comprimento do volume de controle"
 
-            R_d_i_5 = 0.0002
-
-            U_e_5 = (A_e_5 * (1/(A_i_5 * h_i_5) + R_d_i_5 / A_i_5 + (np.log(d_e/d_i))/(2 * np.pi * k_aco ) + 
-                    R_d_e/A_e_5 + 1/(A_e_5 * h_e)))**(-1)
+        L_5 = (NUT_5 * c_q_5)/(U_e_5 * A_e)
 
 
-            "encontrando comprimento do volume de controle"
+        T_f_sai_5 = T_f_ent_5 + q_5/(h_i_5*A_i)
 
-            L_5 = (NUT_5 * c_q_5)/(U_e_5 * d_i * np.pi)
-
-
-            "lei de resfriamento de Newton"
-
-            T_f_sai_5 = T_f_ent_5 + q_5/h_i_5
-
-            "############### parametros do loop ##############"
-
-            error_q_5 = ((T_q_sai_chut_5 - T_q_sai_5)**2)**0.5
-            error_L_5 = ((L_chut_5 - L_5)**2)**0.5
-
-            T_q_sai_chut_5 = (T_q_sai_chut_5 + T_q_sai_5)/2
-            L_chut_5 = (L_chut_5 + L_5)/2
-
-            if (error_q_5 < (T_q_sai_5 * 0.01)) and error_L_5 < (L_5 * 0.01):
-
-                parameters_5['q'][0,counter] = q_5    
-                parameters_5['epsilon'][0,counter] = epsilon_5
-                parameters_5['Re_D_i'][0,counter] = Re_D_i_5_v
-                parameters_5['h_i'][0,counter] = h_i_5
-                parameters_5['T_q_sai'][0,counter] = T_q_sai_5
-                parameters_5['T_f_sai'][0,counter] = T_f_sai_5
-                parameters_5['L'][0,counter] = L_5
-
-                break
 
         "############### Volume de Controle VI ##############"
 
 
-        while True:
+        "parametros do fluido frio"
+
+        T_f_ent_6 = T_q_sai_5
+        T_med_f_6 = (T_f_ent_6 + T_f_sai_chut_6) / 2
+        c_p_f_6 = PropsSI('CPMASS','P',P_f,'T',T_med_f_6,'water')
+        I_f_ent_6 = PropsSI('H','P',P_f,'T',T_f_ent_6,'water')
+        I_f_sai_6 = PropsSI('H','P',P_f,'T',T_f_sai_chut_6,'water')
+        mu_f_6 = PropsSI('viscosity','P',P_f,'T',T_med_f_6,'water')
+        Pr_f_6 = PropsSI('Prandtl','P',P_f,'T',T_med_f_6,'water')
+        k_f_6 = PropsSI('conductivity','P',P_f,'T',T_med_f_6,'water')
+
+
+        "parametros do fluido quente"
+
+        T_q_ent_6 = T_q_sai_5
+        T_med_q_6 = (T_q_ent_6 + T_q_sai_chut_6)/2
+        c_p_q_6 = PropsSI('CPMASS','P',P_q,'T',T_med_q_6,'air') 
+
+        "parametros adicionais"
+
+        mu_f_s_6 = PropsSI('viscosity','P',P_f,'T',T_med_f_6,'water')
+
+
+        "Balanço de massas e energias"
+
+        T_q_sai_6 = T_q_ent_6 - m_dot_f*c_p_f_6*(T_f_sai_chut_6 - T_f_ent_6)/(m_dot_q * c_p_q_6)
+
+        q_6 = m_dot_q * c_p_q_6 *(T_q_sai_6-T_q_ent_6)
+
+        "calculo da efetividade"
+
+        c_q_6 = m_dot_q * c_p_q_6
+        c_f_6 = m_dot_f * c_p_f_6
+
+        if (c_q_6<c_f_6) : 
+            c_min_6 = c_q_6 
+            c_max_6 = c_f_6
+
+        else: 
+            c_min_6 = c_f_6
+            c_max_6 = c_q_6
+
+
+        c_r_6 = c_min_6/c_max_6
+
+        q_max_6 = c_min_6 * (T_q_ent_6 - T_f_ent_6)
+
+        epsilon_6 = q_6 / q_max_6
+
+        if epsilon_6 >=1:
+            print(m_dot_f)
+
+        NUT_6 = (c_r_6 - 1)*np.log((epsilon_6-1)/(epsilon_6*c_r_4-1))
+
+        e_c_6 = (2/epsilon_6 - 1 + c_r_6)/(1 + c_r_6**2)**(1/2)
+
+        NUT_6 = -(1 + c_r_6**2)**(-1/2) * np.log((e_c_6 - 1)/(e_c_6 + 1))
+
+        "Numero de Reynolds"
+
+        Re_D_i_6 = (m_dot_f*d_i)/(A_i_t*mu_f_6)
+
+        "numero de Nusselt"
+
+        if Re_D_i_6 >= 2300:
+
+            f_f = 0.0375
+
+            Nu_D_6 = ((f_f/8)*(Re_D_i_6-1e3)*Pr_f_6)/(1 + 12.7 * (f_f/8)**0.5 * (Pr_f_6**(2/3)-1))
+
+        elif Re_D_i_6 >= 10000 and Pr_f_6 >= 0.6 and Pr_f_6 <= 160:
             
-            "parametros da zona"
+            Nu_D_6 = 0.023 * Re_D_i_6**(4/5) * Pr_f_6 * 0.4
 
-            L_6 = L - (L_4 + L_5)
+        else:
+            
+            Nu_D_6 = 4.36
 
-            A_i_6 = np.pi * d_i * L_6 * n_tubos
-            A_e_6 = np.pi * d_e * L_6 * n_tubos
+        "coeficiente de convecção interna"
 
-            "parametros do fluido frio"
+        h_i_6 = (Nu_D_6*k_f_6)/(d_i)
 
-            T_f_ent_6 = T_f_sai_5
-            T_med_f_6 = (T_f_ent_6 + T_f_sai_chut_6) / 2
-            c_p_f_6 = PropsSI('CPMASS','P',P_f,'T',T_med_f_6,'water')
-            I_f_ent_6 = PropsSI('H','P',P_f,'T',T_f_ent_6,'water')
-            I_f_sai_6 = PropsSI('H','P',P_f,'T',T_f_sai_chut_6,'water')
-            mu_f_6 = PropsSI('viscosity','P',P_f,'T',T_med_f_6,'water')
-            Pr_f_6 = PropsSI('Prandtl','P',P_f,'T',T_med_f_6,'water')
-            k_f_6 = PropsSI('conductivity','P',P_f,'T',T_med_f_6,'water')
+        "coeficientes globais"
 
+        R_d_i_6 = 0.0002
 
-            "parametros do fluido quente"
+        U_i_6 = (1/h_i_6 + R_d_i_6 + d_i * n_tubos * (np.log(d_e/d_i))/(2 * k_aco) + 
+                (d_i/d_e) * R_d_e + d_i/(d_e * h_e))**(-1)
 
-            T_q_ent_6 = T_q_sai_5
-            T_med_q_6 = (T_q_ent_6 + T_q_sai_chut_6)/2
-            c_p_q_6 = PropsSI('CPMASS','P',P_q,'T',T_med_q_6,'air')
+        "encontrando comprimento do volume de controle"
 
+        L_6 = (NUT_6 * c_min_6)/(U_i_6 * A_i)
 
-            "parametros adicionais"
+        "lei de resfriamento de Newton"
 
-            mu_f_s_6 = PropsSI('viscosity','P',P_f,'T',T_med_q_6,'water')
+        T_f_sai_6 = T_f_ent_6 + q_6/(h_i_6*A_i)
 
 
-            "Balanço de massas e energias"
-
-            T_q_sai_6 = T_q_ent_6 - m_dot_f*(I_f_sai_6-I_f_ent_6)/(m_dot_q * c_p_q_6)
-
-            q_6 = m_dot_q * c_p_q_6 * (T_q_ent_6 - T_q_sai_6)
-
-            "calculo da efetividade"
-
-            c_q_6 = m_dot_q * c_p_q_6
-            c_f_6 = n_tubos * m_dot_f * c_p_f_6
-
-            if (c_q_6<c_f_6) : 
-                c_min_6 = c_q_6 
-                c_max_6 = c_f_6
-
-            else: 
-                c_min_6 = c_f_6
-                c_max_6 = c_q_6
+        "############### parametros do loop ##############"
 
 
-            c_r_6 = c_min_6/c_max_6
+        error_q_4 = ((T_q_sai_chut_4 - T_q_sai_4)**2)**0.5
 
-            q_max_6 = c_min_6 * (T_q_ent_6 - T_f_ent_6)
+        T_q_sai_chut_4 = T_q_sai_4
 
-            epsilon_6 = q_6 / q_max_6
 
-            e_c_6 = (2/epsilon_6 - 1 + c_r_6)/(1 + c_r_6**2)**(1/2)
+        "Erro do V"
 
-            NUT_6 = -(1 + c_r_6**2)**(-1/2) * np.log((e_c_6 - 1)/(e_c_6 + 1))
+        error_q_5 = ((T_q_sai_chut_5 - T_q_sai_5)**2)**0.5
+        error_L_5 = ((L_chut_5 - L_5)**2)**0.5
 
-            "Numero de Reynolds"
+        T_q_sai_chut_5 = T_q_sai_5
+        L_chut_5 = L_5
 
-            Re_D_i_6 = (m_dot_f*d_i)/(A_i_t*mu_f_6)
 
-            "numero de Nusselt"
+        "Erro do VI"
 
-            if Re_D_i_6 >= 2300:
+        error_q_6 = ((T_q_sai_chut_6 - T_q_sai_6)**2)**0.5
+        error_f_6 = ((T_f_sai_chut_6 - T_f_sai_6)**2)**0.5
 
-                f_f = 0.0375
+        T_q_sai_chut_6 = T_q_sai_6
+        T_f_sai_chut_6 = T_f_sai_6
 
-                Nu_D_6 = ((f_f/8)*(Re_D_i_6-1e3)*Pr_f_6)/(1 + 12.7 * (f_f/8)**0.5 * (Pr_f_6**(2/3)-1))
-
-            elif Re_D_i_6 >= 10000 and Pr_f_6 >= 0.6 and Pr_f_6 <= 160:
-                
-                Nu_D_6 = 0.023 * Re_D_i_6**(4/5) * Pr_f_6 * 0.4
-
-            else:
-                
-                Nu_D_6 = 4.36
-
-            "coeficiente de convecção interna"
-
-            h_i_6 = (Nu_D_6*k_f_6)/(d_i)
-
-            "coeficientes globais"
-
-            R_d_i_6 = 0.0002
-
-            U_i_6 = (A_i_6 * (1/(A_i_6 * h_i_6) + R_d_i_6 / A_i_6 + (np.log(d_e/d_i))/(2 * np.pi * k_aco ) + 
-                    R_d_e/A_e_6 + 1/(A_e_6 * h_e)))**(-1)
-
-            "lei de resfriamento de Newton"
-
-            T_f_sai_6 = T_f_ent_6 + q_6/h_i_6
-
-            "############### parametros do loop ##############"
-
-            error_q_6 = ((T_q_sai_chut_6 - T_q_sai_6)**2)**0.5
-            error_f_6 = ((T_f_sai_chut_6 - T_f_sai_6)**2)**0.5
-
-            T_q_sai_chut_6 = (T_q_sai_chut_6 + T_q_sai_6)/2
-            T_f_sai_chut_6 = (T_f_sai_chut_6 + T_f_sai_6)/2
-
-            if (error_q_6 < (T_q_sai_6 * 0.01)) and (error_f_6 < (T_f_sai_6 * 0.01)):
-
-                parameters_6['q'][0,counter] = q_6
-                parameters_6['epsilon'][0,counter] = epsilon_6
-                parameters_6['Re_D_i'][0,counter] = Re_D_i_6
-                parameters_6['h_i'][0,counter] = h_i_6
-                parameters_6['T_q_sai'][0,counter] = T_q_sai_6
-                parameters_6['T_f_sai'][0,counter] = T_f_sai_6
-                parameters_6['L'][0,counter] = L_6
-
-                break
+        "Erro Geral"
 
         error_q_2 = ((T_q_sai_chut_2 - T_q_sai_6)**2)**0.5
         error_f_1 = ((T_f_sai_chut_1 - T_f_sai_6)**2)**0.5
 
-        T_q_sai_chut_2 = (T_q_sai_chut_2 + T_q_sai_6)/2
-        T_f_sai_chut_1 = (T_f_sai_chut_1 + T_f_sai_6)/2
+        T_q_sai_chut_2 = T_q_sai_6
+        T_f_sai_chut_1 =  T_f_sai_6
 
+        L_chut_5 = (L_chut_5 + L_5)/2
+        error_L_5 = ((L_chut_5 - L_5)**2)**0.5
 
-        if (error_q_2 < (T_q_sai_6 * 0.01)) and (error_f_1 < (T_f_sai_6 * 0.01)):
-
+        if (error_q_2 < (T_q_sai_6 * 0.01)) and (error_f_1 < (T_f_sai_6 * 0.01)) and (error_q_6 < (T_q_sai_6 * 0.01)) and (error_f_6 < (T_f_sai_6 * 0.01)) and (error_q_5 < (T_q_sai_5 * 0.01)) and error_L_5 < (L_5 * 0.01) and error_q_4 < (T_q_sai_4 * 0.01):
             break
+
+    parameters_4['q'].append(q_4)
+    parameters_4['c_p_f'].append(c_p_f_4)
+    parameters_4['c_p_q'].append(c_p_q_4)
+    parameters_4['q_max'].append(q_max_4)
+    parameters_4['C_min'].append(c_min_4)
+    parameters_4['epsilon'].append(epsilon_4)
+    parameters_4['Re_D_i'].append(Re_D_i_4)
+    parameters_4['h_i'].append(h_i_4)
+    parameters_4['T_q_sai'].append(T_q_sai_4)
+    parameters_4['T_f_sai'].append(T_f_sai_4)
+    parameters_4['L'].append(L_4)
+
+    parameters_5['q'].append(q_5)   
+    parameters_5['c_p_f'].append(0)
+    parameters_5['c_p_q'].append(c_p_q_5)
+    parameters_5['q_max'].append(q_max_5)
+    parameters_5['C_min'].append(c_min_5)
+    parameters_5['epsilon'].append(epsilon_5)
+    parameters_5['Re_D_i'].append(Re_D_i_5_v)
+    parameters_5['h_i'].append(h_i_5)
+    parameters_5['T_q_sai'].append(T_q_sai_5)
+    parameters_5['T_f_sai'].append(T_f_sai_5)
+    parameters_5['L'].append(L_5)
+
+    parameters_6['q'].append(q_6)
+    parameters_6['c_p_f'].append(c_p_f_6)
+    parameters_6['c_p_q'].append(c_p_q_6)
+    parameters_6['C_min'].append(c_min_6)
+    parameters_6['q_max'].append(q_max_6)
+    parameters_6['epsilon'].append(epsilon_6)
+    parameters_6['Re_D_i'].append(Re_D_i_6)
+    parameters_6['h_i'].append(h_i_6)
+    parameters_6['T_q_sai'].append(T_q_sai_6)
+    parameters_6['T_f_sai'].append(T_f_sai_6)
+    parameters_6['L'].append(L_6)
+
     
 
 "############### Análise geral ##############"
@@ -544,8 +561,18 @@ colors = [
     'r'
 ]
 
+styles = [
+    '-.',
+    '-',
+    '--'
+]
+
 names = [
     'Taxa de transferência de calor',
+    'Capacidade térmica do fluido frio',
+    'Capacidade térmica do fluido quente',
+    'Capacidade calorífica mínima',
+    'Taxa de transferência de calor ideal',
     'Efetividade',
     'Número de Reynolds',
     'Coeficiente de transferência convectiva',
@@ -556,6 +583,10 @@ names = [
 
 symbols = [
     '$q$',
+    '$c_{p,f}$',
+    '$c_{p,q}$',
+    '$C_{min}$',
+    '$q_{max}$',
     '$\epsilon$',
     '$Re_D$',
     '$h_i$',
@@ -578,9 +609,9 @@ for parameter, name , symbol in zip(parameters,names,symbols):
 
     #plt.yscale("log")
     
-    for zone,z_name,color in zip(zones,z_names,colors):
+    for zone,z_name,color,style in zip(zones,z_names,colors,styles):
 
-        ax.plot(m_dot_f_eval,zone[parameter][0],color, linewidth=2,label = z_name)
+        ax.plot(m_dot_f_eval,zone[parameter],color, linewidth=2,linestyle=style,label = z_name)
 
         ax.grid()
 
@@ -593,9 +624,10 @@ for parameter, name , symbol in zip(parameters,names,symbols):
     plt.close()
 
 parameters_g = [
-                [(L_4 + L_5 + L_6) for L_4,L_5,L_6 in zip([parameters_4['L'][0,:]],
-                                                          [parameters_4['L'][0,:]],
-                                                          [parameters_4['L'][0,:]])]]
+                [(L_4 + L_5 + L_6) for L_4,L_5,L_6 in zip(parameters_4['L'],
+                                                          parameters_5['L'],
+                                                          parameters_6['L'])]
+]
 
 names_g = [
     'Comprimento do trocador'
@@ -615,7 +647,7 @@ for parameter, name , symbol in zip(parameters_g,names_g,symbols_g):
     ax.set_xlabel('$\dot{m}_f$',fontsize=16)
     ax.set_ylabel(symbol,fontsize=16)
 
-    ax.plot(m_dot_f_eval,parameter[0],'b', linewidth=2)
+    ax.plot(m_dot_f_eval,parameter,'b', linewidth=2)
 
     ax.grid()
 
