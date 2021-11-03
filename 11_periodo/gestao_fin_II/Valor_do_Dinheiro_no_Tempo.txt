@@ -1,0 +1,32 @@
+-OBJETIVO DO CAPÍTULO
+
+Compreender como o valor do dinheiro se altera no tempo para  Construir modelos de análise de valor do dinheiro no tempo e  Avaliar alternativas de aplicações de recursos
+
+-BILBIOGRAFIA DO CAPÍTULO
+
+Bibliografia indicada
+
+.EHRHARDT, Michael C.; BRIGHAM, Eugene F. Administração financeira: teoria e prática. São Paulo: Cengage Learning, 2012. Capítulo 4
+
+.Assaf Neto, Alexandre Matemática financeira: edição universitária / Alexandre Assaf Neto. – São Paulo: Atlas, 2017. Capítulos 1 a 6
+
+-NOTAS:
+
+.Séries temporais;
+.juros é um elemento de tomada de decisão;
+
+.Nomenclatura:
+
+	.Quantidade de Capital (C,VP ou VP) - Valor investido;
+	.Tempo (nper ou t);
+	.Taxa de juros (I ou taxa) expressa em porcentagem;
+	.Montante (M,VF ou FV): Juros + Capital;
+	.Fluxo de Caixa: Entradas e saídas ao longo do tempo;
+	.Prestações iguais e consecutivas (PGTO);
+
+.Regimes de capitalização:
+
+	.Simples - Linear;
+	.Composta - Exponencial;
+	
+	*Caso não expecifique é composta*
