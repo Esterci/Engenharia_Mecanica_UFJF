@@ -1,0 +1,11 @@
+5:P_{critico} = 225,4~kgf/cm^2 ; T_{critico} = 374~^\circ  C\\
+15:p\bar{v}=\bar{R}T \\
+15:\bar{R} = 8314,5 \frac{N~m}{kmol~K} = 8,3145 \frac{kN~m}{kmol~K} = 8,3145 \frac{kJ}{kmol~K} \\
+16:\frac{p\bar{v}}{M}= \frac{\bar{R}T}{M}~~onde~~R = \frac{\bar{R}}{M} \\
+16:pV = n\bar{R}T=mRT~~ou~~\frac{p_1 V_1}{T_1} = \frac{p_2 V_2}{T_2} \\
+18:R_{ar} = 0,287~\frac{kN~m}{kg~K}\\
+18:m=\frac{pV}{RT} = \frac{100~kN / m^2 \times 240~m^3}{0 , 287~kN~m / kg K \times 298 , 2~K}\\
+18:R = \frac{\bar{R}}{M}=\frac{8 , 3145~kN m / kmol K}{24~kg / kmol}=0 , 34644~kN m / kg K\\
+18:p = \frac{mRT}{V} = \frac{10~kg \times 0 , 34644~kN m / kg K \times 298 , 2~K}{0,5~m^3} = 2066~kPa\\
+20:Z=\frac{p\bar{v}}{RT} \rightarrow p\bar{v}=Z\bar{R}T\\
+44:C = \Bigg [\Bigg(\frac{B_2-B}{B_2-B_1}\Bigg)C_{1,1} + \Bigg(\frac{B-B_1}{B_2-B_1}\Bigg)C_{1,2} \Bigg] \Bigg( \frac{A_2-A}{A_2-A_1}\Bigg) + \Bigg [\Bigg(\frac{B_2-B}{B_2-B_1}\Bigg)C_{2,1} + \Bigg(\frac{B-B_1}{B_2-B_1}\Bigg)C_{2,2} \Bigg] \Bigg( \frac{A-A_1}{A_2-A_1}\Bigg)3

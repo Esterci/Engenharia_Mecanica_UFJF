@@ -1,0 +1,10 @@
+1: \oint \delta Q = \oint \delta W \\
+3: \int_1^2 \delta Q_A + \int_2^1 \delta Q_B = \int^2_1 \delta W_A + \int^1_2 \delta W_B \\
+3: \int_1^2 \delta Q_C + \int_2^1 \delta Q_B = \int^2_1 \delta W_C + \int^1_2 \delta W_B \\
+3: falta
+5: \delta Q - \delta W = dE\\
+5: \delta Q = dE + \delta W\\
+5: ~_1Q_2 = E_2 -E_1 + ~_1W_2\\
+7: E = E+ EC +EP\\
+8: dE = dU + d(EC) + d(EP)\\
+8: \delta Q= dU ...\\

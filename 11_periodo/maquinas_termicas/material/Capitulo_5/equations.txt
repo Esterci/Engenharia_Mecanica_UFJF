@@ -1,0 +1,6 @@
+1: \oint \delta Q = \oint \delta W\\
+3: \int_{1}^{2} \delta Q_{A} + \int_{2}^{1} \delta Q_{B} = \int_{1}^{2} \delta W_{A} +\int_{2}^{1} \delta W_{B}\\
+3: \int_{1}^{2} \delta Q_{C} + \int_{2}^{1} \delta Q_{B} = \int_{1}^{2} \delta W_{C} +\int_{2}^{1} \delta W_{B}\\
+3: \int_{1}^{2} \delta Q_{A} - \int_{1}^{2} \delta Q_{C} = \int_{1}^{2} \delta W_{A} - \int_{1}^{2} \delta W_{C}\\
+3: \int_{1}^{2} (\delta Q - \delta W)_A = \int_1^2(\delta Q - \delta W)_C\\
+
