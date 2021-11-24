@@ -1,0 +1,2926 @@
+PRIMEIRA LEI DA TERMODINÂMICA
+Lei da Conservação da Energia
+
+SISTEMA QUE PERCORRE UM CICLO
+
+  W
+
+
+Q 
+
+Durante qualquer ciclo percorrido por um sistema, a integral cíclica do calor é igual 
+a integral cíclica do trabalho.
+
+A base de todas as leis da natureza é a evidência experimental, e isto também é 
+verdadeiro  para  a  primeira  lei  da  termodinâmica.  Todas  as  experiências  já 
+efetuadas provaram a veracidade, direta ou indiretamente, da primeira lei.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/1-0.png}
+\caption{Equação1}
+\label{fig:eq1}
+\end{figure}
+ 
+ 
+\newpage
+
+PRIMEIRA LEI DA TERMODINÂMICA PARA UMA MUDANÇA DE ESTADO 
+NUM SISTEMA
+
+Consideremos  um  sistema  que  percorre  um  ciclo,  mudando  do  estado  1  ao 
+estado  2  pelo  processo  A  e  voltando do  estado  2 ao  estado  1 pelo  processo  B, 
+como  mostrado  na  Fig.  que  é  um  diagrama  pressão  (ou  outra  propriedade 
+intensiva) - volume (ou outra propriedade extensiva). 
+Consideremos o mesmo sistema que percorre outro ciclo, mudando do estado 1 
+ao estado 2 pelo processo C e voltando do estado 2 ao estado 1 pelo processo B, 
+como mostrado na Fig. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/figures/2.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+\newpage
+
+Da primeira lei da termodinâmica:
+
+  W
+
+
+Q 
+
+2
+
+2
+
+2
+
+Considerando os dois processos separadamente, temos:
+
+
+
+
+1
+
+Q
+
+A
+
+
+
+1
+
+
+
+2
+
+Q
+B
+
+
+
+
+
+
+1
+
+W
+
+A
+
+
+
+1
+
+
+
+2
+
+W
+B
+
+
+
+
+1
+
+Q
+C
+
+
+
+1
+
+
+
+2
+
+Q
+B
+
+
+
+
+
+
+1
+
+W
+C
+
+
+
+1
+
+
+
+2
+
+W
+B
+
+2
+
+2
+
+Subtraindo esta equação da anterior, temos:
+
+2
+
+2
+
+2
+
+
+
+Q
+
+1
+
+A
+
+
+
+
+
+
+1
+
+Q
+C
+
+
+
+
+
+
+1
+
+W
+
+A
+
+
+
+
+
+
+1
+
+W
+C
+
+ou, reordenando:
+
+
+
+WQ
+
+2
+
+
+
+1
+
+
+
+A
+
+
+
+2
+
+
+
+1
+
+
+
+
+WQ
+
+
+
+C
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/3-0.png}
+\caption{Equação2}
+\label{fig:eq2}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/3-1.png}
+\caption{Equação3}
+\label{fig:eq3}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/3-2.png}
+\caption{Equação4}
+\label{fig:eq4}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/3-3.png}
+\caption{Equação5}
+\label{fig:eq5}
+\end{figure}
+ 
+ 
+\newpage
+
+A e C representam processos arbitrários entre os estados 1 e 2.
+
+(δ Q - δ W) é a mesma para todos os processos entre o estado 1 e o estado 2. 
+
+(δ Q - δ W)  depende somente dos estados inicial e final e não depende do 
+
+caminho percorrido entre os dois estados. 
+
+(δ Q - δ W) é uma diferencial de uma função de ponto e, portanto, é a diferencial 
+
+de uma propriedade do sistema.
+
+Essa propriedade é a energia do sistema. 
+
+ 
+\newpage
+
+Representando a energia pelo símbolo E, temos:
+
+ 
+
+δ Q - δ W = dE 
+
+δQ = dE + δW
+
+1Q2 = E2 - E1 + 1W2
+
+Quando a equação é integrada, de um estado inicial 1 a um estado final 2, temos:
+
+1Q2 é o calor transferido para o sistema durante o processo do estado 1 ao estado 
+
+2, E1 e E2 são os valores inicial e final da energia E do sistema e 1W2 é o trabalho 
+
+realizado pelo sistema durante o processo.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/5-0.png}
+\caption{Equação6}
+\label{fig:eq6}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/5-1.png}
+\caption{Equação7}
+\label{fig:eq7}
+\end{figure}
+ 
+ 
+\newpage
+
+E representa toda a energia de um sistema em um dado estado. 
+
+-energia cinética ou a energia potencial do sistema em relação a um sistema de 
+
+coordenadas; 
+
+- energia associada com o movimento e posição das moléculas; 
+
+- energia associada com a estrutura do átomo; 
+
+- energia química, tal como numa bateria; 
+
+- energia presente num capacitor carregado; 
+
+- ou sob várias outras formas. 
+
+É  conveniente  considerar-se  separadamente  as  energias  cinética  e  potencial  e 
+
+admitir que as outras formas de energia do sistema sejam representadas por uma 
+
+única propriedade que chamaremos de energia interna. 
+
+ 
+\newpage
+
+Adotando o símbolo U para a energia interna, temos:
+
+E = Energia Interna + Energia Cinética + Energia Potencial
+
+ou
+
+E = U + EC + EP
+
+O  motivo  para  esta  separação  é  que  as  energias  cinética  e  potencial  estão 
+
+associadas  ao  sistema  de  coordenadas  que  escolhemos  e  podem  ser 
+
+determinadas pelos parâmetros macroscópicos de massa, velocidade e elevação.
+
+A  energia  interna  U  inclui  todas  as  outras  formas  de  energia  do  sistema  e  está 
+
+associada ao estado termodinâmico do sistema.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/7-0.png}
+\caption{Equação8}
+\label{fig:eq8}
+\end{figure}
+ 
+ 
+\newpage
+
+Como cada uma das parcelas é uma função de ponto, podemos escrever:
+
+dE = dU + d(EC) + d(EP)
+
+A primeira lei da termodinâmica para uma mudança de estado num sistema pode 
+
+ser escrita do seguinte modo:
+
+δQ = dU + d(EC) + d(EP) + δW
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/8-0.png}
+\caption{Equação9}
+\label{fig:eq9}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/8-1.png}
+\caption{Equação10}
+\label{fig:eq10}
+\end{figure}
+ 
+ 
+\newpage
+
+Expressões para as energias cinética e potencial de um sistema.
+
+
+
+EP
+
+
+
+2
+
+
+
+
+
+EP
+
+
+
+1
+
+
+
+
+Zmg
+
+
+
+2
+
+Z
+
+1
+
+EC 
+
+2
+
+mV
+
+1
+2
+
+Para a Energia temos:
+
+E
+
+2
+
+
+
+UUE
+
+1
+
+2
+
+
+
+1
+
+2
+mV
+2
+
+
+
+2
+mV
+1
+
+
+
+mgZ
+
+
+
+mgZ
+
+1
+
+2
+
+1
+2
+
+1
+2
+
+A primeira lei para mudança de estado torna-se:
+
+
+UUQ
+2
+
+1
+2
+As equações somente podem fornecer as variações de energias interna, cinética e 
+potencial e não consegue-se obter valores absolutos destas quantidades.
+
+mgZ
+1
+
+2
+mV
+1
+
+2
+mV
+2
+
+
+W
+1
+2
+
+mgZ
+
+1
+2
+
+
+
+
+
+
+
+
+
+1
+
+2
+
+2
+
+1
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/9-1.png}
+\caption{Equação11}
+\label{fig:eq11}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/9-2.png}
+\caption{Equação12}
+\label{fig:eq12}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/9-3.png}
+\caption{Equação13}
+\label{fig:eq13}
+\end{figure}
+ 
+ 
+\newpage
+
+ENERGIA INTERNA - PROPRIEDADE TERMODINÂMICA
+
+A energia interna é uma propriedade extensiva. 
+
+As energias cinética e potencial também são propriedades extensivas.
+
+O símbolo U designa a energia interna de uma dada massa de uma substância.
+
+O símbolo u designa a energia interna por unidade de massa. 
+
+u é a energia interna específica. 
+
+A energia interna é uma das propriedades independentes de uma substância pura. 
+
+Se  especificarmos  a  pressão  e  a  energia  interna  (com  referência  a  uma  base 
+
+arbitrária) do vapor superaquecido, a temperatura também estará determinada.
+
+ 
+\newpage
+
+Em  uma  tabela  de  propriedades  termodinâmicas  os  valores  de  energia  interna 
+podem ser tabelados juntamente com as outras propriedades termodinâmicas. 
+As  tabelas  apresentam  os  valores  da  energia  interna  do  líquido  saturado  (ul),  da 
+energia interna do vapor saturado (uv) e da diferença entre as energias internas do 
+líquido saturado e do vapor saturado (ulv ). 
+A energia interna de uma mistura líquido-vapor é calculada por: 
+
+U = Uliq +Uvap
+
+Ou
+
+mu = mliq ul + mvap uv
+
+Dividindo por m e introduzindo o título x , temos:
+
+u = (1-x)ul+xuv
+
+u = ul +xulv
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/11-0.png}
+\caption{Equação14}
+\label{fig:eq14}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/11-1.png}
+\caption{Equação15}
+\label{fig:eq15}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/11-2.png}
+\caption{Equação16}
+\label{fig:eq16}
+\end{figure}
+ 
+ 
+\newpage
+
+Exemplo
+O fluido contido num tanque é movimentado por um agitador. O trabalho fornecido 
+ao agitador é 5090 kJ e o calor transferido do tanque é 1500 kJ. Considerando o 
+tanque e o fluido como sistema, determine a variação da energia do sistema neste 
+processo.
+A primeira lei da termodinâmica é
+
+
+UUQ
+2
+
+2
+
+1
+
+1
+
+
+
+
+
+
+Zmg
+
+
+
+2
+
+
+
+Z
+1
+
+
+1
+
+W
+2
+
+
+2
+Vm
+2
+
+2
+V
+1
+
+
+
+
+2
+
+Como não há variação de energia cinética ou de energia potencial, essa equação 
+fica reduzida a
+
+WUUQ
+2
+(
+
+
+2
+
+
+
+1
+1
+1500
+
+1
+2
+
+UU
+2
+
+
+
+1
+
+
+
+5090
+)
+
+
+
+3590
+
+kJ
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/12-0.png}
+\caption{Equação17}
+\label{fig:eq17}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/12-1.png}
+\caption{Equação18}
+\label{fig:eq18}
+\end{figure}
+ 
+ 
+\newpage
+
+PROPRIEDADE TERMODINÂMICA ENTALPIA
+
+Frequentemente  encontra-se  combinações  de  propriedades  termodinâmicas  que 
+são, portanto, também propriedades. 
+Consideremos  um  sistema  que  passa  por  um  processo  quase  estático  a  pressão 
+constante, como o mostrado na Figura. 
+Considerando  que  não  haja  variações  de  energias  cinética  ou  potencial  e  que  o 
+único trabalho realizado seja aquele associado a movimento de fronteira. 
+Considerando  o  gás  como  sistema  e  aplicando  a  primeira  lei  da  termodinâmica 
+temos:
+
+
+WUUQ
+2
+2
+
+
+1
+
+2
+
+1
+
+1
+
+W
+2
+1
+
+
+
+
+dvp
+
+2
+
+1
+
+2
+
+
+dv
+
+1
+
+2
+
+
+pW
+2
+1
+
+
+
+
+VVp
+2
+1
+
+
+
+
+
+VpUUQ
+22
+
+
+
+2
+
+1
+
+1
+
+
+
+Vp
+11
+
+
+
+U
+2
+
+Vp
+22
+
+
+
+
+
+
+11
+
+VpU
+
+1
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/13-0.png}
+\caption{Equação19}
+\label{fig:eq19}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/13-1.png}
+\caption{Equação20}
+\label{fig:eq20}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/13-2.png}
+\caption{Equação21}
+\label{fig:eq21}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/13-3.png}
+\caption{Equação22}
+\label{fig:eq22}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/figures/13.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+\newpage
+
+Nesse  caso  muito  restrito,  a  transferência  de  calor  durante  o  processo  é  igual  a 
+variação da quantidade U + p V entre os estados inicial e final. 
+Como  todos  os  elementos  dessa  expressão  são  propriedades  termodinâmicas  a 
+combinação dos mesmos também é uma propriedade. 
+Definindo uma nova propriedade extensiva chamada entalpia,
+
+H=U+pV
+ou, por unidade de massa,
+h = u+ pv
+
+A transferência de calor num processo quase estático a pressão constante é igual 
+a variação de entalpia e esta inclui a variação de energia interna e o trabalho neste 
+processo. 
+O  resultado  não  é  geral  e  só  é  valido  para  esse  caso  especial  onde  o  trabalho 
+realizado  durante  o  processo  é  igual  a  diferença  do  produto  pV  entre  os  estados 
+final e inicial. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/14-0.png}
+\caption{Equação23}
+\label{fig:eq23}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/14-1.png}
+\caption{Equação24}
+\label{fig:eq24}
+\end{figure}
+ 
+ 
+\newpage
+
+ANÁLISE DO PROBLEMA E TÉCNICA DE SOLUÇÃO
+
+Técnica para a análise e solução de problemas termodinâmicos. 
+A    análise  do  problema  e  técnica  de  solução  é  baseado  no  seguinte  conjunto  de  questões 
+que devem ser respondidas:
+1.Qual  é  o  sistema  ou  o  volume  de  controle?  É  necessário,  definir  mais  de  um  sistema  ou 
+volume  de  controle?  Fazer  um  esboço  do  sistema  ou  do  volume  de  controle  e  indicar  as 
+interações do sistema, ou volume de controle, com o meio.
+2.O que conhecemos a respeito do estado inicial (quais as propriedades neste estado)?
+3.O que conhecemos do estado final (quais as propriedades neste estado)?
+4.O  que  conhecemos  sobre  o  processo?  Alguma  grandeza  é  constante  ou  nula?  Existe 
+alguma relação funcional conhecida entre duas propriedades?
+5.Fazer  um  diagrama  relativo  as  informações  levantadas  nos  itens  2  a  4  (por  exemplo:  um 
+diagrama T-v ou p-v)
+6.Qual  é  o  modelo  utilizado  na  previsão  do  comportamento  da  substância  (por  exemplo: 
+tabelas de vapor, gás perfeito etc.)?
+7.Qual é a nossa análise do problema (examinar fronteiras para os vários modos de trabalho, 
+conservação da massa, primeira lei da termodinâmica, etc.)?
+8.Qual é a técnica que deve ser utilizada na solução (em outras palavras, a partir daquilo que 
+foi  efetuado  nos  itens  1  a  7,  qual  deve  ser  o  procedimento  para  obter  o  desejado)?  E 
+necessário uma resolução pelo método de tentativa e erro?
+
+ 
+\newpage
+
+Exemplo
+Um  cilindro  provido  de  pistão  contém  0,5  kg  de  vapor  d'água  a  0,4  MPa  e 
+apresenta inicialmente um volume de 0,1 m3. Transfere-se calor ao vapor até que 
+a temperatura atinja 300°C, enquanto a pressão permanece constante. Determinar 
+o calor transferido e o trabalho realizado nesse processo.
+Sistema: Água interna ao cilindro.
+Estado inicial: P1, V1 e m; portanto v1 é conhecido e o estado 1 está determinado 
+(verifique na região de duas fases das tabelas de vapor d'água com os valores de 
+P1 e v1).
+Estado  final:  P2,  T2;  assim  o  estado  2  está  determinado  (região  de  vapor 
+superaquecido). 
+Processo: A pressão constante.
+Diagrama:
+
+Modelo: Tabelas de vapor de água.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/figures/16.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+\newpage
+
+Análise:  Não  há  variação  de  energia  cinética  ou  de  energia  potencial.  O  trabalho  está 
+associado a movimento de fronteira.
+
+2
+
+W
+2
+1
+
+
+
+
+dvp
+1
+
+
+umQ
+
+2
+
+2
+
+1
+
+
+
+2
+
+1
+
+1
+
+
+
+p
+
+
+dv
+
+
+
+
+
+VVp
+2
+1
+
+
+
+
+
+
+Vpm
+22
+
+
+
+Vp
+11
+
+
+
+
+umWu
+2
+1
+
+
+
+
+
+2
+
+
+
+
+
+u
+1
+
+
+
+
+Vpm
+22
+
+
+
+Vp
+11
+
+
+
+
+
+
+hm
+2
+
+
+
+1
+h
+
+Solução:
+O estado 1 é conhecido, assim v1 e h1 (ou u1 ) podem ser determinados. 
+O estado 2 também é conhecido, assim, v2 e h2 (ou u2) podem ser obtidos.
+Utilizando-se  as  expressões  para  o  trabalho  e  a  primeira  lei  da  termodinâmica,  o  calor 
+transferido e o trabalho realizado podem ser calculados. 
+Utilizando as entalpias, temos
+1,0
+V
+1
+
+5,0
+m
+
+h
+hx
+1
+l
+lv
+3066
+8,
+
+
+x
+1
+
+001084
+
+,02,0
+
+74,604
+
+2133
+
+1524
+
+4614
+
+4311
+
+4311
+
+v
+1
+
+
+
+
+
+
+
+x
+1
+
+7,
+
+,0
+
+,0
+
+,0
+
+8,
+
+
+
+
+
+
+
+h
+1
+h
+2
+Q
+1
+2
+W
+1
+2
+
+UU
+2
+
+
+
+
+
+(5,0
+
+3066
+
+8,
+
+
+
+1524
+
+)7,
+
+
+
+1,771
+
+kJ
+
+(
+vmp
+
+
+
+v
+2
+1
+
+WQ
+1
+2
+
+1
+
+2
+
+1
+
+5,0)
+
+
+
+,0(400
+
+6548
+
+
+
+)2,0
+
+
+
+0,91
+
+kJ
+
+
+
+1,771
+
+
+
+0,91
+
+
+
+1,680
+
+kJ
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/17-0.png}
+\caption{Equação25}
+\label{fig:eq25}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/17-1.png}
+\caption{Equação26}
+\label{fig:eq26}
+\end{figure}
+ 
+ 
+\newpage
+
+CALORES ESPECÍFICOS A VOLUME E A PRESSÃO CONSTANTES
+
+Considere uma substância de composição constante e que só apresenta uma fase 
+
+(sólida, líquida ou gasosa). 
+
+Definindo uma variável, denominada calor específico, como a quantidade de calor 
+
+necessária para elevar a temperatura de um grau por unidade de massa. 
+
+c
+
+
+
+1
+Q
+
+
+
+T
+m
+
+
+
+
+
+
+É  útil  examinar  a  relação  entre  o  calor  específico  com  outras  variáveis 
+
+termodinâmicas.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/18-0.png}
+\caption{Equação27}
+\label{fig:eq27}
+\end{figure}
+ 
+ 
+\newpage
+
+Desprezando  as  variações  de  energias  cinética  e  potencial  e  que  o  trabalho  pode  ser 
+
+δQ = dU + d(EC) + d(EP) + δW
+
+avaliado por pdV temos:
+
+ δQ = dU + δW = dU + p dV
+
+1. Se o volume é constante, o termo de trabalho (pdV) é nulo; de modo que o calor específico 
+
+(a volume constante) é
+
+c
+v
+
+
+
+1
+m
+
+
+Q
+
+T
+
+
+
+
+
+
+
+
+v
+
+1
+m
+
+
+
+
+
+
+U
+
+T
+
+
+
+
+
+
+
+v
+
+
+u
+
+T
+
+
+
+
+
+v
+
+2.  Se  a  pressão  é  constante,  o  termo  de  trabalho  pode  ser  integrado.  Os  termos  pV 
+
+resultantes,  nos  estados  inicial  e  final,  podem  ser  associados  com  as  energia  internas, 
+
+fornecendo que o calor transferido pode ser expresso em função da variação de entalpia. O 
+
+calor específico correspondente (a pressão constante) é portanto
+
+c
+
+p
+
+
+
+1
+m
+
+
+Q
+
+T
+
+
+
+
+
+
+
+
+p
+
+1
+m
+
+
+
+
+
+
+H
+
+T
+
+
+
+
+
+
+
+p
+
+
+h
+
+T
+
+
+
+
+
+p
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/19-0.png}
+\caption{Equação28}
+\label{fig:eq28}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/19-1.png}
+\caption{Equação29}
+\label{fig:eq29}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/19-2.png}
+\caption{Equação30}
+\label{fig:eq30}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/19-3.png}
+\caption{Equação31}
+\label{fig:eq31}
+\end{figure}
+ 
+ 
+\newpage
+
+Os  calores  específicos,  a  volume  e  a  pressão  constantes,  são  propriedades 
+termodinâmicas, pois os outros termos na expressão também o são.
+Apesar  do  inicio  da  discussão  considerar  a  quantidade  de  calor  necessária  para 
+provocar  a  variação  de  uma  unidade  de  temperatura,  o  resultado  obtido  exprime 
+uma  relação  entre  um  conjunto  de  propriedades  termodinâmicas,  e,  portanto, 
+constitui uma definição que é independente do processo que conduz ao resultado. 
+Considere dois sistemas idênticos:
+
+A variação de energia interna é a mesma em cada um deles, e o estado final e a 
+temperatura  final  são  as  mesmas  em  cada  um  deles.    Obtém  o  mesmo  valor  do 
+calor  específico  médio  a  volume  constante  desta  substância  para  os  dois 
+processos,  mesmo  que  os  dois  processos  sejam  diferentes  relativamente  a 
+transferência de calor.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/figures/20.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+\newpage
+
+Exemplo
+
+Estime o calor específico a pressão constante do vapor d'águá a 0,5 MPa e 375°C.
+
+Solução:  Se  considerarmos  uma  mudança  de  estado  a  pressão  constante, 
+podemos escrever:
+
+c
+
+p
+
+
+
+
+
+
+
+h
+
+T
+
+
+
+
+
+p
+
+Das tabelas de vapor d'água:
+
+• 0,5 MPa, 350°C, h = 3167,7 
+
+• 0,5 MPa, 400°C, h = 3271,8
+
+Como estamos interessados no valor de cp a 0,5 MPa e 375°C,
+
+c p
+
+
+
+1,104
+50
+
+
+
+2082
+
+kJ
+
+/
+
+Kkg
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/21-0.png}
+\caption{Equação32}
+\label{fig:eq32}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/21-1.png}
+\caption{Equação33}
+\label{fig:eq33}
+\end{figure}
+ 
+ 
+\newpage
+
+Caso  especial:  fase  sólida  ou  líquida,  onde  os  efeitos  de  compressibilidade  não  são 
+
+importantes (estas fases são praticamente incompressíveis)
+
+dh = du + d (pv) = du + vdp
+
+Se o volume específico, para estas fases, é muito pequeno, podemos escrever:
+
+onde  c é o calor específico a volume constante ou a pressão constante, pois os valores de 
+
+Em  muitos  processos  que  envolvem  um  sólido  ou  um  líquido,  podemos  adicionalmente 
+
+admitir que o calor específico é constante. Nesse caso pode-se efetuar a  integração: 
+
+dh≈du≈cdT
+
+ambos serão muito próximos.
+
+h2- h1 = u2 - u1 =  c(T2-T1)
+
+Os calores específicos para vários sólidos e líquidos estão apresentados nas tabelas.
+
+Em outros processos, para os quais não é possível admitir calor específico constante, pode 
+
+existir uma relação funcional entre o calor específico e a temperatura.
+
+A precisão do cálculo também deve ser levada em consideração.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/22-0.png}
+\caption{Equação34}
+\label{fig:eq34}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/22-1.png}
+\caption{Equação35}
+\label{fig:eq35}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/22-2.png}
+\caption{Equação36}
+\label{fig:eq36}
+\end{figure}
+ 
+ 
+\newpage
+
+GASES PERFEITOS
+ENERGIA INTERNA, ENTALPIA E CALOR ESPECÍFICO 
+
+O  gás  perfeito  é  um  gás  a  uma  densidade  suficientemente  baixa  para  que  as 
+forças inter-moleculares e a energia associada a estas possam ser desprezadas. 
+A equação de estado para um gás perfeito é
+
+pv = RT
+
+u = f (T)
+
+Pode-se mostrar que, para um gás perfeito, a energia interna depende apenas da 
+temperatura, ou seja
+
+Isso significa que um gás perfeito a uma dada temperatura apresenta uma energia 
+interna específica definida e independente da pressão. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/23-0.png}
+\caption{Equação37}
+\label{fig:eq37}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/23-1.png}
+\caption{Equação38}
+\label{fig:eq38}
+\end{figure}
+ 
+ 
+\newpage
+
+Joule, em 1843, demonstrou esse fato efetuando a seguinte experiência: 
+
+Dois  vasos  de  pressão  conectados  por  um  tubo  com  uma  válvula,  foram  imersos 
+num banho de água. Inicialmente, o vaso A  continha  ar a pressão de  22  atm e o 
+vaso  B  estava  em  alto  vácuo.  A  válvula  é  aberta,  permitindo  a  equalização  de 
+pressão em A e B. Não foi detectada nenhuma variação de temperatura do banho. 
+Como não houve nenhuma variação de temperatura do banho, Joule concluiu que 
+não  houve  transferência  de  calor  ao  ar.  Como  o  trabalho  também  é  nulo,  ele 
+chegou  a  conclusão,  a  partir  da  primeira  lei  da  termodinâmica,  que  não  houve 
+variação da energia interna do gás. Como a pressão e o volume variaram durante 
+esse  processo,  verifica-se  que  a  energia  interna  não  é  função  da  pressão  e  do 
+volume. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/figures/24.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+\newpage
+
+c
+v
+
+
+
+
+
+
+
+u
+
+T
+
+
+
+
+
+v
+
+A  relação  entre  a  energia  interna  u  e  a  temperatura  pode  ser  estabelecida 
+
+utilizando-se a definição de calor específico a volume constante.
+
+Como  a  energia  interna  de  uma  gás  perfeito  não  é  função  do  volume,  podemos 
+
+escrever
+
+du = cv0 dT
+
+Para uma dada massa m,
+
+dU = mcv0 dT
+
+onde o índice 0 indica o calor específico de um gás perfeito. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/25-0.png}
+\caption{Equação39}
+\label{fig:eq39}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/25-1.png}
+\caption{Equação40}
+\label{fig:eq40}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/25-2.png}
+\caption{Equação41}
+\label{fig:eq41}
+\end{figure}
+ 
+ 
+\newpage
+
+Da definição de entalpia e da equação de estado de um gás perfeito, segue que
+
+Como  R  é  uma  constante  e  u  é  função  apenas  da  temperatura,  a  entalpia,  h,  de 
+
+um gás perfeito, é uma função apenas da temperatura, ou seja,
+
+h = u + pv = u + RT
+
+h = h(T)
+
+A  relação  entre  a  entalpia  e  a  temperatura  é  obtida  a  partir  da  definição  do  calor 
+
+específico a pressão constante.
+
+c
+
+p
+
+
+
+
+
+
+
+h
+
+T
+
+
+
+
+
+p
+
+Como  a  entalpia  de  um  gás  perfeito  é  função  apenas  da  temperatura,  e  é 
+
+independente da pressão, temos
+
+c
+
+p
+
+0
+
+
+c
+
+dh
+
+dT
+
+p
+
+0
+
+ou
+
+dH
+
+
+
+mc
+
+dT
+
+p
+
+0
+
+dh
+dT
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/26-0.png}
+\caption{Equação42}
+\label{fig:eq42}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/26-1.png}
+\caption{Equação43}
+\label{fig:eq43}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/26-2.png}
+\caption{Equação44}
+\label{fig:eq44}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/26-3.png}
+\caption{Equação45}
+\label{fig:eq45}
+\end{figure}
+ 
+ 
+\newpage
+
+A  partir  do  estado  1  podemos  atingir  a  linha  de  temperatura  elevada  por  vários 
+
+caminhos e, em cada caso, o estado final é diferente. 
+
+No entanto, qualquer que seja o caminho, tanto a variação de energia interna como a 
+
+de entalpia serão as mesmas. 
+
+constante e de h constante.
+
+Isto  ocorre  porque  as  linhas  de  temperatura  constante  são  também  linhas  de  u 
+
+Mesmo que não seja um gás perfeito, a temperatura é que mais influencia a energia.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/figures/27.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+\newpage
+
+Como  a  energia  interna  e  a  entalpia  de  um  gás  perfeito  são  funções  apenas  da 
+temperatura,  segue  que  os  calores  específicos  a  volume  constante  e  a  pressão 
+constante só dependem da temperatura:
+
+cv0 = f(T)
+cp0 =f(T)
+
+Em alguns casos os calores específicos são considerados constantes.
+
+Todos  os  gases  apresentam  um  comportamento  próximo  do  de  gás  perfeito 
+quando a pressão tende a zero.
+O calor específico de gás perfeito é chamado de calor específico a pressão zero e 
+recebe o símbolo cpO . 
+O calor específico a volume constante a pressão zero recebe o símbolo cv0 . 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/28-0.png}
+\caption{Equação46}
+\label{fig:eq46}
+\end{figure}
+ 
+ 
+\newpage
+
+A Fig. mostra um gráfico de cp0 em função 
+da temperatura para várias substâncias. 
+Esses  valores  foram  determinados  com  o 
+uso  das 
+termodinâmica 
+estatística.
+
+técnicas  da 
+
+Uma  breve  discussão  qualitativa  pode 
+proporcionar  uma  visão  melhor  desse 
+comportamento  e  é  também  útil  para  a 
+determinação das condições sob as quais 
+se  justifica  a  hipótese  de  calor  específico 
+constante.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/figures/29.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+\newpage
+
+Como  foi  discutido  a  energia  associada  as 
+moléculas  pode  ser  armazenada  de  várias 
+formas.  As  energias  de  translação  e  rotacional 
+aumentam  linearmente  com  a  temperatura,  o 
+que significa que suas contribuições para o calor 
+específico não são dependentes da temperatura. 
+As  contribuições  dos  modos  vibracional  e 
+eletrônico,  por  outro  lado,  são  dependentes  da 
+temperatura (a do modo eletrônico é usualmente 
+muito pequena).
+Observa-se  na  Figura  que  o  valor  do  calor 
+específico  de  um  gás  diatômico  (tal  como  o 
+hidrogênio ou o oxigênio) cresce com o aumento 
+da temperatura e isto é devido, primariamente, a 
+vibração. 
+
+ 
+\newpage
+
+Um gás poliatômico (tal como o dióxido de 
+carbono ou a água) apresenta um aumento 
+muito  maior  do  calor  específico  quando  a 
+temperatura  aumenta,  e  isto  é  devido  aos 
+modos  de  vibração  adicionais  de  uma 
+molécula poliatômica. 
+Um  gás  monoatômico  (tal  como  o  hélio, 
+argônio  ou  o  neônio),  que  possui  apenas 
+energias  de 
+translação  e  eletrônica, 
+apresenta  pequena  ou  nenhuma  variação 
+do calor específico num grande intervalo de 
+temperatura.
+
+ 
+\newpage
+
+Uma relação muito importante entre os calores específicos a pressão constante e a 
+
+volume  constante  de  um  gás  perfeito  pode  ser  desenvolvida  a  partir  da  definição 
+
+de entalpia.
+
+h = u + pv = u + RT
+
+Diferenciando a equação obtemos
+
+dh=du+RdT   ou   cp0dT = cv0dT + R dT
+
+Portanto
+
+cp0 –cv0 = R
+
+da temperatura.
+
+A    diferença  entre  os  calores  específicos  a  pressão  constante  e  a  volume 
+
+constante, de um gás perfeito, é sempre constante, embora ambos sejam funções 
+
+Precisamos examinar somente a dependência da temperatura de um deles; o outro 
+
+será fornecido pela equação anterior.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/32-0.png}
+\caption{Equação47}
+\label{fig:eq47}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/32-1.png}
+\caption{Equação48}
+\label{fig:eq48}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/32-2.png}
+\caption{Equação49}
+\label{fig:eq49}
+\end{figure}
+ 
+ 
+\newpage
+
+Consideremos o calor específico cp0.  Existem três casos a examinar. 
+
+A  situação  mais  simples  resulta  da  hipótese  de  se  admitir  calor  específico 
+
+constante. Nesse caso, é possível integrar diretamente a equação, obtendo-se
+
+h2 – h1 = cp0 (T2 – T1)
+
+anterior. 
+
+As condições nas quais essa hipótese é precisa podem ser observadas na Figura 
+
+Deve-se  acrescentar,  entretanto,  que  essa  situação  pode  ser  uma  aproximação 
+
+razoável  sob  outras  condições,  especialmente  se  for  usado  um  calor  específico 
+
+médio (o valor médio deve ser avaliado no intervalo de temperatura da aplicação).
+
+Valores  do  calor  específico,  para  diversos  gases,  na  temperatura  ambiente  e  de 
+
+constantes de gases são tabelados.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/33-0.png}
+\caption{Equação50}
+\label{fig:eq50}
+\end{figure}
+ 
+ 
+\newpage
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/figures/34.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+\newpage
+
+A segunda possibilidade relativa ao calor específico é a utilização de uma equação 
+
+analítica para cp0 em função da temperatura. 
+
+Como  os  resultados  dos  cálculos  do  calor  específico,  a  partir  da  termodinâmica 
+
+estatística, não conduzem a formas matemáticas convenientes, estes normalmente 
+
+são ajustados empiricamente.
+
+deste modo, para diversos gases.
+
+Tabelas fornecem equações de cp0 em função da temperatura, que foram ajustadas 
+
+ 
+\newpage
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/figures/36.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+\newpage
+
+A  terceira  possibilidade  é  integrar  os  resultados  dos  cálculos  da  termodinâmica 
+estatística  desde  uma  temperatura  arbitrária  de  referência  até  qualquer  outra 
+temperatura T, e definir a função
+
+T
+
+h
+T
+
+
+
+T
+0
+
+c
+
+dT
+
+p
+
+0
+
+Essa  função  pode  então  ser  apresentada  numa  tabela  de  única  entrada 
+(temperatura). Assim, entre dois estados quaisquer 1 e 2,
+
+h
+2
+
+
+h
+1
+
+dT
+
+
+
+p
+
+0
+
+c
+
+p
+
+0
+
+dT
+
+
+h
+T
+
+2
+
+h
+T
+
+1
+
+T
+2
+
+
+
+T
+0
+
+c
+
+T
+1
+
+
+
+T
+0
+
+A temperatura de referência, na equação anterior, se cancela. 
+A  hT  (e  uma  função  similar  uT  =  hT  -  RT)  é  apresentada,  para  o  caso  do  ar,  em 
+tabela.
+A função entalpia (em relação a temperatura de referência de 25°C) é apresentada 
+para vários outros gases também em tabelas.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/37-0.png}
+\caption{Equação51}
+\label{fig:eq51}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/37-1.png}
+\caption{Equação52}
+\label{fig:eq52}
+\end{figure}
+ 
+ 
+\newpage
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/figures/38.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+\newpage
+
+É importante lembrar que todas essas hipóteses constituem uma parte do modelo 
+de gás perfeito e que este modelo não é válido para modelar o comportamento das 
+substâncias em muitos dos nossos problemas.
+
+Exemplo
+Calcular a variação de entalpia para 1 kg de oxigênio quando este é aquecido de 
+300 a 1500 K. Admita que o oxigênio se comporta como um gás perfeito.
+
+Solução: 
+Para um gás perfeito, a variação de entalpia é dada por
+
+dh
+
+p0
+c
+
+dT
+
+É  preciso  admitir  uma  hipótese  relativa  a  dependência  do  calor  específico  com  a 
+temperatura. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/39-0.png}
+\caption{Equação53}
+\label{fig:eq53}
+\end{figure}
+ 
+ 
+\newpage
+
+A  resposta  mais  precisa  para  a  variação  de  entalpia  de  gás  perfeito  será  obtida 
+com as Tabelas de Gases Perfeitos. 
+Resulta:
+
+h
+2
+
+
+h
+1
+
+h
+1500
+
+h
+300
+
+
+M
+
+
+
+
+40600
+32
+
+54
+
+
+
+1267
+
+0,
+
+kJ
+
+/
+
+kg
+
+A equação empírica fornece uma boa aproximação para a variação de entalpia.
+
+h
+2
+
+
+h
+1
+
+c
+
+p
+
+0
+
+dT
+
+
+
+c
+
+p
+
+0
+
+
+
+100
+
+
+
+d
+
+T
+2
+
+
+
+T
+1
+
+
+2
+
+
+
+
+1
+
+h
+1500
+
+
+
+h
+300
+
+
+
+,32
+
+432
+
+
+
+
+5,0
+
+
+
+
+100
+
+
+
+,0
+
+020102
+5,2
+
+5,2
+
+
+
+
+
+57,178
+5,0
+
+5,0
+
+
+
+
+
+
+88,236
+
+
+
+
+1
+
+
+15
+
+
+2
+
+
+
+
+1
+
+
+3
+
+h
+2
+
+
+h
+1
+
+h
+1500
+
+h
+300
+
+
+M
+
+
+
+40525
+32
+
+
+
+1266
+
+4,
+
+kJ
+
+/
+
+kg
+
+Este  resultado  apresenta  uma  diferença  menor  do  que  0,1\%  em  relação  ao 
+
+resultado anterior.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/40-0.png}
+\caption{Equação54}
+\label{fig:eq54}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/40-1.png}
+\caption{Equação55}
+\label{fig:eq55}
+\end{figure}
+ 
+ 
+\newpage
+
+Se  admitirmos  calor  específico  constante,  devemos  decidir  qual  o  valor  a  ser 
+utilizado. 
+Se utilizarmos o valor referente a 300 K obtemos
+
+h2 –h1 = cp0(T2-T1) =0,9216 x 1200= 1105,9 kJ/kg
+
+que é 12,7 \% menor do que o primeiro resultado. 
+
+Por outro lado, se admitirmos que o calor específico é constante, mas com o seu 
+valor referente a 900 K (temperatura média do intervalo) e avaliado pela equação 
+pertinente, podemos obter
+
+cp0 = 37,342+0.020102(9)1.5-178,57(9)-1.5+236,88(9)-2 = 34,2855 kJ/kmol K
+
+ou
+
+ cp0 = 34,2855 / 32 = 1,0714 kJ/kg K
+
+Substituindo esse valor obtemos o resultado
+
+ h2 –h1 = 1,0714 x 1200 = 1285,7 kJ/ kg
+que é cerca de 1,4 \% maior do que o primeiro resultado. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/41-0.png}
+\caption{Equação56}
+\label{fig:eq56}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/41-1.png}
+\caption{Equação57}
+\label{fig:eq57}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/41-2.png}
+\caption{Equação58}
+\label{fig:eq58}
+\end{figure}
+ 
+ 
+\newpage
+
+Exemplo
+Um  cilindro  provido  de  pistão  apresenta  volume  inicial  de  0,1  m3  e  contém 
+nitrogênio  a  150  kPa  e  25°C.  Comprime-se  o  nitrogênio,  movimentando  o  pistão, 
+até  que  a  pressão  seja  1  MPa  e  a  temperatura  150°C.  Durante  esse  processo, 
+calor é transferido do nitrogênio e o trabalho realizado sobre o nitrogênio é 20 kJ. 
+Determinar o calor transferido.
+
+Modelo: Gás perfeito com calor especifico constante (avaliado a 300 K ).
+Análise: Primeira lei da termodinâmica:
+1Q2 = m (U2 – U1) + 1W2
+
+Solução: A massa de N2 é obtida a partir da equação de estado, com o valor de R 
+dado por 0,2968.
+
+m =pv / RT = (150 x 0,1)/(0,2968 x 298,15) = 0,1695 kg
+
+Admitindo calor específico constante
+
+ 1Q2 = m cv0 (T2 – T1) + 1W2 = 0,1695 x 0,7448 (150 - 25) - 20 = -4,2 kJ
+
+Obteríamos um resultado mais preciso se tivéssemos utilizado tabelas.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/42-0.png}
+\caption{Equação59}
+\label{fig:eq59}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/42-1.png}
+\caption{Equação60}
+\label{fig:eq60}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/42-2.png}
+\caption{Equação61}
+\label{fig:eq61}
+\end{figure}
+ 
+ 
+\newpage
+
+EQUAÇÃO DA PRIMEIRA LEI EM TERMOS DE FLUXO
+
+Muitas  vezes  é  vantajoso  usar  a  equação  da  primeira  lei  em  termos  de  fluxo, 
+expressando  a  taxa  média  ou  instantânea  de  energia  que  cruza  a  fronteira  do 
+sistema - como calor e trabalho e a taxa de variação da energia do sistema. 
+Procedendo  desse  modo  estamos  nos  afastando  do  ponto  de  vista  estritamente 
+clássico, pois a termodinâmica clássica trata de sistemas que estão em equilíbrio e 
+o tempo não é um parâmetro pertinente em sistemas que estão em equilíbrio.
+Entretanto  as  equações  em  termos  de  fluxo  são  desenvolvidas  a  partir  dos 
+conceitos  da  termodinâmica  clássica  e  são  usadas  em  muitas  aplicações  da 
+termodinâmica. 
+A  equação  da  primeira 
+lei  em 
+desenvolvimento da primeira lei adequada a volumes de controle. 
+Esta última formulação encontra inúmeras aplicações na termodinâmica, mecânica 
+dos fluidos e transferência de calor.
+
+fluxo  será  utilizada  para  o 
+
+termos  de 
+
+ 
+\newpage
+
+Consideremos  um  intervalo  de  tempo  δt  durante  o  qual  uma  quantidade  de  calor 
+δQ atravessa a fronteira do sistema e um trabalho δW é realizado pelo sistema.
+Admitindo que a variação imposta na energia interna seja ΔU, na energia cinética 
+seja ΔEC e na potencial seja ΔEP, a aplicação da primeira lei fornece:
+
+δQ = ΔU + ΔEC + ΔEP + δW
+
+Dividindo  por  δt,  teremos  a  taxa  média  de  energia  transferida,  como  calor  e 
+trabalho, e de aumento de energia do sistema
+
+
+Q
+
+t
+
+
+
+
+U
+
+t
+
+
+
+
+EC
+
+t
+
+
+
+
+EP
+
+t
+
+
+
+
+W
+
+t
+
+Calculando os limites desses valores quando δt tende a zero, temos
+
+
+Q
+
+
+
+taxa
+
+de 
+
+ transferê
+
+ncia
+
+ de 
+
+calor
+
+
+W
+
+
+
+potência
+
+lim
+
+
+t
+0
+
+lim
+
+
+t
+0
+
+lim
+
+
+t
+0
+
+
+Q
+
+t
+
+W
+
+t
+
+U
+
+t
+
+
+
+dU
+dt
+
+lim
+
+
+t
+0
+
+
+
+)
+
+(
+EC
+
+t
+
+
+
+)
+
+(
+ECd
+dt
+
+lim
+
+
+t
+0
+
+
+
+)
+
+(
+EP
+
+t
+
+
+
+)
+
+(
+EPd
+dt
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/44-0.png}
+\caption{Equação62}
+\label{fig:eq62}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/44-1.png}
+\caption{Equação63}
+\label{fig:eq63}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/44-2.png}
+\caption{Equação64}
+\label{fig:eq64}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/44-3.png}
+\caption{Equação65}
+\label{fig:eq65}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/44-4.png}
+\caption{Equação66}
+\label{fig:eq66}
+\end{figure}
+ 
+ 
+\newpage
+
+Portanto, a equação da primeira lei em termos de fluxo é
+
+˙Q=
+
+dU
+dt
+
++
+
+d ( EC )
+dt
+
++
+
+d ( EP )
+dt
+
++ ˙W
+
+Escrevendo de outra forma:
+
+˙Q=
+
++ ˙W
+
+dE
+dt
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/45-0.png}
+\caption{Equação67}
+\label{fig:eq67}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/45-1.png}
+\caption{Equação68}
+\label{fig:eq68}
+\end{figure}
+ 
+ 
+\newpage
+
+Exemplo
+Durante  a  operação  de  carga  de  uma  bateria,  a  corrente  elétrica  é  de  20  A  e  a 
+tensão é 12,8 V. A taxa de transferência de calor da bateria é 10 W. Qual é a taxa 
+de aumento da energia interna?
+Solução: Como as variações de energia cinética e potencial são insignificantes, a 
+equação da primeira lei da termodinâmica, em termos de fluxo, pode ser escrita na 
+forma
+
+
+Q
+
+
+W
+
+
+
+
+W
+
+
+
+
+
+dU
+dt
+
+Ei
+dU
+dt
+
+20
+
+
+
+8,12
+
+
+
+256
+
+W
+
+
+
+
+WQ
+
+10
+
+
+
+(
+
+
+
+256
+)
+
+
+
+246
+
+/
+sJ
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/46-0.png}
+\caption{Equação69}
+\label{fig:eq69}
+\end{figure}
+ 
+ 
+\newpage
+
+CONSERVAÇÃO DA MASSA
+
+Um  sistema,  de  acordo  com  a  definição,  apresenta  uma  quantidade  de  matéria 
+com massa e identidade fixas. 
+Surge  agora  uma  pergunta:  a  massa  do  sistema  poderá  variar  quando  houver  a 
+variação de energia do sistema? 
+Se isso acontecer, a definição de sistema não será mais válida quando a energia 
+do sistema variar.
+Da teoria da relatividade, sabe-se que a massa e a energia estão relacionadas pela 
+equação
+
+E = mc2
+
+onde c é velocidade da luz e E a energia. 
+Conclui-se que a massa de um sistema varia quando a sua energia varia. 
+Essa variação é significativa?
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/47-0.png}
+\caption{Equação70}
+\label{fig:eq70}
+\end{figure}
+ 
+ 
+\newpage
+
+Um recipiente rígido que contém 1 kg de uma mistura estequiométrica de um hidrocarboneto 
+combustível (gasolina, por exemplo) e ar, que constitui o nosso sistema. 
+Após  o  processo  de  combustão  é  necessário  transferir  2900  kJ  do  sistema  para  que  seja 
+restabelecida sua temperatura inicial. 
+Da primeira lei da termodinâmica
+
+1Q2 = U2 -U1 + 1W2
+
+com  1W2  =  0  e  1Q2  =  -2900  kJ,  concluímos  que  a  energia  interna  do  sistema  decresce  de 
+2.900 kJ durante o processo de transferência de calor. 
+Calculemos, então, a diminuição de massa durante esse processo.
+A velocidade da luz, c, é 2,9979 x 108 m/s. 
+Portanto,
+
+2900 kJ = 2900000 J = m (2,9979 x 108) 2
+
+m = 3,23 x 10-11 kg
+
+Uma diminuição de energia do sistema de 2.900 kJ provoca uma redução de massa igual a 
+3,23 x 10-11 kg.
+Uma  variação  da  massa,  com  essa  ordem  de  grandeza,  não  pode  ser  detectada  nem  com 
+uma balança analítica extremamente precisa.
+Uma  variação  relativa  de  massa,  com  essa  ordem  de  grandeza,  está  além  da  precisão 
+necessária para a grande maioria dos cálculos de engenharia. 
+Portanto,  se  considerarmos  a  lei  de  conservação  da  massa  independente  da  lei  de 
+conservação  da  energia,  não  introduziremos  erros  significativos  na  maioria  dos  problemas 
+termodinâmicos  e  a  nossa  definição  de  sistema  poderá  ser  utilizada  mesmo  que  haja 
+variação de energia do sistema.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/48-0.png}
+\caption{Equação71}
+\label{fig:eq71}
+\end{figure}
+ 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_5/equations/48-1.png}
+\caption{Equação72}
+\label{fig:eq72}
+\end{figure}
+ 
+ 
+\newpage
