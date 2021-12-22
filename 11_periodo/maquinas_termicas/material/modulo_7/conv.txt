@@ -1,0 +1,1752 @@
+CICLOS TERMODINÂMICOS
+MOTORES E REFRIGERAÇÃO 
+
+Capítulo 11 – Van Wylen
+
+Ciclo (“fechado”): o fluido de trabalho sofre uma série de processos e 
+
+finalmente retorna ao estado inicial – Central com turbina a vapor, 
+
+geladeira, etc.
+
+No motor de combustão interna, o fluido de trabalho não passa por um ciclo 
+
+termodinâmico propriamente dito.
+
+O fluido de trabalho, no final do processo, apresenta uma composição 
+
+química diferente ou está num estado termodinâmico 
+
+diferente do inicial. 
+
+Diz-se “incorretamente” que tais equipamentos operam segundo um ciclo 
+
+aberto.
+
+ 
+\newpage
+Será analisado o desempenho do ciclo fechado ideal, semelhante ao ciclo 
+real, para os equipamentos que operam com ciclo aberto ou fechado. 
+O procedimento é vantajoso na determinação da influência das variáveis no 
+desempenho dos equipamentos. 
+Exemplo:  O  motor  de  combustão  interna,  com  ignição  por  centelha,  é 
+modelado  como  um  ciclo  Otto.  Da  análise  do  ciclo  Otto  (ideal)  conclui-se 
+que  o  aumentando  a  relação  de  compressão  obtemos  um  aumento  no 
+rendimento.  Isso  também  é  verdadeiro  para  o  motor  real,  embora 
+rendimentos  dos  ciclos  Otto  possam  se  afastar  significativamente  dos 
+rendimentos dos motores reais. 
+Quais os motivos que levam os ciclos reais a se desviarem dos ideais?
+Existem  modificações  dos  ciclos  básicos  que  objetivam  o  aumento  do 
+rendimento do ciclo. Essas modificações são realizadas com a introdução 
+de  certos  equipamentos  (regeneradores,  compressores  e  expansores  de 
+múltiplos estágios e resfriadores intermediários) no ciclo original. 
+
+ 
+\newpage
+CICLOS MOTORES
+
+ 
+Produz-se  trabalho  em  máquinas  com  processos  que  envolvem  escoamentos  em 
+dispositivos, produzindo trabalho na forma de rotação de eixo. 
+O fluido de trabalho pode apresentar mudanças de fase durante a execução do ciclo 
+ou permanecer numa única fase (normalmente na fase vapor).
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/13.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CICLOS MOTORES
+
+Da primeira lei:
+
+hq
+e
+
+
+
+1
+2
+
+V
+2
+e
+
+
+
+gZ
+
+e
+
+
+
+h
+s
+
+1
+2
+
+V
+2
+s
+
+
+
+gZ
+
+s
+
+
+
+w
+
+Um  processo  adiabático  reversível,  em  regime  permanente,  com  uma 
+seção de entrada e uma de saída e desprezando as variações de energia 
+cinética e potencial, o trabalho por unidade de massa é dado por:
+
+h
+wh
+
+s
+e
+:
+Como
+Tds
+
+vdp
+
+
+
+dh
+
+
+
+vdp
+
+dh
+
+s
+
+
+hw
+e
+
+h
+s
+
+vdp
+
+e
+
+Esse trabalho não envolve processos a pressão constante. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/1.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/2.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CICLOS MOTORES
+
+ 
+Produz-se trabalho a partir de processos que ocorrem em sistemas. A produção de 
+trabalho é devida ao movimento de um pistão num cilindro
+O  fluido  de  trabalho  usualmente  permanece  na  fase  vapor  em  todos  os  estados 
+percorridos pelo ciclo.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/20.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CICLOS MOTORES
+
+ 
+O  trabalho  de  movimento  da  fronteira,  por  unidade  de  massa,  num 
+processo reversível para um sistema:
+
+A força total sobre o êmbolo é pA , onde p é 
+a pressão no gás e A é a área do êmbolo.
+Assim, o trabalho δW é:
+
+δW = p A dL
+
+porém,  A  dL  =  dV,  que  é  a  variação  de 
+volume do gás. 
+Portanto:  δW = p dV
+ pdv
+O trabalho não envolve processos a volume constante.
+
+w
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/3.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/4.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/24.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+As áreas relativas as duas integrais estão mostradas na figura.
+
+w
+
+
+
+vdp
+
+2
+
+1
+
+Dispositivos
+Volume Controle
+
+w
+
+
+
+pdv
+
+2
+
+1
+
+Pistão/cilindro
+Sistemas
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/5.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/6.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/28.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O  ciclo  acima  é  baseado  em  quatro  processos  que  ocorrem  em  regime 
+permanente e todos os equipamentos envolvidos apresentam uma única seção 
+de alimentação e uma única de descarga. 
+Vamos  admitir  que  os  processos  são  internamente  reversíveis  e  que  não 
+apresentem variações significativas de energia cinética e potencial.
+O trabalho por unidade de massa, em cada processo pode ser calculado como:
+
+w
+
+
+
+vdp
+
+s
+
+e
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/7.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Admitindo  que  os  processos  de  transferência  de  calor  ocorrem  a  pressão 
+constante (sem realização de trabalho) e tanto a turbina quanto a bomba são 
+adiabáticas. 
+Como  a  hipótese  de  que  os  processos  são  internamente  reversíveis,  os 
+processos na turbina e na bomba são isoentrópicos. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/35.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Se os estados percorridos pelo fluido de trabalho durante o ciclo pertencerem a 
+região de saturação líquido-vapor, o ciclo será um ciclo de Carnot. 
+Isto  porque  as  transferências  de  calor  ocorrem  a  pressão  constante  e,  nesta 
+região, os processos a pressão constante também são processos isotérmicos. 
+Se  ocorrer  variação  de  temperatura  na  caldeira,  ou    no  condensador,  o  ciclo 
+não será mais um ciclo de Carnot. 
+Nestas duas situações, o trabalho líquido por unidade de massa é:
+
+wliq
+
+
+
+2
+
+1
+
+
+vdp
+
+0
+
+
+4
+
+3
+
+
+vdp
+
+
+
+0
+
+2
+
+1
+
+
+vdp
+
+
+
+3
+
+4
+
+
+vdp
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/8.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+wliq
+
+
+
+2
+
+1
+
+
+vdp
+
+0
+
+
+4
+
+3
+
+
+vdp
+
+
+
+0
+
+2
+
+1
+
+
+vdp
+
+
+
+3
+
+4
+
+
+vdp
+
+Como p2 = p3 , p1= p4 , e considerando que os volumes específicos do fluido 
+de  trabalho  no  processo  de  expansão  (estado  3  ao  estado  4)  são  maiores 
+dos que os referentes ao processo de compressão (estado 1 ao estado 2), 
+conclui-se que o trabalho realizado pelo ciclo é positivo. 
+Esta conclusão também pode ser obtida analisando as áreas da  figura.
+Conclui-se a partir desta análise, que o trabalho líquido fornecido pelo ciclo é 
+função da diferença entre os volumes específicos das fases. 
+Para  se  ter  mais  trabalho,  o  fluido  de  trabalho  deve  apresentar  a  maior 
+variação de volume específico possível . 
+
+IMPORTANTE!
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/9.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Se  o  ciclo  for  realizado  num  conjunto  cilindro-pistão,  o  trabalho  sera    realizado 
+pelo movimento de fronteira. Neste caso:
+
+pdv
+
+
+pdv
+
+
+
+pdv
+
+
+pdv
+
+wliq
+
+
+
+
+
+2
+
+1
+
+3
+
+2
+
+
+
+4
+
+3
+
+1
+
+4
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/10.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+wliq
+
+
+
+2
+
+1
+
+
+pdv
+
+
+
+3
+
+2
+
+
+pdv
+
+
+
+4
+
+3
+
+
+pdv
+
+
+
+1
+
+4
+
+
+pdv
+
+Analisando  a  figura,  nota-se  que  as  áreas  relativas  aos  processos  de  expansão 
+(do  estado  2  ao  3  e  do  estado  3  ao  4)  são  maiores  que  as  áreas  relativas  aos 
+processos de compressão (estado 4 ao 1 e do estado 1 ao 2). A área líquida e o 
+trabalho liquido produzido pelo ciclo são positivos. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/11.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+wliq
+
+
+
+2
+
+1
+
+
+vdp
+
+0
+
+
+4
+
+3
+
+
+vdp
+
+
+
+0
+
+2
+
+1
+
+
+vdp
+
+
+
+3
+
+4
+
+
+vdp
+
+wliq
+
+
+
+2
+
+1
+
+
+pdv
+
+
+
+3
+
+2
+
+
+pdv
+
+
+
+4
+
+3
+
+
+pdv
+
+
+
+1
+
+4
+
+
+pdv
+
+A  área  delimitada  pelas  linhas  que  representam  os  processos  1-2-3-4-1  no 
+diagrama representa o trabalho líquido produzido nos dois casos analisados. 
+O  trabalho  líquido  fornecido  pelos  dois  ciclos  é  o  mesmo  apesar  dos  trabalhos 
+realizados nos processos que compõe os dois ciclos serem diferentes.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/12.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O ciclo de Rankine é constituído por quatro processos que ocorrem em regime 
+permanente  e  opera  na  região  de  saturação.  Isto  é  feito  para  maximizar  a 
+diferença  entre  os  volumes  específicos  relativos  aos  processos  de  expansão  e 
+compressão. 
+
+wliq
+
+
+
+2
+
+1
+
+
+vdp
+
+0
+
+
+4
+
+3
+
+
+vdp
+
+
+
+0
+
+2
+
+1
+
+
+vdp
+
+
+
+3
+
+4
+
+
+vdp
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/13.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\newpage
+O CICLO RANKINE 
+
+A figura apresenta o diagrama T-s referente ao ciclo e os processos são:
+1-2: Processo de bombeamento adiabático reversível, na bomba.
+2-3’: Transferência de calor a pressão constante, na caldeira.
+3’-4’:  Expansão  adiabática  reversível  na  turbina  (ou  noutra  máquina  motora  tal 
+como a máquina a vapor).
+4’-1: Transferência de calor a pressão constante, no condensador.
+O ciclo de Rankine usualmente apresenta superaquecimento do vapor.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/64.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Se  as  variações  de  energia  cinética  e  potencial 
+forem  desprezadas,  as 
+transferências  de  calor  e  o  trabalho  líquido  podem  ser  representados  pelas 
+diversas áreas do diagrama T-s. 
+
+O calor transferido ao fluido de trabalho é 
+representado  pela  área  a-2-2’-3’-c-a  e  o 
+calor transferido do fluido de trabalho pela 
+área a-1-4’-c-a. 
+Utilizando a primeira lei da termodinâmica, 
+podemos  concluir  que  a  área  que 
+representa  o  trabalho  é  igual  a  diferença 
+entre essas duas áreas, isto é, a área 1-2-
+2’-3’-4’- 1.
+
+O rendimento térmico é definido pela relação
+
+'3'22
+
+
+1'4'3'221
+
+
+a
+ac
+
+
+
+área
+área
+
+
+
+
+
+
+
+
+
+
+
+térmico
+
+
+
+w
+liq
+q
+
+H
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/14.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/68.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\newpage
+O ciclo de Rankine (1-2-3-4-1) tem um rendimento menor que o ciclo de 
+Carnot  que  apresenta  as  mesmas  temperaturas  máxima  e  mínima  do 
+ciclo de Rankine, porque a temperatura média entre 2 e 2’ é menor do 
+que o temperatura durante a vaporização. 
+Porque escolher o ciclo de Rankine como o ciclo ideal? 
+Porque não escolher o ciclo de Carnot 1’-2’-3-4-1’ como o ciclo ideal?
+
+ 
+\newpage
+Por duas razões principais: 
+1.O processo de bombeamento – o estado 1’ é uma mistura de líquido e 
+vapor e é muito difícil construir uma bomba que opere convenientemente 
+sendo alimentada com uma mistura de líquido e vapor (1’) e que forneça 
+líquido saturado na seção de descarga (2’). E muito mais fácil condensar 
+completamente  o  vapor  e  trabalhar  somente  com  líquido  na  bomba  (o 
+ciclo de Rankine é baseado neste fato). 
+
+ 
+\newpage
+2. A segunda razão envolve o superaquecimento do vapor. No ciclo de 
+Rankine o vapor é superaquecido a pressão constante, processo 3-
+3’.  No  ciclo  de  Carnot  toda  a  transferência  de  calor  ocorre  a 
+temperatura  constante  e  portanto  o  vapor  é  superaquecido  no 
+processo  3-3”. Note  que  durante esse  processo  a  pressão cai.  Isto 
+significa que calor deve ser transferido ao vapor enquanto ele sofre 
+um  processo  de  expansão  (no  qual  é  efetuado  trabalho).  Isso 
+também é muito difícil de se conseguir na prática. 
+
+ 
+\newpage
+O ciclo Rankine é o ciclo ideal que pode ser aproximado na prática.
+Algumas  variações  do  ciclo  de  Rankine  provocam  o  aumento  do 
+rendimento térmico do ciclo e deste modo apresenta um rendimento 
+mais próximo ao rendimento do ciclo de Carnot.
+
+ 
+\newpage
+Exemplo
+
+Determine o rendimento de um ciclo de Rankine que utiliza água como fluido de 
+trabalho  e  no  qual  a  pressão  no  condensador  é  igual  a  10  kPa.  A  pressão  na 
+caldeira é de 2 MPa. O vapor deixa a caldeira como vapor saturado.
+Simbologia:
+wb – trabalho da bomba por quilograma de fluido que escoa no equipamento;
+qL  –  calor  rejeitado  pelo  fluido  de  trabalho  por  quilo  de  fluido  que  escoa  no 
+equipamento.
+Na  solução  do  problema  será  considerado,  sucessivamente,  uma  superfície  de 
+controle que envolve a bomba, caldeira, turbina e condensador. Em cada caso é 
+considerado  que  o  processo  ocorre  regime  permanente  (com  variações  de 
+energias cinética e potencial desprezíveis).
+
+ 
+\newpage
+Volume de controle na Bomba:
+Estado de entrada: p1 conhecida, líquido saturado: estado determinado.
+Estado de saída: p2 conhecida.
+Primeira lei da termodinâmica: |Wb| = h2 —h1
+Segunda Lei da termodinâmica: s2=s1
+Como s2=s1
+
+2
+
+h
+2
+
+
+
+h
+1
+
+
+vdp
+
+1
+
+Admitindo que o líquido seja incompressível:
+
+w
+b
+h
+2
+
+
+pv
+
+
+2
+wh
+
+1
+b
+
+,0
+
+
+
+
+
+00101
+2000
+p
+
+1
+8,193
+0,28,191
+
+
+
+
+10
+
+
+
+
+
+0,2
+
+kJ
+
+/
+
+kg
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/17.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/18.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Volume de controle na Caldeira:
+Estado de entrada: p2 , h2 conhecidas; estado determinado.
+Estado de saída: p3 conhecida, vapor saturado; estado determinado.
+Primeira lei da termodinâmica: qH= h3 - h2
+
+qH= h3 - h2 = 2799,5 – 193,8 = 2605,7 kJ/kg
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/20.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Volume de controle na Turbina:
+Estado de entrada: estado 3 conhecido.
+Estado de saída: p4 conhecida.
+Primeira lei da termodinâmica: Wt = h3 - h4
+Segunda Lei da termodinâmica: s3=s4
+
+Da entropia no estado 4 pode-se determinar o título:
+
+s3 = s4  = 6,3408 = 0,6493 + x4 7,5009
+ h4 = 191,8+0,7588(2392,8) = 20007,5
+ wt = 2799,5 – 2007,5 = 792,0 kJ/kg
+
+→
+
+x4 = 0,7588
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/21.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Volume de controle no Condensador:
+Estado de entrada: Estado 4 conhecido.
+Estado de saída: Estado 1 conhecido.
+Primeira lei da termodinâmica: |qL|= h4 – h1
+
+qL= h4 – h1 = 2007,5 – 191,8 = 1815,7 kJ/kg
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/22.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+RENDIMENTO TÉRMICO DO CICLO
+
+ww
+b
+t
+
+
+q
+
+H
+
+
+
+0,20,792
+
+
+2605
+
+7,
+
+
+
+\%3,30
+
+
+
+térmico
+
+Em
+
+
+
+térmico
+
+
+
+térmico
+
+H
+
+q
+
+H
+
+
+
+q
+
+L
+
+
+
+
+
+
+q
+
+w
+liq
+q
+H
+ termos
+:es
+propriedad
+ de 
+
+
+
+h
+h
+h
+
+1
+2
+3
+
+h
+3
+7,
+2605
+
+2605
+
+
+h
+
+4
+
+h
+
+2
+1815
+7,
+
+
+
+
+
+
+
+7,
+
+
+
+
+
+
+
+
+
+
+
+h
+3
+
+h
+
+4
+
+h
+
+3
+0,20,792
+
+
+2605
+
+7,
+
+
+h
+2
+h
+2
+
+
+
+
+
+h
+1
+
+
+\%3,30
+
+
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/23.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/24.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EFEITOS DA VARIAÇÃO DE PRESSÃO E TEMPERATURA 
+
+Qual o efeito, no rendimento e no trabalho específico, da variação de pressão 
+e temperatura na saída da turbina?
+Esse efeito é mostrado no diagrama T-s da figura.
+
+?
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/108.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+A  pressão  de  saída  diminui  de  P4  a  P4‘,  com  a  correspondente  diminuição  da 
+temperatura na qual o calor é rejeitado. 
+O aumento do trabalho líquido está representado pela área 1-4-4'-1'-2'-2-1.
+O aumento do calor transferido ao fluido é representado pela área a'-2'-2-a-a'.
+Como essas duas áreas são aproximadamente iguais, o resultado líquido é um 
+aumento no rendimento do ciclo.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/113.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O aumento do rendimento fica evidente pelo fato de que a temperatura média, na 
+qual o calor é rejeitado, diminui.
+Por outro lado a redução da pressão na seção de descarga da turbina provoca 
+uma redução no título do fluido que deixa a turbina. Isso é um fator significativo, 
+pois ocorrerá uma diminuição na eficiência da turbina e a erosão das palhetas da 
+turbina  tornar-se-á  um  problema  muito  sério  quando  a  umidade  do  fluido,  nos 
+estágios  de  baixa  pressão  da 
+cento. 
+
+turbina,  excede  cerca  de  10  por 
+
+ 
+\newpage
+Qual o efeito do superaquecimento do vapor na caldeira?
+ 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/120.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O trabalho aumenta o correspondente a área 3-3'-4'-4-3 e o calor transferido na 
+caldeira aumenta o correspondente a área 3-3'-b'-b-3. 
+Como a relação entre estas duas áreas é maior do que a relação entre o trabalho 
+líquido  e  o  calor  fornecido  no  restante  do  ciclo,  para  as  pressões  dadas,  o 
+superaquecimento do vapor aumenta o rendimento do ciclo de Rankine. 
+Isso  pode  ser  explicado,  também,  pela  ocorrência  do  aumento  da  temperatura 
+média na qual o calor é transferido ao vapor. 
+Quando o vapor é superaquecido, aumenta o título do vapor na saída da turbina.
+
+ 
+\newpage
+Qual o efeito da pressão máxima do vapor?
+
+QL reduziu
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/128.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Na análise, a temperatura máxima do vapor, bem como a pressão de saída, são 
+mantidas constantes. 
+O calor rejeitado diminui o correspondente a área b'-4'-4-b-b'. O trabalho líquido 
+aumenta o correspondente a área hachurada simples e diminui o correspondente 
+a área duplo hachurada. 
+Portanto  o  trabalho  líquido  tende  permanecer  o  mesmo,  mas  o  calor  rejeitado 
+diminui e portanto, o rendimento do ciclo de Rankine aumenta com o aumento da 
+pressão máxima. 
+
+ 
+\newpage
+Neste  caso, a  temperatura  média  na  qual  o  calor é fornecido também  aumenta 
+com o aumento da pressão. 
+O título do vapor que deixa a turbina diminui quando a pressão máxima do ciclo 
+aumenta. 
+
+ 
+\newpage
+RESUMO
+
+O  rendimento  de  um  ciclo  de  Rankine  pode  ser  aumentado  pela  redução  da 
+pressão  na  seção  de  descarga  da  turbina,  pelo  aumento  da  pressão  no 
+fornecimento de calor e pelo superaquecimento do vapor. 
+O título do vapor que deixa a turbina aumenta com o superaquecimento do vapor 
+e  diminui  pelo  abaixamento  da  pressão  no  condensador  e  pelo  aumento  da 
+pressão no fornecimento de calor. 
+O que acontece, em cada caso, com o trabalho útil?
+ 
+
+ 
+\newpage
+CICLO RANKINE COM REAQUECIMENTO 
+
+O rendimento do ciclo Rankine pode ser aumentado, pelo aumento da pressão no 
+processo de fornecimento de calor. 
+O  aumento  da  pressão  aumenta  o  teor  de  umidade  do  vapor  nos  estágios  de 
+baixa pressão da turbina. 
+O ciclo com reaquecimento foi desenvolvido para tirar vantagem do aumento de 
+rendimento  provocado  pela  utilização  de  pressões  mais  altas  e  evitando  que  a 
+umidade seja excessiva nos estágios de baixa pressão da turbina. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/141.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O vapor expande até uma pressão intermediária na turbina e depois é reaquecido 
+na caldeira e novamente expande na turbina até a pressão de saída. 
+Do  diagrama  T-s  vê-se  que  há  um  ganho  muito  pequeno  de  rendimento  pelo 
+reaquecimento do vapor, pois a temperatura média, na qual o calor é fornecido, 
+não muda muito. 
+A principal vantagem deste reaquecimento está na diminuição do teor de umidade 
+nos estágios de baixa pressão da turbina. 
+Se houver metais que possibilitem um superaquecimento do vapor até 3', o ciclo 
+Rankine simples seria mais eficiente que o ciclo com reaquecimento e este ciclo 
+modificado não seria necessário.  
+
+ 
+\newpage
+Exemplo 
+Considere um ciclo com reaquecimento que utiliza água como fluido de trabalho. 
+O vapor deixa a caldeira e entra na turbina a 4 MPa e 400°C. O vapor expande 
+até 400 kPa na turbina de alta pressão, é reaquecido até 400°C e então expande 
+novamente na turbina de baixa pressão até 10 kPa. Determine o rendimento do 
+ciclo. 
+
+O resultado mostra que o aumento do rendimento provocado pelo reaquecimento 
+é relativamente pequeno. Porém, a fração de líquido do vapor na seção de saída 
+da turbina (baixa pressão) diminui em consequência do reaquecimento (de 18,4 
+\% para 3,4 \%). 
+
+ 
+
+ 
+\newpage
+CICLO RANKINE REGENERATIVO 
+
+Outra variação importante do ciclo de Rankine é o ciclo regenerativo. 
+Esta variação envolve a utilização de aquecedores da água de alimentação. 
+As  características  básicas  deste  ciclo  podem  ser  mostrados  considerando-se  o 
+ciclo de Rankine sem superaquecimento mostrado na Figura.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/152.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O fluido de trabalho é aquecido na fase líquida entre os estados 2 e 2'. 
+A temperatura média do fluido de trabalho, durante este processo, é muito inferior 
+à do processo de vaporização 2'-3. 
+Isto faz com que a temperatura média, na qual o calor é transferido ao ciclo de 
+Rankine, seja menor do que a do ciclo de Carnot 1'-2'-3-4-1 '. 
+Assim o rendimento do ciclo Rankine é menor que o do ciclo de Carnot. 
+No ciclo regenerativo o fluido de trabalho entra na caldeira em algum estado entre 
+2 e 2‘, obtendo-se um aumento na temperatura média na qual o calor é fornecido 
+ao fluido de trabalho. 
+
+ 
+\newpage
+Um ciclo regenerativo ideal (Figura). 
+Característica:  após  deixar  a  bomba  o  líquido  circula  ao  redor  da  carcaça  da 
+turbina, em sentido contrário ao do vapor.  Calor é transferido do vapor ao líquido 
+que escoa na periferia da turbina. 
+Admiti-se que seja uma transferência de calor reversível; isto é: em cada ponto 
+da  superfície  da  turbina,  a  temperatura  do  vapor  é  apenas  infinitesimalmente 
+superior a do líquido. 
+A linha 4-5, que representa os estados do vapor escoando através da turbina, é 
+exatamente  paralela  à  linha  1-2-3  que  representa  o  processo  de  bombeamento 
+(1-2) e os estados do líquido que escoa na periferia da turbina. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/159.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Portanto as áreas 2-3-b-a-2 e 5-4-d-c-5 são iguais e congruentes, e representam 
+o calor transferido ao líquido e do vapor. 
+Calor é transferido ao fluido de trabalho a temperatura constante, no processo 3-
+4, e a área 3-4-d-b-3 representa esta transferência de calor. 
+Calor  é  transferido  do  fluido  de  trabalho  no  processo  5-1  e  a  área  1-5-c-a-1 
+representa  esta  transferência.  Essa área  é  exatamente  igual  a  área  1'-5'-d-b-1', 
+que é o calor rejeitado no ciclo de Carnot relacionado, 1'-3-4-5'-1'. 
+O  ciclo  regenerativo  ideal  apresenta  rendimento  térmico  exatamente  igual  ao 
+rendimento  do  ciclo  de  Carnot  que  opera  entre  as  mesmas  temperaturas  de 
+fornecimento e rejeição de calor. 
+
+ 
+\newpage
+Não é possível implantar este ciclo regenerativo ideal. 
+1.Não  seria  possível  efetuar  a  transferência  de  calor  necessária  do  vapor  na 
+turbina para a água líquida de alimentação. 
+2.O teor de umidade do vapor que deixa a turbina aumenta consideravelmente, 
+em  consequência  da  transferência  de  calor,  e  a  desvantagem  disto  já  foi 
+anteriormente observada. 
+
+ 
+\newpage
+O ciclo regenerativo real está esquematizado na Figura.
+Envolve a extração de uma parte do vapor que escoa na turbina, após ter sido 
+parcialmente expandido, e a utilização de aquecedores da água de alimentação.
+O vapor entra na turbina no estado 5. Após a expansão até o estado 6, parte do 
+vapor é extraído e entra no aquecedor de água de alimentação. 
+O vapor não extraído expande na turbina  até o estado 7 e é, então, levado ao 
+condensador.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/169.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O líquido descarregado do condensador é bombeado para o aquecedor da água 
+de alimentação onde ocorre a mistura com o vapor extraído da turbina. 
+A vazão de vapor extraído da turbina é a suficiente para fazer com que o líquido, 
+que deixa o aquecedor de mistura, esteja no estado saturado (estado 3). 
+Como o líquido ainda não foi bombeado até a pressão da caldeira mas apenas 
+até  a  pressão  intermediária  correspondente  àquela  no  estado  6,  torna-se 
+necessária  a  instalação  de  uma  outra  bomba  que  transfere  o  líquido,  que  é 
+descarregado do aquecedor da água de alimentação, para a caldeira. 
+
+ 
+\newpage
+O ponto significativo, deste ciclo, é o aumento da temperatura média na qual o 
+calor é fornecido ao fluido de trabalho. 
+É difícil mostrar esse ciclo no diagrama T-s porque a massa de vapor que escoa 
+através dos vários componentes não é a mesma. O diagrama T-s da Fig. mostra 
+o estado do fluido nos vários pontos. 
+
+ 
+\newpage
+A  área  4-5-c-b-4  representa  o  calor  transferido  por  quilograma  de  fluido  de 
+trabalho. 
+O processo 7-1 é o processo de rejeição de calor, mas como todo o vapor gerado 
+não  passa  através  do  condensador,  a  área  1-7-c-a-1  representa  o  calor 
+transferido  por  quilograma  de  fluido  que  escoa  no  condensador.  Esta  área  não 
+representa o calor transferido por quilograma de fluido de trabalho que entra na 
+turbina. 
+Entre  os  estados  6  e  7, somente  uma  parte  do  vapor  gerado  escoa  através  da 
+turbina. 
+
+ 
+\newpage
+Exemplo
+Considere um ciclo regenerativo que utiliza água como fluido de trabalho. O vapor 
+deixa a caldeira, e entra na turbina, a 4 MPa e 400°C. Após expansão até 400 
+kPa, parte do vapor é extraída da turbina com o propósito de aquecer a água de 
+alimentação  num  aquecedor  de  mistura.  A  pressão  no  aquecedor  da  água  de 
+alimentação é igual a 400 kPa e a água na seção de saída deste equipamento 
+está no estado líquido saturado a 400 kPa. O vapor não extraído é expandido, na 
+turbina, até a pressão de 10 kPa. Determine o rendimento do ciclo. 
+
+ 
+\newpage
+Anteriormente  o  vapor  de  extração  e  a  água  de  alimentação  eram  misturados 
+num aquecedor de água de alimentação. 
+Outro tipo de aquecedor de água de alimentação, conhecido como aquecedor de 
+superfície, é aquele no qual o vapor e a água de alimentação não se misturam, 
+porém  o  calor  é transferido do vapor  extraído,  enquanto ele  condensa  na  parte 
+externa dos tubos, à água de alimentação (que escoa através dos tubos).
+A Figura mostra o esboço de um aquecedor de superfície. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/185.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Neste aquecedor a pressão do vapor pode ser diferente da pressão da água de 
+alimentação. 
+O condensado pode ser bombeado para a tubulação de água de alimentação, ou 
+pode ser removido através de um purgador (um aparelho que permite o líquido, e 
+não o vapor, escoar para uma região de pressão inferior) para um aquecedor de 
+baixa pressão ou para o condensador principal. 
+
+ 
+\newpage
+Os aquecedores de mistura para a água de alimentação tem a vantagem, quando 
+comparados  com  os  aquecedores  de  superfície,  de  apresentar  menor  custo  e 
+melhores características na transferência de calor. 
+Porém, é necessário utilizar uma bomba para transportar o fluido de trabalho de 
+um aquecedor de mistura para outro ou do aquecedor de mistura para a caldeira. 
+
+ 
+\newpage
+É  normal  utilizar  vários  estágios  de  extração  nas  centrais  térmicas,  porém 
+raramente são utilizados mais do que cinco estágios. 
+O número é determinado por considerações econômicas. 
+Utilizando um grande número de estágios de extração e aquecedores da água de 
+alimentação,  o  rendimento  do  ciclo  se  aproxima  daquele  do  ciclo  regenerativo 
+ideal,  onde  a  água  de  alimentação  entra  na  caldeira  como  líquido  saturado  a 
+pressão máxima.
+Na  prática,  isso  não  pode  ser  justificado  economicamente,  porque  a  economia 
+alcançada com o aumento do rendimento não seria justificada pelo custo inicial 
+do  equipamentos  adicionais  (aquecedores  da  água  de  alimentação,  tubulação 
+etc.). 
+O  que  se  observa  é  que  se  o  numero  de  aquecedores  é  dobrado,  o  ganho  de 
+rendimento não obedece a mesma proporção.
+O  ciclo  Rankine  usado  nas  térmicas  de  ciclo  combinado  (TG  +  TV)  não  usam 
+aquecedores. Mais tarde veremos o motivo. 
+
+ 
+\newpage
+A Figura mostra um arranjo típico dos principais componentes de uma central real. Um dos 
+aquecedores da água de alimentação de mistura é um aquecedor/desaerador da água de 
+alimentação. 
+Este  equipamento  tem  duplo  objetivo:  o  aquecimento  e  a  remoção  de  ar  da  água  de 
+alimentação. Sem a remoção do ar, pode ocorrer corrosão excessiva na caldeira. 
+O  condensado  do  aquecedor  a  alta  pressão  escoa  (através  de  um  purgador)  para  um 
+aquecedor  intermediário;  o  condensado  do  aquecedor  intermediário  é  drenado  para  o 
+aquecedor  desaerador  e  que  o  condensado  do  aquecedor  a  baixa  pressão  drena  para  o 
+condensador. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/199.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\newpage
+AFASTAMENTO DOS CICLOS REAIS EM RELAÇÃO AOS CICLOS IDEAIS
+ 
+Comentários relativos às formas pelas quais um ciclo real se afasta de um ciclo 
+ideal  (as  perdas  associadas  com  o  processo  de  combustão  são  consideradas 
+aparte). 
+As perdas mais importantes são vistas a seguir.
+
+ 
+\newpage
+Perdas nas tubulações 
+A perda de carga, provocada pelo atrito, e a transferência de calor ao ambiente 
+são as perdas mais importantes nas tubulações. 
+Na tubulação que liga a caldeira a turbina, se ocorrerem somente efeitos de atrito, 
+os estados a e b representariam, respectivamente, os estados do vapor que deixa 
+a  caldeira  e  entra  na  turbina.  O  calor  transferido  ao  ambiente,  a  pressão 
+constante,  pode  ser  representado  pelo  processo  bc.  Os  dois  fenômenos 
+diminuem a capacidade da turbina produzir trabalho.
+Uma perda análoga é a perda de carga na caldeira. Devido a esta perda, a água 
+que entra na caldeira deve ser bombeada até uma pressão mais elevada do que 
+a pressão desejada para o vapor que deixa a caldeira. Assim, será necessário um 
+trabalho adicional no bombeamento do fluido de trabalho. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/210.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Definição de eficiência isoentrópica da turbina
+
+hw
+
+3
+t
+
+h
+4
+
+
+
+turbina
+
+
+
+w
+t
+h
+
+4
+
+)
+
+s
+
+(
+
+h
+3
+
+Perdas na turbina 
+As perdas principais na turbina são aquelas associadas ao escoamento do fluido 
+de  trabalho  através  da  turbina.  A  transferência  de  calor  para  o  meio  também 
+representa uma perda , mas apresenta importância secundária. 
+O  ponto  4s  representa  o  estado  após  uma  expansão  isoentrópica  e  o  ponto  4 
+representa o estado real do vapor na saída da turbina. 
+Os  sistemas  de  controle  também  podem  provocar  uma  perda  na  turbina, 
+particularmente  se  for  usado  um  processo  de  estrangulamento  para  controlar  a 
+turbina.  
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/25.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/215.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Definição de eficiência isoentrópica da bomba
+
+w
+b
+
+
+
+bomba
+
+h
+
+2
+(
+
+
+
+h
+1
+h
+2
+
+s
+
+
+w
+b
+
+h
+1
+
+)
+
+(
+pv
+
+
+
+p
+1
+
+)
+
+
+2
+w
+b
+
+Perdas na bomba 
+As perdas na bomba são análogas àquelas da turbina e decorrem principalmente 
+das irreversibilidades associadas ao escoamento do fluido. 
+A transferência de calor é, usualmente, uma perda secundária. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/26.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Perdas no condensador 
+As perdas no condensador são relativamente pequenas. 
+Uma  dessas  perdas  é  o  resfriamento  abaixo  da  temperatura  de  saturação  do 
+líquido que deixa o condensador, ou sub-resfriamento.
+Isso  representa  uma  perda,  porque  é  necessário  uma  troca  de  calor  adicional 
+para trazer a água até a sua temperatura de saturação. 
+
+ 
+\newpage
+Exemplo
+Uma central térmica a vapor opera segundo o ciclo indicado na Figura. Sabendo 
+que a eficiência da turbina é 86\% e que a eficiência da bomba é 80\%, determine 
+o rendimento térmico deste ciclo. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/225.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/226.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+COGERAÇÃO 
+Existem indústrias que utilizam ciclo de potência a vapor para gerar eletricidade e 
+o processo produtivo requer uma fonte de vapor ou de água quente.
+Pode-se utilizar o vapor expandido até uma pressão intermediária, numa turbina 
+de  alta  pressão  do  ciclo  de  potência,  como  fonte  de  energia  do  processo 
+produtivo. Assim não será necessária a construção e utilização de uma segunda 
+caldeira dedicada unicamente ao processo produtivo. 
+Este  tipo  de  aplicação  é  denominada  cogeração:  geração  concomitante  de 
+energia elétrica e vapor. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/231.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ASPECTOS GERAIS DO CICLO RANKINE 
+
+1.A água requer tratamento de desmineralização.
+2.No passado usava-se carvão, mas está sendo abandonado (meio ambiente).
+3.É usado em navios petroleiros e navios aeródromos.
+4.Usado também em usinas nucleares.
+5.Consegue-se potências superiores a 1 GW com uma única turbina.
+6.Também chamados de combustão externa.
+7.O fluido de trabalho pode ser um fluido orgânico.
+8.Usado nas usinas de açúcar e álcool.
+9.É o ciclo de potência mais antigo.
+10.Responsável pela revolução industrial do século XVIII.
+
+ 
+\newpage

@@ -1,0 +1,1850 @@
+SEGUNDA LEI DA TERMODINÂMICA 
+
+A  primeira  lei  da  termodinâmica:  para  um  sistema  que  efetua  um  ciclo,  a  integral 
+cíclica do calor é igual à integral cíclica do trabalho.
+
+A primeira lei não impõe restrição quanto às direções dos fluxos de calor e trabalho.
+
+Um  ciclo,  no  qual  uma  determinada  quantidade  de  calor  é  cedida  pelo  sistema  e 
+uma quantidade equivalente de trabalho é recebida pelo sistema, satisfaz a primeira 
+lei, da mesma maneira que um ciclo onde estás transferências se dão em sentidos 
+opostos. 
+
+Se um dado ciclo proposto não viola a primeira lei, não está assegurado que este 
+ciclo possa realmente ocorrer. 
+
+Esse tipo de evidência levou à formulação da segunda lei da termodinâmica.
+
+Um  ciclo  somente  ocorrerá  se  tanto  a  primeira  como  a  segunda  lei  da 
+termodinâmica forem satisfeitas.
+
+ 
+\newpage
+A segunda lei envolve o fato de que processos ocorrem num dado sentido e não no 
+oposto. 
+
+Consome-se  gasolina  quando  um  carro  sobe  uma  colina,  mas  o  nível  de 
+combustível do tanque de gasolina não pode ser restabelecido ao nível original na 
+descida da colina. 
+
+Observações cotidianas como essas, juntamente com várias outras, são evidências 
+da validade da segunda lei da termodinâmica.
+
+Será  considerado  primeiramente  a  segunda  lei  para  um  sistema  percorrendo  um 
+ciclo  e,  em  seguida,  estenderemos  os  conceitos  para  um  sistema  que  sofre  uma 
+mudança de estado e depois para um volume de controle.
+
+ 
+\newpage
+MOTORES TÉRMICOS E REFRIGERADORES
+
+Consideremos o sistema e o meio mostrados na Figura.
+
+Seja o sistema constituído pelo gás e que este sistema 
+percorra um ciclo. 
+
+Primeiramente  realiza-se  trabalho  sobre  o  sistema, 
+mediante o abaixamento do peso e através das pás do 
+agitador,  e  completemos  o  ciclo,  transferindo-se  calor 
+para o meio. 
+
+Não podemos inverter este ciclo: se transferirmos calor 
+ao  gás  a  sua  temperatura  aumentará,  mas  a  pá  não 
+girará e não levantará o peso. 
+
+Esse sistema só poderá operar num ciclo no qual calor 
+e trabalho são negativos, não podendo operar em um 
+ciclo no qual calor e trabalho são positivos, apesar de 
+que isto não contraria a primeira lei.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/100.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Considerando outro ciclo impossível de ser realizado. 
+
+Sejam dois sistemas, um a temperatura elevada e o outro a temperatura baixa.
+
+Suponha  um  processo  no  qual  determinada  quantidade  de  calor  é  transferida  do 
+sistema a alta para o de baixa temperatura. 
+
+Esse processo pode ocorrer. 
+
+O  processo  inverso:  a  passagem  de  calor  do  sistema  à  baixa  para  o  de  alta 
+temperatura,  não  pode  ocorrer  e  que  é  impossível  completar  o  ciclo  apenas  pela 
+transferência de calor. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/107.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Essas  duas  ilustrações  levam  a  considerar  o  motor  térmico  e  o  refrigerador 
+(também é conhecido como bomba de calor). 
+
+O motor térmico pode ser um sistema que opera segundo um ciclo, realizando um 
+trabalho líquido positivo e trocando calor líquido positivo. 
+
+A bomba de calor pode ser um sistema que opera segundo um ciclo, que recebe 
+calor  de  um  corpo  a  baixa  temperatura  e  cede  calor  para  um  corpo  a  alta 
+temperatura; sendo necessário, entretanto, trabalho para sua operação. 
+
+Vamos considerar motores térmicos simples e refrigeradores simples.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/114.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Motor térmico constituído por um cilindro, com limitadores de curso, e um êmbolo.
+O gás contido no cilindro considerado como sistema. 
+Inicialmente,  o  êmbolo  repousa  sobre  os  limitadores  inferiores  e  tem  um  peso  sobre  sua 
+plataforma. 
+Calor é transferido de um corpo a alta temperatura para o gás, fazendo com ele se expanda e 
+elevando o êmbolo até os limitadores superiores. Nesse ponto o peso é removido. 
+O sistema retorna ao estado inicial, por meio da transferência de calor do gás para um corpo a 
+baixa temperatura, completando o ciclo.
+O gás realizou trabalho durante o ciclo pois um peso foi elevado.
+A  partir da primeira lei, o calor líquido transferido é positivo e igual ao trabalho realizado.
+Este dispositivo é denominado de máquina térmica e a substância para a qual e da qual 
+calor é transferido é chamada fluido de trabalho. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/118.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Uma  máquina  térmica  pode  ser  definida  como  um  dispositivo  que,  operando 
+segundo  um  ciclo  termodinâmico,  realiza  um  trabalho  líquido  positivo  a  custa  da 
+transferência  de  calor  de  um  corpo  a  temperatura  elevada  para  um  corpo  a 
+temperatura baixa. 
+
+A denominação máquina térmica é utilizada num sentido mais amplo para designar 
+todos os dispositivos que produzem trabalho, através da transferência de calor ou 
+combustão, mesmo que o dispositivo não opere segundo um ciclo termodinâmico. 
+
+O  motor  de  combustão  interna  e  a  turbina  a  gás  são  exemplos  desse  tipo  de 
+dispositivo e a denominação de motores térmicos é aceitável nesses casos. 
+
+Entretanto  serão analisadas  as  máquinas térmicas  que operam segundo um ciclo 
+termodinâmico.
+
+ 
+\newpage
+Uma instalação motora a vapor é uma máquina térmica no sentido estrito. 
+
+Cada  componente  é  analisado  separadamente,  associando  a  cada  um  deles  um 
+processo  em  regime  permanente,  mas  se  a  instalação  é  considerada  como  um 
+todo, ela é uma máquina térmica na qual a água é o fluido de trabalho. 
+
+Uma  quantidade  de  calor  QH  é  transferida  de  um  corpo  a  alta  temperatura,  que 
+poderá  ser  os  produtos  da  combustão  numa  câmara,  um  reator,  ou  um  fluido 
+secundário que por sua vez foi aquecido num reator.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/122.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+A  turbina  aciona  a  bomba  e  o  trabalho  líquido  fornecido  pelo  motor  térmico  é  a 
+característica mais importante do ciclo. 
+
+A  quantidade  de  calor  QL  é  transferida  para  um  corpo  a  baixa  temperatura  que, 
+usualmente, é a água de resfriamento do condensador. 
+
+A instalação motora a vapor simples é uma máquina térmica no sentido estrito, pois 
+tem  um  fluido  de  trabalho,  para,  ou  do  qual,  calor  é  transferido  e  realiza  uma 
+determinada quantidade de trabalho, enquanto percorre o ciclo.
+
+ 
+\newpage
+Por  meio de um motor térmico, pode-se fazer um sistema percorrer um ciclo que 
+apresenta tanto o trabalho líquido como a transferência de calor líquida positivos. 
+
+Ao utilizarmos os símbolos QH e QL afasta-se da convenção de sinal para o calor 
+porque,  para  um  motor  térmico  e  quando  se  considera  o  fluido  de  trabalho  como 
+sistema, QL deve ser negativo. 
+
+Será vantajoso usar o símbolo QH para representar o calor transferido no corpo a 
+alta temperatura e QL para o transferido no corpo a baixa temperatura. 
+
+O sentido da transferência de calor será evidente em cada caso pelo contexto.
+
+ 
+\newpage
+Introduzindo o conceito de eficiência térmica para um motor térmico. 
+
+A eficiência é a razão entre o que é produzido (energia pretendida) e o que é usado 
+(energia gasta).
+
+Em um motor térmico a energia pretendida é o trabalho e a energia gasta é o calor 
+transferido da fonte a alta temperatura (implica em custos e reflete os gastos com 
+os combustíveis). 
+
+A eficiência térmica, ou rendimento térmico, é definida por:
+
+
+
+térmico
+
+
+
+Q
+
+
+
+W
+Q
+
+H
+
+
+H
+Q
+
+H
+
+Q
+
+L
+
+1
+
+
+Q
+Q
+
+L
+
+H
+
+ 
+\newpage
+Outro ciclo incapaz de ser realizado é aquele que envolve a transferência de calor 
+diretamente de um corpo a baixa temperatura para um corpo a alta temperatura. 
+
+Essa possibilidade só pode ser alcançada com um refrigerador ou uma bomba de 
+calor. 
+
+ 
+\newpage
+O ciclo de refrigeração por compressão de vapor.
+
+O fluido de trabalho é um refrigerante, tal como o R-134a ou a amônia,
+
+Transfere-se  calor  para  o  refrigerante  no  evaporador,  onde  a  pressão  e  a  temperatura  são 
+baixas. 
+
+O  refrigerante  recebe  trabalho  no  compressor  e  transfere  calor  no  condensador,  onde  a 
+pressão e a temperatura são altas. 
+
+A queda de pressão é provocada no fluido quando este escoa através da válvula de expansão 
+ou do tubo capilar.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/126.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O refrigerador, ou a bomba de calor, é um dispositivo que opera segundo um ciclo e 
+que  necessita  de  trabalho  para  que  se  obtenha  a  transferência  de  calor  de  um 
+corpo a baixa temperatura para outro a alta temperatura.
+
+ 
+\newpage
+A  "eficiência"  de  um  refrigerador  é  expressa  em  termos  do  coeficiente  de 
+desempenho ou coeficiente de eficácia, que é designado pelo símbolo β. 
+
+No caso de um refrigerador, o objetivo (isto é, a energia pretendida) é QL, o calor 
+transferido do espaço refrigerado, e a energia gasta é o trabalho, W. 
+
+O coeficiente de desempenho, β , é:
+
+
+
+
+
+Q
+L
+W
+
+Q
+L
+
+
+H
+
+Q
+
+Q
+
+L
+
+
+
+1
+
+Q
+H
+Q
+
+L
+
+
+
+1
+
+ 
+\newpage
+Um  refrigerador  ou  uma  bomba  de  calor  pode  ser  utilizado  com  um  destes 
+objetivos: 
+
+1.  retirar  QL,  o  calor  transferido  do  espaço  refrigerado  para  o  fluido 
+
+refrigerante -  denominado refrigerador; 
+
+2.  fornecer  QH,  o  calor  transferido  do  fluido  refrigerante  ao  corpo  a  alta 
+
+temperatura, que é o espaço a ser aquecido - denominado bomba de calor. 
+
+O  calor  QL,  neste  último  caso,  é  transferido  ao  fluído  refrigerante  pelo  solo,  ar 
+atmosférico ou pela água de poço. 
+
+O coeficiente de desempenho neste caso, β ', é.
+
+
+
+
+
+Q
+H
+W
+
+
+
+Q
+H
+Q
+
+
+H
+
+L
+
+Q
+
+
+1
+
+Observar 
+para
+ 
+que,
+
+1
+
+
+ um 
+
+L
+
+
+
+1
+Q
+Q
+H
+ 
+dado
+ciclo
+
+:
+
+ 
+\newpage
+Conceito de reservatório térmico: 
+
+Reservatório  térmico  é  um  corpo  que  nunca  apresenta  variação  de  temperatura 
+mesmo estando sujeito a transferências de calor.
+
+Um reservatório térmico permanece sempre a temperatura constante. 
+
+O oceano e a atmosfera satisfazem, com boa aproximação, essa definição.
+
+É útil indicar um reservatório a alta temperatura e outro a baixa temperatura. 
+
+As  vezes,  um  reservatório  do  qual  se  transfere  calor,  é  chamado  de  fonte  e  um 
+reservatório para o qual se transfere calor é chamado de sorvedouro.
+
+ 
+\newpage
+SEGUNDA LEI DA TERMODINÂMICA
+
+Existem dois enunciados clássicos da segunda lei, conhecidos como enunciado de 
+Kelvin - Planck e enunciado de Clausius.
+
+Enunciado de Kelvin - Planck: 
+É impossível construir um dispositivo que opere num ciclo termodinâmico e que não 
+produza outros efeitos além do levantamento de um peso e troca de calor com um 
+único reservatório térmico.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/13.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Enunciado vinculado a discussão sobre o motor térmico. É impossível construir um 
+motor  térmico  que  opere  segundo  um  ciclo  que  receba  uma  determinada 
+quantidade  de  calor  de  um  corpo  a  alta  temperatura  e  produza  uma  igual 
+quantidade de trabalho. 
+A única alternativa é que alguma quantidade de calor deve ser transferida do fluido 
+de trabalho a baixa temperatura para um corpo a baixa temperatura. 
+Um  ciclo  só  pode  produzir  trabalho  se  estiverem  envolvidos  dois  níveis  de 
+temperatura  e  o  calor  ser  transferido  do  corpo  a  alta  temperatura  para  o  motor 
+térmico e também do motor térmico para o corpo a baixa temperatura. 
+É impossível construir um motor térmico que tenha uma eficiência térmica de 100\%.
+
+ 
+\newpage
+Enunciado de Clausius: 
+É impossível construir um dispositivo que opere segundo um ciclo termodinâmico e 
+que não produza outros efeitos além da transferência de calor de um corpo frio para 
+um corpo quente.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/139.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Este  enunciado  está  relacionado  com  o  refrigerador  ou  a  bomba  de  calor  e,  com 
+efeito,  estabelece  que  é  impossível  construir  um  refrigerador  que  opera  sem 
+receber trabalho.
+
+Isso  também  significa  que  o  coeficiente  de  desempenho  é  sempre  menor  do  que 
+infinito.
+
+ 
+\newpage
+Três observações relativas aos dois enunciados. 
+
+A primeira:
+Ambos são enunciados negativos. 
+- É impossível "provar" um enunciado negativo. 
+A  segunda  lei  da  termodinâmica  (como  qualquer  outra  lei  da  natureza)  se 
+fundamenta na evidência experimental. 
+Todas  as  experiências  já  realizadas  têm,  direta  ou  indiretamente,  confirmado  a 
+segunda lei da termodinâmica. 
+
+A segunda:
+Os dois enunciados da segunda lei são equivalentes. 
+Dois enunciados são equivalentes se a verdade de cada um implicar na verdade do 
+outro, ou se a violação de cada um implicar na violação do outro.
+
+ 
+\newpage
+O dispositivo esquerdo da Figura é um refrigerador que não requer trabalho e, portanto, viola 
+o enunciado de Clausius. Uma quantidade de calor  QL é transferida do reservatório a baixa 
+temperatura  para  o  refrigerador  e  a  mesma  quantidade  de  calor  QL  é  transferida  para  o 
+reservatório a alta temperatura. 
+Uma  quantidade  de  calor  QH,  que  é  maior  do  que  QL,  é  transferida  do  reservatório  a  alta 
+temperatura para o motor térmico e o motor rejeita o calor QL, realizando um trabalho W (que 
+é igual a QH- QL). 
+Como  não  há  uma  troca  líquida  de  calor  com  o  reservatório  a  baixa  temperatura,  este 
+reservatório, o motor térmico e o refrigerador podem constituir um conjunto.
+Este conjunto, então, pode ser considerado como um dispositivo que opera segundo um ciclo 
+e não produz outro efeito além do levantamento de um peso (trabalho) e a troca de calor com 
+um único reservatório térmico. 
+A violação do enunciado de Clausius implica na violação do enunciado de Kelvin - Planck. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/14.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+A  completa  equivalência  desses  dois  enunciados  é  estabelecida  quando  se 
+demonstra que a violação do enunciado de Kelvin - Planck implica na violação do 
+enunciado de Clausius. 
+
+Isso fica como exercício..
+
+ 
+\newpage
+A terceira:
+A  segunda  lei  da  termodinâmica  tem  sido  enunciada  como  a  impossibilidade  da 
+construção de um moto-perpétuo de segunda espécie. 
+
+Um moto-perpétuo de primeira espécie criaria trabalho do nada, ou criaria massa e 
+energia, violando a primeira lei.
+
+Um moto-perpétuo de segunda espécie violaria a segunda lei.
+
+Um  moto-perpétuo  de 
+indefinidamente, porém não produziria trabalho.
+
+terceira  espécie  não 
+
+teria  atrito  e  assim  operaria 
+
+ 
+\newpage
+Vazo de Boyle
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/146.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/159.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+DealExtreme - Novelty Dippy Drinking Bird_(360p).flv
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/18.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Um  motor  térmico,  que  viola  o  segunda  lei  da  termodinâmica,  é  transformado  num  moto-
+perpétuo de segunda espécie da seguinte maneira.
+A  Figura que poderia ser a instalação propulsora de um navio. 
+Uma quantidade de calor QL é transferida do oceano para um corpo de alta temperatura, por 
+meio de uma bomba de calor. 
+O trabalho necessário é W' e o calor transferido ao corpo de alta temperatura é QH.
+Então  uma  transferência  da  mesma  quantidade  de  calor  ao  motor  térmico,  que  viola  o 
+enunciado de Kelvin - Planck da segunda lei e que produz um trabalho W = QH. 
+Deste  trabalho,  uma  parcela  igual  a  QH-  QL  é  necessária  para  acionar  a  bomba  de  calor 
+sobrando o trabalho líquido (Wliq = QL ) disponível para movimentar o navio.
+Dessa maneira, temos um moto-perpétuo, no sentido de que trabalho é realizado utilizando 
+fontes de energia livremente disponíveis, tais como o oceano e a atmosfera.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/184.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+PROCESSO REVERSÍVEL
+
+A pergunta que logicamente ocorre é se é impossível obter um motor térmico 
+com eficiência de 100\%, qual é a máxima eficiência que pode ser obtida?
+
+O primeiro passo para responder a essa pergunta é definir um processo ideal que é 
+chamado processo reversível.
+
+Um  processo  reversível,  para  um  sistema,  é  definido  como  aquele  que,  tendo 
+ocorrido,  pode  ser  revertido  e  depois  de  realizada  esta  inversão,  não  se  notará 
+algum vestígio no sistema e no meio.
+
+ 
+\newpage
+Gás como sistema está inicialmente a alta pressão e com o êmbolo fixado por um pino. 
+Quando se remove o pino, o êmbolo sobe e se choca contra os limitadores. 
+Algum trabalho é realizado pelo sistema, pois o êmbolo foi levantado. 
+Para restabelecer o sistema ao seu estado inicial, uma maneira de fazer isso é exercer uma 
+força sobre o êmbolo, comprimindo o gás até que o pino possa ser recolocado. 
+Como a pressão exercida sobre a face do pistão é maior no curso de volta do que no curso 
+inicial de expansão, o trabalho realizado sobre o gás no processo de volta é maior do que o 
+trabalho realizado pelo gás no processo inicial. 
+Uma determinada quantidade de calor deve ser transferida do gás durante o curso de volta, 
+para que o sistema tenha a mesma energia interna do estado inicial.
+O sistema retoma ao seu estado inicial, porém o meio mudou pelo fato de ter sido necessário 
+fornecer trabalho ao sistema, para fazer descer o êmbolo, e transferir calor para o meio. 
+O processo inicial é irreversível - ele não pode ser invertido sem provocar mudança no meio.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/197.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O gás contido no cilindro como o sistema. Inicialmente o êmbolo está carregado com pesos. 
+Retirando os pesos, um de cada vez, fazendo-os deslizar horizontalmente e permitindo que o 
+gás  expanda  e  realize  um  trabalho  correspondente  ao  levantamento  dos  pesos  que  ainda 
+permanecem sobre o êmbolo. 
+À medida que a quantidade de pesos é diminuída, aproxima-se de um processo que pode ser 
+invertido (pois em cada nível do êmbolo, no processo inverso, haverá um pequeno peso que 
+está exatamente no nível da plataforma e, assim, pode ser colocado sobre a plataforma sem 
+requerer trabalho). 
+No limite, como os pesos se tomam muito pequenos, o processo inverso pode ser realizado 
+de tal maneira que tanto o sistema como o meio retomam exatamente ao mesmo estado em 
+que estavam inicialmente. 
+Este processo é reversível.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/201.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+FATORES QUE TORNAM IRREVERSÍVEL UM PROCESSO
+
+Atrito
+O atrito torna um processo irreversível. 
+Considere um bloco e um plano inclinado e façamos com que o bloco seja puxado para cima, 
+no plano inclinado, pelos pesos que descem.
+Trabalho é necessário para realizar o processo. Parte é necessária para vencer o atrito entre 
+o bloco e o plano e outra parte é necessária para aumentar a energia potencial do bloco. 
+O bloco pode ser recolocado na posição inicial pela remoção de alguns pesos.. 
+É necessário alguma transferência de calor do sistema para o meio, para que o bloco retome 
+à sua temperatura inicial. 
+Como o meio não retoma ao seu estado inicial no fim do processo inverso, concluímos que o 
+atrito tornou o processo irreversível. 
+Outros  efeitos  da  presença  do  atrito  estão  associados  aos  escoamentos  de  fluidos 
+viscosos em tubos e canais e com os movimentos dos corpos em fluidos viscosos.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/202.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Expansão não resistida
+
+Um gás está separado do vácuo por uma membrana. 
+Considera-se  o  processo  que  ocorre  quando  a  membrana  se  rompe  e  o  gás  ocupa  todo  o 
+recipiente. 
+Pode-se  demonstrar  que  esse  processo  é  irreversível,  considerando  o  processo  que  seria 
+necessário para recolocar o sistema no seu estado original. 
+Esse processo envolve a compressão e a transferência de calor do gás, até atingir o estado 
+inicial. 
+Como trabalho e transferência de calor implicam numa mudança do meio, o meio não retoma 
+ao seu estado inicial.
+A expansão não resistida é um processo irreversível.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/22.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O processo acima é um exemplo de expansão não resistida.
+
+Na expansão reversível de um gás, deve haver somente uma diferença infinitesimal 
+entre a força exercida pelo gás e a força resistiva, de modo que a velocidade com 
+que a fronteira se move será infinitesimal. 
+Esse processo é quase-estático.
+Os  casos  reais  envolvem  diferenças  finitas  de  forças,  que  provocam  velocidades 
+finitas de movimento da fronteira e são, em determinado grau, irreversíveis.
+
+ 
+\newpage
+Transferência de calor com diferença finita de temperatura
+
+Um  sistema:  um  corpo  a  alta  temperatura  e  outro  a  baixa  temperatura.  Deixa-se 
+que  ocorra  a  transferência  de  calor  do  corpo  a  alta  temperatura  para  o  de  baixa 
+temperatura. 
+A única maneira pela qual o sistema pode retomar ao seu estado inicial é através 
+de um refrigerador, que requer trabalho do meio e uma transferência de calor para o 
+meio. 
+Como  o  meio  não  retoma  ao  seu  estado  original,  temos  que  o  processo  é 
+irreversível.
+Calor é a energia que é transferida devido a uma diferença de temperatura e esta 
+transferência é um processo irreversível. 
+Questão: como podemos ter um processo de transferência de calor reversível? 
+
+ 
+\newpage
+Um  processo  de  transferência  de  calor  se  aproxima  de  um  processo 
+reversível quando a diferença entre as temperaturas dos dois corpos tende 
+a zero. 
+Um processo de transferência de calor reversível é aquele em que o calor 
+é transferido através de uma diferença infinitesimal de temperatura.
+Para  transferir  uma  quantidade  finita  de  calor  através  de  uma  diferença 
+infinitesimal de temperatura, necessitamos de um tempo infinito, ou de uma 
+área infinita. 
+Os  processos  reais  de  transferência  de  calor  ocorrem  através  de  uma 
+diferença  finita  de  temperatura  e  são  irreversíveis;  quanto  maior  a 
+diferença maior a irreversibilidade. 
+Verificamos, entretanto, que o conceito de transferência de calor reversível 
+é muito útil na descrição dos processos ideais.
+
+ 
+\newpage
+ Mistura de duas substâncias diferentes
+
+Dois gases diferentes estão separados por uma membrana. 
+Admitamos que a membrana se rompa e que uma mistura homogênea de oxigênio 
+e nitrogênio ocupe todo o volume. 
+Esse  processo  pode  ser  considerado  como  um  caso  especial  de  expansão  não 
+resistida pois cada gás sofre uma expansão não resistida ao ocupar todo o volume. 
+É necessária uma determinada quantidade de trabalho para separar esses gases.
+Uma instalação de separação de ar requer o fornecimento de trabalho, para que se 
+obtenha esta separação.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/227.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Outros fatores
+
+Existem outros fatores que tornam os processos irreversíveis. 
+Efeitos  de  histerese  e  a  perda  RI2  encontrados  em  circuitos  elétricos  são  fatores 
+que tornam irreversíveis os processos. 
+Um processo de combustão também é um processo irreversível.
+
+ 
+\newpage
+
+Cada  sistema  é  constituído  por  uma  substância  pura,  a  temperatura  se  mantém  constante 
+durante o processo de transferência de calor.
+Num  deles,  o  calor  é  transferido  de  um  reservatório  a  temperatura  T  +  dT,  e  no  outro,  o 
+reservatório está a uma temperatura T + ΔT. 
+O primeiro é um processo reversível e o segundo é um processo irreversível. 
+Quando se considera somente o sistema, ele passa exatamente através dos mesmos estados 
+nos dois processos. 
+Diz-se que o processo é internamente reversível no segundo caso, porém ele é externamente 
+irreversível porque a irreversibilidade ocorre fora do sistema.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/234.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Existe uma inter-relação geral entre reversibilidade, equilíbrio e tempo. 
+
+Num  processo  reversível,  o  afastamento  do  equilíbrio  é  infinitesimal  e  ele  ocorre 
+com velocidade infinitesimal. 
+
+Os processos reais ocorrem com velocidade finita e o o afastamento do equilíbrio é 
+finito. 
+
+Os processos reais são irreversíveis em determinado grau. 
+
+Quanto  maior  o  afastamento  do  equilíbrio,  maior  é  a  irreversibilidade  e  mais 
+rapidamente ocorre o processo. 
+
+Deve-se observar que o processo quase-estático é um processo reversível, e será 
+usado o termo processo reversível.
+
+ 
+\newpage
+O CICLO DE CARNOT
+
+irreversíveis,  apresentamos  novamente  a  questão 
+
+Tendo definido o processo reversível e considerado alguns fatores que tornam os 
+processos 
+levantada 
+anteriormente:
+Se  o  rendimento  térmico  de  todo  motor  térmico  é  inferior  a  100\%,  qual  é  o 
+ciclo de maior rendimento que podemos ter? 
+
+ 
+\newpage
+O CICLO DE CARNOT
+
+Responde-se  essa  questão  para  um  motor  térmico  que  recebe  calor  de  um 
+reservatório térmico a alta temperatura e rejeita calor para um a baixa temperatura.
+As  temperaturas  dos  reservatórios  térmicos  são  constantes  e  independem  das 
+quantidades de calor transferidas.
+Admite-se  que  esse  motor  térmico,  que  opera  entre  os  dois  dados  reservatórios 
+térmicos, funcione segundo um ciclo no qual todos os processos são reversíveis.
+Se  cada  processo  é  reversível,  o  ciclo  é  também  reversível  e,  se  o  ciclo  for 
+invertido, o motor térmico se transforma num refrigerador. 
+Este  ciclo  é  conhecido  como  o  ciclo  de  Carnot,  em  homenagem  ao  engenheiro 
+francês  Nicolas  Leonard  Sadi  Carnot  (1796-1832)  que  estabeleceu  as  bases  da 
+segunda lei da termodinâmica em 1824. 
+Mostraremos  que  esse  é  o  ciclo  mais  eficiente  que  pode  operar  entre  dois 
+reservatórios térmicos.
+
+ 
+\newpage
+Uma instalação motora que é semelhante a uma instalação a vapor d'água. 
+Admiti-se  que  a  instalação  opera  segundo  um  ciclo  de  Carnot  e  que  o  fluido  de 
+trabalho seja uma substância pura, tal como a água. 
+Calor  é  transferido  do  reservatório  térmico  a  alta  temperatura  para  a  água  no 
+gerador de vapor.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/240.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Para que seja um processo de transferência de calor reversível, a temperatura da 
+água (vapor) é  infinitesimalmente menor do que temperatura do reservatório. 
+A  temperatura  da  água  deve  se  manter  constante,  pois  a  temperatura  do 
+reservatório permanece constante. 
+Portanto,  o  primeiro  processo  do  ciclo  de  Carnot  é  um  processo  isotérmico 
+reversível, no qual calor é transferido do reservatório a alta temperatura para 
+o fluido de trabalho. 
+A  mudança  de  fase,  de  líquido  para  vapor,  numa  substância  pura  e  a  pressão 
+constante, é um processo isotérmico.
+
+ 
+\newpage
+O processo seguinte ocorre na turbina. 
+Esse processo ocorre sem transferência de calor e é portanto adiabático. 
+Como  todos  os  processos  do  ciclo  de  Carnot  são  reversíveis,  esse  deve  ser  um 
+processo  adiabático  reversível,  durante  o  qual  a  temperatura  do  fluido  de 
+trabalho diminui, desde a temperatura do reservatório a alta temperatura até a 
+do reservatório a baixa temperatura.
+
+ 
+\newpage
+No processo seguinte, calor é rejeitado do fluido de trabalho para o reservatório a 
+baixa temperatura. 
+Esse  processo  deve  ser  isotérmico  e  reversível,  no  qual  a  temperatura  do 
+fluido de trabalho é infinitesimalmente maior do que a do reservatório a baixa 
+temperatura.
+Durante esse processo isotérmico, parte do vapor d'água é condensado.
+
+ 
+\newpage
+O processo final, que completa o ciclo, é um processo adiabático reversível, no 
+qual a temperatura do fluido aumenta desde a temperatura do reservatório a 
+baixa temperatura até a temperatura do outro reservatório. 
+Se  esse  processo  for  efetuado  com  água  (vapor),  nós  encontraríamos  uma 
+compressão de uma mistura de líquido com vapor efluente do condensador.
+Na  prática  isto  é  um  inconveniente  e,  portanto,  em  todas  as  instalações  motoras 
+reais, o fluido de trabalho é condensado completamente no condensador.
+Lembre que as bombas operam apenas com a substância na fase líquida. Será?
+
+ 
+\newpage
+Como  o  ciclo  motor  térmico  de  Carnot  é  reversível,  cada  processo  pode  ser 
+invertido e, neste caso, ele se transforma num refrigerador. 
+O refrigerador é mostrado pelas linhas tracejadas e pelos parênteses na Figura.
+A temperatura  do fluido de trabalho no  evaporador é infinitesimalmente menor do 
+que  a  temperatura  do  reservatório  a  baixa  temperatura  e,  no  condensador,  ela  é 
+infinitesimalmente maior do que a do reservatório a alta temperatura.
+
+ 
+\newpage
+Um  ponto  importante,  que  deve  ser  observado,  é  que  o  ciclo  de  Carnot, 
+independentemente  da  substância  de  trabalho,  tem  sempre  os  mesmos  quatro 
+processos básicos. 
+São eles:
+
+1. Um processo isotérmico reversível, no qual calor é transferido para ou 
+do reservatório a  alta temperatura.
+
+2. Um processo adiabático reversível, no qual a temperatura do fluido de 
+trabalho diminui desde a do reservatório a alta temperatura até a do outro 
+reservatório.
+
+3. Um processo isotérmico reversível, no qual calor é transferido para ou 
+do reservatório a baixa temperatura.
+
+4. Um processo adiabático reversível, no qual a temperatura do fluido de 
+trabalho aumenta desde a do reservatório de baixa temperatura até a do 
+outro reservatório.
+
+ 
+\newpage
+DOIS TEOREMAS RELATIVOS AO RENDIMENTO DO CICLO DE CARNOT
+
+Existem  dois  teoremas  importantes  relativos  ao  rendimento  térmico  do  ciclo  de 
+Carnot.
+
+Primeiro teorema.
+
+É  impossível  construir  um  motor  que  opere  entre  dois  reservatórios 
+térmicos dados e que seja mais eficiente que um motor reversível operando entre 
+os mesmos dois reservatórios.
+
+A demonstração desse enunciado envolve uma "experiência mental". 
+Faz-se  uma  hipótese  inicial,  e  então  se  demonstra  que  esta  hipótese  conduz  a 
+conclusões impossíveis. 
+A única conclusão possível é que a hipótese inicial era incorreta.
+
+ 
+\newpage
+Admitamos  que  exista  um  motor  irreversível  operando  entre  dois  reservatórios 
+térmicos  e  que  tenha  um  rendimento  térmico  maior  que  um  motor  reversível 
+operando entre os mesmos dois reservatórios. 
+Seja  QH  o  calor  transferido  ao  motor  irreversível,  Q'L  o  calor  rejeitado  e  WIR  o 
+trabalho (igual a QH – Q’L). 
+Admitamos que o motor reversível opere como um refrigerador (isto é possível, pois 
+ele é reversível). 
+Seja  QL  o  calor  transferido  no  reservatório  a  baixa  temperatura,  QH  o  calor 
+transferido no reservatório de alta temperatura e WR o trabalho necessário (igual a 
+QH – QL).
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/246.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Foi admitido inicialmente que o motor irreversível é mais eficiente, portanto temos que Q'L < QL 
+e WIR > WR (pois QH é o mesmo para os dois ciclos motores). 
+O motor irreversível pode movimentar o motor reversível e ainda produzir o trabalho líquido 
+Wliq (igual a WIR - WR = QL - Q'L ). 
+Se  consideramos  os  dois  motores  e  o  reservatório  a  alta  temperatura  como  o  sistema, 
+teremos um sistema que opera segundo um ciclo que se comunica com um único reservatório 
+e produz uma determinada quantidade de trabalho. 
+Isso  constitui  uma  violação  da  segunda  lei  da  termodinâmica  e  concluímos  que  a  nossa 
+hipótese inicial (que o motor irreversível é mais eficiente que o motor reversível) é incorreta. 
+Não  podemos  ter  um  motor  irreversível  que  apresente  rendimento  térmico  maior  do  que 
+aquele de um motor reversível que opere entre os mesmos reservatórios térmicos.
+
+ 
+\newpage
+Segundo teorema.
+
+Todos  os  motores  que  operam  segundo  o  ciclo  de  Carnot  e  entre  dois 
+
+reservatórios térmicos apresentam o mesmo rendimento térmico.
+
+A  demonstração  desse  teorema  é  similar  à  esboçada  anteriormente  e  envolve  a 
+hipótese de que existe um ciclo de Carnot que é mais eficiente que outro ciclo de 
+Carnot operando entre os mesmos reservatórios térmicos. 
+Façamos  com  que  o  ciclo  de  Carnot  com  a  eficiência  maior  substitua  o  ciclo 
+irreversível  da  demonstração  anterior,  e  o  ciclo  de  Carnot  com  eficiência  menor 
+opere como o refrigerador. 
+A demonstração segue a mesma linha de raciocínio do primeiro teorema. 
+Os detalhes ficam como exercício.
+
+
+
+térmico
+
+
+
+Q
+
+
+
+W
+Q
+
+H
+
+
+H
+Q
+
+H
+
+Q
+
+L
+
+1
+
+
+Q
+Q
+
+L
+
+H
+
+ 
+\newpage
+A ESCALA TERMODINÂMICA DE TEMPERATURA
+
+Na  discussão  anterior  sobre  temperatura  foi  observado  que  a  lei  zero  da 
+termodinâmica  estabelece  uma  base  para  a  medida  de  temperatura,  mas  que  a 
+escala de temperatura deve ser definida em função de uma determinada substância 
+e de um dispositivo termométrico. 
+Seria  desejável  termos  uma  escala  de  temperatura  que  fosse  independente  de 
+qualquer substância particular, a qual poderia ser chamada de escala absoluta de 
+temperatura. 
+Anteriormente verificamos que a eficiência de um ciclo de Carnot é independente da 
+substância  de  trabalho  e  depende  somente  das  temperaturas  dos  reservatórios 
+térmicos. 
+Esse  fato  estabelece  a  base  para  essa  escala  absoluta  de  temperatura,  que 
+chamaremos de escala termodinâmica.
+
+ 
+\newpage
+A  Figura  mostra  três  reservatórios  térmicos  e  três  motores  que  operam  segundo 
+ciclos de Carnot. 
+T1 é a temperatura mais alta, T3 é a temperatura mais baixa e T2 é a intermediária.
+Os motores funcionam do modo indicado entre os vários reservatórios. 
+Q1  é  o  mesmo  para  os  motores  A  e  C  e,  como  estamos  tratando  de  ciclos 
+reversíveis, Q3 é o mesmo para os motores B e C.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/26.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Com T1 > T2 – Pode a eficiência do motor B (Carnot) ser 
+maior ou igual a eficiência do motor C (Carnot)?
+
+ 
+\newpage
+O rendimento térmico do ciclo de Carnot é função somente da temperatura:
+
+
+
+térmico
+
+1
+
+
+L
+
+
+
+1
+
+(
+TT
+H
+L
+
+,
+
+)
+
+Q
+Q
+
+H
+
+Onde Ψ indica uma relação funcional.
+Apliquemos esta relação aos três ciclos de Carnot 
+
+Q
+1
+Q
+2
+
+
+
+(
+TT
+2
+1
+
+,
+
+)
+
+Q
+2
+Q
+3
+
+
+
+(
+TT
+2
+3
+
+,
+
+)
+
+Q
+1
+Q
+3
+
+
+
+(
+TT
+1
+3
+
+,
+
+)
+
+Como
+
+temos
+que
+ 
+
+
+
+
+
+Q
+Q
+Q
+2
+1
+1
+Q
+Q
+Q
+3
+2
+3
+(
+,
+)
+TT
+
+2
+1
+
+(
+TT
+3
+1
+
+,
+
+)
+
+
+
+(
+TT
+2
+3
+
+,
+
+)
+
+Note  que  o  primeiro  membro  é  função  de  T1  e  T3  (e  não  de  T2)  e,  portanto,  o 
+segundo membro dessa equação, também, deve ser função de T1 e T3 (e não de 
+T2). 
+Dessa equação concluímos que a forma da função Ψ  deve ser tal que
+
+
+
+(
+TT
+1
+2
+
+,
+
+)
+
+
+
+
+
+(
+TT
+2
+3
+
+,
+
+)
+
+
+
+(
+Tf
+1
+(
+Tf
+2
+
+)
+)
+
+pois, desse modo f(T2) se cancelará no produto  Ψ(T1, T2 ) X Ψ(T1, T3 ).
+
+(
+Tf
+2
+(
+Tf
+3
+
+)
+)
+
+ 
+\newpage
+Q
+1
+Q
+
+2
+
+
+
+(
+TT
+1
+2
+
+,
+
+)
+
+
+
+(
+Tf
+1
+(
+Tf
+2
+
+)
+)
+
+Portanto, concluímos que
+
+Generalizando,
+
+Q
+H
+Q
+
+L
+
+
+
+(
+Tf
+H
+(
+Tf
+L
+
+)
+)
+
+Existem diversas relações funcionais que satisfazem essa equação.
+Lord  Kelvin  escolheu  a  seguinte  relação  para  escala  termodinâmica  de 
+temperatura
+
+Q
+H
+Q
+
+L
+
+
+
+T
+H
+T
+L
+
+Assim,  utilizando  a  relação  anterior,  o  rendimento  térmico  de  um  ciclo  de  Carnot 
+pode ser expresso em função das temperaturas absolutas.
+T
+1
+
+L
+T
+H
+
+Q
+Q
+
+1
+
+
+térmico
+
+
+
+L
+
+H
+
+ 
+\newpage
+
+
+térmico
+
+1
+
+
+L
+
+1
+
+
+Q
+Q
+
+H
+
+T
+L
+T
+H
+
+Isso significa que se conhecermos o rendimento térmico de um ciclo de Carnot que 
+opera  entre  dois  dados  reservatórios  térmicos  conheceremos,  também,  a  relação 
+entre as temperaturas absolutas dos reservatórios.
+Note que a equação nos fornece uma relação entre temperaturas absolutas, porém 
+não nos informa sobre a grandeza do grau. 
+
+ 
+\newpage
+Admitamos que temos um motor térmico que opera segundo o ciclo de Carnot, que 
+recebe calor a temperatura do ponto de evaporação normal da água e que rejeite 
+calor num reservatório a temperatura do ponto de fusão do gelo. 
+Observe  que  é  impossível  construir  tal  motor  porque  o  ciclo  de  Carnot  envolve 
+somente processos reversíveis. 
+Assim, não é possível executar a experiência proposta mas podemos realizar uma 
+especulação  e  adquirir  algum  conhecimento  sobre  a  escala  termodinâmica  de 
+temperatura. 
+Se o rendimento térmico de tal motor pudesse ser medido, obteríamos o valor de 
+26,80\%. 
+Portanto
+
+térmico
+
+1
+
+
+1
+
+
+
+
+,0
+
+2680
+
+
+
+
+
+,0
+
+7320
+
+T
+L
+T
+H
+
+ do 
+
+T
+fusão
+T
+evap.água
+
+gelo
+
+ do 
+
+T
+fusão
+T
+evap.água
+
+gelo
+
+ 
+\newpage
+Isso nos fornece uma equação envolvendo as duas incógnitas TH e TL 
+A segunda equação provém de uma decisão arbitrária relativa à grandeza do grau 
+na escala termodinâmica de temperatura. 
+Se desejamos ter a grandeza do grau na escala absoluta correspondendo à mesma 
+grandeza do grau na escala Celsius, podemos escrever
+
+
+
+
+
+15,273
+
+K
+
+ do 
+
+gelo
+
+100
+T
+T
+
+evap.água
+fusão
+ do 
+gelo
+duas
+Resolvendo
+ 
+essas
+ 
+equações
+ 
+15,373
+;
+K
+T
+T
+
+evap.água
+fusão
+o
+(
+Assim
+15,273
+)
+CT
+
+
+
+KT
+
+(
+
+)
+
+ 
+\newpage
+Conforme  já  foi  observado,  a  medida  dos  rendimentos  térmicos  dos  ciclos  de 
+Carnot não é, entretanto, uma maneira prática de abordar o problema da medida de 
+temperatura na escala termodinâmica de temperatura. 
+A  abordagem  utilizada  é  baseada  no  termômetro  de  gás  perfeito  e  num  valor 
+atribuído para o ponto triplo da água. 
+Na  Décima  Conferência  de  Pesos  e  Medidas,  realizada  em  1954,  foi  atribuído  o 
+valor de 273,15 K para a temperatura do ponto triplo da água.
+O  ponto  triplo  da  água  é  aproximadamente  0,01  °C  acima  do  ponto  de  fusão  do 
+gelo. 
+O ponto de fusão do gelo é definido como sendo a temperatura de uma mistura de 
+gelo  e  água,  à  pressão  de  1  atm  (101,3  kPa),  e  em  equilíbrio  com  ar  que  está 
+saturado com vapor de água. 
+
+ 
+\newpage
+ESCALA DE TEMPERATURA DE GÁS IDEAL
+
+Essa escala é baseada no seguinte fato: à medida que a pressão de um gás tende 
+a zero, a sua equação de estado tende à equação de estado do gás ideal, ou seja:
+
+Pv = RT
+
+A  temperatura  de  gás  ideal  satisfaz  a  definição  de  temperatura  termodinâmica 
+apresentada.
+
+Um gás ideal pode ser usado para medir a temperatura num termômetro a gás de 
+volume constante. 
+
+ 
+\newpage
+O bulbo de gás é colocado no local onde a temperatura deve ser medida e, então, a 
+coluna de mercúrio é ajustada de maneira que o nível de mercúrio fique na marca 
+de referência A.  Assim, o volume do gás permanece constante. 
+Admite-se que o gás no tubo capilar esteja à mesma temperatura do gás no bulbo. 
+Então, a pressão do gás, correspondente à altura L da coluna de mercúrio, é uma 
+indicação da temperatura.
+ 
+ 
+
+Pv = RT
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/33.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Como referencial de temperatura, pode-se utilizar a temperatura do ponto triplo da 
+água (273,16 K). 
+Desse modo, mede-se a pressão que está associada à temperatura desse ponto e 
+designa-se essa pressão Pp.t . 
+Então, utilizando a definição de gás  ideal, qualquer outra temperatura T pode ser 
+determinada a partir da medida da pressão P por meio da relação:
+
+T
+
+
+
+
+
+16,273
+
+
+
+P
+tpP
+.
+
+
+
+
+
+
+A    escala  de  temperatura  de  gás  perfeito  é  idêntica  a  escala  de  temperatura 
+termodinâmica que foi definida na discussão sobre o ciclo de Carnot e a segunda lei 
+da termodinâmica. 
+
+ 
+\newpage
+Analisando os processos que o correm numa máquina térmica que opera segundo 
+o ciclo de Carnot e que utiliza um gás perfeito como fluido de trabalho:
+
+Os quatro processos que compõe um ciclo de Carnot, e os estados termodinâmicos 
+1, 2, 3 e 4.
+Considerando  que  a  massa  de  gás  contida  na  câmara  seja  unitária,  apenas  para 
+facilitar  a  análise,  o  trabalho  reversível  realizado  no  movimento  de  fronteira  nos 
+quatro processos podem ser calculados:
+
+δw = pdv
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/Capitulo_7/figures/4.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Como  admitimos  que  o  gás  contido  na  câmara  é  perfeito,  temos  que  o 
+comportamento dele é lado por:
+
+pv = RT
+
+A  energia interna pode ser calculada:
+
+du = cv0 dT
+
+Admitindo que as variações  de energia cinética e potencial  sejam desprezíveis, a 
+equação da primeira lei da termodinâmica para uma massa unitária é: 
+
+δq = du + δw
+
+ 
+\newpage
+Utilizando as três primeiras equações, podemos reescrever a equação anterior do 
+seguinte modo:
+
+q
+
+
+dTc
+vo
+
+dv
+
+
+
+RT
+v
+
+Integrando a equação nos quatro processos que compõe o ciclo de Carnot: 
+
+Processo 1-2, transferência de calor isotérmica para o gás contido na câmara – 
+
+q
+
+H
+
+q
+
+21
+
+0
+
+RT
+H
+
+ln
+
+v
+2
+v
+1
+
+Processo 2-3, expansão adiabática – 
+ 
+
+0
+
+T
+cL
+
+0
+v
+T
+
+T
+H
+
+dT
+
+
+
+Processo 3-4, transferência de calor isotérmica – 
+
+vR
+ln
+v
+
+3
+
+2
+
+q
+
+L
+
+
+3
+
+q
+
+4
+
+
+
+0
+
+
+
+RT
+L
+
+ln
+
+v
+4
+v
+3
+
+
+
+RT
+L
+
+ln
+
+v
+3
+v
+
+4
+
+ 
+\newpage
+Processo 4-1, compressão adiabática – 
+ 
+
+Então:
+
+T
+cH
+
+0
+v
+T
+
+T
+L
+
+dT
+
+
+
+vR
+ln
+1
+v
+
+4
+
+
+
+vR
+ln
+v
+
+3
+
+2
+
+0
+
+T
+cH
+
+0
+v
+T
+
+T
+L
+
+dT
+
+
+
+vR
+ln
+1
+v
+
+4
+
+
+
+v
+3
+v
+
+4
+
+v
+2
+v
+1
+
+v
+3
+v
+
+2
+
+v
+4
+v
+1
+
+q
+H
+q
+
+L
+
+
+
+RT
+H
+
+ln
+
+RT
+L
+
+ln
+
+v
+2
+v
+1
+v
+3
+v
+
+4
+
+
+
+T
+H
+T
+L
+
+ 
+\newpage
