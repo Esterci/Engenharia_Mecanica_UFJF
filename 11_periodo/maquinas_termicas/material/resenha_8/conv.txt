@@ -1,0 +1,1538 @@
+Turbinas Hidráulicas – Fluido de trabalho é a água.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/6.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/11.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Turbina a Vapor – Fluido de trabalho é o vapor (água).
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/15.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/19.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/23.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Turbina a Gás – Fluido de trabalho é um gás.
+
+ 
+\newpage
+Em todas as turbinas, o fluido de trabalho aprisionado 
+
+realiza trabalho ao ser libertado.
+
+Nas turbinas  gás, quem é o gás e como ele é aprisionado?
+
+ 
+\newpage
+RR Avon
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/33.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Rolls Royce RB211
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/37.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Sem
+componentes
+alternativos e
+atritantes
+
+Turbinas a Gás
+
+Balanceamento,
+lubrificação e
+confiabilidade
+
+Excelentes para produção de potência mecânica
+
+Hidráulica    Vapor    Gás
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/38.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Para que serve uma Turbina a Gás?
+
+Geração de energia em plataformas de petróleo.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/44.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/45.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Para que serve uma Turbina a Gás?
+
+Termelétricas.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/49.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/50.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Para que serve uma Turbina a Gás?
+
+Aeronáutica
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/54.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/55.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/56.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/57.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Para que serve uma Turbina a Gás?
+
+Outras aplicações
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/61.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/62.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/63.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/64.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Aplicações de turbinas a 
+
+gás
+
+A TG garante confiabilidade e disponibilidade, 
+
+com grande densidade (volume e peso) de 
+
+potência e instalação rápida.
+
+ 
+\newpage
+CICLOS - PADRÃO A AR 
+
+O ciclo de Rankine é o ciclo de potência ideal em que o fluido de trabalho apresenta 
+mudança de fase.
+Outros equipamentos dedicados a produção de trabalho (motores) utilizam um gás 
+como fluido de trabalho.
+O motor automotivo com ignição por centelha, o motor Diesel e a turbina a gás são 
+exemplos.
+Em todos esses motores há uma combustão na qual o fluido de trabalho muda sua 
+composição de ar e combustível para produtos da combustão. 
+Por esta razão, esses motores são chamados de motores de combustão interna. 
+Já  foram  construídos  motores  de  combustão  externa  que  utilizam  um  gás  como 
+fluido de trabalho. Até o momento, eles têm tido uma aplicação muito limitada.
+Os  motores  de  combustão  externa  tem  sido  analisados  e  desenvolvidos  com  o 
+objetivo  de  combater  o  problema  da  poluição  do  ar  e  permitir  a  utilização  de 
+combustíveis não convencionais.
+
+ 
+\newpage
+O motor de combustão interna opera segundo um "ciclo" aberto porque o fluido 
+de trabalho não passa por um ciclo termodinâmico completo .
+Para  analisar  os  motores  de  combustão  interna,  é  vantajoso  conceber  ciclos 
+fechados que se aproximam muito dos ciclos abertos. 
+Um destes ciclos fechados é denominado ciclo-padrão a ar e é baseado nas 
+seguintes hipóteses: 
+1. O fluido de trabalho é uma massa fixa de ar modelado como um gás perfeito. 
+2. O processo de combustão é substituído por um processo de transferência de 
+
+calor de uma fonte externa. 
+
+3. O  ciclo  é  completado  pela  transferência  de  calor  ao  meio  envolvente  (em 
+
+contraste com o processo de exaustão/admissão num motor real). 
+
+ Hipótese adicional de que o ar apresenta calor específico constante. 
+
+4. Todos os processos são internamente reversíveis. 
+5.
+Este modelo permite examinar qualitativamente a influência de várias variáveis 
+no desempenho do ciclo. 
+
+ 
+\newpage
+CICLO PADRÃO A AR BRAYTON 
+
+Heavy 
+Duty 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/77.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CICLO PADRÃO A AR BRAYTON ou CICLO BRAYTON 
+
+Aeroderivativa
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/81.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CICLO BRAYTON 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/85.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CICLO BRAYTON 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/89.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CICLO BRAYTON 
+
+Seja  um  ciclo  composto  por  quatro  processos  que  apresentam  escoamentos  e 
+que  ocorrem  em  regime  permanente.  Dois  destes  processos  são  isobáricos  e 
+dois isoentrópicos.
+
+Denominamos  este  ciclo  de  Rankine  quando  o  fluido  de  trabalho  apresenta 
+mudança  de  fase  nos  processos  que  ocorrem  a  pressão  constante  e  de  ciclo 
+Brayton  quando  o  fluido  de  trabalho  não  apresenta  mudança  de  fase  (o  fluido 
+está sempre na fase vapor).
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/95.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O ciclo-padrão a ar Brayton é o ciclo ideal para a turbina a gás simples. 
+
+A Figura mostra o diagrama esquemático de uma turbina a gás simples, de ciclo 
+aberto, que utiliza um processo de combustão interna e a de uma turbina a gás 
+simples, de ciclo fechado, que utiliza dois processos de transferência de calor.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/99.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Diagramas p-v e T-s para o ciclo-padrão a ar Brayton.
+ 
+
+O rendimento do ciclo-padrão Brayton pode ser determinado do seguinte modo: 
+
+
+
+térmico
+
+1
+
+
+Q
+L
+Q
+H
+
+1
+
+
+(
+Tc
+4
+p
+(
+Tc
+3
+p
+
+T
+1
+T
+2
+
+)
+)
+
+1
+
+
+
+
+
+)1
+)1
+
+4
+
+(
+(
+
+TTT
+1
+1
+TTT
+2
+2
+k
+
+
+3
+
+T
+3
+T
+4
+
+k
+
+1
+
+
+
+
+
+
+
+
+
+T
+2
+T
+1
+
+
+
+
+
+
+
+
+T
+3
+T
+4
+
+
+
+
+
+
+
+
+
+T
+3
+T
+2
+
+
+
+
+
+
+
+
+T
+4
+T
+1
+
+
+
+
+
+T
+4
+T
+1
+
+T
+3
+T
+2
+
+1
+
+1
+
+
+
+k
+
+
+k
+
+1
+
+T
+2
+T
+1
+
+
+
+
+
+
+
+1
+
+pp
+2
+1
+
+)1
+
+k
+
+(
+
+
+
+k
+
+Como
+
+    
+:
+
+
+
+térmico
+
+1
+
+
+p
+2
+p
+1
+T
+1
+T
+2
+
+
+
+
+
+
+p
+3
+p
+
+4
+
+1
+
+
+
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/1.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/104.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+1
+
+
+térmico
+
+T
+1
+T
+2
+
+1
+
+
+1
+
+pp
+2
+1
+
+
+
+(
+
+k
+
+
+
+)1
+
+k
+
+O  rendimento  do  ciclo-padrão  a  ar  Brayton  é  função  da  relação  de  pressão 
+isentrópica.
+O  fato  do  rendimento  aumentar  com  a  relação  de  pressão  torna-se  evidente 
+analisando o diagrama T- s. 
+Aumentando-se a relação de pressão; o ciclo muda de 1-2-3-4-1 para 1-2'-3'-4-1.
+Esse último ciclo tem um fornecimento de calor maior e o mesmo calor rejeitado 
+do ciclo original e, portanto, apresenta um rendimento maior.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/2.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/108.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+1
+
+
+térmico
+
+T
+1
+T
+2
+
+1
+
+
+1
+
+pp
+2
+1
+
+
+
+(
+
+k
+
+
+
+)1
+
+k
+
+O último ciclo opera com uma temperatura máxima maior  (T3’ ) do que o ciclo 
+original (T3 ). 
+Numa turbina a gás real, a temperatura máxima do gás que entra na turbina é 
+fixada por considerações metalúrgicas. Portanto, se fixarmos a temperatura T3 ' 
+e aumentarmos a relação de pressão, o ciclo resultante é 1-2'-3"-4"-1. 
+Esse ciclo teria um rendimento maior do que o ciclo original, mas há mudança do 
+trabalho por quilograma de fluido que escoa no equipamento. 
+
+ 
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/3.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/4.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/117.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+turbina  a  gás  real  difere  do  ciclo 
+
+A 
+ideal  (principalmente):  devido  às 
+irreversibilidades  no  compressor  e  na  turbina;  e  devido  à  perda  de  carga  nas 
+passagens do fluido e na câmara de combustão. 
+Assim os pontos representativos dos estados de uma turbina a gás real, simples 
+e de ciclo aberto, podem ser mostrados na Figura.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/122.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+As  eficiências  do  compressor  e  da  turbina  são  definidas  em  relação  aos 
+processos isentrópicos. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/5.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Outra característica importante do ciclo Brayton é que o compressor utiliza uma 
+grande  quantidade  de  trabalho  na  sua  operação  (em  comparação  ao  trabalho 
+gerado na turbina). A potência utilizada no compressor pode representar de 40 a 
+80 \% da potência desenvolvida na turbina. 
+Isso é importante quando se considera o ciclo real, porque o efeito das perdas é 
+de requerer uma quantidade maior de trabalho no compressor e realizar menor 
+quantidade de trabalho na turbina. 
+O rendimento global diminui com a diminuição das eficiências do compressor e 
+da  turbina.  Se  as  eficiências  caírem  abaixo  de  aproximadamente  60  \%,  será 
+necessário  que 
+turbina  seja  utilizado  no 
+acionamento do compressor e o rendimento global será zero. 
+Isto está em nítido contraste com o ciclo de Rankine, onde é necessário somente 
+1 ou 2 \% do trabalho da turbina para acionar a bomba. A razão disso é que, para 
+um  processo  em  regime  permanente  com  variação  desprezível  de  energias 
+cinética  e  potencial,  o  trabalho  é  igual  a  -∫vdp.  Isto  demonstra  a  vantagem 
+inerente do ciclo que utiliza a condensação do fluido de trabalho, pois o volume 
+específico da fase vapor é muito maior que o da fase líquida.  
+
+trabalho  realizado  na 
+
+todo  o 
+
+ 
+\newpage
+Exemplos 
+Ar entra no compressor, de um ciclo-padrão a ar Brayton (fechado), a 0,1 MPa e 
+15 ºC. A pressão na saída do compressor é de 1,0 MPa e a temperatura máxima 
+no ciclo é 1100 ºC. 
+Determine: 
+1. A pressão e a temperatura em cada ponto do ciclo. 
+2. O trabalho no compressor, o trabalho na turbina e o rendimento do ciclo. 
+________________________________________________________________
+Refazer o exemplo anterior considerando uma eficiência do compressor de 80\% 
+e da turbina de 85\%. A perda de carga entre o compressor e turbina de 15 kPa.
+________________________________________________________________
+Comparações entre os resultados:
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/133.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O  efeito  das  irreversibilidades  é  diminuir  o  trabalho  realizado  na  turbina  e 
+aumentar  o  trabalho  consumido  no  compressor.  Como  o  trabalho  líquido  é  a 
+diferença  entre  esses  dois,  o  seu  valor  diminui  muito  rapidamente  quando  as 
+eficiências do compressor e da turbina diminuem. 
+O desenvolvimento de compressores e turbinas que apresentem eficiências altas 
+é, portanto, um aspecto importante no desenvolvimento das turbinas a gás. 
+No  ciclo  ideal  cerca  de  41  \%  do  trabalho  realizado  na  turbina  é  consumido  no 
+compressor e o trabalho líquido fornecido pelo ciclo é cerca de 59\% do trabalho 
+realizado na turbina. 
+Na turbina real, 60 \% do trabalho realizado na turbina é utilizado no acionamento 
+do compressor e 40 \% é fornecido como trabalho líquido. 
+Se  desejarmos  uma  unidade  com  potência  líquida  de  10.000  kW  serão 
+necessários uma turbina de 25.000 kW e um compressor de 15.000 kW. 
+Uma TG tem um freio motor bastante intenso.
+
+ 
+\newpage
+CICLO SIMPLES DE TURBINA A GÁS COM REGENERADOR 
+
+O rendimento do ciclo de turbina a gás pode ser melhorado pela introdução de 
+um regenerador. 
+A Figura mostra o esquema do ciclo simples de turbina a gás, de ciclo aberto e 
+com regenerador, e os diagramas p-v e T-s correspondentes ao ciclo padrão a ar 
+ideal com regenerador. 
+As  microturbinas,  para  concorrerem  em  rendimento  com  os  motores  Diesel, 
+normalmente funcionam segundo esse ciclo.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/141.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/142.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CICLO SIMPLES DE TURBINA A GÁS COM REGENERADOR 
+
+No ciclo 1-2-x-3-4-y-1 a temperatura do gás de exaustão, que deixa a turbina no estado 4, 
+é maior do que a temperatura do gás que deixa o compressor. 
+Calor pode ser transferido dos gases de descarga da turbina para os gases a alta pressão 
+que deixam o compressor. 
+Usando  um  trocador  de  calor  de  contracorrente,  que  é  conhecido  como  regenerador,  a 
+temperatura  do  gás  a  alta  pressão  que  deixa  o  regenerador,  Tx,  pode  no  caso  ideal  ser 
+igual a T4 que é a temperatura do gás que deixa a turbina.
+Neste caso, a transferência de calor da fonte externa é apenas necessária para aumentar 
+a temperatura de Tx para T3. 
+Esta  transferência  de  calor  é  representada  pela  área  x-3-d-b-x  e  a  área  y-1-a-c-y 
+representa o calor rejeitado. 
+
+ 
+\newpage
+A  influência  da  relação  de  pressão  no  ciclo  simples  de  turbina  a  gás  com 
+regenerador por ser mostrada analisando-se o ciclo 1-2’-3’-4-1. 
+A temperatura do gás que deixa a turbina é exatamente igual a temperatura do 
+gás  que  deixa  o  compressor  e  portanto  não  há  possibilidade  de  se  utilizar  um 
+regenerador. 
+Isto  pode  ser  mostrado,  mais  precisamente  determinando-se  o  rendimento  do 
+ciclo ideal da turbina a gás com regenerador.
+
+ 
+\newpage
+O rendimento do ciclo com regeneração é obtido do seguinte modo:
+
+
+
+
+
+w
+liq
+q
+
+ww
+t
+c
+
+
+q
+
+térmico
+
+ 
+Para  o  regenerador  ideal,  T4  =  Tx  e,  portanto,  qH  =  wt.    Conseqüentemente: 
+
+H
+
+H
+
+H
+
+q
+
+
+
+
+Tc
+3
+p
+
+
+
+
+
+T
+x
+
+
+Tcw
+3
+t
+
+
+
+p
+
+
+
+4
+T
+
+
+
+
+
+
+
+T
+1
+T
+4
+
+
+Tc
+2
+p
+
+Tc
+3
+p
+/)1
+k
+k
+
+
+1
+
+
+
+
+1
+TTT
+
+1
+1
+
+
+1
+TT
+T
+3
+4
+3
+
+2
+
+
+1
+
+
+
+
+térmico
+
+1
+
+
+
+
+térmico
+
+1
+
+
+w
+c
+w
+t
+
+1
+
+
+T
+1
+T
+3
+
+
+
+
+
+p
+2
+p
+1
+
+(
+
+
+
+
+
+(
+
+k
+
+
+
+ppT
+1
+1
+
+1
+T
+3
+
+
+pp
+1
+
+
+
+
+
+2
+
+
+/)1
+
+
+
+/)1
+
+k
+
+(
+
+k
+
+
+
+
+
+2
+
+
+1
+
+k
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/6.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/7.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+1
+
+
+térmico
+
+(
+
+k
+
+
+
+/)1
+
+k
+
+T
+1
+T
+3
+
+
+
+
+
+p
+2
+p
+1
+
+
+
+
+
+Para  o  ciclo  ideal  com  regeneração,  o  rendimento  térmico  depende  não 
+somente  da  relação  de  pressão,  mas  também  da  relação  das  temperaturas 
+máximas e mínimas.
+Em  contraste  com  o  ciclo  Brayton,  o  rendimento  diminui  com  um  aumento  da 
+relação de pressão. 
+A  Figura  mostra  o  gráfico  do  rendimento  térmico,  para  este  ciclo  e 
+T1/T3=0,25 em função da relação de pressão.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/8.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/155.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+A efetividade de um regenerador é a expressão da eficiência do regenerador e 
+pode ser melhor visualizada se nos referirmos à Figura.
+O ponto x representa o estado do gás a alta pressão que deixa o regenerador.
+No regenerador ideal haveria apenas uma diferença de temperatura infinitesimal 
+entre  as  duas  correntes  e  o  gás  a  alta  pressão  deixaria  o  regenerador,  à 
+temperatura Tx’  e Tx’ = T4.
+Um regenerador real deve operar com uma diferença finita de temperatura e a 
+temperatura do gás que deixa o regenerador, Tx, é menor do que Tx’. 
+A eficiência do regenerador é definida por:
+
+
+reg
+
+
+
+h
+x
+h
+x
+
+'
+
+
+
+
+h
+2
+h
+2
+
+c
+
+p
+
+
+
+cte
+
+
+reg
+
+
+
+T
+x
+T
+x
+
+'
+
+
+
+
+T
+2
+T
+2
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/9.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/159.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+É  possível  alcançar  rendimentos  mais  altos  utilizando  regeneradores  com 
+maiores áreas de transferência de calor. 
+Entretanto,  isso  também  aumenta  a  perda  de  carga  no  escoamento  (o  que 
+representa uma perda no ciclo). 
+Assim,  tanto  a  perda  de  carga  como  a  efetividade  do  regenerador  devem  ser 
+consideradas na determinação do regenerador que fornece rendimento térmico 
+máximo para o ciclo. 
+Do ponto de vista econômico, o custo do regenerador deve ser comparado com 
+a economia que pode ser obtida com seu uso. É o estudo de custo-benefício. 
+
+ 
+\newpage
+O CICLO IDEAL DA TURBINA A GÁS, UTILIZANDO COMPRESSÃO EM 
+
+VÁRIOS ESTÁGIOS COM RESFRIAMENTO INTERMEDIÁRIO, 
+EXPANSÃO EM VÁRIOS ESTÁGIOS COM REAQUECIMENTO E 
+
+REGENERADOR
+
+ 
+O  ciclo  Brayton  é  o  ciclo  ideal  para  a  central  de  potência  baseada  na 
+turbina a gás.
+O compressor e a turbina no ciclo ideal são adiabáticas e reversíveis.
+Será visto, no próximo exemplo, o que acontece com o ciclo se trocamos 
+estes dois equipamentos por outros que operam isotérmicamente.
+
+ 
+\newpage
+Exemplo 
+Ar entra no compressor de um ciclo-padrão a ar Brayton (Fechado) a 0,1 
+MPa  e  15ºC.  A  pressão  na  saída  do  compressor  é  de  1,0  MPa  e  a 
+temperatura máxima do ciclo é 1100ºC. Entretanto neste ciclo, a turbina e o 
+compressor  operam  de  modo  reversível  e  isotérmico.  Calcule  o  trabalho 
+consumido  no  compressor  e  o  fornecido  pela  turbina  e  compare  estes 
+resultados com aqueles do exemplo anterior.
+Como  os  processos  são  isotérmicos  reversíveis,  o  trabalho  pode  ser 
+calculado de:
+
+w
+
+vdp
+
+
+
+vp
+ee
+
+ 
+
+p
+p
+e
+Para o compressor:  w= -0,287x288,2xln10=-190,5kJ/kg
+O trabalho consumido no compressor adiabático é -269,5 kJ/kg. 
+Para a turbina:
+w=-0,287x1373,2xln0,1=907,5 kJ/kg 
+O trabalho fornecido pela turbina adiabática é 664,7 kJ/kg. 
+
+RT
+e
+
+p
+p
+
+s
+
+e
+
+
+
+s
+
+e
+
+ln
+
+ln
+
+s
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/10.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Os  resultados  obtidos,  tanto  para  o  compressor  quanto  para  a  turbina, 
+utilizando processos isotérmicos são mais favoráveis que os relativos aos 
+processos adiabáticos. 
+Este  novo  ciclo  ideal,  composto  por  quatro  processos  reversíveis,  dois 
+deles  isobáricos  e  os  outros  dois  isotérmicos,  é  denominado  Ciclo  de 
+Ericsson. 
+Os  motivos  para  que  o  ciclo  de  Brayton  seja  o 
+dos  ciclos  de  turbina  a  gás,  e  não  o  ciclo  de  Ericsson,  são  os  processos 
+que ocorrem na turbina e compressor. 
+Como as vazões de fluido que escoam nestes equipamentos são grandes, 
+existem dificuldades para se transferir as quantidades de calor necessárias 
+para que os processos ocorram de forma isotérmica. Os processos nestes 
+equipamentos  são,  essencialmente,  adiabáticos  como  nas  operações  de 
+compressão e expansão do ciclo de Brayton. 
+
+referencial 
+
+ 
+\newpage
+Existe  uma  modificação  no  ciclo  de  Brayton  que  tende  a  mudar  seu 
+comportamento em direção ao comportamento do ciclo de Ericsson. 
+Esta  modificação  consiste  em  utilizar  múltiplos  estágios  de  compressão, 
+com  resfriamento  intermediário  entre  os  estágios,  e  expansão  em  vários 
+estágios com reaquecimento entre os estágios e um regenerador. 
+A figura mostra um ciclo com dois estágios e compressão e dois estágios 
+de expansão e também o diagrama T-s correspondente. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/175.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Pode-se mostrar que se obtêm o máximo rendimento quando são mantidas 
+iguais as relações de pressão através dos compressores e das turbinas. 
+Admite-se que a temperatura do ar que deixa o resfriador intermediário, T3, 
+seja  igual  a  temperatura  do  ar  que  entra  no  primeiro  estágio  de 
+compressão, T1 , e que a temperatura após o reaquecimento, T8, seja igual 
+à temperatura do gás que entra na primeira turbina, T6.
+Admite-se  ainda  que  a  temperatura  do  ar  a  alta  pressão  que  deixa  o 
+regenerador, T5, seja igual à temperatura ar a baixa pressão que deixa a 
+turbina, T9.
+
+ 
+\newpage
+Se utilizarmos um grande número de estágios de compressão e expansão, 
+é evidente que nos aproximamos do ciclo de Ericsson e isto está mostrado 
+na figura. 
+Nas  aplicações  reais,  o  limite  econômico  para  o  número  de  estágios  é, 
+usualmente, dois ou três. 
+As perdas na turbina e no compressor e as perdas de carga estão sempre 
+presentes em qualquer unidade real que empregue esse ciclo.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/182.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Eficiências isentrópicas = 80\%
+Efetividade regenerador = 80\%
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/186.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O CICLO - PADRÃO A AR PARA PROPULSÃO A JATO
+
+Entr
+
+Neste ciclo, o trabalho efetuado pela turbina é exatamente o suficiente para acionar 
+o  compressor.  O  gases  são  expandidos  na  turbina  até  uma  pressão  tal  que  o 
+trabalho da turbina é exatamente igual ao trabalho consumido no compressor. 
+Na turbina a gás aeronáutica, a  pressão de entrada no compressor é maior que a 
+atmosférica, devido ao impacto do ar com a velocidade de vôo. A entrada de ar é um 
+difusor: energia cinética é transformada em entalpia.
+A pressão de saída da turbina será superior a do meio envolvente e o gás pode ser 
+expandido num bocal até a pressão deste meio. 
+Como os gases saem do bocal a alta velocidade, estes apresentam uma variação de 
+quantidade de movimento e disto resulta um empuxo sobre o avião no qual o motor 
+está instalado. 
+Este ciclo opera de modo similar ao do ciclo de Brayton e a expansão no bocal e 
+modelada como adiabática e reversível.
+Vh
+2
+Tc
+
+e
+4
+p
+2
+
+VTc
+2
+
+
+s
+2
+
+Empuxo
+
+VTc
+2
+
+
+e
+2
+
+ep
+
+
+
+h
+5
+
+V
+2
+s
+2
+
+h
+4
+
+&
+
+&
+
+
+
+e
+
+p
+
+5
+
+h
+1
+
+
+
+Tc
+1
+p
+
+
+
+
+VVm
+e
+
+(
+
+
+
+s
+
+)
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{Equations/11.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/190.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Exemplo 
+Considere  um  ciclo  ideal  de  propulsão  a  jato  no  qual  o  ar  entra  no 
+compressor a 0,1 MPa e 15°C. A pressão de saída do compressor é de 1.0 
+MPa e a temperatura máxima do ciclo é 1100 ºC. O ar expande na turbina 
+até uma pressão tal que o trabalho da turbina é exatamente igual trabalho 
+no  compressor.  Saindo  da  turbina,  o  ar  expande  num  bocal,  adiabática  e 
+reversivelment  até  0,1  MPa.  Determine  a  velocidade  do  ar  na  seção  de 
+descarga do bocal. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/194.png}
+\caption{Caption}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+VEJA DESTUR
+
+ 
+\newpage
