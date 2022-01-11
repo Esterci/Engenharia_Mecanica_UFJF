@@ -168,7 +168,10 @@ class PDF_miner:
 
         import fitz
         import glob
-
+        
+        print('Commencing Figure Extraction')
+        
+        
         # opening pdf file
 
         self.doc = fitz.open(self.folder + "/slide.pdf")
@@ -209,7 +212,7 @@ class PDF_miner:
 
         self.create_fig_form()
 
-        print("\nFill the figures location form and press ENTER")
+        print("\n")
 
         input("Fill th figures location form and press ENTER")
 
@@ -276,8 +279,8 @@ class PDF_miner:
                 figure_call = [
                     '\\begin{figure}[h!]',
                     '\centering',
-                    ('\includegraphics[scale=0.5]{Pictures/' + fig + '.png}'),
-                    '\caption{Caption}',
+                    ('\includegraphics[width=0.8\\textwidth]{Pictures/' + fig + '.png}'),
+                    '\caption*{}',
                     '\label{fig:my_label}',
                     '\end{figure}',
                     '',
@@ -307,7 +310,7 @@ class PDF_miner:
                 figure_call = [
                     '\\begin{figure}[h!]',
                     '\centering',
-                    ('\includegraphics[scale=0.8]{Equations/' + fig + '.png}'),
+                    ('\includegraphics[width=0.6\\textwidth]{Equations/' + fig + '.png}'),
                     '\caption*{}',
                     '\label{fig:my_label}',
                     '\end{figure}',
@@ -388,5 +391,17 @@ parser.add_argument('-f','--folder', action='store',
 
 args = parser.parse_args()
 
-file = args.folder
+folder = args.folder
 
+# initializing class
+
+converter = PDF_miner(folder)
+
+# converting information
+
+converter.convert()
+
+# saving results
+
+
+converter.save()

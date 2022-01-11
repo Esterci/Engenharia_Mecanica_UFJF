@@ -1,0 +1,2181 @@
+MOTORES DE COMBUSTÃO INTERNA
+
+ou melhor
+
+MOTORES A PISTÃO OU MOTORES ALTERNATIVOS 
+
+Dois tipos principais de motores de combustão interna alternativos: motor com 
+ignição por centelha; e o motor com ignição por compressão. 
+No  motor  com  ignição  por  centelha,  uma  mistura  de  combustível  e  ar  é 
+inflamada pela centelha da vela de ignição. 
+No motor com ignição por compressão, o ar é comprimido até uma pressão e 
+temperatura  elevadas,  suficientes  para  que  a  combustão  espontânea  ocorra 
+quando o combustível for injetado. 
+
+ 
+\newpage
+Os  motores  com  ignição  por  centelha  são  vantajosos  para  aplicações  que 
+exijam potência de até cerca de 225 kW (300 HP). 
+Como são relativamente leves e de baixo custo, os motores com ignição por 
+centelha tornam-se particularmente adequados para uso em automóveis. 
+Já os motores com ignição por compressão são normalmente preferidos para 
+aplicações  em  que  se  necessita  de  economia  de  combustível  e  potência 
+relativamente  alta  (caminhões  pesados  e  ônibus,  locomotivas  e  navios, 
+unidades auxiliares de potência).
+
+ 
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/13.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+TERMINOLOGIA
+
+A Figura mostra um esboço de um motor de combustão interna alternativo que 
+consiste  em  um  pistão  que  se  move  dentro  de  um  cilindro  dotado  de  duas 
+válvulas. 
+O esboço apresenta alguns termos especiais. 
+
+O calibre do cilindro é o seu diâmetro.
+ 
+O  curso  é  a  distância  que  o  pistão  se 
+move.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/17.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Diz-se  que  o  pistão  está  no  ponto  morto  superior 
+quando  ele  se  moveu  até  uma  posição  em  que  o 
+volume do cilindro é um mínimo. 
+Esse volume mínimo é conhecido por volume morto.
+Quando o pistão se moveu até a posição de volume 
+máximo  do  cilindro,  ele  se  encontra  no  ponto morto 
+inferior. 
+O volume percorrido pelo pistão quando se move do 
+ponto  morto  superior  ao  ponto  morto  inferior  é  o 
+volume de deslocamento (cilindrada).
+ A taxa de compressão r é definida como o volume 
+no ponto morto inferior dividido pelo volume no ponto 
+morto superior. 
+O  movimento  alternativo  do  pistão  é  convertido  em 
+movimento  de  rotação  por  um  mecanismo  de 
+manivela.
+
+ 
+\newpage
+Vdu: Cilindrada unitária — também conhecida como volume deslocado útil ou deslocamento volumétrico, 
+é o volume deslocado pelo pistão de um ponto morto a outro.
+z: Número de cilindros do motor.
+D: Diâmetro dos cilindros do motor.
+Vd: Volume deslocado do motor, deslocamento volumétrico do motor ou cilindrada total.
+
+Vdu
+
+
+
+VV
+1
+2
+
+2
+
+.
+SD
+
+4
+
+V
+d
+
+
+
+.
+zV
+du
+
+
+
+2
+
+.
+zSD
+
+.
+4
+
+nz
+
+
+º
+
+.
+cilindros
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/1.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/24.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+rv: Relação volumétrica ou taxa de compressão - é a relação entre o volume total 
+(V1) e o volume morto (V2), e representa em quantas vezes V1 é reduzido.
+
+r
+v
+
+r
+v
+
+V
+du
+
+V
+
+1
+V
+2
+VV
+
+1
+2
+V
+V
+
+
+1
+du
+V
+V
+2
+2
+
+V
+2
+
+
+
+V
+du
+V
+2
+
+1
+
+Valor típico de Vdu = 0,5 Litros por cilindro.
+
+rv  de 8 a 12 para motores SI e 12 a 24 para motores CI.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/2.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Taxa de compressão rv - Valores típicos.
+
+MIF
+
+Etanol Hidratado
+
+Gasolina E22
+
+MIE
+
+Diesel
+
+10,0:1 até 14,0:1
+
+8,5:1 até 13,0:1
+
+15,0:1 até 24,0:1
+
+ 
+\newpage
+Um  parâmetro  usado  para  descrever  o  desempenho  de  motores  alternativos  a 
+pistão é a pressão média efetiva, ou pme.
+A pressão média efetiva é a pressão constante teórica que, se atuasse no pistão 
+durante o curso de potência, produziria o mesmo trabalho líquido que é realmente 
+produzido em um ciclo. Ou seja:
+
+pme = ------------------------------------------------
+
+trabalho líquido para um ciclo
+volume de deslocamento
+
+Para dois motores que apresentam o mesmo volume de deslocamento, o de maior 
+pressão  média  efetiva  produziria  o  maior  trabalho  líquido  e,  se  os  motores 
+funcionassem à mesma velocidade, a maior potência.
+
+VER VÍDEOS
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/3.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+MIF - MOTORES DE IGNIÇÃO POR FAÍSCA OU OTTO
+
+Nesses  motores,  a  mistura  combustível-ar  é  admitida,  previamente 
+dosada ou formada no interior dos cilindros quando há injeção direta 
+de  combustível  (GDI)  gasoline  direct  injection,  e  inflamada  por  uma 
+faísca que ocorre entre os eletrodos de uma vela.
+
+Figura 1.8-MIF - Motor de ignição por faísca. [C]
+
+ 
+\newpage
+MIE - MOTORES DE IGNIÇÃO ESPONTÂNEA OU DIESEL
+
+Nesses  motores,  o  pistão  comprime  somente  ar,  até  que  o 
+mesmo atinja uma temperatura suficientemente elevada.
+Quando  o  pistão  aproxima-se  do  PMS,  injeta-se  o  combustível 
+que  reage  espontaneamente  com  o  oxigênio  presente  no  ar 
+quente, sem a necessidade de uma faísca. 
+A  temperatura  do  ar  necessária  para  que  aconteça  a  reação 
+espontânea do combustível denomina-se “temperatura de auto-
+ignição TAI)”.
+Valores típicos de TAI´s (ºC)
+
+Diesel
+
+Etanol Hidratado
+
+Metanol.
+
+Gasolina E22
+
+250
+
+420
+
+478
+
+400
+
+ 
+\newpage
+MOTORES ALTERNATIVOS A QUATRO TEMPOS (4T)
+
+Neste  caso,  o  pistão  percorre quatro cursos, correspondendo a duas voltas da 
+manivela do motor, para que seja completado um ciclo. 
+Os quatro tempos:
+
+                      1oTempo Admissão     2°Tempo Compressão    3°Tempo Expansão     4°Tempo Escape
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/49.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+MÁQUINAS TÉRMICAS 
+
+Tempo de Admissão
+
+O pistão desloca-se do PMS ao PMI. 
+Neste  movimento  o  pistão  dá  origem  a  uma 
+sucção  (depressão)  que  causa  um  fluxo  de 
+gases  através  da  válvula  de  admissão  -  V.A., 
+que se encontra aberta. 
+O cilindro é preenchido com mistura combustível 
+- ar ou somente ar nos motores de injeção direta 
+de combustível (GDI - ignição for faísca) ou nos 
+MIE. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/50.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/56.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Tempo de Compressão
+
+Fecha-se  a  válvula  de  admissão  e  o  pistão  se 
+desloca do PMI ao PMS, comprimindo a mistura ou 
+apenas ar, dependendo respectivamente se o motor 
+é um MIF ou MIE. 
+Neste  segundo  caso  a  compressão  deverá  ser 
+suficientemente  elevada para  que seja  ultrapassada 
+a TAI do combustível.
+
+ 
+\newpage
+Tempo de Expansão
+
+ar 
+
+quente, 
+
+iniciandco-se 
+
+No MIF, nas proximidades do PMS, salta a 
+faísca  que  provoca  a  ignição  da  mistura, 
+enquanto no MIE é injetado o combustível 
+no 
+uma 
+combustão espontânea. 
+A combustão provoca um grande aumento 
+de  pressão,  o  que  permite  "empurrar"  o 
+pistão  para  o  PMI,  de  tal  forma  que  o  FA 
+sofre um processo de expansão. 
+Esse  é  o  processo  que  realiza  o  trabalho 
+positivo (útil) do motor.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/63.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Tempo de Escape
+
+Com a válvula de escape aberta, o pistão 
+desloca-se do PMI ao PMS, "empurrando" 
+os gases queimados para fora do cilindro, 
+para  reiniciar  o  ciclo  pelo 
+tempo  de 
+admissão.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/69.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+MEC 011
+
+^1
+
+Ao um
+
+MÁQUINAS TÉRMICAS 
+
+Diferenças fundamentais entre os motores ciclos Otto e Diesel a 4T
+
+IGNIÇÃO
+
+Nos  MIF  a  ignição  é  provocada  por  uma  faísca,  necessitando  de  um  sistema  elétrico 
+para produzi-la. 
+Nos  motores  ciclo  Diesel  a  combustão  ocorre  por  autoignição,  pelo  contato  do 
+combustível com o ar quente - TAI.
+
+TAXA DE COMPRESSÃO
+
+Nos MIF a taxa de compressão será relativamente baixa para não provocar autoignição, 
+já que o instante apropriado da combustão será comandado pela faísca. 
+Nos  MIE  a  taxa  de  compressão deve  ser  suficientemente  elevada, para ultrapassar  a 
+temperatura de autoignição do combustível – TAI .
+
+Diesel
+
+Etanol Hidratado
+
+Metanol.
+
+Gasolina E22
+
+250
+
+420
+
+478
+
+400
+
+ 
+\newpage
+QUANTO À DISPOSIÇÃO DOS ÓRGÃOS INTERNOS
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/76.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+SISTEMAS DE ARREFECIMENTO
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/80.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+TURBOALIMENTAÇÃO
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/84.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/85.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Motor Wankel
+
+O  motor  Wankel  é  constituído  fundamentalmente  de  um  rotor,  aproximadamente 
+triangular  e  de  um  estator,  cujo  formato  geométrico  é  gerado  pela  posição  dos  três 
+vértices do rotor durante o seu movimento. 
+Apesar de ser considerado um motor rotativo, o rotor sofre movimentos de translação 
+associados à rotação.
+A Figura indica o  movimento  do rotor,  guiado pela engrenagem  central,  evidenciando 
+que o rotor não gira em torno de seu eixo, o que provoca deslocamentos laterais.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/89.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/96.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/97.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ANÁLISE DE AR-PADRÃO ou ANÁLISE DO CICLO PADRÃO AR
+
+Um  estudo  detalhado  do  desempenho  de  um  motor  de  combustão  interna 
+alternativo levaria em conta muitos aspectos: processo de combustão que ocorre 
+dentro  do  cilindro  e  os  efeitos  de  irreversibilidades  associadas  ao  atrito  e  a 
+gradientes de pressão e temperatura.
+A  transferência  de  calor  entre  os  gases  no  cilindro  e  as  paredes  do  cilindro  e  o 
+trabalho  necessário  para  carregar  o  cilindro  e  retirar  os  produtos  da  combustão 
+também seriam considerados. 
+Devido  a  esta  complexidade,  a  modelagem  precisa  de  motores  de  combustão 
+interna alternativos normalmente envolve uma simulação computacional. 
+É  necessária  uma  considerável  simplificação  para  se  conduzirem  análises 
+termodinâmicas elementares de motores de combustão interna. 
+Um procedimento consiste em empregar uma análise de ar-padrão.
+
+VEJA DIESEL-RK
+
+ 
+\newpage
+Elementos de  análise de ar-padrão:
+O  processo  de  combustão  é  substituído  por  uma  transferência  de  calor  de  uma 
+fonte externa.
+Não existem os processos de admissão e descarga como no motor real. 
+O  ciclo  se  completa  com  um  processo  de  transferência  de  calor  a  volume 
+constante enquanto o pistão está no ponto morto inferior.
+Todos os processos são internamente reversíveis.
+Os  calores  específicos  são  considerados  constantes  nos  seus  valores  para 
+temperatura ambiente. 
+Com uma análise de ar-padrão, evitamos lidar com a complexidade do processo de 
+combustão e com a mudança de composição durante a combustão. 
+
+ 
+\newpage
+Embora  uma  análise  de  ar-padrão  simplifique  consideravelmente  o  estudo  dos 
+motores de combustão interna, os valores para a pressão média efetiva e para as 
+temperaturas  e  pressões  de  operação  calculadas  nesta  base  podem  diferir 
+bastante daqueles para os motores reais. 
+Em consequência, a análise de ar-padrão permite que os motores de combustão 
+interna sejam examinados apenas qualitativamente. 
+Ainda  assim,  algumas  noções  sobre  o  desempenho  real  podem  resultar  de  tal 
+procedimento.
+
+ 
+\newpage
+CICLO REAL LEVANTADO POR UM INDICADOR DE PRESSÕES
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/159.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/165.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CICLO-PADRÃO A AR OTTO 
+
+O  ciclo  padrão  a  ar  Otto  é  um  ciclo  ideal  que  se  aproxima  do  motor  de 
+combustão interna de ignição por centelha. 
+Os diagramas p-v e T-s deste ciclo estão mostrados na Figura.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/172.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O  processo  1-2  é  uma  compressão  isoentrópica  do  ar  quando  o  pistão  se 
+move,  do  ponto  morto  do  lado  da  manivela  (inferior)  para  o  ponto  morto  do 
+lado do cabeçote (superior).
+ O calor é então transferido para o ar a volume constante, enquanto o pistão 
+está momentaneamente em repouso no ponto morto superior (num motor real, 
+este processo corresponde à ignição da mistura combustível-ar pela centelha, 
+e à queima subseqüente). 
+O processo 3-4 é uma expansão isoentrópica e o processo 4-1 é o de rejeição 
+de calor do ar, enquanto o pistão está no ponto morto inferior. 
+
+ 
+\newpage
+Considerando calor específico constante:
+
+:
+
+2
+
+;
+
+:
+
+s
+
+r
+
+v
+
+Compressão
+v
+1
+v
+2
+Combustão
+;
+v
+Q
+3
+H
+:
+Expansão
+v
+4
+v
+3
+
+r
+
+v
+
+v
+
+
+s
+
+;
+
+4
+
+2
+
+
+
+térmico
+
+
+
+
+um
+
+
+
+3
+
+
+
+
+
+u
+
+2
+
+
+
+
+umUUWs
+1
+
+
+2
+
+
+
+;
+
+C
+
+1
+
+
+
+2
+
+
+
+u
+1
+
+r
+v
+
+
+
+relação
+
+ de 
+
+compressão
+
+V
+
+4
+V
+3
+
+V
+1
+V
+2
+
+(taxa
+
+ de 
+
+compressão
+
+)
+
+
+
+4
+
+E
+
+;
+
+
+3
+
+UUWs
+3
+
+u
+
+4
+
+um
+
+
+um
+
+
+
+
+
+
+3
+
+3
+
+
+
+um
+2
+u
+
+WW
+C
+
+
+E
+Q
+H
+
+
+um
+
+
+
+3
+
+
+
+u
+
+4
+
+
+
+2
+
+
+
+u
+1
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/4.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/5.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/7.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+
+
+Q
+L
+
+Considerando calor específico constante:
+Q
+L
+Q
+H
+T
+3
+T
+4
+
+Q
+
+H
+Q
+H
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+V
+4
+V
+3
+
+V
+1
+V
+2
+
+T
+2
+T
+1
+
+1
+
+
+térmico
+
+
+
+1
+
+k
+
+k
+
+
+
+1
+
+
+v
+
+
+Tmc
+4
+
+Tmc
+3
+v
+T
+4
+T
+1
+
+
+
+
+
+
+
+T
+1
+T
+2
+
+1
+
+
+T
+1
+T
+2
+
+
+TT
+4
+1
+
+TT
+3
+2
+
+
+1
+
+1
+
+
+
+
+T
+3
+T
+2
+
+
+
+
+1
+
+
+k
+compressão
+
+1
+
+
+ de 
+
+r
+v
+
+r
+v
+
+
+
+
+
+1
+
+
+k
+
+
+
+1
+
+
+
+térmico
+
+1
+
+
+T
+1
+T
+2
+
+1
+
+
+onde
+
+:
+
+r
+v
+
+
+
+relação
+
+V
+
+4
+V
+3
+
+V
+2
+V
+1
+
+ou taxa
+
+ de 
+
+compressão
+
+.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/8.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+
+
+térmico
+
+1
+
+
+T
+1
+T
+2
+
+1
+
+
+1
+
+
+k
+
+
+
+r
+v
+
+
+
+1
+
+
+1
+
+k
+
+
+
+r
+v
+
+
+
+1
+
+O  rendimento  do  ciclo-padrão  Otto  é 
+compressão e o rendimento aumenta com o aumento desta relação. 
+
+função  apenas  da  relação  de 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/9.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/186.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Também  é  verdade,  para  um  motor  real  de  ignição  por  centelha,  que  o 
+rendimento térmico aumenta quando a relação de compressão é aumentada.
+A tendência para a utilização maiores relações de compressão é induzida pelo 
+esforço de se obter maiores rendimentos térmicos. 
+Mas quando se aumenta a relação de compressão, num motor real, ocorre um 
+aumento na tendência para a detonação. Esta detonação é caracterizada por 
+uma  queima do  combustível extremamente  rápida e pela  presença de fortes 
+ondas de pressão no cilindro do motor (que originam as chamadas batidas). 
+Portanto,  a  máxima  relação  de  compressão  que  pode  ser  utilizada  é  aquela 
+onde a detonação é evitada.
+O aumento das relações de compressão através dos anos, nos motores reais, 
+foi  possível  devido  ao  desenvolvimento  de  combustíveis  com  melhores 
+características antidetonantes, por ex., através da adição de chumbo tetraetil.
+Recentemente 
+isentas  de  chumbo  que 
+apresentam boas características detonantes, sem  contaminação atmosférica. 
+
+foram  desenvolvidas  gasolinas 
+
+ 
+\newpage
+
+1
+
+
+t
+
+1
+
+
+k
+
+
+
+r
+v
+
+
+
+
+
+
+
+
+
+r
+v
+
+
+
+k
+
+
+
+1
+
+
+
+1
+
+W
+Tmc
+1
+v
+
+
+
+r
+
+25,1
+
+t
+
+máx
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/193.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Alguns dos pontos importantes nos quais o motor de ignição por centelha de 
+ciclo aberto se afasta do ciclo-padrão são os seguintes:
+-Os  calores  específicos  dos  gases  reais  aumentam  com  o  aumento  de 
+temperatura. 
+-  O  processo  de  combustão  substitui o processo  de  transferência de calor a 
+alta temperatura e a combustão pode ser incompleta. 
+-  Cada  ciclo  mecânico  do  motor  envolve  um  processo  de  alimentação  e  de 
+descarga  e,  devido  à  perdas  de  carga  dos  escoamentos  nas  válvulas,  são 
+necessárias uma certa quantidade de trabalho para alimentar o cilindro com ar 
+e descarregar os produtos da combustão no coletor de escapamento. 
+- Existe uma transferência de calor significativa entre os gases e as paredes 
+do cilindro. 
+-  Existem 
+temperatura. 
+
+irreversibilidades  associadas  aos  gradientes  de  pressão  e 
+
+ 
+\newpage
+Comparação dos Ciclos Reais com os Ciclos Teóricos
+1. O Fluído de trabalho (ou fluido ativo – FA) não é ar puro:
+
+-Mistura de ar, combustível, gases de combustão e umidade.
+-  A  temperaturas  maiores  que  1000  K  ocorrem  dissociações  dos  produtos  de 
+combustão.
+- Os calores específicos dos gases variam com a temperatura.
+São  necessárias  rotinas  computacionais  para  uma  aproximação  maior  dos 
+valores obtidos de cálculos com os valores reais.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/203.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Comparação dos Ciclos Reais com os Ciclos Teóricos
+Não  aparecem  no  ciclo  teórico.  A  área 
+2. Admissão e Escape (A)
+compreendida entre os dois é um trabalho 
+negativo utilizado para a troca do fluido no 
+cilindro - trabalho de "bombeamento" que é 
+englobado  no  trabalho  perdido  por  atrito. 
+Será  maior  quanto  maiores  as  perdas  de 
+carga  nas 
+tubulações  de  admissão  e 
+escape.  Nos  motores  com  controle  de 
+carga  via  restrição  de  fluxo  (borboleta  de 
+acelerador),  essa  área  será  tanto  maior 
+quanto mais fechada estiver a borboleta, já 
+que a perda de carga assim causada fará 
+cair  a  curva  de  admissão  para  uma 
+posição bastante mais abaixo do que a de 
+pressão atmosférica. Dutos de admissão e 
+escape bem projetados, o motor com plena 
+aceleração  deveria  apresentar  essa  área 
+praticamente 
+desprezível. 
+Filtros? 
+Silenciadores? Catalisadores?
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/209.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Comparação dos Ciclos Reais com os Ciclos Teóricos
+3. Perdas de Calor (B)
+
+No  ciclo 
+teórico  os  processos  de 
+compressão e expansão são considerados 
+isentrópicos,  enquanto  no  ciclo  real  as 
+perdas  de  calor  são  sensíveis.  Na 
+compressão a diferença entre a isentrópica 
+e  o  processo  real  não  é  tão  grande,  mas 
+na  expansão,  quando  o  gradiente  de 
+temperatura  entre  o  cilindro  e  o  meio  é 
+muito  grande,  a  troca  de  calor  será  muito 
+grande e, portanto, os dois processos irão 
+se afastar sensivelmente.
+
+ 
+\newpage
+Comparação dos Ciclos Reais com os Ciclos Teóricos
+3. Perdas por tempo finito de combustão (C)
+
+No  ciclo  teórico  a  combustão  é  instantânea. 
+Na prática, a combustão leva um tempo não 
+desprezível  em  relação  à  velocidade  do 
+pistão. A faísca deve ser dada antes do PMS, 
+e a expansão se inicia antes de a combustão 
+alcançar  a  máxima  pressão.  Ao  adiantar  a 
+faísca  perde-se  área  na  parte  inferior  do 
+ciclo,  mas  ganha-se  na  parte  superior  e,  ao 
+atrasar,  acontece  o  contrário  -  a  posição  da 
+faísca  deve  ser  estudada  para  se  obter  o 
+menor perda de áreas e portanto de trabalho. 
+Instante ideal de ignição: balanço de trabalho 
+negativo na compressão e o trabalho positivo 
+na  expansão  seja  o  máximo.  Tal  instante 
+denomina-se MBT, do inglês maximum brake 
+torque  -  ou  seja,  o  avanço  de  ignição  que 
+acarreta  o  maior  torque  possível  para  a 
+condição de operação.
+
+ 
+\newpage
+Comparação dos Ciclos Reais com os Ciclos Teóricos
+4. Perdas pelo tempo finito de abertura da válvula de escape
+
+No  ciclo  teórico,  o  escape  foi  substituído  por 
+uma expansão isocórica, na qual se cedia calor 
+para  um  reservatório  frio.  No  ciclo  real,  na 
+válvula de escape, o tempo para o processo de 
+saída  dos gases sob pressão é  finito, por  isso, 
+deve-se abrir a válvula com certa antecedência. 
+Quanto  mais  adiantada  a  abertura  em  relação 
+ao  PMI,  mais  se  perde  área  na  parte  superior, 
+mas menos área será perdida na parte inferior e 
+vice-versa.  Logo,  o  instante  da  abertura  da 
+válvula  de  escape  visa  otimizar  a  área  nessa 
+região.  É  o  resultado  do  balanço  entre  o 
+trabalho "perdido" no final do curso de expansão 
+e  o  trabalho  necessário  para  se  expulsar  os 
+gases queimados no tempo de escapamento.
+
+ 
+\newpage
+Comparação dos Ciclos Reais com os Ciclos Teóricos
+Perdas totais
+
+Estima-se que o trabalho do ciclo real seja 
+da ordem de 80\% do trabalho realizado no 
+ciclo padrão-ar correspondente.
+
+trabalho  poderia  ser 
+
+Essa  “perda”  de 
+distribuída da seguinte maneira:
+60\% perdas de calor e atrito.
+30\% tempo finito de combustão.
+10\%  tempo  finito  abertura  válvula  escape 
+(D).
+
+ 
+\newpage
+Exemplo
+A relação de compressão num ciclo-padrão a ar Otto é 8. No inicio do curso de 
+compressão,  pressão  é  igual  a  0,1  MPa  e  a  temperatura  é  15  °C.  Sabendo 
+que  a  transferência  de  calor  ao  ar,  por  ciclo,  é  igual  1800  kJ/kg  de  ar, 
+determine: 
+
+1. A pressão e a temperatura no estado final de cada processo do ciclo. 
+2. O rendimento térmico. 
+3. A pressão média efetiva.
+
+ 
+\newpage
+CICLO - PADRÃO A AR DIESEL 
+
+A figura mostra o ciclo-padrão de ar Diesel. 
+Este é o ciclo ideal para o motor Diesel que é também conhecido por motor de 
+ignição por compressão.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/269.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O calor é transferido ao fluido de trabalho a pressão constante. Este processo 
+corresponde a injeção e a queima do combustível no motor Diesel real. 
+Como o gás expande durante transferência de calor e a transferência de calor 
+deve ser apenas o suficiente para manter pressão constante. 
+No  estado  3  a  transferência  de  calor  cessa  e  o  gás  sofre  uma  expansão 
+isoentropica (processo 3-4) até que o pistão atinja o ponto morto inferior.
+A rejeição de calor, como no ciclo-padrão Otto, ocorre a volume constante e 
+com  o  pistão  no  ponto  morto  inferior.  Esta  rejeição  simula  os  processos  de 
+descarga e de admissão do motor real.
+
+ 
+\newpage
+pv
+3
+
+)
+
+
+
+(
+u
+
+2
+
+
+
+pv
+
+2
+
+)
+
+h
+
+3
+
+h
+2
+
+)
+
+
+23
+
+WQ
+23
+
+2
+
+u
+3
+
+
+
+3
+
+
+
+
+pdv
+
+2
+
+
+
+(
+vp
+3
+2
+
+
+
+v
+
+2
+
+)
+
+
+3
+
+(
+u
+
+u
+
+2
+
+)
+
+
+
+(
+vp
+2
+3
+
+
+
+v
+
+2
+
+)
+
+
+4
+
+(
+u
+
+u
+1
+
+)
+
+
+
+(
+u
+
+3
+
+1
+
+
+Q
+41
+Q
+23
+
+1
+
+
+4
+
+u
+h
+3
+
+
+
+
+u
+1
+h
+2
+
+
+
+1
+
+
+
+Tc
+4
+v
+
+Tc
+3
+p
+
+
+
+
+
+
+
+T
+1
+T
+2
+
+1
+
+
+T
+1
+kT
+2
+
+
+TT
+1
+4
+
+TT
+2
+3
+
+
+1
+1
+
+
+
+
+(
+um
+W
+23
+m
+Q
+23
+m
+Q
+41
+m
+
+
+
+
+
+W
+ciclo
+Q
+23
+
+razão
+
+ de 
+
+corte
+
+V
+
+3
+V
+2
+V
+
+3
+V
+2
+V
+
+4
+V
+2
+V
+1
+V
+2
+V
+3
+V
+4
+
+
+
+
+
+
+
+
+
+
+r
+c
+
+T
+3
+
+V
+4
+V
+3
+
+T
+2
+T
+1
+T
+4
+T
+3
+
+T
+2
+
+
+
+Tr
+2
+c
+
+
+
+1
+
+V
+
+1
+V
+2
+
+V
+2
+V
+3
+k
+
+
+
+
+
+
+
+
+
+
+1
+
+k
+
+
+
+V
+2
+V
+3
+
+
+
+r
+r
+c
+
+k
+
+
+
+1
+
+
+
+r
+
+k
+
+
+
+1
+
+r
+c
+r
+
+
+
+
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/10.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/11.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/12.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/13.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+
+
+1
+
+
+1
+k
+
+
+1
+
+r
+
+
+
+
+
+k
+r
+c
+(
+rk
+c
+
+
+
+
+1
+)1
+
+
+
+
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/14.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/280.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+A relação de compressão isoentrópica no ciclo Diesel é maior do que a relação 
+de expansão isoentrópica .
+Para  um  dado  estado  antes  da  compressão  e  uma  dada  relação  de 
+compressão  (isto  é  dados  os  estados  1  e  2),  o  rendimento  do  ciclo  diminui 
+com o aumento da temperatura máxima. 
+Isto  é  evidente  analisando  o  diagrama  T-s  do  ciclo.  As  linhas  de  pressão 
+constante e de volume constante convergem e, aumentando-se a temperatura 
+de 3 para 3’, necessita-se de grande adição de calor (área 3-3'-c-b-3) e ocorre 
+um aumento relativamente pequeno de trabalho (área 3-3’-4’-4-3).
+
+ 
+\newpage
+Considere  o  ciclo  Otto  1-2-3”-4-1  e  o  Diesel  1-2-3-4-1,  que  têm  o  mesmo 
+estado no inicio do curso de compressão, o mesmo deslocamento volumétrico 
+do pistão e a mesma relação e compressão. 
+Pelo  diagrama  T-s,  o  ciclo  Otto  tem  um  rendimento  maior,  entretanto,  na 
+pratica, o motor Diesel pode operar com uma relação de compressão maior do 
+que  o  motor  Otto,  pois  em  num  motor  Otto,  comprime-se  uma  mistura  ar-
+combustivel e a detonação (batida) torna-se um sério problema se for usada 
+uma  alta  relação  de compressão.  Este  problema  não  existe  no  motor  Diesel 
+porque somente o ar é comprimido durante o curso de compressão.
+
+ 
+\newpage
+Uma comparação que pode ser feita é considerar o ciclo  Otto 1-2'-3-4-1 e o 
+ciclo  Diesel  1-2-3-4-1.  A  pressão  e  a  temperatura  máximas  são  as  mesmas 
+para  ambos  os  ciclos,  o  que  significa  que  o  ciclo  Otto  tem  uma  relação  de 
+compressão menor do que o ciclo Diesel. 
+Pelo  diagrama  T-s,  o  ciclo  Diesel  tem  um  rendimento  maior.  As  conclusões 
+tiradas  de  uma  comparação  entre  esses  dois  ciclos  devem  ser  sempre 
+relacionadas às bases em que a comparação é feita.
+
+ 
+\newpage
+O  ciclo  aberto  real  de  ignição  por  compressão  difere  do  ciclo-padrão  a  ar 
+Diesel da mesma maneira que o ciclo aberto de ignição por centelha difere do 
+ciclo-padrão a ar Otto.
+
+ 
+\newpage
+Exemplo
+Um ciclo-padrão de ar Diesel apresenta relação de compressão igual a 18 e o 
+calor transferido ao fluido de trabalho, por ciclo, é 1800 kJ/kg. Sabendo que no 
+início  do  processo  de  compressão,  a  pressão  é  igual  a  0,1  MPa  e  a 
+temperatura é 15 °C, determine:
+1. a pressão e a temperatura em cada ponto do ciclo;
+2. o rendimento térmico;
+3. a pressão média efetiva.
+
+ 
+\newpage
+O CICLO STIRLING
+
+A Figura mostra os diagramas p-v e T-s para este ciclo. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/299.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+No ciclo de Brayton se utilizarmos um infinito número de estágios 
+de compressão e expansão, com resfriamento intermediário, temo 
+as compressão e expansão isotérmicas e aproxima-se do ciclo de 
+Ericsson.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/303.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Calor  é  transferido  ao  fluido  de  trabalho  durante  o  processo  a  volume 
+constante 2-3 e também durante processo de expansão isotérmica 3-4. 
+Calor é transferido do fluido de trabalho (rejeitado do ciclo) durante o processo 
+a volume constante 4-1 e durante o processo de compressão isotérmica 1-2.
+Este  ciclo  é  igual  a  um  ciclo  Otto  onde  os  processos  adiabáticos  são 
+substituídos por processos isotérmicos. 
+
+ 
+\newpage
+Os  motores  baseados  no  ciclo  de  Stirling  tem  sido  desenvolvidos  como  motores  de 
+combustão externa com regeneração. 
+O significado da regeneração pode ser visto na Figura. A transferência de calor para o 
+gás  no  processo  2-3,  correspondente  a  área  2-3-b-a-2,  é  exatamente  igual  a 
+transferência de calor do gás no processo 4-1, correspondente a área 1-4-d-c-1.
+No ciclo ideal, todo o calor transferido ao ciclo, QH, é fornecido no processo de expansão 
+isotérmica  3-4  e  toda  a  rejeição  de  calor,  QL,  ocorre  no  processo  de  compressão 
+isotérmica. Como todas as ransferências de calor ocorrem em processos isotérmicos, a 
+eficiência deste ciclo é igual a eficiência do ciclo de Carnot que opera entre as mesmas 
+temperaturas. 
+As  mesmas  conclusões  podem  ser  obtidas  para  o  ciclo  de  Ericsson,  se  forem 
+adicionados regeneradores no ciclo básico.
+
+ 
+\newpage
+Video
+
+ 
+\newpage
+CICLO - PADRÃO A AR DUAL 
+
+Os diagramas de pressão-volume de motores de combustão interna reais não 
+são bem descritos pelos ciclos Otto e Diesel. 
+Um  ciclo  de  ar-padrão  que  pode  ser  elaborado  para  melhor  aproximar  as 
+variações de pressão é o ciclo de ar-padrão dual. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/316.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Como  nos  ciclos  Otto  e  Diesel,  o  Processo  1-2  é  uma  compressão 
+isoentrópica. 
+Porém, a adição de calor ocorre em dois passos: o Processo 2-3 é uma adição 
+de calor a volume constante; o Processo 3-4 é uma adição de calor a pressão 
+constante. 
+O Processo 3-4 também constitui a primeira parte do curso de potência. 
+A  expansão  isoentrópica  do  estado  4  ao  estado  5  é  o  restante  do  ciclo  de 
+potência. 
+Como  nos  ciclos  Otto  e  Diesel,  o  ciclo  é  completado  por  um  processo  de 
+rejeição de calor a volume constante, o Processo 5-1. 
+
+ 
+\newpage
+
+2
+
+u
+
+u
+1
+
+
+3
+
+u
+
+u
+
+2
+
+
+
+
+vp
+
+4
+
+
+
+
+
+v
+3
+
+
+4
+
+u
+
+u
+
+5
+
+Q
+34
+m
+
+h
+
+4
+
+h
+3
+
+
+5
+
+u
+
+u
+1
+Q
+51
+m
+
+
+1
+
+
+u
+u
+
+2
+
+5
+
+
+
+
+
+
+u
+1
+
+h
+4
+
+
+
+3
+h
+
+
+
+u
+
+3
+
+
+
+W
+12
+m
+Q
+23
+m
+W
+34
+m
+W
+45
+m
+Q
+51
+m
+
+
+
+1
+
+
+Q
+23
+m
+
+Q
+34
+m
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/15.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+1
+r
+
+
+c
+
+1
+
+
+
+
+
+
+
+1
+
+
+
+
+
+
+p
+3
+p
+
+2
+
+
+
+
+
+
+
+1
+
+
+
+
+1
+
+
+V
+
+3
+V
+3
+
+a
+
+b
+
+
+
+
+
+1
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/16.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/327.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/328.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
