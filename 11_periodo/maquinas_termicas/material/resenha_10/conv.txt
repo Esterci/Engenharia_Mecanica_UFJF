@@ -1,0 +1,309 @@
+O CICLO FRIGORÍFICO POR ABSORÇÃO DE AMÔNIA
+
+Os  sistemas  de  refrigeração  por  absorção  de  vapores  são  ciclos  de 
+refrigeração  operados  a  calor,  onde  um  fluido  secundário  ou  absorvente  na 
+fase  líquida  é  responsável  por  absorver  o  fluido  primário  ou  refrigerante,  na 
+forma de vapor. 
+Ciclos de refrigeração operados a calor são assim definidos, porque a energia 
+responsável por operar o ciclo é majoritariamente térmica. 
+Descoberta pelo escocês Nairn em 1777, a refrigeração por absorção tem por 
+"pai"  o  francês  Ferdinand  Carré  (1824-1900),  que  em  1859  patenteou  a 
+primeira  máquina  de  absorção  de  funcionamento  contínuo,  usando  o  par 
+amônia-água. 
+(
+http://pt.wikipedia.org/wiki/Refrigera\%C3\%A7\%C3\%A3o_por_absor\%C3\%A7
+\%C3\%A3o
+)
+
+ 
+\newpage
+Água quente, vapor e gases de combustão, são algumas das fontes de calor 
+utilizadas para operar equipamentos de absorção, cuja energia térmica pode 
+ser obtida a partir dos seguintes meios:
+Aproveitamento de rejeitos de calor;
+Cogeração;
+Energia solar; e
+Queima direta (biomassa, biodiesel, gás natural, biogás).
+
+ 
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/13.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Os sistemas de refrigeração por absorção podem ser classificados segundo os 
+fluidos de trabalho empregados. 
+São três as tecnologias comercialmente consagradas:
+Amônia-água;
+Amônia-água-hidrogênio; e
+Água-brometo de lítio.
+Os  sistemas  de  refrigeração  por  absorção,  utilizando  a  solução  binária 
+amônia-água, passaram a ser empregados comercialmente, a partir de 1859, 
+com o intuito de produzir gêlo. Nesses sistemas, a água faz o papel do fluido 
+secundário,  ou  seja,  é  responsável  por  absorver  os  vapores  de  amônia.  Por 
+utilizarem amônia como refrigerante, cuja temperatura de congelamento é de 
+(-77°C),  tais  sistemas  são  hoje  normalmente  empregados  no  campo  da 
+refrigeração, em grandes instalações industriais, que requeiram temperaturas 
+inferiores a 0°C. Contudo, o uso da solução amônia-água se estendeu, a partir 
+das  décadas  de  1960  e  1970,  para  equipamentos  de  ar  condicionado  de 
+pequeno a médio porte (10 a 90 kW), com condensação a ar, no resfriamento 
+e na calefação de instalações residenciais e comerciais.
+
+ 
+\newpage
+O  sistema  de  refrigeração  por  absorção  utilizando  amônia-água-hidrogênio, 
+também conhecido como sistema por difusão, foi desenvolvido em 1920 pelos 
+suecos Baltazar von Platen e Carl Munters. Tem como base o ciclo amônia-
+água, com a adição de hidrogênio para equalizar a pressão em todo o sistema. 
+Empregado  em  refrigeradores  residenciais  e  veiculares,  o  ciclo  não  possui 
+bomba  de  recirculação  de  solução,  fazendo  com  que  esses  equipamentos 
+sejam extremamente silenciosos. Geladeira a querosene.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/20.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+A utilização da absorção com solução de água-brometo de lítio, se deu a partir 
+de  1946  com  a  disseminação  do  uso  do  condicionamento  do  ar  para 
+resfriamento e calefação de ambientes. Nesse sistema, a água desempenha o 
+papel  do  refrigerante,  enquanto  uma  solução  de  água-brometo  de  lítio  é  o 
+agente  absorvente.  Por  utilizar  água  como  refrigerante,  cuja  temperatura  de 
+congelamento  é  0°C,  sua  utilização  é  restrita  a  aplicações  com  alta 
+temperatura  de  evaporação,  ar  condicionado  por  exemplo.  Atualmente, 
+instalações  centrais  de  ar  condicionado  em  grandes  edifícios,  utilizam 
+equipamentos  de  absorção,  com  condensação  a  água,  fabricados  nas 
+capacidades de 352 a 5.275 kW.
+
+ 
+\newpage
+O CICLO FRIGORÍFICO POR ABSORÇÃO DE AMÓNIA
+
+O ciclo frigorífico por absorção de amônia difere do ciclo por compressão de 
+vapor na maneira pela qual a compressão é efetuada. 
+No  ciclo  de  absorção,  o  vapor  de  amônia  a  baixa  pressão  é  absorvido  pela 
+água e a solução líquida é bombeada a uma pressão superior por uma bomba 
+de líquido. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/30.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O vapor de amônia a baixa pressão, que deixa o evaporador, entra no absorvedor onde 
+é absorvido pela solução fraca de amônia. 
+Esse processo ocorre a uma temperatura levemente acima daquela do meio e deve ser 
+transferido calor ao meio durante esse processo.
+  A  solução  forte  de  amônia  é  então  bombeada  através  de  um  trocador  de  calor  ao 
+gerador (onde são mantidas uma alta pressão e uma alta temperatura).
+Sob  essas  condições,  o  vapor  de  amônia  se  separa  da  solução  em  consequência  da 
+transferência de calor da fonte de alta temperatura. 
+O  vapor  de  amônia  vai  para  o  condensador,  é  condensado,  como  no  sistema  de 
+compressão de vapor, e se dirige para a válvula de expansão e para o evaporador. 
+A solução fraca de amônia retorna ao absorvedor através do trocador de calor.
+
+ 
+\newpage
+A  característica  particular  do  sistema  de  absorção  consiste  em  requerer  um 
+consumo  muito  pequeno  de  trabalho  porque  o  processo  de  bombeamento 
+envolve um líquido.
+Isso  resulta  do  fato  de  que;  para  um  processo  reversível,  em  regime 
+permanente e com variações desprezíveis de energias cinéticas e potencial; o 
+trabalho é igual a -∫vdp e o volume específico do líquido é muito menor que o 
+volume específico do vapor. 
+Por  outro  lado,  deve-se  dispor  de  uma  fonte  térmica  de  temperatura 
+relativamente alta (100 a 200 °C). 
+O equipamento envolvido num sistema de absorção é um tanto maior que num 
+sistema  de  compressão  de  vapor  e  pode  ser  justificado  economicamente 
+apenas nos casos onde é disponível uma fonte térmica adequada e que, de 
+outro modo, seria desperdiçada. 
+Nos anos recentes, tem-se dado maior atenção aos ciclos de absorção devido 
+às fontes alternativas de energia, tais como, por exemplo, as fontes de energia 
+solar ou geotérmica.
+
+ 
+\newpage
+O CICLO - PADRÃO DE REFRIGERAÇÃO A AR
+
+O  ciclo  de  refrigeração  original,  baseado  em  quatro  processos  e  descrito  na 
+Figura, que opera com um fluido de trabalho que não apresenta mudança de 
+fase,  o  trabalho  envolvido  no  processo  de  expansão  isoentrópica  não  será 
+pequeno (o contrário do que ocorre com os ciclos que operam com processos 
+que apresentam mudança de fase). 
+Portanto, no ciclo padrão refrigeração a ar, realiza-se o processo de expansão 
+numa turbina e este ciclo está esquematicamente mostrado na Figura.
+O ciclo de refrigeração é essencialmente o inverso do ciclo Brayton.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/40.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Após  a  compressão  de  1  a  2,  o  ar  é  resfriado  em  consequência  da 
+transferência de calor ao meio envolvente (a temperatura T0).
+O  ar  é  então  expandido,  no  processo  3-4,  até  a  pressão  de  entrada  do 
+compressor e a temperatura cai para T4, no expansor. 
+Calor pode, então, ser transferido ao ar até que se atinja a temperatura T1. 
+O  trabalho,  para  esse  ciclo,  é  representado  pela  área  1-2-3-4-1  e  o  efeito 
+frigorífico é representado pela área 4-1-b-a-4. 
+O coeficiente de eficácia é a relação entre estas duas áreas.
+
+ 
+\newpage
+Uma  versão  aberta  deste  ciclo  tem  sido  utilizada  para  o  resfriamento  de 
+aviões. 
+A Figura mostra um esquema deste ciclo. 
+O ar frio, obtido na seção de descarga da turbina, é soprado diretamente na 
+cabine e assim proporcionando o efeito de resfriamento.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/47.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+E  possível  obter  temperaturas  muito  baixas  se  incorporarmos  trocadores  de  calor 
+contracorrente no ciclo. 
+Procedendo deste modo nós obtemos o ciclo básico utilizado nas usinas de liquefação 
+de  ar  a  baixa  pressão  e  em  outros  dispositivos  de  liquefação  de  fluidos  (tal  como  o 
+aparelho de Collins utilizado para liquefação de hélio). 
+O ciclo ideal é mostrado na Figura.
+A  turbina  opera  a  temperaturas  muito  baixas  e  isto  cria  problemas  significativos  ao 
+projetista destes equipamentos. 
+A  escolha  do  sistema  de  lubrificação  e  dos  materiais  é  fundamental  para  a  operação 
+segura destas turbinas.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/51.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Exemplo 
+Considere o ciclo-padrão a ar de refrigeração simples da Figura. O ar entra no 
+compressor  a 0,1 MPa e -20 °C e o deixa a 0,5 MPa. Sabendo que o ar entra 
+na turbina a 15 °C, determine:
+O coeficiente de eficácia desse ciclo;
+A descarga de ar no compressor para fornecer 1 kW de refrigeração.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/40.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+They are used to achieve very low temperatures for the liquefaction of air and 
+other  gases  and  for  other  specialized  applications  such  as  aircraft  cabin 
+cooling.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/58.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CICLOS COMBINADOS DE POTÊNCIA E DE REFRIGERAÇÃO 
+
+Um  ciclo  combinado,  que  tem  recebido  muita  atenção  ultimamente,  é  o  baseado  na 
+utilização do "calor perdido" na exaustão da turbina a gás do ciclo Brayton (ou de outro 
+motor, como o Diesel) como fonte térmica para um ciclo de potência a vapor d'água ou 
+de outro fluido.
+O ciclo a vapor opera com um ciclo de "bottoming" do ciclo de potência a gás e isto é 
+feito para aproveitar o alto rendimento térmico do ciclo combinado. 
+Uma destas combinações, composta por uma turbina a gás e um ciclo a vapor do tipo 
+Rankine, está mostrada na Figura.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/62.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Nesta combinação, o resfriamento dos gases de exaustão da turbina a gás é a 
+fonte de energia para os processos de transferência de calor com mudança de 
+fase (ebulição) e de superaquecimento do vapor gerado. 
+O projeto destas instalações deve ser feito de modo a evitar o ponto de pinça, 
+ou seja, deve-se evitar que a temperatura dos gases atinja a temperatura de 
+mudança  de  fase  do  vapor  sem  que  se  tenha  transferido  a  quantidade  de 
+energia necessária para que o processo de evaporação esteja completo.
+
+ 
+\newpage
+Outro modo de utilizar o "calor perdido" na exaustão do ciclo Brayton é a instalação de 
+um  ciclo  de  potência  que  opera  com  uma  mistura  de  substâncias  como  fluido  de 
+trabalho. 
+Um exemplo desta aplicação é o ciclo Kalina que utiliza uma mistura água-amônia como 
+fluido de trabalho num ciclo de potência do tipo Rankine. 
+Esta combinação de ciclos pode apresentar eficiências muito altas, pois as diferenças 
+de temperatura entre os dois fluidos podem ser controladas através do projeto criterioso 
+do ciclo combinado.
+
+ 
+\newpage
+Ciclos combinados de refrigeração são utilizados quando a diferença entre as 
+temperaturas do meio e a do espaço refrigerado é grande.
+ A Figura mostra uma combinação que normalmente é chamada de cascata.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/72.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Neste caso apresentado, o refrigerante utilizado no ciclo que rejeita calor para 
+o  ambiente  é  o  R-22  e  a  transferência  de  calor  no  evaporador  deste  ciclo  é 
+devida  a  condensação  do  refrigerante  R-23  que  escoa  no  do  ciclo  de  baixa 
+temperatura. 
+Este  segundo  fluido  de  trabalho  é  utilizado  porque  apresenta  propriedades 
+termodinâmicas adequadas para o funcionamento em baixa temperatura. 
+Como  no  caso  de  combinação  dos  ciclos  de  potência,  a  determinação  dos 
+tipos  de  fluidos  de  trabalho  e  das  características  de  projeto  precisam  ser 
+consideradas cuidadosamente para otimizar o desempenho de cada ciclo.
+
+ 
+\newpage
