@@ -1,0 +1,4286 @@
+ANÁLISE DA EXERGIA
+
+1.Apresentação da Exergia.
+2.Conceituação de Exergia.
+3.Exergia de um Sistema.
+4.Balanço de Exergia de um Sistema.
+5.Balanço da taxa de Exergia para Volumes de Controle.
+6.Eficiência Exergética.
+7.Termoeconomia.
+
+Princípios da Termodinâmica para Engenharia – Moran e Shapiro.
+
+ 
+\newpage
+ANÁLISE DA EXERGIA
+
+1.Apresentação da Exergia.
+2.Conceituação de Exergia.
+3.Exergia de um Sistema.
+4.Balanço de Exergia de um Sistema.
+5.Balanço da taxa de Exergia para Volumes de Controle.
+6.Eficiência Exergética.
+7.Termoeconomia.
+
+ 
+\newpage
+APRESENTAÇÃO DA EXERGIA
+
+Utiliza  os  princípios  de  conservação  da  massa  e  da 
+energia, juntamente com a segunda lei da termodinâmica 
+para o projeto e análise de sistemas térmicos.
+
+Maximiza  a  utilização  de recursos  energéticos  a  partir  da 
+determinação da localização, o tipo e os valores reais de 
+rejeitos e perdas.
+
+ 
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/19.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+A quantidade total de energia do sistema é constante.
+Porém a condição (a) é mais útil que a condição (c).
+O sistema tem um potencial de uso maior na condição (a).
+Na condição (c) o potencial de uso foi desperdiçado.
+Potencial foi destruído por causa da natureza irreversível do processo.
+EXERGIA é a propriedade que quantifica o potencial de uso.
+Energia é conservada e EXERGIA é destruída por meio de irreversibilidades. 
+
+ 
+\newpage
+EXERGIA não somente pode ser destruída por meio de irreversibilidades, mas também 
+pode ser transferida PARA e DE sistemas.
+A  EXERGIA  transferida  de  um  sistema  para  sua  vizinhança  e  que  não  é  utilizada 
+representa uma perda.
+Utiliza-se  melhor  os  recursos  energéticos  reduzindo-se  a  destruição  de  exergia  no 
+interior de sistemas e/ou reduzindo-se as perdas.
+Um  objetivo  na  análise  de  exergia  é  identificar  locais  em  que  ocorrem  destruição  e 
+perdas de exergia e classificá-los em ordem de importância.
+A  atenção  estará  centrada  nos  aspectos  que  oferecem  maiores 
+custo/benefício.
+(a) incorpora valor econômico, ao passo que (c) tem pouco valor. Conclusão: existe uma 
+ligação entre exergia e o valor econômico.
+
+relações 
+
+ 
+\newpage
+ANÁLISE DA EXERGIA
+
+1.Apresentação da Exergia.
+2.Conceituação de Exergia.
+3.Exergia de um Sistema.
+4.Balanço de Exergia de um Sistema.
+5.Balanço da taxa de Exergia para Volumes de Controle.
+6.Eficiência Exergética.
+7.Termoeconomia.
+
+ 
+\newpage
+CONCEITUAÇÃO DE EXERGIA
+
+Observações:
+1. Existe  um  potencial  para  desenvolvimento  de  trabalho  sempre  que  dois 
+
+sistemas em diferentes estados são colocados em contato.
+
+2. Pode-se  desenvolver  trabalho  quando  se  permite  que  dois  sistemas 
+
+atinjam o equilíbrio.
+
+ 
+\newpage
+A figura mostra um sistema global com três elementos: o corpo; o ciclo de potência; e a 
+atmosfera a T0 e p0.
+Se  a  transferência  de  calor  Q  durante  o  resfriamento  for  transmitida  para  o  ciclo  de 
+potência, o trabalho Wc é desenvolvido, enquanto Q0 é descarregado na atmosfera.
+O corpo esfria até T0 e nenhum trabalho a mais pode ser desenvolvido.
+No  equilíbrio,  corpo  e  atmosfera  possuem  energia,  mas  já  não  há  qualquer  potencial 
+para realização de trabalho a partir dos dois, pois não pode ocorrer interação entre eles.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/36.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Trabalho poderia ser desenvolvido se a temperatura inicial do corpo fosse menor que a 
+atmosfera.
+Os sentidos das transferências de calor seriam invertidos.
+Pode-se  desenvolver  trabalho  a  medida  em  que  o  corpo  aquece  em  direção  à 
+atmosfera.
+O trabalho é realizado somente porque o estado inicial do corpo é diferente do estado 
+da atmosfera.
+EXERGIA é o valor teórico máximo de tal trabalho.
+
+ 
+\newpage
+O  trabalho  é  realizado  somente  porque  o  estado  inicial  do  corpo  difere  do  estado  da 
+atmosfera.
+Exergia é o valor máximo de tal trabalho.
+
+ 
+\newpage
+ Ambiente
+
+Para  a  análise  do  conceito  de  exergia,  é  necessário  modelar  a  atmosfera 
+usada no exemplo anterior. 
+O modelo é chamado ambiente de referência da exergia, ou simplesmente 
+ambiente.
+O ambiente é considerado um sistema compressível simples que é grande em 
+extensão e uniforme em temperatura, T0 (25°C ) e pressão,p0 (1 atm). 
+As  propriedades  intensivas  do  ambiente  não  variam  significativamente  como 
+resultado de algum processo e o ambiente é livre de irreversibilidades.
+
+ 
+\newpage
+ Estado Morto
+
+Quando um sistema de interesse está a T0 e p0, e em repouso com relação ao 
+ambiente, dizemos que o sistema está no estado morto. 
+No estado morto não pode haver interação entre o sistema e o ambiente, e 
+desse modo não há potencial para se desenvolver trabalho.
+
+ 
+\newpage
+Definição de Exergia
+
+Exergia  é  o  máximo  trabalho  teórico  possível  de  ser  obtido  a  partir  de  um 
+sistema global, composto por um sistema e o ambiente, conforme este entra 
+em equilíbrio com o ambiente (atinge o estado morto).
+
+ 
+\newpage
+Exergia  (Origem: Wikipédia, a enciclopédia livre).
+Exergia é o trabalho máximo que pode ser obtido através do 
+processo mais adequado de um sistema que se encontre em 
+um  estado  inicial  até  que  atinja  o  estado  final,  caracterizado 
+pelo equilíbrio termodinâmico com o ambiente. Essa grandeza 
+pode ser definida também como potencial máximo de trabalho 
+de  uma  substância  ou  trabalho  mínimo  para  fazer  o  sistema 
+sair do estado morto.
+O termo foi definido por Zoran Rant, chamando de “exergia” a 
+parte  da  energia  disponível  para  produzir  trabalho  útil  e  de 
+“anergia”  a  quantidade  de  energia  não  disponível  para  o 
+mesmo fim. Ao contrário da energia, a exergia não pode ser 
+conservada, já que é destruída por processos irreversíveis em 
+razão do aumento de entropia.
+
+ 
+\newpage
+A  exergia  se  torna  uma  propriedade  de  combinação  entre  o 
+sistema e o ambiente, uma vez definida como o trabalho máximo 
+que  um  sistema  pode  desenvolver  para  chegar  ao  equilíbrio 
+térmico, mecânico e químico com o ambiente. Dessa forma, uma 
+vez que se define o ambiente, a exergia pode ser considerada 
+propriedade do sistema.
+Historicamente, exergia foi o primeiro conceito a começar a ser 
+proposta  na termodinâmica,  quando Carnot afirmou  que  “para 
+transformar  calor  em  energia  cinética,  utiliza-se  uma  máquina 
+térmica, porém esta não é 100\% eficiente na conversão”. A partir 
+de seus trabalhos, a Segunda Lei da Termodinâmica foi definida. 
+Após Carnot, outro físico de grande importância na definição de 
+exergia  foi  Gibbs,  que  conceituou  energia  disponível  como  a 
+propriedade  que  mede  a  capacidade  de  causar  mudanças 
+devido ao desequilíbrio com o ambiente de certa substância.
+
+ 
+\newpage
+ANÁLISE DA EXERGIA
+
+1.Apresentação da Exergia.
+2.Conceituação de Exergia.
+3.Exergia de um Sistema.
+4.Balanço de Exergia de um Sistema.
+5.Balanço da taxa de Exergia para Volumes de Controle.
+6.Eficiência Exergética.
+7.Termoeconomia.
+
+ 
+\newpage
+EXERGIA DE UM SISTEMA
+
+A exergia de um sistema, E, em um estado especificado é dada por:
+
+Ε
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+onde  U,  EC,  EP,  V  e  S  denotam,  respectivamente,  energia  interna,  energia 
+cinética,  energia  potencial,  volume  e  entropia  do  sistema  no  estado 
+especificado.
+U0, V0 e S0 denotam energia interna, volume e entropia, respectivamente, do 
+sistema quando está em estado morto.
+As energias cinética e potencial são avaliadas em relação ao ambiente. Dessa 
+forma, quando está no estado morto, o sistema está em repouso em relação 
+ao ambiente e os valores das energias cinética e potencial são zero.
+A unidade de exergia é a mesma da energia.
+
+ 
+\newpage
+
+
+(
+UU
+
+)
+
+0
+
+
+
+
+
+MÁQUINAS TÉRMICAS 
+VVp
+SST
+0
+0
+0
+
+(
+
+(
+
+)
+
+
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+A  Equação  pode  ser  deduzida  pela  aplicação  dos  balanços  de  energia  e 
+entropia ao sistema global mostrado na Figura.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/78.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+E
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+A exergia é o valor teórico máximo do trabalho Wc que poderia ser alcançado se o sistema 
+entrasse em equilíbrio com o ambiente — sistema entrasse em estado morto.
+O sistema somado ao ambiente forma o sistema completo ou global.
+A fronteira do sistema global está localizada de modo que não haja transferência de energia 
+por transferência de calor através dela: Qc = 0.
+A  fronteira  do  sistema  global  está  localizada  de  forma  que  o  volume  total  permaneça 
+constante, mesmo que os volumes do sistema e do ambiente possam variar. 
+O trabalho Wc é a única transferência de energia através da fronteira do sistema global e está 
+totalmente  disponível  para  levantar  um  peso,  girar  um  eixo  ou  produzir  eletricidade  nas 
+proximidades. 
+
+ 
+\newpage
+E
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+Balanço de Energia. 
+Considere um processo em que o sistema e o ambiente entram em equilíbrio. 
+O balanço de energia para o sistema global é:
+WQE
+
+c
+c
+c
+
+0
+
+
+W
+c
+
+ΔEEc é a variação da energia do sistema global: a soma das variações de energia do sistema e 
+do ambiente. 
+A energia do sistema inicialmente inclui a energia cinética, a energia potencial e a energia 
+interna do sistema. Uma vez que as energias cinética e potencial são avaliadas em relação 
+ao ambiente, a energia do sistema no estado morto é simplesmente sua energia interna U0. 
+Consequentemente, ΔEEc pode ser expresso por: 
+
+(
+EU
+E
+
+
+
+
+U
+
+)
+
+amb
+
+c
+
+
+
+0
+
+ 
+\newpage
+E
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+Balanço de Energia. 
+Ainda que T0 e p0 sejam constantes, as variações da energia interna  Uamb, da entropia Samb e 
+do volume do ambiente estão relacionadas através da Equação: 
+
+E
+
+0
+
+(
+EU
+
+c
+
+)
+
+
+
+U
+
+amb
+
+
+
+)
+
+
+ST
+
+0
+
+amb
+
+
+
+Vp
+
+0
+
+amb
+
+
+
+U
+
+
+amb
+
+ST
+
+0
+
+
+
+Vp
+
+0
+amb
+(
+EU
+
+amb
+E
+
+0
+
+c
+
+E
+
+
+c W
+c
+
+
+
+W
+c
+
+
+
+UE
+
+(
+
+0)
+
+
+
+
+
+ST
+
+0
+
+amb
+
+
+
+Vp
+
+0
+
+amb
+
+
+
+ 
+\newpage
+E
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+Balanço de Energia. 
+O  volume  total  é  constante.  Portanto,  a  variação  de  volume  do  ambiente  é  igual  em 
+magnitude e oposta em sinal à variação de volume do sistema: 
+Vp
+
+0
+
+
+
+W
+c
+
+amb
+
+(
+
+
+
+0)
+UE
+
+Vamb
+
+)
+UE
+
+
+0
+
+
+ST
+
+
+0
+amb
+( 0 VV
+)
+
+
+(
+)
+VVp
+0
+
+
+
+0
+
+W
+c
+
+
+
+(
+
+
+
+
+
+ST
+
+0
+
+amb
+
+
+
+Essa  equação fornece  o trabalho  para  o sistema global à  medida que o sistema  passa ao 
+estado morto. 
+O trabalho teórico máximo é determinado utilizando-se o balanço de entropia como se segue.
+
+ 
+\newpage
+E
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+Balanço de Entropia. 
+O balanço de entropia para o sistema global reduz-se a:
+
+cS 
+c
+
+O  termo  da  transferência  de  entropia  é  omitido  porque  nenhuma  transferência  de  calor 
+atravessa a fronteira do sistema global. 
+O termo σc leva em conta a produção de entropia devido às irreversibilidades à medida que o 
+sistema entra em equilíbrio com o ambiente. 
+
+ 
+\newpage
+E
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+Balanço de Entropia. 
+A  variação  da  entropia  ΔESc  é  o  somatório  das  variações  de  entropia  do  sistema  e  do 
+ambiente, respectivamente. Isso é:
+
+ΔESc = (S0 - S) + ΔEsamb
+
+onde  S  e  S0  denotam  a  entropia  do  sistema  em  um  dado  estado  e  no  estado  morto, 
+respectivamente. 
+Combinando as duas últimas equações, temos: 
+
+(S0 - S) + ΔSamb = σc 
+
+ 
+\newpage
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+E
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+(S0 - S) + ΔSamb = σc 
+
+W
+c
+
+
+
+UE
+
+(
+
+)
+
+
+
+0
+
+VVp
+0
+
+(
+
+
+
+0
+
+)
+
+
+
+
+
+ST
+
+0
+
+amb
+
+
+
+W
+c
+
+
+
+UE
+
+(
+
+)
+
+
+
+0
+
+VVp
+0
+
+(
+
+
+
+0
+
+)
+
+
+
+
+
+SST
+0
+
+
+
+
+
+
+
+0
+
+T
+0
+c
+
+UUW
+
+
+
+(
+
+c
+
+)
+
+
+
+0
+
+VVp
+0
+
+(
+
+
+
+0
+
+)
+
+
+
+
+
+SST
+0
+
+
+
+
+
+0
+
+
+
+EC
+
+
+
+EP
+
+
+
+T
+0
+c
+
+ 
+\newpage
+E
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+UUW
+
+
+
+(
+
+c
+
+)
+
+
+
+0
+
+VVp
+0
+
+(
+
+
+
+0
+
+)
+
+
+
+
+
+SST
+0
+
+
+
+
+
+0
+
+
+
+EC
+
+
+
+EP
+
+
+
+T
+0
+c
+
+O  valor  do  termo  sublinhado  é  determinado  pelos  dois  estados  extremos  do  sistema  -  o 
+estado dado e o estado morto - e é independente dos detalhes do processo que liga esses 
+estados.
+O valor do termo T0σc depende da natureza do processo à medida que o sistema evolui para 
+o estado morto.
+De acordo com a segunda lei, T0σc é positivo quando irreversibilidades estão presentes e se 
+anula quando não há ocorrência da irreversibilidades. 
+O valor do termo T0σc não pode ser negativo. 
+Por isso, o valor teórico máximo para o trabalho do sistema global Wc é obtido fazendo-se 
+T0σc igual a zero. 
+Por definição, esse valor máximo é a exergia, E.
+
+ 
+\newpage
+E
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+Aspectos da Exergia
+
+1. Exergia é uma medida do desvio do estado de um sistema quando comparado 
+ao do ambiente. 
+É, portanto, um atributo do sistema e do ambiente em conjunto. 
+Uma vez que o ambiente é especificado, pode-se  atribuir um valor à exergia em 
+termos de valores de propriedades apenas do sistema, e então a exergia pode ser 
+considerada uma propriedade do sistema. 
+Exergia é uma propriedade extensiva.
+
+ 
+\newpage
+E
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+Aspectos da Exergia
+
+2. O valor da exergia não pode ser negativo. 
+Se  um  sistema  estiver  em  qualquer  estado  diferente  do  estado  morto,  este  será 
+capaz de mudar sua condição espontaneamente na direção do estado morto; essa 
+tendência irá cessar quando o estado morto for alcançado. 
+Nenhum trabalho deve ser feito para causar essa variação espontânea. 
+Em  consequência,  qualquer  mudança  no  estado  de  um  sistema  em  direção  ao 
+estado  morto  deve  ser  realizada  com  pelo  menos  zero 
+trabalho  sendo 
+desenvolvido e, desse modo, o trabalho máximo (exergia) não pode ser negativo.
+
+ 
+\newpage
+E
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+Aspectos da Exergia
+
+3. A exergia não é conservada, mas pode ser destruída pelas irreversibilidades.
+Um  caso-limite ocorre  quando  a exergia  é  completamente destruída, o que  pode 
+acontecer se um sistema for submetido a uma variação espontânea até o estado 
+morto sem possibilidade de obtenção de trabalho. 
+O  potencial  para  o  desenvolvimento  de  trabalho  que  existia  originalmente  será 
+completamente desperdiçado nesse processo espontâneo.
+
+ 
+\newpage
+E
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+Aspectos da Exergia
+
+4. A exergia até agora tem sido vista como o trabalho teórico máximo possível de 
+ser  obtido  de  um  sistema  global,  constituído  de  um  sistema  mais  o  ambiente  à 
+medida que o sistema passa de um dado estado para o estado morto. 
+Como  alternativa,  a  exergia  pode  ser  considerada  o  módulo  do  valor  teórico 
+mínimo  de  fornecimento  de  trabalho  necessário  para  levar  o  sistema  do  estado 
+morto para um dado estado.
+Usando  os  balanços  de  energia  e  entropia  já  vistos,  podemos  facilmente 
+desenvolver a Equação a partir desse ponto de vista. 
+
+ 
+\newpage
+E
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+Aspectos da Exergia
+
+5.  Quando  um  sistema  está  no  estado  morto,  ele  está  em  equilíbrio  térmico  e 
+mecânico com o ambiente, e sua exergia tem valor zero. 
+Mais precisamente, a contribuição termomecânica para a exergia é zero. 
+Este  termo  distingue  o  conceito  de  exergia  termomecânica  de  uma  outra 
+contribuição para a exergia, onde se permite que os conteúdos de um sistema no 
+estado  morto  entrem  em  reação  química  com  os  componentes  do  ambiente  e 
+então se desenvolva um trabalho adicional. 
+Esta contribuição para a exergia é chamada exergia química. 
+Apesar de o conceito de exergia química ser importante na análise da segunda lei 
+de sistemas que envolvam misturas reagentes, incluindo combustão, o conceito de 
+exergia termomecânica satisfaz uma ampla gama de avaliações termodinâmicas.
+
+ 
+\newpage
+E
+
+
+
+(
+UU
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+Expressando  a  Exergia  em  termos  de  unidade  de  massa,  temos  para  a  exergia 
+específica, e:
+
+Exergia Específica
+
+e = (u - u0) + p0(v - v0) - T0(s – s0) + V2/2 + gz
+
+u, v, s, V2/2 e gz são a energia interna específica, o volume, a entropia, a energia 
+cinética e a energia potencial, respectivamente, no estado de interesse; 
+u0, v0 e s0 são propriedades específicas no estado morto.
+
+ 
+\newpage
+E
+
+)
+
+
+
+0
+
+
+
+
+
+(
+UU
+
+e = (u - u0) + p0(v - v0) - T0(s – s0) + V2/2 + gz
+
+VVp
+0
+0
+
+EC
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+)
+
+
+
+(
+
+0
+
+EP
+
+A exergia específica em um estado determinado requer propriedades nesse estado 
+e no estado morto.
+POR EXEMPLO... a Equação será usada para se determinar a exergia específica 
+do vapor d'água saturado a 120°C, com uma velocidade de 30 m/s e a uma altura 
+de 6 m, cada qual relativa a um ambiente de referência de exergia, onde T0 = 298 
+K (25°C),p0 = 1 atm e g = 9,8 m/s2. 
+Para a água como vapor saturado a 120°C, a Tabela fornece v = 0,8919 m3/kg, u = 
+2529,3 kJ/kg, s = 7,1296 kJ/kgK. 
+No estado morto, em que T0 = 298 K (25°C) e p0 = 1 atm, a água é um líquido. 
+Desta forma, v0 = 1,0029 X 10-3 m3/kg, u0 = 104,88 kJ/kg, s0 = 0,3674 kJ/kgK.
+
+Resposta: e = 500 kJ/kg
+
+ 
+\newpage
+e = (u - u0) + p0(v - v0) - T0(s – s0) + V2/2 + gz
+
+Um  cilindro  de  um  motor  de  combustão  interna  contém  2450  cm3  de  produtos  gasosos  de 
+combustão a uma pressão de 7 bar e a uma temperatura de 867°C, pouco antes da abertura 
+da válvula de descarga. 
+Determine a exergia específica do gás, em kJ/kg. 
+Ignore os efeitos de movimento e gravidade,e modele os produtos da combustão como ar na 
+situação de gás ideal.
+Admita T0 = 300 K (27°C) e p0 = 1,013 bar.
+
+s
+
+c
+
+v
+
+s
+0
+
+ln
+
+T
+T
+0
+
+
+
+R
+
+ln
+
+v
+v
+0
+
+s
+
+c
+
+
+s
+
+0
+
+ln
+
+p
+
+T
+T
+0
+
+
+
+R
+
+ln
+
+p
+p
+0
+
+e = (666,28 + (-38,75) - 258,62) kJ/kg = 368,91 kJ/kg 
+
+Se  os  gases  forem  descarregados  diretamente  nas  vizinhanças,  o  potencial  para  o 
+desenvolvimento de trabalho quantificado pelo valor da exergia determinado na solução será 
+desperdiçado. 
+Entretanto, expelindo-se os gases para uma turbina, pode-se produzir algum trabalho. Este 
+princípio  é  utilizado  pelos  turboalimentadores  adicionados  a  alguns  motores  de  combustão 
+interna.
+
+ 
+\newpage
+UUE
+
+
+
+(
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+Variação de Exergia
+
+Um sistema em um dado estado pode alcançar novos estados de várias maneiras, 
+inclusive por interações de trabalho e calor com a vizinhança. 
+O  valor  da  exergia  associado  a  um  novo  estado  geralmente  difere  do  valor  da 
+exergia do estado inicial. 
+Utilizando  a  Equação  podemos  determinar  a  variação  de  exergia  entre  dois 
+estados. 
+No estado inicial, 
+
+S
+
+0
+
+)
+
+
+
+EC
+1
+
+
+
+EP
+1
+
+(
+ST
+0
+1
+
+
+
+E
+1
+
+
+1
+
+(
+UU
+
+0
+
+)
+
+
+
+VVp
+0
+0
+
+(
+
+
+
+1
+
+)
+
+
+
+No estado final,
+
+E
+
+2
+
+
+2
+
+(
+UU
+
+0
+
+)
+
+
+
+VVp
+0
+0
+
+(
+
+
+
+2
+
+)
+
+
+
+(
+ST
+0
+
+2
+
+
+
+S
+
+0
+
+)
+
+
+
+EC
+
+2
+
+
+
+EP
+2
+
+Subtraindo esses termos obtemos a variação de exergia
+
+E
+
+2
+
+
+2
+
+(
+UU
+
+E
+1
+
+)
+
+
+
+1
+
+VVp
+0
+1
+
+(
+
+
+
+2
+
+)
+
+
+
+(
+ST
+0
+
+2
+
+
+
+S
+1
+
+)
+
+
+
+(
+
+EC
+
+2
+
+
+
+EC
+1
+
+)
+
+
+
+(
+
+EP
+2
+
+
+
+EP
+1
+
+)
+
+ 
+\newpage
+UUE
+
+
+
+(
+
+)
+
+
+
+0
+
+VVp
+0
+0
+
+(
+
+
+
+)
+
+
+
+SST
+0
+
+(
+
+
+
+)
+
+
+
+EC
+
+
+
+EP
+
+0
+
+Variação de Exergia
+
+A  variação  de  exergia  pode  ser  ilustrada  pela  Figura  que  mostra  a  superfície  exergia-
+temperatura-pressão para um gás junto com um contorno de exergia constante projetado nas 
+coordenadas temperatura-pressão. 
+Para  um  sistema  sujeito  ao  Processo  A,  a  exergia  aumenta  à  medida  que  o  estado  se 
+distancia do estado morto (de 1 para 2). 
+No Processo B, a exergia diminui à medida que o estado se aproxima do estado morto (de 1' 
+para 2').
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/127.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ANÁLISE DA EXERGIA
+
+1.Apresentação da Exergia.
+2.Conceituação de Exergia.
+3.Exergia de um Sistema.
+4.Balanço de Exergia de um Sistema.
+5.Balanço da taxa de Exergia para Volumes de Controle.
+6.Eficiência Exergética.
+7.Termoeconomia.
+
+ 
+\newpage
+BALANÇO DE EXERGIA PARA UM SISTEMA
+
+Assim como a energia, a exergia pode ser transferida através da fronteira de um 
+sistema. 
+A variação de exergia de um sistema durante um processo não é necessariamente 
+igual  à  exergia  líquida  transferida,  porque  a  exergia  pode  ser  destruída  se 
+estiverem presentes irreversibilidades no sistema durante o processo. 
+Os  conceitos  de  variação  de  exergia,  transferência  de  exergia  e  destruição  de 
+exergia estão relacionados com o balanço de exergia para um sistema. 
+O conceito de balanço de exergia será depois estendido para volumes de controle.
+Os  balanços  de  exergia  são  expressões  da  segunda  lei  da  termodinâmica  e 
+fornecem a base para a análise de exergia.
+
+ 
+\newpage
+Apresentação de Balanço de Exergia para um Sistema
+
+O balanço de exergia para um sistema é dado por:
+
+E
+
+2
+
+
+
+E
+1
+
+Variação
+          
+Exergia
+    
+
+2
+
+
+
+
+
+
+
+          
+
+1
+
+0
+
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+T
+
+VVpWQ
+
+0
+1
+T
+
+b
+Transferên
+       
+Exergia
+
+cia
+      
+
+          
+
+2
+
+
+
+
+
+
+
+T
+
+0
+
+          
+
+          
+Destruição
+  
+  
+Exergia
+   
+
+Para os estados finais especificados e os valores de p0 e T0 dados, a variação de 
+exergia E2-E1  pode ser avaliada por:
+(
+
+(
+UU
+
+EC
+
+
+2
+
+E
+1
+
+(
+ST
+0
+
+VVp
+0
+1
+
+
+
+EC
+1
+
+EP
+2
+
+EP
+1
+
+S
+1
+
+E
+
+
+
+
+
+
+
+(
+
+)
+
+)
+
+)
+
+
+
+
+
+2
+
+
+
+2
+
+)
+
+)
+
+(
+
+
+
+1
+
+2
+
+2
+
+Os termos sublinhados no lado direito dependem da natureza do processo. 
+Esses termos são interpretados mais adiante.
+
+ 
+\newpage
+Desenvolvimento do Balanço de Exergia
+
+O balanço de exergia para um sistema é desenvolvido combinando-se os balanços 
+de energia e entropia para o sistema. 
+As formulações dos balanços de energia e entropia são:
+
+2
+
+
+
+
+WQ
+
+
+
+1
+
+U
+
+
+EC
+
+
+
+
+
+
+EP
+
+
+
+S
+
+
+
+2
+
+
+Q
+
+
+
+bT
+
+
+1
+
+
+
+Onde W e Q representam,respectivamente, trabalho e transferência de calor entre 
+o sistema e a vizinhança. 
+No balanço de entropia, Tb denota a temperatura nas fronteiras do sistema onde 
+δQ ocorre. 
+O  termo  σ  leva  em  conta  a  entropia  produzida  dentro  do  sistema  pelas 
+irreversibilidades internas.
+
+ 
+\newpage
+Desenvolvimento do Balanço de Exergia
+
+Multiplicando o balanço de entropia pela temperatura T0  e subtraindo a expressão 
+resultante do balanço de energia obtém-se:
+
+
+
+U
+
+
+EC
+
+
+
+EP
+
+
+
+ST
+0
+
+
+
+
+
+
+2
+
+
+
+
+TQ
+
+0
+
+
+1
+
+
+
+
+
+2
+
+Q
+
+
+T
+
+1
+
+
+
+
+
+b
+
+TW
+
+0
+
+
+
+Reunindo os termos que envolvem δQ no lado direito e introduzindo a  equação
+EP
+1
+
+EC
+1
+
+EP
+2
+
+
+
+(
+
+)
+
+
+
+
+
+2
+
+)
+
+)
+(
+E
+UU
+E
+
+
+
+1
+2
+1
+)
+(
+U
+EP
+EC
+
+
+2
+
+)
+VVp
+0
+1
+2
+(
+ST
+E
+0
+
+(
+
+
+
+(
+ST
+0
+2
+)
+E
+
+1
+
+)
+
+(
+S
+
+
+1
+(
+VVp
+
+0
+1
+
+EC
+)
+
+2
+
+
+2
+
+no lado esquerdo, tem-se:
+
+
+E
+
+
+
+
+
+E
+1
+
+2
+
+
+
+E
+
+2
+
+
+
+E
+1
+
+Variação
+          
+Exergia
+    
+
+
+
+
+
+
+
+TWQ
+
+
+
+0
+
+
+
+
+
+
+
+
+T
+
+0
+
+VVp
+0
+1
+
+(
+
+
+
+2
+
+)
+
+
+
+
+
+
+
+2
+
+
+
+
+
+
+1
+
+1
+
+
+
+T
+0
+T
+b
+
+2
+
+
+
+
+
+
+
+          
+
+1
+
+1
+
+0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+T
+
+VVpWQ
+
+0
+1
+T
+
+b
+Transferên
+       
+Exergia
+
+cia
+      
+
+          
+
+2
+
+          
+
+          
+Destruição
+  
+  
+Exergia
+   
+
+ 
+\newpage
+E
+
+2
+
+
+
+E
+1
+
+Variação
+          
+Exergia
+    
+
+1
+
+2
+
+
+
+
+
+
+
+          
+
+1
+
+
+
+0
+
+
+
+
+
+
+
+
+
+
+
+
+T
+
+VVpWQ
+
+0
+1
+T
+
+b
+Transferên
+       
+Exergia
+
+cia
+      
+
+          
+
+
+
+
+
+
+
+T
+
+0
+
+2
+
+          
+
+          
+Destruição
+  
+  
+Exergia
+   
+
+O  primeiro  termo  sublinhado  no  lado  direito  da  Equação  está  associado  à 
+transferência de calor de ou para o sistema durante o processo. 
+Pode ser interpretado como a transferência de exergia associada ao calor.
+
+E
+
+q
+
+
+
+
+
+
+
+Variação
+associada
+
+ de 
+ ao 
+
+exergia
+calor
+
+2
+
+
+1
+
+
+
+
+
+
+
+
+1
+
+T
+0
+T
+b
+
+
+
+Q
+
+
+
+ 
+\newpage
+E
+
+2
+
+
+
+E
+1
+
+Variação
+          
+Exergia
+    
+
+2
+
+
+
+
+
+
+
+          
+
+1
+
+0
+
+2
+
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+T
+
+VVpWQ
+
+0
+1
+T
+
+b
+Transferên
+       
+Exergia
+
+cia
+      
+
+          
+
+
+
+
+
+
+
+T
+
+0
+
+          
+
+          
+Destruição
+  
+  
+Exergia
+   
+
+O  segundo  termo  sublinhado  no  lado  direito  da  Equação  está  associado  ao 
+trabalho. 
+Pode ser interpretado como a transferência de exergia associada ao trabalho.
+
+EW
+
+
+
+
+
+
+
+Variação
+associada
+
+ de 
+ao 
+
+exergia
+
+
+ trabalho
+
+
+
+
+1
+
+VVpW
+
+
+
+
+
+2
+
+0
+
+ 
+\newpage
+E
+
+2
+
+
+
+E
+1
+
+Variação
+          
+Exergia
+    
+
+1
+
+2
+
+
+
+
+
+
+
+          
+
+1
+
+0
+
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+T
+
+VVpWQ
+
+0
+1
+T
+
+b
+Transferên
+       
+Exergia
+
+cia
+      
+
+          
+
+
+
+
+
+
+
+T
+
+0
+
+          
+
+          
+Destruição
+  
+  
+Exergia
+   
+
+O  terceiro  termo  sublinhado  no  lado  direito  da  Equação  leva  em  conta  a 
+destruição de exergia (Ed) em virtude das irreversibilidades no interior do sistema.
+
+Portanto:
+
+Ed 
+
+0T
+
+2
+
+
+
+E
+1
+
+E
+Variação
+          
+Exergia
+    
+
+q
+
+
+
+E
+
+E
+
+w
+Transferên
+ 
+Exergia
+
+cia
+          
+
+
+          
+         
+
+E
+
+d
+
+  
+Destruição
+Exergia
+   
+
+ 
+\newpage
+E
+
+q
+
+
+
+
+
+
+
+Variação
+associada
+
+ de 
+ ao 
+
+exergia
+calor
+
+2
+
+
+1
+
+
+
+
+
+
+
+
+1
+
+T
+0
+T
+b
+
+
+
+Q
+
+
+
+EW
+
+
+
+
+
+
+
+Variação
+associada
+
+ de 
+ao 
+
+exergia
+
+
+ trabalho
+
+
+
+
+1
+
+VVpW
+
+
+
+
+
+2
+
+0
+
+Conceituação de Transferência de Exergia
+
+Na  análise  da  exergia,  a  transferência  de  calor  e  o  trabalho  são  expressos  em 
+termos  de  uma  medida  comum:  trabalho  totalmente  disponível  para  levantar  um 
+peso, ou, de forma equivalente, como trabalho elétrico ou trabalho de eixo. 
+Essa  é  a  importância  das  expressões  de  transferência  de  exergia  dadas  pelas 
+Equações acima.
+
+ 
+\newpage
+q
+
+
+
+
+
+
+
+Variação
+associada
+
+ de 
+ ao 
+
+exergia
+calor
+
+2
+
+
+1
+
+
+
+
+
+
+
+
+1
+
+MÁQUINAS TÉRMICAS 
+Variação
+associada
+
+EW
+
+
+
+
+
+Q
+
+
+
+T
+0
+T
+b
+
+
+
+
+
+ de 
+ao 
+
+exergia
+
+
+ trabalho
+
+
+
+
+1
+
+VVpW
+
+
+
+
+
+2
+
+0
+
+Interpreta-se  as  magnitudes  dessas  transferências  de  exergia  como  o  trabalho 
+teórico  máximo  que  pode  ser  desenvolvido  caso  o  sistema  interaja  com  o 
+ambiente, como se segue:
+Reconhecendo  o  termo  (1  –  T0/Tb)  como  a  eficiência  Carnot,  a  quantidade  (1  – 
+T0/Tb)δQ  é  interpretada  como  o  trabalho  desenvolvido  por  um  ciclo  de  potência 
+reversível recebendo a energia δQ por transferência de calor a uma temperatura Tb 
+e  descarregando  energia  por 
+transferência  de  calor  no  ambiente  a  uma 
+temperatura T0 < Tb. 
+Quando Tb é inferior a T0, consideramos que o trabalho desenvolvido por um ciclo 
+de  potência  reversível  recebe  uma  transferência  de  calor  do  ambiente  a  T0  e 
+descarregando δQ a uma temperatura Tb < T0.
+A  outra  transferência  de  exergia  é  o  trabalho  W  do  sistema  menos  o  trabalho 
+requerido para se deslocar o ambiente cuja pressão é p0. em outras palavras        
+p0(V2 –V1).
+
+ 
+\newpage
+E
+
+2
+
+
+
+E
+1
+
+Variação
+          
+Exergia
+    
+
+2
+
+
+
+
+
+
+
+          
+
+1
+
+0
+
+2
+
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+T
+
+VVpWQ
+
+0
+1
+T
+
+b
+Transferên
+       
+Exergia
+
+cia
+      
+
+          
+
+
+
+
+
+
+
+T
+
+0
+
+          
+
+          
+Destruição
+  
+  
+Exergia
+   
+
+2
+
+
+
+E
+1
+
+E
+Variação
+          
+Exergia
+    
+
+q
+
+
+
+E
+
+E
+
+w
+Transferên
+ 
+Exergia
+
+cia
+          
+
+
+          
+         
+
+E
+
+d
+
+  
+Destruição
+Exergia
+   
+
+Em suma, em cada uma de suas formas, as equações expressam que a variação 
+de exergia em um sistema fechado ocorre em virtude da transferência de exergia e 
+pela destruição de exergia em virtude das irreversibilidades no interior do sistema.
+
+ 
+\newpage
+Ed 
+
+0T
+
+Na aplicação do balanço de exergia, é essencial observar os requisitos impostos 
+pela  segunda  lei  na  destruição  de  exergia:  de  acordo  com  a  segunda  lei,  a 
+destruição de exergia é positiva quando há irreversibilidades presentes no interior 
+do  sistema  durante  o  processo  e  desaparecem  no  caso-limite,  em  que  não  há 
+irreversibilidades. 
+Ou seja:
+
+Ed  > 0 irreversibilidades presentes no sistema 
+Ed = 0 ausência de irreversibilidades no sistema.
+
+O valor da destruição de exergia não pode ser negativo. 
+A destruição de exergia não é uma propriedade. 
+A  exergia  é  uma  propriedade  e,  assim  como  outras  propriedades,  a  variação  de 
+exergia de um sistema pode ser positiva, negativa ou nula.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/164.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Para  um  sistema  isolado,  não  ocorrem  interações  de  calor  ou  trabalho  com  a 
+vizinhança, e portanto não ocorrem transferências de exergia entre o sistema e a 
+vizinhança. 
+Consequentemente, o balanço de exergia se reduz a
+
+E
+
+
+
+
+E
+
+d
+
+isolado
+
+isolado
+
+Visto que a destruição de exergia deve ser positiva em qualquer processo real, os 
+únicos processos de um sistema isolado que ocorrem são aqueles para os quais a 
+exergia de um sistema isolado diminui. 
+Para  a  exergia,  essa  conclusão  é  a  equivalência  do  princípio  do  aumento  de 
+entropia e, assim como o princípio do aumento de entropia, pode ser considerada 
+um enunciado alternativo da segunda lei.
+
+ 
+\newpage
+EXEMPLO 6.1
+
+Água, inicialmente como líquido saturado a 150°C (423,15 K) está contida em um conjunto 
+cilindro-pistão. A água é submetida a um processo que a leva ao estado correspondente de 
+vapor  saturado,  durante  o  qual  o  pistão  se  move  livremente  ao  longo  do  cilindro. 
+Considerando  que  a  mudança  de  estado  acontece  em  virtude  do  aquecimento  da  água  à 
+medida  que  esta  percorre  um  processo  internamente  reversível  a  pressão  e  temperatura 
+constantes, determine o trabalho e a quantidade de calor transferida por unidade de massa, 
+em kJ/kg.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/171.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EXEMPLO 6.1
+
+Água, inicialmente como líquido saturado a 150°C (423,15 K) está contida em um conjunto 
+cilindro-pistão. A água é submetida a um processo que a leva ao estado correspondente de 
+vapor  saturado,  durante  o  qual  o  pistão  se  move  livremente  ao  longo  do  cilindro. 
+Considerando  que  a  mudança  de  estado  acontece  em  virtude  do  aquecimento  da  água  à 
+medida  que  esta  percorre  um  processo  internamente  reversível  a  pressão  e  temperatura 
+constantes, determine o trabalho e a quantidade de calor transferida por unidade de massa, 
+em kJ/kg.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/175.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EXERCÍCIO
+
+Um conjunto cilindro-pistão contém água inicialmente a 150°C (423,15 K). A água é aquecida 
+até o estado de vapor saturado correspondente em um processo internamente reversível a 
+temperatura  e  pressão  constantes.  Para  T0  =  20°C  (293,15  K),  p0  =  1  bar  e  ignorando  os 
+efeitos de movimento e da gravidade, determine, em kJ/kg, (a) a variação de exergia, (b) a 
+transferência  de  exergia  associada  ao  calor,  (c)  a  transferência  de  exergia  associada  ao 
+trabalho e (d) a destruição de exergia.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/179.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/184.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/185.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/186.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/187.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/188.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/189.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/193.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Balanço da Taxa de Exergia para Sistemas
+
+Tal  como  ocorre  para  os  balanços  de  massa,  energia  e  entropia,  o  balanço  de 
+exergia  pode  ser  expresso  de  formas  variadas  que  podem  ser  mais  adequadas 
+para determinados tipos de análise. 
+Uma forma conveniente é a taxa do balanço de exergia para um sistema dada por:
+
+ onde dE/dt é a taxa temporal de variação de exergia. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/197.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+
+O termo (1 — T0/Tj)Qj representa a taxa temporal de transferência de exergia que 
+acompanha a transferência de calor à taxa Qj que ocorre nos pontos da fronteira 
+em que a temperatura instantânea é Tj .
+O termo Ẇ representa a taxa temporal de transferência de energia por trabalho.
+A taxa de transferência de exergia é dada por (Ẇ – p0dVldt), onde dV/dt é a taxa de 
+variação temporal do volume do sistema. 
+O termo Ėd leva em conta a taxa temporal de destruição de exergia em virtude das 
+irreversibilidades presentes no sistema.
+
+ 
+\newpage
+Em  regime  permanente,  dE/dt  =  dV/dt  =  0,  e  a  Equação  se  reduz,  fornecendo  o 
+balanço da taxa de exergia em regime permanente. 
+
+Note  que  para  um  sistema  em  regime  permanente,  a  taxa  de  transferência  de 
+exergia associada a Ẇ é simplesmente a potência.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/204.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ Destruição e Perda de Exergia
+
+A maioria dos sistemas térmicos é abastecida com influxos de exergia derivados 
+direta ou indiretamente do consumo de combustíveis (fósseis e renováveis). 
+Consequentemente,  destruições  e  perdas  evitáveis  de  exergia  representam  um 
+desperdício desses recursos. 
+Por  meio  do  desenvolvimento  de  caminhos  para  se  reduzirem  tais  ineficiências, 
+pode-se fazer um melhor uso desses combustíveis. 
+O balanço de exergia pode ser aplicado para determinar a localização, os tipos e a 
+verdadeira  magnitude  do  desperdício  de  recursos  energéticos  e,  assim,  pode 
+representar uma parte importante no desenvolvimento de estratégias para um uso 
+mais eficiente dos combustíveis.
+No Exemplo a seguir as formulações dos balanços das taxas de energia e exergia 
+para um sistema em regime permanente são aplicadas a uma parede de um forno 
+para  se  avaliarem  a  destruição  e  a  perda  de  exergia  que  são  interpretadas  em 
+termos de uso de combustíveis fósseis.
+
+ 
+\newpage
+AVALIAÇÃO DA DESTRUIÇÃO DE EXERGIA NA PAREDE DE UM FORNO
+
+A parede de um forno industrial de secagem é construída utilizando-se 0,066 m de espessura 
+de  isolante  com  condutividade  térmica  k  =  0,05  x  10  3  kW/m•K  entre  duas  placas  finas  de 
+metal. Em regime permanente, a placa de metal interna está a T1= 575 K e a placa externa 
+está  a  T2=  310  K.  A  temperatura  varia  linearmente  através  da  parede.  A  temperatura  das 
+proximidades do fomo é, em média, 293 K. Determine, em kW por m2 de área da superfície 
+da  parede,  (a)  a  taxa  de  transferência  de  calor  através  da  parede,  (b)  as  taxas  de 
+transferência de exergia associadas à transferência de calor nas superfícies interna e externa 
+da parede e (c) a taxa de destruição de exergia na parede. Adote T0 = 293 K.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/211.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/215.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+As taxas de transferência de calor são as mesmas na parede interna e na parede 
+externa,  mas  as  taxas  de  transferência  de  exergia  nesses  locais  são  muito 
+diferentes. 
+A taxa de transferência de exergia na parede interna a alta temperatura é 10 vezes 
+a taxa de transferência de exergia na parede externa a baixa temperatura.
+Em cada um desses locais a transferência de exergia fornece uma medida mais fiel 
+do valor termodinâmico do que a taxa de transferência de calor. 
+Isto  é  claramente  visto  na  parede  externa,  onde  a  pequena  transferência  de 
+exergia  indica  o  potencial  mínimo  para  uso  e,  portanto,  o  valor  termodinâmico 
+mínimo.
+
+ 
+\newpage
+A  exergia  transferida  para  a  parede  a  T1  =  575  K  ou  é  destruída  no  interior  da 
+parede  devido  à  transferência  de  calor  espontânea  ou  é  transferida  para  fora  da 
+parede a T2 = 310 K, onde é perdida para a vizinhança. 
+A  exergia  transferida  para  a  vizinhança  associada  ao  calor  perdido,  como  no 
+presente caso, acaba sendo destruída na vizinhança. 
+Um  isolamento  mais  grosso  e/ou  um  isolamento  com  um  valor  de  condutividade 
+térmica menor reduziria a taxa de transferência de calor e, dessa forma, diminuiria 
+a destruição e a perda de exergia.
+
+Neste  exemplo,  a  exergia  destruída  e  perdida  tem  origem  no  combustível 
+fornecido. 
+Desse modo, medidas eficientes em termos de custo para reduzir a destruição e a 
+perda de exergia gera benefícios na economia de combustível.
+
+ 
+\newpage
+BALANCETE DE EXERGIA PARA UMA CAIXA DE REDUÇÃO
+
+ Balancete de Exergia – operação onde os diversos termos de um balanço de 
+exergia para um sistema são sistematicamente avaliados e comparados.
+
+T0 = 293 K
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/228.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/229.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/230.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/231.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/232.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+BALANCETE DE EXERGIA PARA UMA CAIXA DE REDUÇÃO
+
+ Balancete de Exergia – operação onde os diversos termos de um balanço de 
+exergia para um sistema são sistematicamente avaliados e comparados.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/238.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ANÁLISE DA EXERGIA
+
+1.Apresentação da Exergia.
+2.Conceituação de Exergia.
+3.Exergia de um Sistema.
+4.Balanço de Exergia de um Sistema.
+5.Balanço da taxa de Exergia para Volumes de Controle.
+6.Eficiência Exergética.
+7.Termoeconomia.
+
+ 
+\newpage
+BALANÇO DA TAXA DE EXERGIA PARA VOLUMES DE CONTROLE EM 
+
+REGIME PERMANENTE
+
+O balanço de exergia é estendido para uma forma aplicável a volumes de controle 
+em regime permanente. 
+A  formulação  de  volume  de  controle  é  geralmente  a  mais  útil  em  análises  de 
+engenharia.
+
+onde os termos sublinhados representam a transferência de exergia, com massa 
+entrando e saindo do volume de controle, respectivamente.
+Em  regime  permanente,  dEvc/dt  =  dVvc/dt  =  0,  obtendo-se  assim  o  balanço  de 
+exergia para regime permanente em termos de taxa,
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/245.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/246.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Onde efi denota a exergia por unidade de massa que atravessa a entrada i e efe 
+denota a exergia por unidade de massa que atravessa a saída e. 
+Esses termos, conhecidos como exergia específica de fluxo, são expressos por
+
+e
+
+f
+
+
+
+hh
+0
+
+
+
+
+sT
+0
+
+
+
+
+
+s
+
+0
+
+
+
+2
+
+V
+2
+
+
+
+gz
+
+Onde h e s representam a entalpia e a entropia específicas, respectivamente, na 
+entrada  ou  na  saída  consideradas;  h0  e  s0  representam  os  respectivos  valores 
+dessas propriedades quando avaliadas em T0, p0.
+Veja a seguir a dedução da equação.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/253.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Se  houver  uma  única  entrada  e  uma  única  saída,  indicadas  por  1  e  2, 
+respectivamente, o balanço da taxa de exergia em regime permanente se reduz a
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/254.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Avaliação da Exergia Específica de Fluxo
+
+A exergia associada a uma corrente de matéria é o trabalho teórico máximo que 
+pode  ser  obtido  conforme  a  corrente  alcança  o  estado  morto,  enquanto  a 
+transferência de calor só ocorre com o ambiente a T0.
+O trabalho desenvolvido é totalmente disponível para erguer um peso ou, de forma 
+equivalente, como trabalho elétrico ou trabalho de eixo.
+Para avaliar a exergia associada à corrente no estado dado por h, s, V e z, pense 
+em  uma  corrente  que  alimenta  o  volume  de  controle  que  opera  em  regime 
+permanente conforme mostrado na Figura.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/258.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Na  saída  do  volume  de  controle,  as  respectivas  propriedades  são  as 
+correspondentes ao estado morto: h0,s0, V0 = 0, z0 = 0.
+Quanto ao  volume  de  controle  da  Figura,  os  balanços  de  energia  e entropia  são 
+dados, respectivamente, por
+
+]
+
+Eliminando Qvc entre as Equações, o trabalho desenvolvido por unidade de massa 
+em escoamento é
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/262.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/263.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+   __________________________
+
+O valor do termo sublinhado é determinado por dois estados: o estado dado e o 
+estado morto. 
+O valor do termo de produção de entropia, que não pode ser negativo, depende da 
+natureza do fluxo. 
+O trabalho máximo teórico que pode ser desenvolvido, por unidade de massa em 
+escoamento,  corresponde  ao  valor  zero  para  produção  de  entropia  —  ou  seja, 
+quando o fluxo através do volume de controle da Figura é internamente reversível.
+A exergia específica de fluxo, ef é esse valor máximo do trabalho.
+
+2
+
+V
+2
+
+e
+
+f
+
+
+
+hh
+0
+
+
+
+
+sT
+0
+
+
+
+
+
+s
+
+0
+
+
+
+
+
+gz
+
+ 
+\newpage
+Comparação entre Energia e Exergia para Volumes de
+
+Controle em Regime Permanente
+
+Embora  energia  e  exergia  tenham  unidades  em  comum  e  a  transferência  de 
+exergia acompanhe a transferência de energia, os conceitos de energia e exergia 
+são fundamentalmente diferentes.
+  A  energia  e  a  exergia  se  relacionam,  respectivamente,  com  a  primeira  e  a 
+segunda lei da termodinâmica: A energia se conserva. A exergia é destruída pelas 
+irreversibilidades.
+A exergia expressa a transferência de energia por trabalho, calor e fluxo de massa 
+em termos de uma medida comum, relacionada com a disponibilidade — ou seja, o 
+trabalho  que  está  totalmente  disponível  para  o  levantamento  de  um  peso  ou,  de 
+modo equivalente, como trabalho de eixo ou trabalho elétrico.
+
+ 
+\newpage
+x
+
+x
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/273.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+x
+
+x
+
+POR EXEMPLO
+
+A  primeira  Figura  mostra  as  taxas  de  transferência  de  energia  para  um  volume  de
+controle em regime permanente com uma entrada e uma saída. 
+Isto inclui as transferências de energia por trabalho e por calor e as transferências de energia 
+para dentro e para fora associadas ao fluxo de massa através da fronteira. 
+A  segunda  Figura  mostra  o  mesmo  volume  de  controle,  mas  agora  com  as  taxas
+de transferência de exergia indicadas. 
+Observe  que  as  magnitudes  das  transferências  de  exergia  associadas  à  transferência  de 
+calor  e  ao  fluxo  de  massa  diferem  das  magnitudes  das  transferências  de  energia 
+correspondentes. 
+Essas taxas de transferência de exergia são calculadas por meio das Equações anteriores. 
+
+ 
+\newpage
+x
+
+x
+
+De acordo com o princípio da conservação de energia, a taxa total de entrada de energia no 
+volume de controle é igual à taxa total de saída. 
+Entretanto, a taxa total de exergia que entra no volume de controle excede a taxa à qual a 
+exergia sai. 
+A  diferença  entre  esses  valores  de  exergia  é  a  taxa  à  qual  a  exergia  é  destruída  por 
+irreversibilidades, de acordo com a segunda lei.
+Resumindo,  a  exergia  fornece  uma  imagem  mais  nítida  de  desempenho  do  que  a  energia 
+porque  a  exergia  expressa  todas  as  transferências  de  energia  em  uma  base  comum  e 
+considera  de  forma  explícita  os  efeitos  das  irreversibilidades  através  do  conceito  de 
+destruição de exergia.
+
+ 
+\newpage
+ANÁLISE DA EXERGIA
+
+1.Apresentação da Exergia.
+2.Conceituação de Exergia.
+3.Exergia de um Sistema.
+4.Balanço de Exergia de um Sistema.
+5.Balanço da taxa de Exergia para Volumes de Controle.
+6.Eficiência Exergética.
+7.Termoeconomia.
+
+ 
+\newpage
+EFICIÊNCIA EXERGÉTICA (OU EFICIÊNCIA DA SEGUNDA LEI)
+
+Adequação do Uso Final à Fonte
+
+O  aquecimento  de  um  ambiente,  aquecimento  de  fornos  industriais  e  processos  de 
+geração de vapor costumam envolver a combustão de carvão, óleo ou gás natural. 
+Quando os produtos da combustão encontram-se a uma temperatura significativamente 
+superior à temperatura exigida para uma dada tarefa, o uso final não está bem ajustado 
+à fonte, e o resultado é o uso ineficiente do combustível queimado. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/291.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EFICIÊNCIA EXERGÉTICA (OU EFICIÊNCIA DA SEGUNDA LEI)
+
+Para  ilustrar  esse  fato,  considere  a  Figura,  que  mostra  um  sistema  que  recebe  uma 
+transferência de calor a uma taxa Qf de uma fonte a uma temperatura Tf e fornece Qu a 
+uma temperatura de uso Tu. 
+A energia é perdida para a vizinhança através de transferência de calor a uma taxa Qp 
+ao longo de uma parcela da superfície a Tp. 
+Todas as transferências de energia mostradas na figura ocorrem nos sentidos indicados 
+pelas setas.
+
+ 
+\newpage
+EFICIÊNCIA EXERGÉTICA (OU EFICIÊNCIA DA SEGUNDA LEI)
+
+Supondo  que  o  sistema  opere  em  regime  permanente,  e  que  não  há  trabalho,  os 
+balanços das taxas de energia e de exergia do sistema são: 
+
+Ou:
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/299.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/300.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EFICIÊNCIA EXERGÉTICA (OU EFICIÊNCIA DA SEGUNDA LEI)
+
+A Equação indica que a energia transportada pelo calor transferido, Qf, ou é utilizada, 
+Qu, ou é perdida para a vizinhança, Qp.
+Isso pode ser descrito por uma eficiência em termos de taxas de energia na forma de 
+produto/entrada como:
+
+Em princípio, o valor de η pode ser aumentado através da aplicação de um isolante para 
+reduzir as perdas. 
+O valor-limite, quando Qp = 0, é de η = 1 (100\%).
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/304.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EFICIÊNCIA EXERGÉTICA (OU EFICIÊNCIA DA SEGUNDA LEI)
+
+A Equação mostra que a exergia transportada para o sistema associada à transferência 
+de  calor  Qf  ou  é  transferida  a  partir  do  sistema  acompanhando  as  transferências  de 
+calor Qu e Qp ou é destruída pelas irreversibilidades dentro do sistema. 
+Isso pode ser descrito por um rendimento em termos de taxas de exergia em forma de 
+produto/entrada, tal como
+
+Ou:
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/308.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/309.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EFICIÊNCIA EXERGÉTICA (OU EFICIÊNCIA DA SEGUNDA LEI)
+
+O  parâmetro  ε,  definido  em  relação  ao  conceito  de  exergia,  pode  ser  chamado  de 
+eficiência exergética. 
+Tanto η quanto ε medem a eficácia com que a entrada é convertida em produto. 
+O parâmetro η realiza isso em uma base de energia, enquanto ε o faz em uma base de 
+exergia. 
+O valor de ε geralmente é inferior à unidade, mesmo quando η = 1.
+
+ 
+\newpage
+EFICIÊNCIA EXERGÉTICA (OU EFICIÊNCIA DA SEGUNDA LEI)
+
+A  Equação  indica  que  um  valor  de  η  tão  próximo  da  unidade  quanto  possível  é,  na 
+prática, importante para a correta utilização da exergia transferida a partir do gás quente 
+da combustão para o sistema. 
+No entanto, isso por si só não garante uma utilização eficiente.
+As  temperaturas  Tf  e  Tu  também  são  importantes,  já  que  o  uso  da  exergia  melhora  à 
+medida que a temperatura de uso Tu se aproxima da temperatura da fonte Tf. 
+Para a correta utilização da exergia, por conseguinte, é conveniente ter um valor de  η 
+tão próximo da unidade quanto possível na prática e também um bom ajuste entre as 
+temperaturas da fonte e de uso.
+
+ 
+\newpage
+EFICIÊNCIA EXERGÉTICA (OU EFICIÊNCIA DA SEGUNDA LEI)
+
+Figura ε versus a temperatura de uso Tu ; Tf = 2200 K (3960°R) e η = 1.
+ε tende à unidade (100\%) à medida que a temperatura de uso se aproxima de Tf.
+Na maioria dos casos a temperatura de uso é substancialmente inferior a Tf. 
+As  eficiências  para  três  aplicações  estão  indicadas  no  gráfico:  o  aquecimento  de  um 
+ambiente a Tu = 320 K (576°R), o processo de geração de vapor a Tu  = 480 K (864°R) e 
+o aquecimento de fornos industriais a Tu = 700 K (1260°R). 
+Esses valores de eficiência sugerem que o combustível é utilizado de forma mais eficaz 
+em aplicações industriais que envolvam altas temperaturas de uso. 
+As eficiências estão superestimadas (η = 1) e a perda de exergia associada a processo 
+de combustão não foi considerada.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/319.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EFICIÊNCIA EXERGÉTICA DE COMPONENTES USUAIS
+
+Turbinas
+
+Para  uma  turbina  que  opera  em  regime  permanente,  sem  transferência  de 
+calor  para  sua  vizinhança,  a  formulação  do  balanço  da  taxa  de  exergia  em 
+regime permanente simplifica-se como a seguir:
+
+ 
+Esta equação pode ser reformulada, fornecendo
+
+ 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/323.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/324.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/325.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EFICIÊNCIA EXERGÉTICA DE COMPONENTES USUAIS
+
+Compressores e Bombas 
+
+Para  um  compressor  ou  bomba  que  opere  em  regime  permanente,  sem 
+transferência  de  calor  com a  vizinhança,  o  balanço  da  taxa  de  exergia  pode 
+ser colocado na forma
+
+ 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/329.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/330.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EFICIÊNCIA EXERGÉTICA DE COMPONENTES USUAIS
+
+Trocador de Calor sem Mistura
+
+O  trocador  de  calor  mostrado  na    figura  opera  em  regime  permanente,  sem 
+transferência  de  calor  para  a  vizinhança  e  com  as  duas  correntes  a 
+temperaturas acima de T0. 0 balanço da taxa de exergia se reduz a
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/334.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/335.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/336.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/337.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EFICIÊNCIA EXERGÉTICA DE COMPONENTES USUAIS
+
+Trocador de Calor de Contato Direto
+
+O  trocador  de  calor  de  contato  direto  mostrado  na  Figura  opera  em  regime 
+permanente, sem transferência de calor com a vizinhança. O balanço da taxa 
+de exergia se reduz a 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/344.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/345.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/346.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/347.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+USO DAS EFICIÊNCIAS EXERGÉTICAS
+
+As  eficiências  exergéticas  são  úteis  para  distinguirmos  os  meios  de 
+utilização  de  combustíveis  que  são  termodinamicamente  eficazes 
+daqueles que são menos eficazes. 
+Também  podemos  utilizar  as  eficiências  exergéticas  para  avaliar  a 
+eficácia  das  medidas  de  engenharia  tomadas  para  melhorar  o 
+desempenho  de  um  sistema  térmico. 
+Isso  é  feito  através  da 
+comparação dos valores de eficiência determinados antes e após as 
+modificações terem sido realizadas para mostrar quanto a melhora foi 
+alcançada. 
+Além disso, eficiências exergéticas podem ser utilizadas para medir o 
+potencial  das  melhoras  no  desempenho  de  um  determinado  sistema 
+térmico,  por  comparação da eficácia desse sistema com  a  eficiência 
+de sistemas similares. Uma diferença significativa entre esses valores 
+sugere que é possível melhorar o desempenho.
+
+ 
+\newpage
+É  importante  reconhecer  que  o  limite  de  100\%  de  eficiência  exergética 
+não deve ser considerado um objetivo prático. 
+Vários  métodos  são  utilizados  para  melhorar  a  utilização  dos  recursos 
+energéticos. Todos esses métodos devem atingir seus objetivos de forma 
+economicamente  eficiente.  Um  desses  métodos  é  a  co-geração,  que 
+produz sequencialmente energia elétrica e energia térmica.
+Dois outros métodos empregados para melhorar a utilização de recursos 
+energético  são  a  recuperação de  potência  e  a  recuperação de calor 
+rejeitado.  A  recuperação  da  potência  pode  ser  conseguida  mediante  a 
+inserção de uma turbina em um gás pressurizado ou em uma corrente de 
+líquido,  de  modo  a  capturar  alguma  exergia  que  de  outra  forma  seria 
+destruída  em  uma  expansão  espontânea.  A  recuperação  de  calor 
+rejeitado contribui para a eficiência global através da utilização de alguma 
+exergia que de outra forma seria eliminada para a vizinhança, como nos 
+gases de exaustão de grandes motores de combustão interna. 
+
+ 
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/357.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/358.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/359.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/360.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/361.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/369.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/370.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/371.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/378.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/382.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/386.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+(Anterior)
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/391.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
