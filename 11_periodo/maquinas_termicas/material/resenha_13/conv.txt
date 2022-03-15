@@ -1,0 +1,1052 @@
+MISTURA DE GASES
+
+Muitos problemas termodinâmicos envolvem a mistura de substâncias puras.
+Como estimar as propriedades termodinâmicas de misturas?
+Conhecendo as propriedades individuais dos constituintes, é possível estimar 
+as propriedades da mistura.
+O  entendimento  do  comportamento  de  misturas  de  ar  com  vapor  d’água  é 
+importante  para  o  estudo  dos  processos  de  condicionamento  de  ar  e  de 
+conforto ambiental. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/1.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/2.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/3.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CONSIDERAÇÕES GERAIS
+
+Mistura de N componentes, cada um deles sendo uma substância pura.
+A massa total e o número de moles da mistura são dados por:
+
+m
+tot
+n
+tot
+
+2
+
+...
+
+m
+
+mm
+
+1
+2
+N
+n
+n
+
+
+1
+
+
+...
+n
+
+N
+
+m
+i
+
+
+
+
+n
+i
+
+Frações em massa, ou concentrações:
+
+Frações molares da cada componente:
+
+m
+c 
+i
+i m
+tot
+
+y 
+i
+
+n
+i
+n
+tot
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/4.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/5.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/6.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/7.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+As duas frações são relacionadas pela massa molecular:
+
+Mnm 
+
+i
+
+i
+
+i
+
+Conversão da fração na base molar para a fração na base mássica:
+
+c
+i
+
+
+
+m
+i
+m
+tot
+
+
+
+Mn
+i
+i
+
+Mn
+j
+
+j
+
+
+
+i
+
+Mn
+i
+
+
+n
+tot
+Mn
+j
+
+j
+
+n
+tot
+
+
+
+My
+i
+i
+
+My
+j
+
+j
+
+Conversão da fração na base mássica para a fração na base molar :
+
+y
+
+i
+
+
+
+n
+i
+n
+tot
+
+m
+i
+
+
+
+
+
+m
+
+M
+
+i
+
+
+
+j
+
+M
+
+j
+
+m
+i
+
+
+m
+
+
+
+i
+
+mM
+tot
+
+
+mM
+tot
+
+j
+
+j
+
+
+
+c
+i
+
+i
+
+M
+c
+
+j
+
+M
+
+j
+
+
+ 
+
+A massa molecular da mistura é:
+
+M
+
+mist
+
+
+
+m
+tot
+n
+tot
+
+
+
+
+
+Mn
+j
+n
+tot
+
+j
+
+
+
+
+My
+i
+
+i
+
+ 
+\newpage
+Considere  uma  mistura  de  dois  gases  (não  necessariamente  perfeitos)  tal 
+como mostra a Figura.
+Que propriedades podemos medir experimentalmente nesta mistura? 
+Pressão, a temperatura, o volume e a massa da mistura. 
+Pode-se  determinar  experimentalmente  a  composição  da  mistura  e  assim 
+calcular as frações molares e em massa.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/19.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Se a mistura sofre um processo ou uma reação química e deseja-se fazer uma 
+análise termodinâmica desse processo ou reação. 
+Que tipo de dados termodinâmicos deve-se utilizar na análise? 
+Uma  possibilidade  seria  usar  as  tabelas  de  propriedades  termodinâmicas  da 
+mistura (se estas estiverem disponíveis). 
+Entretanto,  o  número  possível  de  misturas  diferentes,  quer  quanto  às 
+substâncias componentes, quer quanto às quantidades relativas com que elas 
+comparecem é tal que seria necessária uma biblioteca repleta de tabelas de 
+propriedades termodinâmicas para cobrir todas as situações possíveis.
+
+ 
+\newpage
+É  muito  mais  simples  determinar  as  propriedades  termodinâmicas  de  uma 
+mistura  a  partir  das  propriedades  dos  componentes  puros  que  compõe  a 
+mistura. 
+Este é, em essência, o objetivo dos modelos de mistura (tanto o que trata das 
+misturas  de  gases  perfeitos  como  o  dos  outros  modelos  simplificados  de 
+mistura).
+
+ 
+\newpage
+Uma exceção a este procedimento é o caso onde a mistura é encontrada com 
+frequência (por exemplo: o ar). 
+Existem tabelas e diagramas de propriedades termodinâmicas para o ar.
+Entretanto, mesmo neste caso, é necessário definir a composição do "ar" para 
+a  qual  as  tabelas  foram  construídas,  uma  vez  que  a  composição  do  ar 
+atmosférico  varia  com  a  altitude,  com  o  número  de  poluentes  e  com  outras 
+variáveis numa dada localidade. 
+
+ 
+\newpage
+A composição ar utilizada na construção das tabelas:  
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/32.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Para o caso geral, as propriedades da mistura são definidas em termos das 
+propriedades molares parciais dos componentes. 
+Uma propriedade molar parcial é definida como o valor de uma propriedade, 
+energia interna por exemplo, de um dado componente nas condições em que 
+ele se encontra na mistura. 
+A partir dessa definição, a energia interna da mistura é dada por:
+ 
+onde Ū é a energia interna molar parcial.
+Equações semelhantes podem ser escritas para outras propriedades.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/36.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Serão abordadas as misturas de gases perfeitos. 
+Será  admitido  que  um  componente  não  é  influenciado  pela  presença  dos 
+demais componentes da  mistura e cada componente pode ser tratado como 
+um gás perfeito.
+No caso real de uma mistura gasosa a alta pressão essa hipótese não é muito 
+correta devido as interações entre as moléculas dos diversos componentes.
+
+ 
+\newpage
+Como calcular as propriedades molares parciais dos componentes?
+Lembrete:  propriedade  molar  parcial  é  definida  como  o  valor  de  uma 
+propriedade de um dado componente nas condições em que ele se encontra 
+na mistura. 
+
+Para a mistura de gases perfeitos são utilizados dois modelos:
+
+Modelo de Dalton
+
+Modelo de Amagat 
+
+ 
+\newpage
+Modelo de Dalton
+No modelo de Dalton as propriedades de cada componente são determinadas 
+a partir da hipótese de que cada um dos componentes ocupa todo o volume 
+na temperatura da mistura.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/46.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Para a mistura
+
+Para os componentes
+
+Fazendo as substituições convenientes obtemos:
+
+Ou:
+onde pA e pB são denominadas pressões parciais.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/50.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/51.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/52.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/53.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Assim,  para  uma  mistura  de  gases  perfeitos,  a  pressão  é  a  soma  das 
+pressões parciais dos componentes.
+O termo pressão parcial tem importância somente no caso de gases perfeitos. 
+Esse  conceito  admite  que  as  moléculas  de  cada  componente  não  são 
+influenciadas pelas dos outros e que a pressão total é a soma das pressões 
+parciais dos componentes. 
+A  pressão  parcial  não  é  uma  propriedade  molar  parcial,  uma  vez  que  as 
+propriedades molares parciais se relacionam a propriedades extensivas.
+
+ 
+\newpage
+Modelo Amagat
+No  modelo  de  Amagat  as  propriedades  de  cada  componente  são 
+determinadas a partir da hipótese de que cada um dos componentes esteja a 
+pressão e temperatura da mistura. 
+Os volumes A e B nestas condições são, respectivamente, VA e VB.
+No  caso  geral,  a  soma  dos  volumes,  ou  seja,  VA  +  VB  não  precisa  ser 
+necessariamente igual ao volume da mistura. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/60.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Neste caso podemos escrever:
+Para a mistura:
+
+Para os componentes:
+
+Fazendo as substituições convenientes obtemos
+
+Onde  VA/V e VB/V são denominadas frações em volume.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/64.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/65.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/66.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/67.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Assim o modelo de Amagat, para o caso de gases perfeitos, estabelece que a 
+soma das frações em volume é unitária e que não haverá variação de volume 
+se  os  componentes  forem  misturados  e  mantidos  na  mesma  pressão  e 
+temperatura.
+Uma evidência:
+
+Isto é, a fração em volume, a fração molar e a relação entre a pressão parcial 
+e a pressão total de cada componente de uma mistura de gases perfeitos são 
+iguais.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/71.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Na determinação da energia interna, da entalpia e da entropia de uma mistura 
+de gases perfeitos, o modelo de Dalton é mais útil devido à hipótese de que 
+cada  componente  da  mistura  se  comporta  com  se  ele,  isoladamente, 
+ocupasse todo o volume. 
+Assim, a energia interna, a entalpia e a entropia podem ser calculadas como a 
+soma  das  respectivas  propriedades  de  cada  componente  nas  condições  em 
+que ele se encontram na mistura. 
+
+ 
+\newpage
+Como  para  os  gases  perfeitos  a  energia  interna  e  a  entalpia  são  funções 
+somente da temperatura, temos que:
+
+onde uA e hA são a energia interna e a entalpia por mol do componente A puro 
+e  uB  e  hB  do  componente  B  puro.  As  propriedades  são  calculadas  na 
+temperatura da mistura.
+A entropia de um gás perfeito é função da temperatura e da pressão. 
+Cada componente, na mistura de gases perfeitos, se faz presente na sua 
+pressão parcial. 
+
+onde sA é a entropia por mol do componente A puro a T e pA (pressão parcial 
+do componente A) e sB é a entropia do componente B puro, a T e pB.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/79.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/80.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/81.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/85.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+MODELO SIMPLIFICADO PARA MISTURAS COMPOSTAS POR GASES E 
+
+UM VAPOR
+
+Será apresentada uma simplificação, que em muitos casos é razoável, para o 
+problema que envolve uma mistura de gases perfeitos em contato com a fase 
+sólida ou líquida de um de seus componentes. 
+
+Um  exemplo  típico  é  a  mistura  de  ar  e  vapor  d'água  em  contato  com  água 
+líquida ou gelo que são encontradas nos processos de condicionamento de ar 
+e de secagem. 
+
+Estamos familiarizados com a condensação da água da atmosfera quando ela 
+é resfriada num dia de verão.
+
+ 
+\newpage
+Hipóteses:
+
+A fase sólida ou líquida não contém gases dissolvidos.
+
+A fase gasosa pode ser tratada como uma mistura de gases perfeitos.
+
+Quando  a  mistura  e  a  fase  condensada  estão  a  uma  dada  pressão  e 
+temperatura,  o  equilíbrio  entre  a  fase  condensada  e  seu  vapor  não  é 
+influenciado pela presença do outro componente.
+Isso significa que, quando o equilíbrio é atingido, a pressão parcial do vapor 
+será igual a pressão de saturação correspondente a temperatura da mistura.
+
+Esta aproximação é largamente utilizada, com considerável precisão.
+
+Serão  vistas  as  condições  em  que  a  aplicação  deste  modelo  de  mistura  é 
+válido e relevante. 
+
+Essa mistura é chamada de “mistura de gás e vapor”.
+
+ 
+\newpage
+O ponto de orvalho de uma mistura de gás e vapor é o ponto no qual o vapor 
+condensa ou solidifica quando é resfriado a pressão constante. 
+Isso é mostrado no diagrama T-s para o vapor.
+Inicialmente, a temperatura da mistura gasosa e a pressão parcial do vapor na 
+mistura são tais que o vapor esteja superaquecido (estado 1).
+Se  a  mistura  é  resfriada  a  pressão  constante,  a  pressão  parcial  do  vapor 
+permanece  constante  até  que  o  ponto  2  seja  alcançado  e,  então,  temos  o 
+início da condensação. 
+A temperatura no estado 2 é chamada de temperatura de orvalho. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/97.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Se  a  mistura  for  resfriada  a  volume  constante,  linha  1-3  no  diagrama,  a 
+condensação  iniciará  no  ponto  3,  cuja  temperatura  será  ligeiramente  mais 
+baixa que a de orvalho.
+Se  o  vapor  está  a  pressão  e  temperatura  de  saturação,  a  mistura  é 
+denominada mistura saturada e, para uma mistura ar-vapor d'água, é usado o 
+termo "ar saturado".
+
+ 
+\newpage
+A umidade relativa Φ é definida como sendo a relação entre a fração molar 
+do  vapor  na  mistura  e  a  fração  molar  do  vapor  numa  mistura  saturada  a 
+mesma temperatura e pressão total.
+Uma vez que o vapor é considerado gás perfeito, a definição se reduz a razão 
+entre a pressão parcial do vapor na mistura, pv, e a pressão de saturação do 
+vapor a mesma temperatura pg.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/8.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/104.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+De acordo com o diagrama, a umidade relativa, Φ, pode ser dada por:
+
+Uma vez que consideramos o vapor como um gás perfeito, a umidade relativa 
+também  pode  ser  definida  em  função  do  volume  específico  ou  da  massa 
+específica.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{Equations/9.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/11.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/112.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+A  umidade  absoluta,  ω  ,de  uma  mistura  ar-vapor  d'água  é  definida  como 
+sendo a razão entre a massa de vapor d’água, mv, e a massa de ar seco, ma .
+O termo "ar seco" é utilizado para enfatizar que o termo é referente ao ar puro 
+e não ao vapor d'água. 
+O termo "umidade específica" é utilizado como sinônimo de umidade absoluta. 
+
+Esta definição é idêntica para qualquer outra mistura gás-vapor e o índice a 
+refere-se ao gás sem o vapor. 
+Uma  vez  que  consideramos  o  vapor  e  a  mistura  como  gases  perfeitos,  nós 
+podemos desenvolver uma expressão para a umidade absoluta em função das 
+pressões parciais e das massas moleculares.
+
+Para uma mistura ar-vapor d’água a equação fica reduzida a: 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/119.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/120.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/121.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O  grau  de  saturação  é  definido  como  sendo  a  relação  entre  a  umidade 
+absoluta  real  e  a  umidade  absoluta  de  uma  mistura  saturada  a  mesma 
+temperatura e pressão total.
+Uma expressão que relaciona a umidade relativa e umidade absoluta pode ser 
+estabelecida explicitando-se as equações em pv e igualando-as. 
+A relação resultante, para uma e ar-vapor d'água, é:
+
+Pg = P4
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/125.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O que ocorre quando uma mistura gás-vapor é resfriada a pressão constante?
+Suponha que o vapor esteja inicialmente superaquecido no estado 1.
+Como a mistura é resfriada a pressão constante, a pressão parcial do vapor permanece 
+a mesma até que o ponto de orvalho seja alcançado no ponto 2 (o vapor na mistura está 
+saturado). 
+O condensado inicial está no estado 4 em equilíbrio com o vapor no estado 2.
+Se abaixarmos ainda mais a temperatura, mais vapor condensa, diminuindo assim a sua 
+pressão parcial na mistura. 
+O vapor que permanece na mistura é sempre saturado e o líquido (ou o sólido) formado 
+se encontra em equilíbrio com o vapor. 
+Por exemplo, quando a temperatura é reduzida a T3, o vapor na mistura está no estado 
+3 e a pressão parcial deste é a igual a pressão de saturação correspondente a T3.
+O líquido, em equilíbrio com o vapor, se encontra no estado 5.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/129.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/133.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/134.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+1ª LEI APLICADA ÀS MISTURAS GÁS – VAPOR
+
+A  Figura  mostra  uma  unidade  de  ar  condicionado  e  suas  características 
+operacionais  (pressões,  temperaturas  e  umidades  relativas).  Calcule  o  calor 
+transferido  por  kg  de  ar  seco  supondo  desprezíveis  as  variações  de  energia 
+cinética.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/141.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/142.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/148.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+O PROCESSO DE SATURAÇÃO ADIABÁTICA
+
+Um  processo  importante  e  que  envolve  a  mistura  ar-vapor  d'água  é  o  de  saturação 
+adiabática. 
+Neste processo, a mistura ar-vapor entra em contato com água líquida num duto bem 
+isolado. 
+Se a umidade relativa inicial for menor do que 100 \%, uma parte da água se evaporará 
+e a temperatura da mistura gasosa diminuirá. 
+Se a mistura, na seção de saída do duto, é saturada e se o processo é adiabático, sua 
+temperatura é conhecida como temperatura de saturação adiabática. 
+Para  que  este  processo  ocorra  em  regime  permanente,  água  de  reposição,  a 
+temperatura  de  saturação  adiabática,  deve  ser  adicionada  na  mesma  razão  daquela 
+evaporada. 
+Supõe-se que a pressão, ao longo do processo, seja constante.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/155.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Supondo  que  o  processo  de  saturação  adiabática  ocorra  em  regime  permanente  e 
+desprezado as variações de energia cinética e potencial, a primeira lei da termodinâmica fica 
+reduzida a
+
+A  conclusão  mais  importante  que  pode  ser  tirada  neste  processo  é  que  a  temperatura  de 
+saturação  adiabática  (temperatura  da  mistura  que  deixa  o  duto)  é  função  da  pressão, 
+temperatura  e  umidade  relativa,  na  seção  de  alimentação,  e  da  pressão,  na  seção  de 
+descarga. 
+Assim, a umidade relativa e a umidade absoluta da mistura ar-vapor que escoa na seção de 
+entrada  do  saturador  podem  ser  determinadas  através  das  medidas  de  pressão  e 
+temperatura, nas seções de alimentação e descarga do saturador adiabático. 
+Uma vez que estas medidas são relativamente fáceis de serem realizadas, este é um modos 
+utilizados para determinar a umidade de uma mistura gasosa.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/159.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+TEMPERATURAS DE BULBO ÚMIDO E DE BULBO SECO
+
+A  umidade  de  uma  mistura  ar-vapor  d'água  é  usualmente  estabelecida  através  das 
+temperaturas  de  bulbo  úmido  e  bulbo  seco  medidas  num  instrumento  denominado 
+psicrômetro. 
+Neste equipamento, a mistura escoa ao redor dos termômetros de bulbo úmido e bulbo seco.
+O bulbo do termômetro de bulbo úmido é coberto com uma mecha de algodão saturada com 
+água. 
+O termômetro de bulbo seco é usado simplesmente para medir a temperatura do ar. 
+O fluxo de ar pode ser obtido por um ventilador, como no psicrômetro de fluxo contínuo, ou 
+pela movimentação do termômetro através da mistura, como num psicrômetro "reco-reco".
+No  psicrômetro  do  tipo  "reco-reco"  os  termômetros  de  bulbo  úmido  e  de  bulbo  seco  são 
+montados na base que pode ser girada manualmente.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/163.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/167.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+A temperatura de bulbo úmido e a de saturação adiabática são aproximadamente iguais para 
+misturas ar-vapor d'água a temperatura e pressão atmosféricas. 
+Por este motivo pode-se considerar que estas temperaturas são equivalentes.
+
+ 
+\newpage
+Recentemente, as medidas de umidade tem sido realizadas com 
+instrumentos que operam a  partir de outros fenômenos e que produzem 
+um sinal eletrônico proporcional a umidade medida.
+
+Por  exemplo:  algumas  substâncias 
+
+tendem  a  mudar  de 
+
+comprimento, forma ou capacitância elétrica quando absorvem umidade. 
+
+São substâncias sensíveis a quantidade de umidade presente na 
+
+atmosfera e podem ser utilizadas como sensores. 
+
+Um  instrumento  que  utiliza  uma  dessas  substâncias  pode  ser 
+
+calibrado para medir a umidade de misturas ar-vapor d'água. 
+
+O  sinal  de  saída  do  instrumento  pode  ser  programado  para 
+fornecer  qualquer  um  dos  parâmetros  desejado,  tais  como:  umidade 
+relativa, umidade absoluta ou temperatura de bulbo úmido.
+
+ 
+\newpage
+CARTA PSICROMÉTRICA
+
+As  propriedades  de  misturas  ar-vapor  d'água  são  dadas  em  forma  gráfica  nas  cartas 
+psicrométricas.
+Essas  são  encontradas  em  diferentes  formas  e  somente  os  aspectos  principais  serão 
+considerados. 
+É bom relembrar que são necessárias três propriedades independentes, tais como pressão, 
+temperatura e composição da mistura, para descrever o estado de uma mistura binária.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/178.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/182.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+A  abscissa  da  carta  representa  a  temperatura  de  bulbo  seco  e  a  ordenada 
+representa a umidade absoluta.
+A  temperatura  de  bulbo  úmido,  umidade  relativa  e  entalpia  por  quilograma  de  ar 
+seco são as variáveis dependentes na carta. 
+Se fixarmos a pressão total para a qual a carta é construída (que é usualmente 100 
+kPa), podemos traçar as linhas de umidade relativa e temperatura de bulbo úmido 
+constantes. 
+Isto pode ser feito porque, para uma dada temperatura de bulbo seco, pressão total 
+e umidade absoluta, aqueles valores são fixos. 
+
+ 
+\newpage
+A pressão parcial do vapor d'água é fixada pela umidade absoluta e pressão total 
+e, por isso, uma segunda escala ordenada, indicando a pressão parcial do vapor 
+d'água, pode ser construída. 
+Pelo mesmo motivo poderíamos incluir as linhas referentes aos valores constantes 
+de volume específico da mistura e de entropia da mistura na carta.
+
+ 
+\newpage
+A carta mostrada na Figura também indica a zona de conforto humano. 
+Ela é definida  como a região que contém os estados termodinâmicos da  mistura 
+mais agradáveis para os seres.humanos. 
+Assim,  um  sistema  de  condicionamento  de  ar  bem  dimensionado  é  capaz  de 
+manter o ambiente condicionado nos estados contidos nesta região (qualquer que 
+seja a condição ambienta externa). 
+
+ 
+\newpage
+Algumas  cartas  fornecem  correções  para  variação  de  pressão  total.  Assim,  é 
+possível utiliza-las em pressões totais diferentes da normal. 
+Antes  de  utilizar  uma  dada  carta  é  necessário  que  tenhamos  entendido 
+perfeitamente as suposições feitas na sua construção e que ela seja aplicável ao 
+problema particular em questão. 
+
+ 
+\newpage
+ 
+\newpage
