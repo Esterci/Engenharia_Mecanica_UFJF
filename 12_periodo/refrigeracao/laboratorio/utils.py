@@ -30,7 +30,7 @@ class Experimento:
     @classmethod
     def kelvin_to_celcius(cls, T):
         return T - 273.15
-
+    
     @classmethod
     def pascal_to_psi(cls, P):
         return P / 6894
@@ -76,7 +76,6 @@ class Experimento:
 
             else:
                 self.Hs2 = PropsSI("H", "P", self.Ps2, "T", self.Ts2, self.fluido)
-                self.Ps4 = self.bar_to_pascal(Press_dict["Ps4"])
 
             # determinando densidades
 
@@ -129,6 +128,7 @@ class Experimento:
                         np.around(self.Hs1 / 1e3, 1),
                         np.around(self.rho1, 1),
                         np.around(self.c1, 1),
+                        1,
                         self.dot_m1,
                     ],
                     [
@@ -137,6 +137,7 @@ class Experimento:
                         np.around(self.Hs2 / 1e3, 1),
                         np.around(self.rho2, 1),
                         np.around(self.c2, 1),
+                        np.around(self.kelvin_to_celcius(PropsSI("T", "P", self.Ps2, "Q", 1, self.fluido))),
                         self.dot_m2,
                     ],
                     [
@@ -145,6 +146,7 @@ class Experimento:
                         np.around(self.Hs3 / 1e3, 1),
                         np.around(self.rho3, 1),
                         np.around(self.c3, 1),
+                        1,
                         self.dot_m3,
                     ],
                     [
@@ -153,6 +155,7 @@ class Experimento:
                         np.around(self.Hs4 / 1e3, 1),
                         np.around(self.rho4, 1),
                         np.around(self.c4, 1),
+                        1,
                         self.dot_m4,
                     ],
                 )
@@ -166,6 +169,7 @@ class Experimento:
                     "Entalpia",
                     "Densidade",
                     "Calor Esp.",
+                    "Temp. Sat.",
                     "Vasao massica"
                 ],
             )
