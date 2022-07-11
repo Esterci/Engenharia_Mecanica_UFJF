@@ -30,7 +30,7 @@ class Experimento:
     @classmethod
     def kelvin_to_celcius(cls, T):
         return T - 273.15
-    
+
     @classmethod
     def pascal_to_psi(cls, P):
         return P / 6894
@@ -42,6 +42,48 @@ class Experimento:
     @classmethod
     def vasao_massica(cls, V, rho):
         return V * rho
+
+    @classmethod
+    def calc_prop_error(cls, prop_res, prop_1, prop_2):
+
+        nome_1, valor_1, erro_1 = prop_1
+        nome_2, valor_2, erro_2 = prop_2
+
+        res_1 = PropsSI(
+            prop_res, nome_1, valor_1 + erro_1, nome_2, valor_2 + erro_2, cls.fluido
+        )
+        res_2 = PropsSI(
+            prop_res, nome_1, valor_1 + erro_1, nome_2, valor_2 - erro_2, cls.fluido
+        )
+        res_3 = PropsSI(
+            prop_res, nome_1, valor_1 - erro_1, nome_2, valor_2 + erro_2, cls.fluido
+        )
+        res_4 = PropsSI(
+            prop_res, nome_1, valor_1 - erro_1, nome_2, valor_2 - erro_2, cls.fluido
+        )
+
+        aux = [res_1, res_2, res_3, res_4]
+
+        res_min = np.min(aux)
+        res_max = np.max(aux)
+
+        med = PropsSI(
+            prop_res, nome_1, valor_1 - erro_1, nome_2, valor_2 - erro_2, cls.fluido
+        )
+
+        erro_min = ((med - res_min) ** 2) ** 0.5
+        erro_max = ((med - res_max) ** 2) ** 0.5
+
+        if np.isclose(erro_min, erro_max):
+            return {"med": med, "erro": erro_min}
+
+        erro = np.min((erro_max, erro_min))
+
+        return {"med": med, "erro": erro}
+
+    @classmethod
+    def format_error(cls,prop,pow,decimal):
+        prop
 
     def __init__(self, Temp_dict, Press_dict, I, V, fluido, cool=True, correcao=False):
         # passando valores de temperatura
@@ -62,41 +104,93 @@ class Experimento:
         self.V = V
         self.fluido = fluido
 
+        # definindo erros fixos
+
+        self.Temp_error = 0.5
+        self.Press_error = 0.5
+
         # determinando entalpias
         if cool:
-            self.Hs1 = PropsSI("H", "P", self.Ps1, "T", self.Ts1, self.fluido)
-            self.Hs3 = PropsSI("H", "P", self.Ps3, "T", self.Ts3, self.fluido)
+            self.Hs1 = self.calc_prop_error(
+                "H", ("P", self.Ps1, self.Press_error), ("T", self.Ts1, self.Temp_error)
+            )
+            self.Hs3 = self.calc_prop_error(
+                "H", ("P", self.Ps3), ("T", self.Ts3, self.Temp_error)
+            )
             self.Hs4 = self.Hs3
 
             if correcao:
-                S1 = PropsSI("S", "P", self.Ps1, "T", self.Ts1, self.fluido)
-                self.Hs2 = PropsSI("H", "P", self.Ps2, "S", S1, self.fluido)
-                self.Ts2 = PropsSI("T", "P", self.Ps2, "S", S1, self.fluido)
+                S1 = self.calc_prop_error(
+                    "S",
+                    ("P", self.Ps1, self.Press_error),
+                    ("T", self.Ts1, self.Temp_error),
+                )
+                self.Hs2 = self.calc_prop_error(
+                    "H", ("P", self.Ps2, self.Press_error), ("S", S1["med"],S1["erro"])
+                )
+                self.Ts2 = self.calc_prop_error(
+                    "T", ("P", self.Ps2, self.Press_error), ("S", S1["med"],S1["erro"])
+                )
                 self.Ps4 = self.Ps1
 
             else:
-                self.Hs2 = PropsSI("H", "P", self.Ps2, "T", self.Ts2, self.fluido)
+                self.Hs2 = self.calc_prop_error(
+                    "H",
+                    ("P", self.Ps2, self.Press_error),
+                    ("T", self.Ts2, self.Temp_error),
+                )
 
             # determinando densidades
 
-            self.rho1 = PropsSI("D", "P", self.Ps1, "H", self.Hs1, self.fluido)
-            self.rho2 = PropsSI("D", "P", self.Ps2, "H", self.Hs2, self.fluido)
-            self.rho3 = PropsSI("D", "P", self.Ps3, "H", self.Hs3, self.fluido)
-            self.rho4 = PropsSI("D", "P", self.Ps4, "H", self.Hs4, self.fluido)
+            self.rho1 = self.calc_prop_error(
+                "D", ("P", self.Ps1, self.Press_error), ("H", self.Hs1["med"], self.Hs1["erro"])
+            )
+            self.rho2 = self.calc_prop_error(
+                "D", ("P", self.Ps2, self.Press_error), ("H", self.Hs2["med"], self.Hs2["erro"])
+            )
+            self.rho3 = self.calc_prop_error(
+                "D", ("P", self.Ps3, self.Press_error), ("H", self.Hs3["med"], self.Hs3["erro"])
+            )
+            self.rho4 = self.calc_prop_error(
+                "D", ("P", self.Ps4, self.Press_error), ("H", self.Hs4["med"], self.Hs4["erro"])
+            )
+
+            # determinando temperaturas de saturação
+
+            self.Ts1_sat = self.calc_prop_error(
+                "T", ("P", self.Ps1, self.Press_error), ("Q", 1, 0)
+            )
+            self.Ts2_sat = self.calc_prop_error(
+                "T", ("P", self.Ps2, self.Press_error), ("Q", 1, 0)
+            )
+            self.Ts3_sat = self.calc_prop_error(
+                "T", ("P", self.Ps3, self.Press_error), ("Q", 1, 0)
+            )
+            self.Ts4_sat = self.calc_prop_error(
+                "T", ("P", self.Ps4, self.Press_error), ("Q", 1, 0)
+            )
 
             # determinando calor especifico
 
-            self.c1 = PropsSI("C", "P", self.Ps1, "T", self.Ts1, self.fluido)
-            self.c2 = PropsSI("C", "P", self.Ps2, "T", self.Ts2, self.fluido)
-            self.c3 = PropsSI("C", "P", self.Ps3, "T", self.Ts3, self.fluido)
-            self.c4 = PropsSI("C", "P", self.Ps4, "T", self.Ts4, self.fluido)
+            self.c1 = self.calc_prop_error(
+                "C", ("P", self.Ps1, self.Press_error), ("T", self.Ts1, self.Temp_error)
+            )
+            self.c2 = self.calc_prop_error(
+                "C", ("P", self.Ps2, self.Press_error), ("T", self.Ts2, self.Temp_error)
+            )
+            self.c3 = self.calc_prop_error(
+                "C", ("P", self.Ps3, self.Press_error), ("T", self.Ts3, self.Temp_error)
+            )
+            self.c4 = self.calc_prop_error(
+                "C", ("P", self.Ps4, self.Press_error), ("T", self.Ts4, self.Temp_error)
+            )
 
             # determinando vasao massica
 
-            self.dot_m1 = self.vasao_massica(V,self.rho1)
-            self.dot_m2 = self.vasao_massica(V,self.rho2)
-            self.dot_m3 = self.vasao_massica(V,self.rho3)
-            self.dot_m4 = self.vasao_massica(V,self.rho4)
+            self.dot_m1 = self.vasao_massica(V, self.rho1)
+            self.dot_m2 = self.vasao_massica(V, self.rho2)
+            self.dot_m3 = self.vasao_massica(V, self.rho3)
+            self.dot_m4 = self.vasao_massica(V, self.rho4)
 
             input_array = np.array(
                 (
@@ -137,7 +231,7 @@ class Experimento:
                         np.around(self.Hs2 / 1e3, 1),
                         np.around(self.rho2, 1),
                         np.around(self.c2, 1),
-                        np.around(self.kelvin_to_celcius(PropsSI("T", "P", self.Ps2, "Q", 1, self.fluido))),
+                        np.around(self.kelvin_to_celcius(self.Ts2_sat), 1),
                         self.dot_m2,
                     ],
                     [
@@ -170,7 +264,7 @@ class Experimento:
                     "Densidade",
                     "Calor Esp.",
                     "Temp. Sat.",
-                    "Vasao massica"
+                    "Vasao massica",
                 ],
             )
 
@@ -268,14 +362,18 @@ class Experimento:
 
     def calc_trab_compressao(self):
         if self.cool:
-            self.trab_compressao = (self.dot_m2 + self.dot_m1)/2 * (self.Hs2 - self.Hs1)
+            self.trab_compressao = (
+                (self.dot_m2 + self.dot_m1) / 2 * (self.Hs2 - self.Hs1)
+            )
 
         else:
-            self.trab_compressao = (self.dot_m2 + self.dot_m1)/2 * (self.Hs1 - self.Hs2)
+            self.trab_compressao = (
+                (self.dot_m2 + self.dot_m1) / 2 * (self.Hs1 - self.Hs2)
+            )
 
     def calc_calor_evap(self):
         if self.cool:
-            self.calor_evap = (self.dot_m1 + self.dot_m4)/2 * (self.Hs1 - self.Hs4)
+            self.calor_evap = (self.dot_m1 + self.dot_m4) / 2 * (self.Hs1 - self.Hs4)
 
     def calc_potencia_compressor(self):
         self.pot_comp = self.I * 127
@@ -570,7 +668,7 @@ class Experimento:
             original_Hs2 = self.Hs2
             results_list = []
             T_liq_sat = PropsSI("T", "P", self.Ps3, "Q", 0, self.fluido)
-            
+
             for sub_res in sub_res_list:
                 Ts2 = T_liq_sat + sub_res
                 self.Hs2 = PropsSI("H", "T", Ts2, "P", self.Ps2, self.fluido)
@@ -586,7 +684,7 @@ class Experimento:
 
             # plotando resultados
             fig = plt.figure(figsize=[16, 9])
-            fig.suptitle('COP em função do subresfriamento', fontsize=24)
+            fig.suptitle("COP em função do subresfriamento", fontsize=24)
 
             # Plotando 2D
 
@@ -613,7 +711,7 @@ class Experimento:
             original_Hs1 = self.Hs1
             original_Hs4 = self.Hs4
             results_list = []
-            
+
             for P in P_list:
                 self.Hs1 = PropsSI("H", "T", self.Ts1, "P", P, self.fluido)
                 self.Hs4 = PropsSI("H", "T", self.Ts4, "P", P, self.fluido)
@@ -633,7 +731,9 @@ class Experimento:
 
             # plotando resultados
             fig = plt.figure(figsize=[16, 9])
-            fig.suptitle('Calor de evaporação em função da pressão do evaporador', fontsize=24)
+            fig.suptitle(
+                "Calor de evaporação em função da pressão do evaporador", fontsize=24
+            )
 
             # Plotando 2D
 
