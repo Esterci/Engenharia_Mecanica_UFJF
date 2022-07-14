@@ -1,6 +1,5 @@
 #### Definição do Frame Work ####
 
-from types import ClassMethodDescriptorType
 from CoolProp.CoolProp import PropsSI
 import numpy as np
 import matplotlib.pyplot as plt
@@ -40,26 +39,26 @@ class Experimento:
         return P / 100000
 
     @classmethod
-    def vasao_massica(cls, V, rho):
-        return V * rho
+    def ft3_h_to_m3_s(cls, V):
+        return V * 7.8658e-6
 
     @classmethod
-    def calc_prop_error(cls, prop_res, prop_1, prop_2):
+    def calc_prop_error(cls, prop_res, prop_1, prop_2, fluido="R134a"):
 
         nome_1, valor_1, erro_1 = prop_1
         nome_2, valor_2, erro_2 = prop_2
 
         res_1 = PropsSI(
-            prop_res, nome_1, valor_1 + erro_1, nome_2, valor_2 + erro_2, cls.fluido
+            prop_res, nome_1, valor_1 + erro_1, nome_2, valor_2 + erro_2, fluido
         )
         res_2 = PropsSI(
-            prop_res, nome_1, valor_1 + erro_1, nome_2, valor_2 - erro_2, cls.fluido
+            prop_res, nome_1, valor_1 + erro_1, nome_2, valor_2 - erro_2, fluido
         )
         res_3 = PropsSI(
-            prop_res, nome_1, valor_1 - erro_1, nome_2, valor_2 + erro_2, cls.fluido
+            prop_res, nome_1, valor_1 - erro_1, nome_2, valor_2 + erro_2, fluido
         )
         res_4 = PropsSI(
-            prop_res, nome_1, valor_1 - erro_1, nome_2, valor_2 - erro_2, cls.fluido
+            prop_res, nome_1, valor_1 - erro_1, nome_2, valor_2 - erro_2, fluido
         )
 
         aux = [res_1, res_2, res_3, res_4]
@@ -67,9 +66,7 @@ class Experimento:
         res_min = np.min(aux)
         res_max = np.max(aux)
 
-        med = PropsSI(
-            prop_res, nome_1, valor_1 - erro_1, nome_2, valor_2 - erro_2, cls.fluido
-        )
+        med = PropsSI(prop_res, nome_1, valor_1, nome_2, valor_2, fluido)
 
         erro_min = ((med - res_min) ** 2) ** 0.5
         erro_max = ((med - res_max) ** 2) ** 0.5
@@ -82,10 +79,16 @@ class Experimento:
         return {"med": med, "erro": erro}
 
     @classmethod
-    def format_error(cls,prop,pow,decimal):
-        prop
+    def format_error(cls, prop, pow=0, decimal=1):
+        valor = prop["med"]
+        erro = prop["erro"]
+        valor = np.around(valor * 10 ** pow, decimal)
+        erro = np.around(erro * 10 ** pow, decimal)
+        return str(valor) + " +/- " + str(erro)
 
-    def __init__(self, Temp_dict, Press_dict, I, V, fluido, cool=True, correcao=False):
+    def __init__(
+        self, Temp_dict, Press_dict, I, V, fluido="R134a", cool=True, correcao=True
+    ):
         # passando valores de temperatura
         self.Ts1 = self.celcius_to_kelvin(Temp_dict["Ts1"])
         self.Ts2 = self.celcius_to_kelvin(Temp_dict["Ts2"])
@@ -101,7 +104,7 @@ class Experimento:
         # passando demais valores
         self.cool = cool
         self.I = I
-        self.V = V
+        self.V = self.ft3_h_to_m3_s(V)
         self.fluido = fluido
 
         # definindo erros fixos
@@ -115,7 +118,7 @@ class Experimento:
                 "H", ("P", self.Ps1, self.Press_error), ("T", self.Ts1, self.Temp_error)
             )
             self.Hs3 = self.calc_prop_error(
-                "H", ("P", self.Ps3), ("T", self.Ts3, self.Temp_error)
+                "H", ("P", self.Ps3, self.Press_error), ("T", self.Ts3, self.Temp_error)
             )
             self.Hs4 = self.Hs3
 
@@ -126,11 +129,10 @@ class Experimento:
                     ("T", self.Ts1, self.Temp_error),
                 )
                 self.Hs2 = self.calc_prop_error(
-                    "H", ("P", self.Ps2, self.Press_error), ("S", S1["med"],S1["erro"])
+                    "H", ("P", self.Ps2, self.Press_error), ("S", S1["med"], S1["erro"])
                 )
-                self.Ts2 = self.calc_prop_error(
-                    "T", ("P", self.Ps2, self.Press_error), ("S", S1["med"],S1["erro"])
-                )
+                self.Ts2 = PropsSI("T", "P", self.Ps2, "S", S1["med"], self.fluido)
+
                 self.Ps4 = self.Ps1
 
             else:
@@ -143,16 +145,24 @@ class Experimento:
             # determinando densidades
 
             self.rho1 = self.calc_prop_error(
-                "D", ("P", self.Ps1, self.Press_error), ("H", self.Hs1["med"], self.Hs1["erro"])
+                "D",
+                ("P", self.Ps1, self.Press_error),
+                ("H", self.Hs1["med"], self.Hs1["erro"]),
             )
             self.rho2 = self.calc_prop_error(
-                "D", ("P", self.Ps2, self.Press_error), ("H", self.Hs2["med"], self.Hs2["erro"])
+                "D",
+                ("P", self.Ps2, self.Press_error),
+                ("H", self.Hs2["med"], self.Hs2["erro"]),
             )
             self.rho3 = self.calc_prop_error(
-                "D", ("P", self.Ps3, self.Press_error), ("H", self.Hs3["med"], self.Hs3["erro"])
+                "D",
+                ("P", self.Ps3, self.Press_error),
+                ("H", self.Hs3["med"], self.Hs3["erro"]),
             )
             self.rho4 = self.calc_prop_error(
-                "D", ("P", self.Ps4, self.Press_error), ("H", self.Hs4["med"], self.Hs4["erro"])
+                "D",
+                ("P", self.Ps4, self.Press_error),
+                ("H", self.Hs4["med"], self.Hs4["erro"]),
             )
 
             # determinando temperaturas de saturação
@@ -185,19 +195,12 @@ class Experimento:
                 "C", ("P", self.Ps4, self.Press_error), ("T", self.Ts4, self.Temp_error)
             )
 
-            # determinando vasao massica
-
-            self.dot_m1 = self.vasao_massica(V, self.rho1)
-            self.dot_m2 = self.vasao_massica(V, self.rho2)
-            self.dot_m3 = self.vasao_massica(V, self.rho3)
-            self.dot_m4 = self.vasao_massica(V, self.rho4)
-
             input_array = np.array(
                 (
-                    [self.Ts1, self.Ps1, self.Hs1, self.rho1, self.c1, self.dot_m1, 1],
-                    [self.Ts2, self.Ps2, self.Hs2, self.rho2, self.c2, self.dot_m2, 2],
-                    [self.Ts3, self.Ps3, self.Hs3, self.rho3, self.c3, self.dot_m3, 3],
-                    [self.Ts4, self.Ps4, self.Hs4, self.rho4, self.c4, self.dot_m4, 4],
+                    [self.Ts1, self.Ps1, self.Hs1["med"], self.rho1["med"], self.c1["med"], 1],
+                    [self.Ts2, self.Ps2, self.Hs2["med"], self.rho2["med"], self.c2["med"], 2],
+                    [self.Ts3, self.Ps3, self.Hs3["med"], self.rho3["med"], self.c3["med"], 3],
+                    [self.Ts4, self.Ps4, self.Hs4["med"], self.rho4["med"], self.c4["med"], 4],
                 )
             )
 
@@ -209,7 +212,6 @@ class Experimento:
                     "Entalpia",
                     "Densidade",
                     "Calor Esp.",
-                    "Vasao Massica",
                     "Ponto na bancada",
                 ],
             )
@@ -217,40 +219,52 @@ class Experimento:
             conv_input_array = np.array(
                 (
                     [
-                        np.around(self.kelvin_to_celcius(self.Ts1), 1),
-                        np.around(self.pascal_to_bar(self.Ps1), 1),
-                        np.around(self.Hs1 / 1e3, 1),
-                        np.around(self.rho1, 1),
-                        np.around(self.c1, 1),
-                        1,
-                        self.dot_m1,
+                        self.format_error(
+                            {"med": self.kelvin_to_celcius(self.Ts1), "erro": 0.5,}
+                        ),
+                        self.format_error(
+                            {"med": self.pascal_to_bar(self.Ps1), "erro": 0.5,}
+                        ),
+                        self.format_error(self.Hs1, -3),
+                        self.format_error(self.rho1),
+                        self.format_error(self.c1),
+                        self.format_error(self.Ts1_sat, decimal=5),
                     ],
                     [
-                        np.around(self.kelvin_to_celcius(self.Ts2), 1),
-                        np.around(self.pascal_to_bar(self.Ps2), 1),
-                        np.around(self.Hs2 / 1e3, 1),
-                        np.around(self.rho2, 1),
-                        np.around(self.c2, 1),
-                        np.around(self.kelvin_to_celcius(self.Ts2_sat), 1),
-                        self.dot_m2,
+                        self.format_error(
+                            {"med": self.kelvin_to_celcius(self.Ts2), "erro": 0.5,}
+                        ),
+                        self.format_error(
+                            {"med": self.pascal_to_bar(self.Ps2), "erro": 0.5,}
+                        ),
+                        self.format_error(self.Hs2, -3),
+                        self.format_error(self.rho2),
+                        self.format_error(self.c2),
+                        self.format_error(self.Ts2_sat, decimal=5),
                     ],
                     [
-                        np.around(self.kelvin_to_celcius(self.Ts3), 1),
-                        np.around(self.pascal_to_bar(self.Ps3), 1),
-                        np.around(self.Hs3 / 1e3, 1),
-                        np.around(self.rho3, 1),
-                        np.around(self.c3, 1),
-                        1,
-                        self.dot_m3,
+                        self.format_error(
+                            {"med": self.kelvin_to_celcius(self.Ts3), "erro": 0.5,}
+                        ),
+                        self.format_error(
+                            {"med": self.pascal_to_bar(self.Ps3), "erro": 0.5,}
+                        ),
+                        self.format_error(self.Hs3, -3),
+                        self.format_error(self.rho3),
+                        self.format_error(self.c3),
+                        self.format_error(self.Ts3_sat, decimal=5),
                     ],
                     [
-                        np.around(self.kelvin_to_celcius(self.Ts4), 1),
-                        np.around(self.pascal_to_bar(self.Ps4), 1),
-                        np.around(self.Hs4 / 1e3, 1),
-                        np.around(self.rho4, 1),
-                        np.around(self.c4, 1),
-                        1,
-                        self.dot_m4,
+                        self.format_error(
+                            {"med": self.kelvin_to_celcius(self.Ts4), "erro": 0.5,}
+                        ),
+                        self.format_error(
+                            {"med": self.pascal_to_bar(self.Ps4), "erro": 0.5,}
+                        ),
+                        self.format_error(self.Hs4, -3),
+                        self.format_error(self.rho4),
+                        self.format_error(self.c4),
+                        self.format_error(self.Ts4_sat, decimal=5),
                     ],
                 )
             )
@@ -264,7 +278,6 @@ class Experimento:
                     "Densidade",
                     "Calor Esp.",
                     "Temp. Sat.",
-                    "Vasao massica",
                 ],
             )
 
@@ -299,7 +312,7 @@ class Experimento:
             conv_input_array = np.array(
                 (
                     [
-                        np.around(self.kelvin_to_celcius(self.Ts2), 1),
+                        self.format_error(self.kelvin_to_celcius(self.Ts2), 1),
                         np.around(self.pascal_to_bar(self.Ps2), 1),
                         np.around(self.Hs2 / 1e3, 1),
                         2,
@@ -338,6 +351,7 @@ class Experimento:
 
             self.delta_P_eva = self.Ps1 - self.Ps4
             self.delta_P_cond = self.Ps3 - self.Ps2
+            self.delat_P_val = self.Ps4 - self.Ps3
 
         else:
             self.delta_T_eva = self.Ts2 - self.Ts3
@@ -349,7 +363,25 @@ class Experimento:
     def calc_COP(self):
 
         if self.cool:
-            self.COP = (self.Hs1 - self.Hs4) / (self.Hs2 - self.Hs1)
+
+            COP = (self.Hs1["med"] - self.Hs4["med"]) / (
+                self.Hs2["med"] - self.Hs1["med"]
+            )
+            erro = (
+                1
+                / (self.Hs2["med"] - self.Hs1["med"]) ** 2
+                * (
+                    (self.Hs2["med"] - self.Hs1["med"]) ** 2
+                    * ((self.Hs1["erro"] + self.Hs4["erro"]))
+                    + (self.Hs1["med"] - self.Hs4["med"]) ** 2
+                    * ((self.Hs1["erro"] + self.Hs2["erro"]))
+                )
+                ** 0.5
+            )
+            self.COP = {
+                "med": COP,
+                "erro": erro,
+            }
 
         else:
             self.COP = (self.Hs4 - self.Hs1) / (self.Hs2 - self.Hs1)
@@ -360,11 +392,32 @@ class Experimento:
 
         self.ef_isentropica = (self.Hs2s - self.Hs1) / (self.Hs2 - self.Hs1)
 
+    def calc_vasao_massica(self):
+
+        res_1 = self.V * (self.rho3["med"] + self.rho3["erro"])
+        res_2 = self.V * (self.rho3["med"] - self.rho3["erro"])
+
+        aux = [res_1, res_2]
+
+        res_min = np.min(aux)
+        res_max = np.max(aux)
+
+        med = self.V * self.rho3["med"]
+
+        erro_min = ((med - res_min) ** 2) ** 0.5
+        erro_max = ((med - res_max) ** 2) ** 0.5
+
+        if np.isclose(erro_min, erro_max):
+            self.dot_m = {"med": med, "erro": erro_min}
+
+        else:
+            erro = np.min((erro_max, erro_min))
+
+            self.dot_m = {"med": med, "erro": erro}
+
     def calc_trab_compressao(self):
         if self.cool:
-            self.trab_compressao = (
-                (self.dot_m2 + self.dot_m1) / 2 * (self.Hs2 - self.Hs1)
-            )
+            self.trab_compressao = ()
 
         else:
             self.trab_compressao = (
@@ -373,7 +426,15 @@ class Experimento:
 
     def calc_calor_evap(self):
         if self.cool:
-            self.calor_evap = (self.dot_m1 + self.dot_m4) / 2 * (self.Hs1 - self.Hs4)
+            calor_evap = self.dot_m["med"] * (self.Hs1["med"] - self.Hs4["med"])
+            erro = (
+                self.dot_m["med"] ** 2 * (self.Hs1["erro"] ** 2 + self.Hs4["erro"] ** 2)
+                + (self.Hs1["med"] - self.Hs4["med"]) ** 2 * self.dot_m["erro"] ** 2
+            ) ** 0.5
+            self.calor_evap = {
+                "med": calor_evap,
+                "erro": erro,
+            }
 
     def calc_potencia_compressor(self):
         self.pot_comp = self.I * 127
@@ -399,16 +460,19 @@ class Experimento:
         self.variacoes()
 
         self.calc_COP()
+        self.calc_vasao_massica()
 
-        self.calc_ef_isentropica()
+        # self.calc_ef_isentropica()
 
-        self.calc_potencia_compressor()
+        # self.calc_potencia_compressor()
 
-        prop1 = {"name": "T", "value": self.Ts3}
+        # prop1 = {"name": "T", "value": self.Ts3}
 
-        prop2 = {"name": "P", "value": self.Ps3}
+        # prop2 = {"name": "P", "value": self.Ps3}
 
-        self.calc_trab_compressao()
+        # self.calc_trab_compressao()
+
+        self.calc_calor_evap()
 
         self.calc_sub_resfriamento()
 
@@ -418,16 +482,22 @@ class Experimento:
             output_array = np.array(
                 (
                     [
-                        np.around(self.delta_T_eva, 1),
-                        np.around(self.delta_T_cond, 1),
-                        np.around(self.pascal_to_bar(self.delta_P_eva), 1),
-                        np.around(self.pascal_to_bar(self.delta_P_cond), 1),
-                        np.around(self.COP, 1),
-                        np.around(self.pot_comp, 1),
-                        np.around(self.sub_ref, 1),
-                        np.around(self.sup_aqc, 1),
-                        np.around(self.ef_isentropica, 1),
-                        np.around(self.trab_compressao, 4),
+                        self.format_error({"med": self.delta_T_eva, "erro": 0.7}),
+                        self.format_error({"med": self.delta_T_cond, "erro": 0.7}),
+                        self.format_error(
+                            {"med": self.pascal_to_bar(self.delta_P_eva), "erro": 0.7}
+                        ),
+                        self.format_error(
+                            {"med": self.pascal_to_bar(self.delta_P_cond), "erro": 0.7}
+                        ),
+                        self.format_error(self.COP, decimal=4),
+                        self.format_error(self.dot_m, decimal=5),
+                        self.format_error(self.calor_evap, pow=-3, decimal=4),
+                        self.format_error({"med": self.sub_ref, "erro": 0.7}),
+                        self.format_error({"med": self.sup_aqc, "erro": 0.7}),
+                        # self.format_error(self.pot_comp),
+                        # self.format_error(self.ef_isentropica),
+                        # self.format_error(self.trab_compressao, 4),
                     ]
                 )
             )
@@ -440,11 +510,13 @@ class Experimento:
                         "delta_P_eva",
                         "delta_P_cond",
                         "COP",
-                        "pot_comp",
+                        "vazao_massica",
+                        "calor_evap",
                         "sub_resfriamento",
                         "sup_aquecimento",
-                        "ef_isentropica",
-                        "trab_compressao",
+                        # "pot_comp",
+                        # "ef_isentropica",
+                        # "trab_compressao",
                     ]
                 )
             )
