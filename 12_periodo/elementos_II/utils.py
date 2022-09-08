@@ -96,215 +96,258 @@ def deg_to_rad(deg):
     return deg * np.pi / (180)
 
 
-def embreagem_hiperespaco(r_pinhao, r_i_lim ):
+class embreagem:
+    def __init__(self, r_pinhao, n_molas_lim = (4,8)) -> None:
+        self.r_pinhao = r_pinhao
+        self.n_molas_min, self.n_molas_max = n_molas_lim
+        pass
 
-    r_i_min, r_i_max = r_i_lim
-    r_i_eval = np.linspace(r_i_min, r_i_max, num=15)
+    def calc_embreagem(self):
 
-    r_i_list = []
-    r_o_list = []
-    N_list = []
-    P_list = []
+        r_i_eval = np.linspace(10, self.r_pinhao, num=10, dtype=int )
+        r_i_list = []
+        r_o_list = []
+        N_list = []
+        P_list = []
+        F_emb_list = []
+        torque_list = []
+        Perim_list = []
 
-    for r_i in r_i_eval:
+        for r_i_mm in r_i_eval:
 
-        # constantes embragem
+            r_i = r_i_mm * 1e-3
 
-        Pot = 7.5e3
-        w = 900 / 60
-        torque = Pot / (w * 2 * np.pi)
-        f = 0.45
-        p_max = 2070e3
-        b = 3e-3
-        rho_emb = 79
+            # constantes embragem
 
-        # calculo de embreagem
+            Pot = 7.5e3
+            w = 900 / 60
+            torque_proj = Pot / (w * 2 * np.pi)
+            f = 0.45
+            p_max = 2070e3
+            b = 3e-3
+            rho_emb = 7070
+            r_pinhao = 75
+            torque_proj
 
-        N = 2
+            # calculo de embreagem
 
-        r_o = r_i * (3) ** 0.5
+            N = 2
 
-        while r_o > 2 * r_pinhao:
+            r_o = r_i * (3) ** 0.5
 
-            r_o = (torque / (np.pi * p_max * f * r_i * N) + r_i ** 2) ** 0.5
+            torque = np.pi * p_max * f * r_i * (r_o ** 2 - r_i ** 2) * N
 
-            N += 1
+            while torque > torque_proj:
 
-        F = 2 * np.pi * p_max * r_i * (r_o - r_i)
+                torque = np.pi * p_max * f * r_i * (r_o ** 2 - r_i ** 2) * N
 
-        P = (np.pi * r_o ** 2 - np.pi * r_i ** 2) * b * rho_emb * N * 2 - 1
+                N += 1
 
-        r_i_list.append(r_i)
-        r_o_list.append(r_o)
-        N_list.append(N)
+                if N > 10:
+                    break
 
-    df = pd.DataFrame(
-        np.vstack((r_i_list, r_o_list, N_list,)).T, columns=["r_i", "r_o", "N",]
-    )
+            F_emb = 2 * np.pi * p_max * r_i * (r_o - r_i)
 
-    return df
+            P = (np.pi * r_o ** 2 - np.pi * r_i ** 2) * b * rho_emb * (N * 2 - 1)
 
+            Perim_emb = 2 * np.pi * ((r_o - r_i) / 2 + r_i)
 
-# n_molas_min, n_molas_max = n_molas_lim
-#     d_min,d_max = d_lim
+            r_i_list.append(r_i)
+            r_o_list.append(r_o)
+            N_list.append(N)
+            P_list.append(P)
+            F_emb_list.append(F_emb)
+            Perim_list.append(2*np.pi*((r_o-r_i)/2 + r_i))
 
-#     n_molas_eval = np.linspace(n_molas_min,n_molas_max,num=15,dtype=int)
-#     d_mm_list = np.linspace(d_min,d_max,num=15,dtype=int)
-#  for n_molas in n_molas_eval:
+        self.df_emb = pd.DataFrame(
+            np.vstack((
+                r_i_list, 
+                r_o_list, 
+                N_list,
+                P_list, 
+                F_emb_list,
+                torque_list,
+                Perim_list,
+                )).T, 
+                columns=["r_i", "r_o", "N","P","F","torque","Perim"]
+        )
 
-#         ## constantes molas
+    def plot_peso_embreagem(self):
+        
+        fig = plt.figure(figsize=[16, 9])
+        fig.suptitle('Peso da embreagem em função do raio interno', fontsize=16)
 
-#         Su = 1250e6
-#         F_min = F / n_molas
-#         F_max = F * 1.2
-#         Fs = 1.1 * F_max
-#         delta_p = 1e-3
-#         G = 79e9
-#         E = 207e9
-#         rho = 7700
+        ax = fig.add_subplot(1,1,1)
 
-#         flambagem_seed = np.array((
-#             [0,10000],
-#             [5.2,0.75],
-#             [10,0.1375],
-#             [9,0.1625],
-#             [6,0.3667],
-#             [8,0.2],
-#             [7,0.252]
-#         ))
+        # Plotando 2D
 
+        ax.plot(self.df_emb.r_i,
+            self.df_emb.P,
+            'o', 
+            self.df_emb.r_i, 
+            self.df_emb.P, 
+            '-',
+            color='b',
+        )
 
-#         f2 = interp1d(
-#             flambagem_seed[:,0],
-#             flambagem_seed[:,1],
-#             kind='cubic'
-#         )
+        ax.locator_params(axis='y', nbins=30)
+        ax.locator_params(axis='x', nbins=20)
+        ax.set_ylabel('$Peso (kg)$', fontsize=16)
+        ax.set_xlabel('$r_i (m)$', fontsize=16)
+        ax.grid()
 
-#         # calculo molas
+        plt.savefig("plots/Peso_da_embreagem_vs_ri.png")
 
-#         # encontrando tensão limite
+    def calc_mola(self):
 
-#         tensao_max_teorico = 0.65 * Su
+        # constantes
+        Su = 1250e6
+        Su_lim = 0.80
+        Su_vida_inf = 0.62
+        Sy_lim = 0.65
+        delta_p = 1e-3
+        G = 79e9
+        E = 207e9
+        rho = 7700
 
-#         f_seguranca = 0.1
+        tensao_max_teorico = 0.65 * Su
 
-#         f_mola_solida = 0.1
+        f_seguranca = 0.1
 
-#         tensao_max = tensao_max_teorico/(1+f_seguranca)/(1+f_mola_solida)
+        f_mola_solida = 0.1
 
-#         # estabelecendo um diãmetro alvo
+        tensao_max = tensao_max_teorico/(1+f_seguranca)/(1+f_mola_solida)
 
-#         C_t = 5
-
-#         Kw = (4*C_t - 1)/(4*C_t - 4) + 0.615/C_t
-
-#         d_alvo = (8*F_max*C_t*Kw/(np.pi*tensao_max))**0.5
-
-#         # determinando rigidez
-
-#         k = (F_max-F_min)/delta_p
-
-
-#         C_list = []
-#         D_list = []
-#         Nt_list = []
-#         Lf_D_list = []
-#         delta_Lf_list = []
-#         V_list = []
-#         P_list = []
-#         fn_list = []
-#         d_list = []
-#         r_i_list = []
-#         r_o_list = []
-#         N_list = []
-#         n_molas_list = []
-
-#         for i,d_mm in enumerate(d_mm_list):
-
-#             d = d_mm*1e-3
-
-#             C = C_converge(C_t,d,tensao_max,F_max)
-
-#             D = C * d
-
-#             D_lim = 2 * np.pi * r_i / (n_molas + np.pi) - d
-
-#             N = d * G/(8 * C**3 * k)
-
-#             N_t = N + 2
-
-#             Ls = N_t * d
-
-#             delta = Fs/k
-
-#             L_f = Ls + delta
-
-#             Lf_D = L_f/D
-
-#             ponto_curva_a = f2(Lf_D)
-
-#             delta_Lf = delta/L_f
-
-#             V = (np.pi * d **2 / 4) * 2*np.pi *D/2
-
-#             P += V * rho * n_molas
-
-#             fn = 353e3*d/(N*D**2) * 60
-
-#             if D > D_lim:
-#                 C_list.append("Circ")
+        n_molas_list = np.linspace(self.n_molas_min,self.n_molas_max,num=5,dtype=int)
+        d_mm_list = np.linspace(5,18,num=6,dtype=float)
 
 
-#             elif ponto_curva_a < delta_Lf:
-#                 C_list.append("Flm")
-#                 break
+        for i in range(len(self.df_emb)):
 
-#             else:
-#                 C_list.append(C)
+            pd_serie = self.df_emb.loc[i]
+            
+            for j,n_molas in enumerate(n_molas_list):
 
-#             D_list.append(D)
-#             Nt_list.append(N_t)
-#             Lf_D_list.append(Lf_D)
-#             delta_Lf_list.append(delta_Lf)
-#             V_list.append(V)
-#             P_list.append(P)
-#             fn_list.append(fn)
-#             d_list.append(d)
-#             r_i_list.append(r_i)
-#             r_o_list.append(r_o)
-#             N_list.append(N)
-#             n_molas_list.append(n_molas)
+                F = pd_serie.F / n_molas
 
-#             print(i)
+                F_max = pd_serie.F * 1.2
 
-# df = pd.DataFrame(np.vstack((
-#     d_list,
-#     C_list,
-#     D_list,
-#     Nt_list,
-#     Lf_D_list,
-#     delta_Lf_list,
-#     V_list,
-#     P_list,
-#     fn_list,
-#     r_i_list,
-#     r_o_list,
-#     N_list,
-#     n_molas_list
-# )).T,columns=[
-#         'd',
-#         'C',
-#         'D',
-#         'Nt',
-#         'Lf/D',
-#         'delta/Lf',
-#         'V',
-#         'P',
-#         'fn',
-#         'r_i',
-#         'r_o',
-#         'N',
-#         'n_molas'
-#     ])
+                Fs = 1.1 * F_max
+                
+                if i ==0 and j == 0:
+                    self.plot_goodman(self, pd_serie.F, F_max, Su_vida_inf,Su_lim,Sy_lim)
 
-# return df
+                for i,d_mm in enumerate(d_mm_list):
+
+                    d = d_mm*1e-3
+
+                    C = C_converge(C_t,d,tensao_max,F_max)
+
+                    D = C * d
+
+                    N = d * G/(8 * C**3 * k)
+
+                    N_t = N + 2
+
+                    Ls = N_t * d
+
+                    delta = Fs/k
+
+                    L_f = Ls + delta
+
+                    Lf_D = L_f/D
+
+
+                    delta_Lf = delta/L_f
+
+
+                    V = (np.pi * d **2 / 4) * 2*np.pi *D/2
+
+                    P += V * rho * n_molas
+
+                    fn = 353e3*d/(N*D**2) * 60
+
+                    C_list.append(C)
+                    D_list.append(D)
+                    Nt_list.append(N_t)
+                    Lf_D_list.append(Lf_D)
+                    delta_Lf_list.append(delta_Lf)
+                    V_list.append(V)
+                    P_list.append(P)
+                    fn_list.append(fn)
+                    d_list.append(d)
+                    N_list.append(n_molas)
+                    Diam_list.append(D*n_molas)
+
+            df = pd.DataFrame(np.vstack((
+                    d_list,
+                    C_list,
+                    N_list,
+                    Diam_list,
+                    D_list,
+                    Nt_list,
+                    Lf_D_list,
+                    delta_Lf_list,
+                    P_list,
+                    fn_list,
+                )).T,columns=[
+                        'd',
+                        'C',
+                        'n_molas',
+                        'Diam',
+                        'D',
+                        'Nt',
+                        'Lf/D',
+                        'delta/Lf',
+                        'P',
+                        'fn',
+                    ], dtype=float)
+
+            df
+
+    def plot_goodman(self, F_min, F_max, Su_vida_inf,Su_lim,Sy_lim):
+        
+        # plotagem diagrama de goodman
+
+        fig = plt.figure(figsize=[16, 25])
+
+        linha_sobrecarga_1 = np.array(
+            ([0,Su_vida_inf],
+            [Su_lim,Su_lim])
+        ) 
+
+        linha_sobrecarga_2 = np.array(
+            ([0,Sy_lim],
+            [Su_lim,Sy_lim])
+        ) 
+
+        linha_carga = np.array(
+            ([0,0],
+            [Su_lim*(F_min/F_max),Su_lim])
+        )
+
+
+        # Plotando 2D
+
+        ax = fig.add_subplot(3, 2, (i+1) )
+
+        ax.set_title('Diagrama de Goodman', fontsize=16)
+
+        ax.plot(linha_sobrecarga_1[:,0], linha_sobrecarga_1[:,1], 'r', linewidth=2)
+        ax.plot(linha_sobrecarga_2[:,0], linha_sobrecarga_2[:,1], 'r', linewidth=2)
+        ax.plot(linha_carga[:,0], linha_carga[:,1], 'b', linewidth=2)
+
+        ax.set_xlim(0)
+        ax.set_ylim(0)
+        ax.locator_params(axis='y', nbins=20)
+        ax.grid()
+
+        plt.savefig("plots/Diagrama_de_Goodman.png")
+
+    def estudo (self):
+
+        self.calc_embreagem()
+
+        self.plot_peso_embreagem()
+
+
