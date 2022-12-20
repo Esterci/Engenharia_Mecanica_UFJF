@@ -1,0 +1,1089 @@
+INJEÇÃO DIRETA DE 
+
+COMBUSTÍVEL EM CICLO OTTO
+
+GDI – GASOLINE DIRECT INJECTION
+
+MEC  014 - Motores de Combustão Interna
+
+Engenharia Mecânica da Universidade Federal de Juiz de 
+
+Fora
+
+ 
+\newpage
+Capitulo 8 Parte II
+
+Motores de Combustão Interna
+
+Volume I
+
+Franco Brunetti
+
+ 
+\newpage
+Agenda
+
+ PRIMEIRA PARTE: Introdução
+ SEGUNDA PARTE: Requisitos de Combustão e 
+Formação de Mistura
+ TERCEIRA PARTE: Sistema de Injeção Direta 
+de Combustível.
+ QUARTA PARTE: Controle de Combustão.
+ QUINTA PARTE: Emissões de Poluentes.
+ SEXTA PARTE: Conclusões. 
+
+ 
+\newpage
+PRIMEIRA PARTE
+
+INTRODUÇÃO
+
+ 
+\newpage
+1) Volkswagen move up! 1.0 TSI – R$ 54.350
+2) Volkswagen Polo Comfortline 1.0 TSI – R$ 
+65.190
+3) Ford Fiesta SEL 1.0 EcoBoost – R$ 66.090
+4) Volkswagen Golf Comfortline 1.0 TSI – R$ 
+77.247
+5) Chevrolet Tracker LT 1.4 Turbo – R$ 82.990
+6) Peugeot 208 GT 1.6 THP – R$ 84.490
+7) Peugeot 308 Griffe 1.6 THP – R$ 84.990 e 
+408 Griffe 1.6 THP – R$ 84.990
+8) Peugeot 2008 Griffe 1.6 THP – R$ 89.990
+9) Citroën C4 Lounge Tendance 1.6 THP – R$ 
+90.290
+
+ 
+\newpage
+Introdução
+
+Sistema 
+de Injeção
+
+Port Fuel 
+
+Injection - PFI
+
+Gasoline 
+Direct 
+Injetcion – 
+GDI
+
+Década de 90
+Maior taxa de 
+compressão e 
+maior eficiência 
+volumétrica
+
+Mistura 
+
+ou 
+
+homogênea 
+estratificada
+Injeção no 
+tempo de 
+admissão ou 
+compressão
+
+ 
+\newpage
+Introdução
+
+Port Fuel 
+
+Injection - PFI
+
+Gasoline 
+Direct 
+
+Injetcion - GDI
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/51.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/52.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Introdução
+
+Menor perda de bombeamento; 
+modulação do torque pelo 
+combustível injetado (fácil no 
+
+Diesel, difícil no Otto)
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/60.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Introdução
+
+• Maior taxa de compressão – limitada 
+pela resistência à detonação do 
+combustível.
+• Mais de uma injeção no ciclo – menor 
+temperatura no interior da câmara de 
+combustão.
+• Controle mais preciso da mistura ar-
+combustível por não haver deposição de 
+combustível nas paredes do coletor de 
+admissão e cabeçote.
+• Combustível dosado de acordo com o ar 
+dentro do cilindro – bom em variação 
+abrupta de carga.
+• Melhores dirigibilidade e controle de 
+
+ 
+\newpage
+Requisitos de Combustão e Formação de 
+
+Mistura
+
+Mecanismo de Atomização do Spray
+
+Jato ou folha líquida
+α  - ângulo do cone.
+
+S – penetração.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/75.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Requisitos de Combustão e Formação de 
+
+Mistura
+
+Mecanismo de Atomização do Spray
+
+A velocidade do líquido é proporcional a 
+diferença de pressão sistema/cilindro.
+
+leva o filme/jato à desintegração.
+
+A  velocidade relativa induz instabilidades que 
+As gotas continuam a sofrer quebras por efeitos 
+A tensão superficial aumenta com a diminuição 
+do diâmetro, mas a velocidade relativa também 
+
+aerodinâmicos.
+
+As gotas podem coalescer com o choque.
+Gotas evaporam ao trocar calor com o 
+
+aumenta.
+
+ambiente.
+
+ 
+\newpage
+Requisitos de Combustão e Formação de 
+
+Mistura
+
+Atomização do Combustível
+
+O ponto de injeção é determinante na formação da mistura.
+Quanto mais próximo da câmara melhor controle da mistura, 
+Injeção direta requer melhor atomização para compensar o 
+
+porém menos tempo para a sua formação.
+
+menor tempo
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/90.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Requisitos de Combustão e Formação de 
+
+Mistura
+
+Atomização do Combustível
+
+PFI
+
+GDI
+
+Maior pressão de injeção, maior atomização.
+
+Maior atomização, maior área de contato combustível-ar.
+
+Injetor com maior tecnologia.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/100.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Requisitos de Combustão e Formação de 
+
+Mistura
+
+Atomização do Combustível
+
+SMD
+SMD
+
+
+
+
+1
+1
+inj P
+P
+
+inj P
+P
+
+
+cyl
+cyl
+
+SMD
+SMD
+ - 
+P
+ - 
+P
+injP
+injP
+ - 
+ - 
+cyl
+cyl
+
+ - 
+Sauter 
+ - 
+Sauter 
+pressão
+pressão
+pressão
+pressão
+
+mean 
+mean 
+ de 
+ de 
+ na 
+ na 
+
+injeção
+injeção
+câmara
+câmara
+
+diameter
+diameter
+
+ de 
+ de 
+ de 
+ de 
+
+combustíve
+combustíve
+combustão
+combustão
+
+l
+l
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/108.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Requisitos de Combustão e Formação de 
+
+Mistura
+
+Atomização do Combustível
+
+Uma massa de 10 mg de gasolina (massa aproximada para um 
+ciclo  de  combustão  de  um  motor  operando  em  baixa  carga) 
+injetada por um sistema de injeção indireta, operando a  4 bar 
+de  pressão  à  montante  do 
+injetor,  é  dividida  em 
+aproximadamente  26.000 partículas de 100 μm de diâmetro 
+médio,  totalizando  uma  área  superficial  total  de  840  mm2  de 
+combustível. Essa mesma massa de combustível, se injetada por 
+um sistema de injeção direta operando a 130 bar de pressão à 
+montante do injetor, será dividida em 8.000.000 de partículas 
+de 15 μm de diâmetro médio, totalizando uma área superficial 
+de 5600 mm2 de combustível.
+A maior área superficial é benéfica, pois aumenta a transferência 
+de massa da gota por efeitos aerodinâmicos, além de aumentar 
+a  área  para  transferência  de  calor  do  meio  para  a  gota, 
+aumentando assim a sua taxa de evaporação.
+
+ 
+\newpage
+Requisitos de Combustão e Formação de 
+
+Mistura
+
+Atomização do Combustível
+
+Tipos de Injetores
+
+externa
+
+Full Cone
+
+Hollow Cone
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/125.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Requisitos de Combustão e Formação de 
+
+Mistura
+
+Atomização do Combustível
+
+Qualidade da 
+
+Injeçã0
+
+Prail = 10 MPa
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/133.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Requisitos de Combustão e Formação de 
+
+Mistura
+
+Atomização do Combustível
+
+O injetor multifuros facilita a aplicação lateral
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/141.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Requisitos de Combustão e Formação de 
+
+Mistura
+
+Atomização do Combustível
+
+Abertura do injetor
+
+•  Solenoide
+•  Piezoelétrico
+
+Piezelétrico da ordem de 10 vezes 
+permitindo mais injeções por ciclo 
+
+mais rápido que o solenoide, 
+
+(melhor atomização), consome menos 
+
+energia, mas é mais caro.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/149.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Requisitos de Combustão e Formação de 
+
+Mistura
+
+Atomização do Combustível
+
+Pulse-pressurized air-assisted injector
+
+•  em desenvolvimento.
+
+•  injetor convencional usado na injeção indireta (menor 
+
+pressão).
+
+•  necessário um compressor de ar.
+
+•  melhor atomização.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/157.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Requisitos de Combustão e Formação de 
+
+Mistura
+
+Orientação da Combustão
+
+•  spray-guided
+• Combustão orientada pelo jato de combustível.
+•  Sofre menor influência da turbulência do interior da câmara.
+•  Injetor localizado próximo a vela.
+• Menor tempo para formação da mistura.
+• Carbonização da vela de ignição.
+
+• Wall-guided.
+• Combustão guiada pela cabeça do 
+pistão e parede do cilindro.
+• Vela no centro e injetor na lateral.
+• Maior distância vela-injetor.
+• Maior tempo de formação da mistura.
+
+• Air-guided.
+• Combustão guiada pela massa de 
+ar deslocada no interior da 
+câmara.
+•  injeção mais cedo, a estabilidade 
+é pior, mas reduz a deposição de 
+combustível na cabeça do pistão e 
+na parede.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/165.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/166.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/167.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Requisitos de Combustão e Formação de 
+
+Mistura
+
+ Orientação da Combustão
+
+Os arranjos dependem muito da forma da cabeça do pistão, 
+
+que direcionará a mistura aos eletrodos da vela.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/175.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Requisitos de Combustão e Formação de 
+
+ Combustão Homogênea e Estratificada
+
+Mistura
+
+Queima estratificada (late injection): relação ar–combustível 
+Para garantir a ignição e a evolução da frente de chama é 
+
+global pobre, acima de 20\% de excesso de ar.
+
+necessário relação ar-combustível próxima a estequiométrica 
+
+pelo menos perto da vela.
+
+A figura mostra A/F no entorno da vela.
+
+   
+
+Final da 
+injeção
+
+Ignição
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/183.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+Requisitos de Combustão e Formação de 
+
+ Combustão Homogênea e Estratificada
+
+Mistura
+
+QUEIMA ESTRATIFICADA
+
+•  Controle altamente complexo.
+
+•  Extremamente sensível às características dos combustíveis.
+
+•  Dependente do desenho dos componentes.
+•  Dependente do regime de operação do motor.
+
+•  Sensível ao desgaste e ao mau funcionamento do sistema de 
+
+•  Dificuldade no controle de emissões de poluentes.
+
+injeção.
+
+   
+
+ 
+\newpage
+SISTEMA DE INJEÇÃO DIRETA DE 
+
+COMBUSTÍVEL
+
+Diferenças para um sistema convencional:
+
+•  Os injetores precisam suportar condições de temperatura e 
+
+pressão do interior da câmara.
+
+•  Existência de uma bomba secundária.
+
+•  Pressão de combustível entre 10 a 40 vezes maior.
+
+• Sistema de combustível dividido em circuito de baixa e de alta 
+
+pressão.
+
+Saída da bomba elétrica – 4 bar.
+
+Saída da bomba de alta pressão – 40 a 200 bar.
+
+ 
+\newpage
+SISTEMA DE INJEÇÃO DIRETA DE 
+
+COMBUSTÍVEL
+
+Sistema Bosch MED 
+Motronic
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/205.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+SISTEMA DE INJEÇÃO DIRETA DE 
+
+COMBUSTÍVEL
+
+ 
+\newpage
+SISTEMA DE INJEÇÃO DIRETA DE 
+
+COMBUSTÍVEL
+
+ 
+\newpage
+SISTEMA DE INJEÇÃO DIRETA DE 
+
+COMBUSTÍVEL
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/213.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CONTROLE DA COMBUSTÃO
+Mapa Característico de Combustão
+
+Carga 
+
+estratificada
+
+Combustão    
+
+GDI
+
+O que define o regime de operação é o 
+projeto do motor associado ao 
+combustível. 
+
+Carga 
+
+homogênea
+Mistura 
+pobre, 
+ca ou rica.
+
+estequiométri
+
+ 
+\newpage
+CONTROLE DA COMBUSTÃO
+Mapa Característico de Combustão
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/245.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CONTROLE DA COMBUSTÃO
+Mapa Característico de Combustão
+Estratégia de transição entre 
+
+elevado.
+
+borboleta.
+estratificada.
+
+combustão homogênea e 
+estratificada – região 2.
+1. A é homogênea – torque 
+2. A-B empobrecimento da 
+mistura pela abertura da 
+3. B-C aplica-se uma injeção 
+4. D totalmente estratificada, 
+com borboleta totalmente 
+Região 3 – a alta rotação requer 
+
+aberta.
+estequiometria para 
+estabilidade.
+máximo torque é obtido com 
+
+Região 4 – plena carga, onde o 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/255.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CONTROLE DA COMBUSTÃO
+
+Injeção em dois estágios
+
+GDI permite a divisão da massa injetada de combustível em 
+No máximo duas, pois nas fases de abertura e fechamento do 
+
+mais de uma injeção.
+
+injetor a atomização é deficiente.
+
+A vantagem obtida é uma maior resistência à detonação, 
+
+devido a diminuição de temperatura.
+
+A primeira injeção absorve calor da câmara.
+
+A divisão de massas entre as injeções deve ser estudada 
+
+Permite ainda a (pós)injeção de combustível com a válvula de 
+
+escapamento aberta, com a finalidade de aquecimento do 
+
+conversor catalítico.
+
+A estratégia permite a adoção de maiores taxas de 
+
+detalhadamente. 
+
+compressão.
+
+ 
+\newpage
+CONTROLE DA COMBUSTÃO
+
+Injeção em dois estágios
+
+Comparativo de atomização entre uma (à esquerda) ou duas 
+
+injeções. Intervalo de 5 ms entre as injeções.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/270.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CONTROLE DA COMBUSTÃO
+
+Partida a Frio
+
+A partida em baixas temperaturas é um grande desafio no 
+
+desenvolvimento de motores de combustão interna.
+
+Os injetores dos GDI’s operam com pressões maiores dos que as 
+fornecidas pela bomba elétrica. A elevação de pressão é feita pela 
+Nos primeiros ciclos de combustão, logo após a partida, a bomba 
+mecânica está operando aquém do ideal, portanto a  pressão de 
+A atomização é prejudicada, aumentando o risco de deposição de 
+
+combustível na vela e nas paredes do cilindro, dificultando a 
+
+bomba mecânica.
+
+injeção é baixa.
+
+partida e o aquecimento. 
+
+Maior quantidade de combustível deve ser injetada, aumentando 
+Apesar das dificuldades, os GDI’s apresentam vantagem no total 
+
+as emissões e o risco de contaminação do óleo lubrificante.
+de massa de combustível injetada, quando comparados com 
+
+sistemas de injeção indireta.
+
+ 
+\newpage
+CONTROLE DA COMBUSTÃO
+
+Partida a Frio
+
+Influência da pressão de injeção na qualidade da atomização.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/287.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CONTROLE DA COMBUSTÃO
+
+Partida a Frio
+
+Nove primeiros ciclos na partida – o GDI requer menos massa 
+A massa adicional do injeção indireta é devida a formação de 
+
+de combustível. 
+
+filme nas paredes do coletor. 
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/295.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EMISSÃO DE POLUENTES
+
+Formação de Poluentes
+
+Formação em GDI totalmente 
+diferente dos injeção indireta.
+Injeção indireta: relação ar – 
+GDI: relação ar-combustível e 
+
+combustível.
+
+diferença angular injeção-
+
+centelha.
+
+Secondary organic aerosol (SOA) ???????
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/303.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EMISSÃO DE POLUENTES
+
+Formação de Poluentes
+
+CO – pequenas diferenças 
+angulares maior emissão, 
+devido a deficiência de 
+formação da mistura, dado o 
+tempo reduzido, incorrendo em 
+
+mistura rica no início.
+HC – grandes diferenças 
+angulares, maior emissão 
+
+devido a diluição do 
+
+combustível com consequente 
+instabilidade da combustão, 
+dada a menor velocidade de 
+chama, e geração de HC.
+NOx – grandes diferenças 
+
+angulares, maiores 
+
+temperaturas, mais formação.  
+
+start of injection (SOI)
+
+ 
+\newpage
+EMISSÃO DE POLUENTES
+
+Formação de Poluentes
+
+Novidade: nos GDI’s existe a 
+
+emissão de particulados 
+A formação de particulados 
+acompanha a formação de CO.
+
+(fuligem).
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/320.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EMISSÃO DE POLUENTES
+
+Formação de Poluentes
+
+Comparando a emissão de HC dos GDI’s com a dos injeção 
+indireta ,  durante a partida e transitórios, como não existe 
+condensação nas paredes dos dutos de admissão, existe 
+ganhos significativos para os GDI’s, ainda que com a baixa 
+pressão de injeção. A GDI permite mistura estequiométrica.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/330.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+EMISSÃO DE POLUENTES
+
+Formação de Poluentes
+
+NOx – a formação se dá principalmente na combustão 
+A tecnologia viável para o abatimento é a adoção da EGR. 
+A recirculação dos gases de exaustão (inertes com baixo 
+oxigênio) promove a redução do pico de temperatura de 
+
+estratificada. 
+
+combustão.
+
+ 
+\newpage
+EMISSÃO DE POLUENTES
+
+Pós-tratamento de Poluentes
+Combustão homogênea, estequiométrica, mesmo tratamento 
+da injeção indireta, ou seja, simples catalisador de três vias.
+O desafio: queima estratificada – necessidade de sistema 
+
+específico para tratamento de NOx mais o três vias.
+
+Três tecnologias para redução de NOx:
+
+(uréia).
+
+platina;  eficiência de conversão 30 a 50\%; faixa 
+
+1. “DeNox” – mais simples e menos eficiente; cara por usar 
+temperatura 180 a 300 ºC (baixa); tem como vantagem a 
+2. NOx storage – eficiência de conversão 90\%; faixa de 
+temperatura 200 a 550 ºC; sensível a contaminação por 
+enxofre; acumula NOx em operação estratificada e se 
+
+resistência a contaminação por enxofre.
+
+regenera em operação com mistura rica.
+
+3. SCR (selective catalysis reduction) – eficiência de conversão 
+70\%; faixa de temperatura 200 a 550 ºC; resistente ao 
+enxofre; mais complexo e necessidade do uso do redutor 
+
+ 
+\newpage
+EMISSÃO DE POLUENTES
+
+Pós-tratamento de Poluentes
+
+Sistema de conversão 
+
+de NOx  a base de 
+
+ureia.
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{Pictures/354.png}
+\caption*{}
+\label{fig:my_label}
+\end{figure}
+
+
+\newpage
+CONCLUSÕES
+
+GDI já é uma realidade desde a década de 90. O objetivo de 
+
+que garante cerca de 5\% de economia de combustível. Alta 
+
+atingir a eficiência do Diesel, com a queima estratificada, não foi 
+alcançado. Atualmente têm-se a injeção com queima homogênea 
+complexidade e custo elevado não despertou interesse por parte 
+do consumidor (menos de 25\% da produção de veículos na Europa 
+na década de 2000). A tendência de downsizing está indicando 
+um maior uso de GDI, dada a maior eficiência térmica e o controle 
+
+da temperatura (pós-injeção) permitindo maior controle do 
+
+turbocompressor.
+
+No Brasil, somente os modelos de luxo importados e adaptados 
+para o uso da E27. O mercado de carros populares não estará 
+
+disposto a arcar com o custo.
+
+O uso com etanol dificulta a aplicação de injeção direta, sobretudo 
+pela dificuldade de partida a frio.  A atomização do etanol é mais 
+
+difícil, devido a maior tensão superficial, injeção de maior 
+
+quantidade volumétrica, a maior resistência a detonação são 
+
+questões a serem levadas em consideração.
+
+Um sistema FLEX de injeção direta – um divisor de águas 
+
+tecnológico. 
+
+ 
+\newpage
+FIM
+
+ 
+\newpage

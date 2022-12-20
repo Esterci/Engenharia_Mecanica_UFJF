@@ -148,7 +148,7 @@ class PDF_miner:
         text = text.replace('\x0c',' ')
         text = text.replace('%','\%')
         text = text.split('\n')
-        text = text[5:]
+        # text = text[5:]
 
         return text
 
